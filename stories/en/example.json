@@ -1,0 +1,37 @@
+{
+  "id": "example",
+  "title": "Ancient Cache",
+  "desc": "A buried Mugic-sealed cache from an early expedition was detected.",
+  "locations": [],
+  "tribes": [],
+  "steps": [
+    {
+      "text": "Beneath three metres of sediment, your deep scanner confirms a sealed Mugic cache — inscribed with markings from all four tribes. A joint expedition, ancient. It has never been opened.",
+      "options": [
+        { "label": "Open it immediately", "go": 1 },
+        { "label": "Scan the contents before opening", "skill": "SCAN DEPTH", "pass": "reward", "fail": 1 },
+        { "label": "Set a perimeter — then open", "go": 1 }
+      ]
+    },
+    {
+      "text": "The cache releases a Mugic pulse when unsealed, drawing two creature signals to your position. The contents are visible — rare fragments — but you have ninety seconds before they arrive.",
+      "options": [
+        { "label": "Grab what you can and extract", "outcome": "reward" },
+        { "label": "Stand ground and fight for the full cache", "outcome": "battle" },
+        { "label": "Set a Mugic trap and hold your position", "skill": "MUGIC RESONANCE", "pass": "reward", "fail": "fail" }
+      ]
+    }
+  ],
+  "isWorldEvent": false,
+  "worldEventId": "",
+  "outcomeLabels": {},
+  "rewardOverride": {
+    "creature": 10,
+    "mugic": 40,
+    "battlegear": 30,
+    "subLocation": 15,
+    "topLocation": 5
+  },
+  "witnessAttacks": [],
+  "aiBattle": null
+}
