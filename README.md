@@ -192,4 +192,123 @@ Loot tables can be set at three levels (checked in priority order):
 | `attacks` | string[] | Attack card names in the drop pool |
 | `locations` | string[] | Location card names in the drop pool |
 
-All fields are optional. Empty or omitted arrays fall back to the default tribe-based pool for that category. `rewardOverride` (drop weights) and `lootTable` (card pools) work together — weights control *how likely* each category is, loot tables control *which cards* are in each category.
+All fields are optional. Empty or omitted arrays fall back to the default tribe-based pool for that category. `rewardOverride` (drop weights) and `loot tables` (card pools) work together — weights control *how likely* each category is, loot tables control *which cards* are in each category.
+
+---
+
+# Translation Files
+
+This repo also hosts translation files that are synced into the main Chaotic project. Translators can work here without needing access to the game codebase.
+
+## Directory Structure
+
+```
+i18n/
+  en.json          # English UI strings (SOURCE OF TRUTH — do not edit here, pushed from main repo)
+  pt.json          # Portuguese UI strings
+  es.json          # Spanish UI strings
+
+cards/
+  pt/
+    cards.json     # Portuguese card ability/flavor text
+  es/
+    cards.json     # Spanish card ability/flavor text
+
+stories/
+  pt/
+    *.json         # Portuguese story translations
+  es/
+    *.json         # Spanish story translations
+
+art/
+  cards/
+    creatures/     # Card art — PNG, 5:7 portrait ratio
+    attacks/
+    battlegear/
+    mugic/
+    locations/     # Card art — PNG, 7:5 landscape ratio
+  ui_images/       # UI art (maps, backgrounds, etc.)
+  avatar/
+    body/          # Avatar layer PNGs (512x768 transparent)
+    hair/
+    shirt/
+    pants/
+    shoes/
+```
+
+## UI Strings (`i18n/*.json`)
+
+Each file is a flat JSON object with dot-notation keys:
+
+```json
+{
+  "landing.title": "CHAOTIC",
+  "landing.enter": "ENTER THE GAME",
+  "dromes.battle": "BATTLE",
+  "faq.title": "FAQ",
+  ...
+}
+```
+
+**Rules:**
+- `en.json` is read-only in this repo — it's pushed here automatically from the main project so translators can see all available keys
+- To translate, open `pt.json` or `es.json` and fill in the empty `""` values with translations
+- Keys with `{name}` placeholders (e.g., `"Welcome, {name}!"`) — keep the `{placeholder}` intact, just translate the surrounding text
+- Don't add or remove keys — only fill in values
+
+## Card Translations (`cards/{locale}/cards.json`)
+
+Each file is a JSON array of card objects:
+
+```json
+[
+  {
+    "name": "Maxxor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  ...
+]
+```
+
+**Rules:**
+- `name` and `type` are identifiers — do NOT translate them
+- Only fill in `ability_text` and `flavor_text` with translated text
+- Leave entries empty (`""`) if no translation is available yet — the game falls back to English
+- Card names are proper nouns and stay in English everywhere
+
+## Story Translations (`stories/{locale}/*.json`)
+
+Story files follow the same JSON schema as `stories/en/`. Copy the English file, keep the `id` and structural fields the same, and translate:
+- `title` — story title
+- `desc` — short description
+- `steps[].text` — narrative text
+- `steps[].options[].label` — choice button text
+
+Do NOT change: `id`, `locations`, `tribes`, `go`, `outcome`, `skill`, `pass`, `fail`, or any other structural/logic fields.
+
+## Art Assets (`art/`)
+
+Drop art files into the appropriate subdirectory. See `art/README.md` for full details on file naming and dimensions.
+
+- **Card art**: `art/cards/{type}/{CardName}.png` — use the exact card name as filename
+- **UI images**: `art/ui_images/{name}.png`
+- **Avatar layers**: `art/avatar/{layer}/{body}_{pose}_{variant}.png`
+
+Art files placed here will overwrite existing art in the main project when synced, then get uploaded to the CDN.
+
+## Adding a New Language
+
+1. Create `i18n/{code}.json` — copy `en.json` and replace all values with `""`
+2. Create `cards/{code}/cards.json` — copy from `cards/pt/cards.json` (values are already empty)
+3. Create `stories/{code}/` — copy story files from `stories/en/` and translate text fields
+4. Let the main project maintainer know so they can add the locale code to the backend's `normalizeLocale()` function
+
+## Syncing
+
+The main project has a `scripts/sync_i18n/` Go script that:
+1. Pushes `en.json` FROM the main project TO this repo (so translators see the latest keys)
+2. Pulls all non-English translations, stories, and art FROM this repo INTO the main project
+
+The CI/CD pipelines automatically clone this repo and run the sync before building, seeding, or uploading assets. Translators and artists just need to push changes here.

@@ -1,0 +1,7808 @@
+[
+  {
+    "name": "Arias",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ario",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Attacat",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Barath Beyond",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Biondu",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blazier",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blügon",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bodal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Borth-Majar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Brathe",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Chaor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Crawsectus",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dardemus",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Donmar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dractyl",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Drakness",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ekuud",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Formicidor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Frafdo",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Galin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gespedan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ghuul",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Grook",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "H'earring",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Heptadd",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hota",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ibiaan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Intress",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Junda",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kannen",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kebna",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kerric",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khybon",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Klasp",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Krekk",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kughar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Laarina",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lhad",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lord Van Bloot",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lore",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Maglax",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Magmon",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mallash",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Malvadine",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Marquis Darini",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Maxxor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Miklon",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Najarin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nauthilax",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Odu-Bathax",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Owis",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prince Mudeenu",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Psimion",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Pyrithion",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Qwun",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rarran",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rellim",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rothar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shimmark",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Siado",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skartalas",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skithia",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skreeth",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Slurhk",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sobtjek",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Solvis",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Staluk",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Takinom",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tangath Toborn",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tartarek",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tiaane",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Toxis",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ubliqun",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Uro",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Valanii Levaan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Velreth",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vidav",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vinta",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wamma",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Xaerv",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Xield",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Yokkis",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Zalic",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Zaur",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Zhade",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aggroar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Arkanin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Balaan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bierk",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Daj Huun",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dasalin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dibanni",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dubin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Faash",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Garv",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Geltod",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hammerdoom Chantcaller",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hune Marquard",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Illazar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Illexia, The Danian Queen",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Jaal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kamangareth",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kelvedran",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khavakk",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khritlaan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kolmo",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lomma",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mahrrant",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Munnari",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Narfall",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ornathor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ramarhvir, The Danian Hivebringer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Raznus, Ambassador to the Danians",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ribbian",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Slufurah",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Strikto",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Swassa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tassanil",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ultadur",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Yondaf",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Arbeid",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Atrapol",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blazvatan, the Epic Warbeast",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bylkian",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Clodor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Drimesse",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Enre-hep",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ere",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fivarth",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gnarlus",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hammerdoom Chantcaller, Assimilated",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hifdan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Iparu",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kalt",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Karraba",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kinnianne, Ambassador to the Mipedians",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kolmo, Assimilated",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kopond",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lanker",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lobanne",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Makrabon",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Melke",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Na-inna",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Olkiex",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Phelphor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ranun",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Raznus, Assimilated",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Saand",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Titanix",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Uboraan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Viqtarr",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vyll",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wytod",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Xelfe",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Zapetur",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Accato",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Akkrean",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Alazdan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aokua",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Asadab",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bivike",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bladez",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Brimflame",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Chaac",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dakkamal, Melee Trainer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Drazz",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ebberim",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ebena'bakku",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Erak'tabb",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fazkaal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Frafdo, The Hero",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gambreor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gan'trak",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Grindaald",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gronmor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hermatred",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ihun'kalin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ikkatosh, Guardian of Nature",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ilx",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Irrabeq",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Issaley",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Jumbad",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kalanju",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Katharaz",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kileron, Warbeast of the Dust Storm",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Klar'nok",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kraade",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kreaal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lendai",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lyssta",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lystone",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Maliph, Guard of the Palace",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Milla'iin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mivindal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mizkio",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nauthilax, Tainted",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Necrabe",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Neth'uar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nimmei",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Okaxor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ooloo",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Owayki",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ragetrod",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rarran, Tainted",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rath'tab",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rebant",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ritzu'dag",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Savell",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sirri",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tabaal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tangath Toborn, in Training",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Targubaj",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tartarek, Psi Overloader",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tinnoi",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tomugar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Trimdaal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Uholdan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmquad",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wistanne",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wrenges",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Xis'torq",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aa'une the Oligarch, Projection",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aa'une the Oligarch, Avatar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aer'dak",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Agrino Jaldar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aivenna",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Anger'keem",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Appelai",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Arrthoa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Attacat, Tactical Aid",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aureban",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bahrakatan, The Coralsmith",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Biakan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blaaxa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dhilas",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dror'niq",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Epitrinne",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fal'makin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fla'gamp",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fliandar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gimwei",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Glost",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "H'earring, Tainted",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Headmaster Ankhyja",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hune Paltanin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ikub'ra",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Jus'hebban",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khybon, The Renegade",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Klencka",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lam'inkal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mik'banin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mock'adyn",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Najarin, Fluidmorpher's Foe",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nivenna",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nunk'worn",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Otinee",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Phelphor, Of the Deep",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rasbma Darini",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ri'oha",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rol'doi",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Siril'ean, The Songthief",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stelgar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Taffial",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Takinom, The Shadowknight",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tarbok",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tasqa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vitar'zu",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wamma, Hive Ordnance",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Agitos, Eloquent Motivator",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ailav",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aval'par",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Drabe",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dreg'ora",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elhadd",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Emna'ool",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Eximiar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gaffat-ra",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gal'drad",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Galmedar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hiadrom",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Iflar, The Crown Prince",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Intress, Natureforce",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ivelaan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Jaidwarl",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ki'bro",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Klawam",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lord Van Bloot, Servant of Aa'une",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Makanaz",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Na-inna, Rebel of the Roa'Po Sahkk",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Neekwin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Noaz, Mipedian Cavalerist",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Olkiex, Driver Extraordinaire",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ørth, The Empowerer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ozlai, Chaor's Pilot",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Part'soa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rellim, Watermaster",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ruhban",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Topar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ustabe",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vilrik Landfarer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vix'ben",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Xaerv, Monsoon Defender",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Yterio",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aivenna, OverWorld Lieutenant",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Akkalbi",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Akkerbal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Anarkiar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Barath Beyond, UnderWorld General",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blügon, Winter Warrior",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bo'aam",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Chaor, The Fierce",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ebbikka",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elna",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Em'swa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gan'nim",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ghar'lag",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Glapaal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gorram, Danian General",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Grantkae, Mipedian General",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hune Marquard, Brainwashed Scholar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Jorre, Mipedian Lieutenant",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kamangareth, Unstable Ally",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kepiaan, Danian Lieutenant",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khorror",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Klencka, Avenger",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Loderool",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lore, Ancestral Caller",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Magmon, Retalliator",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Majjcan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Masilbaat",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Maxxor, Protector of Perim",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nivenna, UnderWorld Lieutenant",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Raquanni",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shinadd",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tangath Toborn, OverWorld General",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tir'baleen",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Torrna",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Uksum",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vidav, Master Strategist",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vunhra",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wilt'dred",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Afjak",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ajara",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Amblox",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Arrthoa, Captain of the Ezoa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ast'imal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blazier, Citadel Cartographer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cromaxx",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dalgad",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Donmar, Tablet Translator",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Enre-hep, High Muge of the Desert",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Eremia",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fal'makin, Azai Inquisitor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fasseph",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gareep",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ghundac",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gintanai, The Forgotten",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Habekh",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Headmaster Ankhyja, Seeker of the Art",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Herken",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hiadrom, Rock Ripper",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hune Canin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ifjann",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ihun'kalin, Psionic Master",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Illiar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Iparu, Metallic Ally",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ixxik",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kaal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ketacc",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ketun",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khenti",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khybon, Magma Dam Overseer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kiru",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Klik'ssi",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kojjbel",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kolmo, Purified",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kopond, High Muge of the Hearth",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Korg",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Krekk, Phalanx Recon",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lomma, Desert Wanderer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lore, High Muge of the Hive",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Maglax, Lodestone Seeker",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Magmon, Engulfed",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Makromil",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mhein",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Milla'iin, Foothold Commander",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mock'adyn, Fluid Master",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Najarin, High Muge of the Lake",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Najarin, Younger",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nauthilax, Aquatic Spy",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nimmei, Expedition Overseer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ninren",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nom, Servant of Earth",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nunk'worn, Assimilated",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Odu-Bathax, Reservoir Reclaimer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Orbaat",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Piddan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Porthyn",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Proboscar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Qwun, Solitary Scout",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rath'tab, Mind Scryer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rothar, Forceful Negotiator",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Savitsa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Seeryn, Servant of Fire",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sepmek",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Silchaw",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Silv, Servant of Air",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skithia, Gothos Spy",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skorblust",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Slufurah, Treacherous Translator",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Smildon",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Somnort",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Son'las",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stelgar, Vicious Mutation",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Taffial, Cothica Hunter",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tarin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Thar'lyn, Azai Spy",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tharc, Tablet Translator",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Toadore",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmar, Perithon Racer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Unda, Servant of Water",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ursis",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Valban",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vlar",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Voorx",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ylinne",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Yondaf, Symbiotic Infector",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Zamool, Lord Van Bloost's Enforcer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Zhade, Dig Site Defender",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Arctus, Heptadd's Squire",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aszil, the Young Queen",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bidua",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bodal, Flamedrill Researcher",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cyrenox",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ginar'rash, The Extinguisher",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Malvadine, The King's Herald",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Maxxor, Elemental Champion",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Riggan",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tassanil, High Elementalist",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wamma, Flame Guard",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aimukk",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Chargola",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dyrtax",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Getterek",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ghatup",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nakal",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nebres",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Neffa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sukoval",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vasquin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Agitos",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Banshor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cerbie",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ettala",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hoton",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mezzmarr",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mishmoshmish",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mommark",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prantix",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Quadore",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulfhedinn",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Abin-wor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blak'drin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ebkeex, Patchwork Minion",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nukasai",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gazarbash, Infecting Terraformer",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khybon's Engineered Automaton",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mommark, Clonemaster",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nis'dabba",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Farhkaj",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmar, Wavescrambler",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Antidaeon",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Epaluo",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ettala, Mind Controlled",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gaffat-ra",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Heptadd, 2008 Hawaii Trade Conference",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ikkatosh, The Aich King",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Irsenog",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kapalor",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nunk'worn",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Opto",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prince Mudeenu, Champion of the Guard",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prince Mudeenu, Champion of the Guard",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Raimusa",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Simalin",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Takinom, The Shadowknight",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tangath Toborn, OverWorld General (Pre-Release)",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Yokkis, Spooker",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tarteme",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kobarri",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Heptadd (Tin Misprint)",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prince Mudeenu (Dardemus Stats)",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Drazz (TTIT stats - online card is TTIT)",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blügon (New York Comic Con)",
+    "type": "creature",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Castle Bodhran",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Castle Pillar",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cordac Falls",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cordac Falls Plungepool",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Crystal Cave",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Doors of the Deepmines",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dranakis Threshold",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Everrain",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Eye of the Maelstrom",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fear Valley",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Forest of Life",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gigantempopolis",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Glacier Plains",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gloomuck Swamp",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gothos Tower",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Iron Pillar",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kiru City",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lake Ken-I-Po",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lava Pond",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedim Oasis",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mount Pillar",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ravanaugh Ridge",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Riverlands",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Runic Grove",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stone Pillar",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Storm Tunnel",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stronghold Morn",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "UnderWorld City",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "UnderWorld Colosseum",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wooden Pillar",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Carnival of Confusion",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Grand Hall of Muge's Summit",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mount Pillar Reservoir",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Oipont's Lookout",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Overworld Embassy at Mount Pillar",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Queen's Gate",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sands of the Unseen",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sha-Kree Flats",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Barracks",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Darkened Dunes",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Catacombs of the Conjurors",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Forest of Life, During Aichlyys",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Indigo Grove",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Iparu Jungle",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedian Dew Farm",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedim Lounge",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedim Mirage",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "OverWorld Embassy at Mipedim",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rao'Pa Sahkk, The Ocean with No Water",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Hunter's Perimeter",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bodal's Arsenal",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Brawlers' Burrow",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Broken Edge",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Chamber of Waves",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Deadrange Gong",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gambreor's Hut",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gloom-mire Night",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hall of Fatigue",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ijahni Outpost",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Illusionary Lake",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Imaginary Walls",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Jade Pillar",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lava Pond, Milla'iin's Foothold",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mommark's Catapult Tower",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mount Pillar Reservoir, Neth'uar's Foothold",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Open Doors of the Deepmines",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Psikoom Madness Chamber",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rao'Pa Sahkk, Ihun'kalin's Foothold",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Riverlands, Erak'tabb's Foothold",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stormgrounds",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Heart of the Jungle",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Hive Gallery",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Infectorium",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The OverWorld Library",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Pits",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmar's Projection Cavern",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Van Bloot's Banquet",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vidav's Refectorium",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Frozen Fire",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kiru City Tunnels",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Psi-fanger's Shelf",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Royal Mipedian Academy of Melee Arts",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Siril'ean's Lair",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skeletal Springs",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Coralsmithy",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Oligarch's Path",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Rao'Pa Sahkk Chimegrid",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Training Grounds",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Brawlers' Burrow, Pugilist's Pit",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Foothold Assault Trench",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Glacier Plains, M'arrillian Melting Camp",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lore's Chamber of Recall",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Pouril Forest",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prototype Demolition Field",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shardcrafter's Workshop",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Phalanx Portcullis",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Storm Tunnel, Flooding",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "UnderWorld City, During Van Bloot's Ascent",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Carnival of Confusion, Mind Games",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cryomorph Barricades",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Glacier Plains, M'arrillian Heat Cannon",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gorram's Briefing",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lake Blakeer",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lake Morn, Globe Storm",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "M'arrillian Pulse Beacons",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Numin Voidland",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Pyrogenousist's Hearth",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Quarters of the Quartet",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Northrange, Highground",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Storm Tunnel, Ki'bro's Foothold",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "AZAIA Mindscrying Chamber",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Brawlers' Burrow",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Broken Edge",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Castle Mommark",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Castle Rathwaq",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "City of Kehn-sep, Tablet Dig Site",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dranakis Threshold, Portal to the Past",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elmantiir",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gigantempopolis, Chamber of the Oraklon",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Graalorn Forest",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Herken's Feast",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kaizeph, City of the Elements",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kiru Village",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lake Ken-I-Po, Ritual Site",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedim Tropics",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedim Valley",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mount Pillar Reservoir, Liberated",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Najarin's Castle",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prexxor Chasm",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prexxor Chasm, The Blight",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rao'Pa Sahkk, Condensation Ceremony",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Riverlands, Abandoned Wastes",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rock River Canyon",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Star Towers of Kehn-sep",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tablet Sanctuary",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Cliffs",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Garden",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Golden Heptagon",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Hive Gallery",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Magma Dam",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The OverWorld Library",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Passage, OverWorld",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Passage, UnderWorld",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Phlogiston",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Pits",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Storm Tunnel, Lingering Monsoon",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Storms",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Swartbron",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vidav's Refectorium",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Silchaw's Mine",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Flame Gate",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Carnival of Confusion, The Entangled Throne",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Castle PIllar",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fear Valley",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kiru City",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Annex of the Arcane",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khybon's Scrapyard",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Storm Tunnel, Flooding",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Glacier Plains",
+    "type": "location",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Canon of Casualty",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cascade Symphony",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Chorus of the Hive",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Decrescendo",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Discord of Disarming",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ember Flourish",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fanfare of the Vanishing",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fortissimo",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Geo Flourish",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hymn of the Elements",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Interlude of Consequence",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Melody of Malady",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Melody of Mirage",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Minor Flourish",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mugic Reprise",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Notes of Neverwhere",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "OverWorld Aria",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Refrain of Denial",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Refrain of Denial, (OverWorld)",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Refrain of Denial, (OverWorld/UnderWorld)",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Asperity",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Deflection",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of EmberNova",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Focus",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Fury",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Futuresight",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of GeoNova",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Mandiblor",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Recovery",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Resistance",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Resurgence",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Revival, (UnderWorld)",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Stasis",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Surprisal",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Symmetry",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Treachery",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Truesight",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Trills of Diminution",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cascading Rondo",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Casters' Warsong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Chorus of Cothica",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Composition of Concentration",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Danian Element Choral",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Defender's Song",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dissonance of Distraction",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elemental Denial",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elemental Elegy",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Forgotten Origins",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gear Glissando",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hive Destruction",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hive Unsung",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Infectious Melody",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Melodic Might",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Melody of the Meek",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Momental Virtuosity",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prelude of Protection",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Purge Dirge",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Recurring Rescue",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Serenade of Subordinance",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Encompassing",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Resilience",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Shelter",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Switch Riff",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Armament Adagio",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Echoes of Empty Hands",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fighters' Fanfare",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hymn of Teleportation",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Melody of Parasitic Mayhem",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rhyme of the Reckless",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Desperation",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of the Dyad",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Strain of Ash",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Strain of Clarity",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Strain of Expensive Delusions",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Strain of Infection",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Strain of the Tide",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tune of Xerium",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Void Dirge",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Allegro",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aria of Enragement",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ballad of the Belittled",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cadence Clash",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Carnivore's Keening",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Chromatic Postlude",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Deep Dirge",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Desert's Wrathsong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Deserter's Finale",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Disarming Theme",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dissonance of Will",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Domestic Hive Hymn",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Draining Dirge",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Duality Dirge",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ecstatic Fanfare",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Effervescent Etude",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Empowering Serenade",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Etude of Exhaustion",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Falsetto",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fanfare of the Brain",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fatiguing Falsetto",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Final Fugue",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fluidmorpher's Fanfare",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Improvisational Melody",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Intense Polyphony",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Melody of Miracles",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Melody of Mirrored Actions",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nourishing Nocturne",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Odd Opus",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Predator's Song",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prelude to Dominance",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Psionic Serenade",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rhythms of Rage",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Selective Strain",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Stable Shields",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Specific Diminishing",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Surprising Riffs",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Symphony of Similarity",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tonal Destruction",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Calling of Aa'une",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Curemorph Chords",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Decelerating Requiem",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Denial Refrain of the Deep",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Harmonies of the Wind",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Intress' Healing Ballad",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kopond's Composition",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mightsingers Requiem",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mindproof March",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Requiem of Fear",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Requiem of Lost Minds",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sound of Noise",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Unheard Melody",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vexing Waveform",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Armament Alteration Anthem",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Choral of the Apparition",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dirge of the Desert",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fanfare of Elemental Champions",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Harmonious Highsong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Intimidating Melody of M'arr",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Katharaz's Cacophony",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "March of the M'arrillian Minions",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Minion's Freesong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nocturne of the Elements",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Roar of the Mob",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shock Song",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Symphonic Pelagic Maresong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Symphony of the Guard",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Unisong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Adaptive Progression",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Denying Dirge",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Iflar's Improvisation",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Illusion Glissando",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Intertwined Melody",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Jig of Reinforcement",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Monophone Mayhem",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ode to Obscurity",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Opus Opposed",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ostinato of Oban'emre",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skysong Arpeggio",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vidav's Voicing",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aegis Airia",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ancestral Anthem",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Anthem of Stone",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Battlesong of Depletion",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Battlesong of Renewal",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bonding Battlesong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Consuming Cacophony",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Counterpoint of Chaos",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Decomposition",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Diminuendo",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dischord of Flame",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elemental Counterpoint",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elemental Denial",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Empowering Encore",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fluid Fugue",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gear Glissando",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Harmonics of Water",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Howl of the Wind",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Interlude of Interruption",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rocky Refrain",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Searing Symphony",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Silent Requiem",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sonata of Storms",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of the Dyad",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Elemental Attunement",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Translocation",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Swartbron Battlesong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Symphony of Shielding",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Unbalancing Battlesong",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Najarin's Tower of Song",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmar's Activating Arpeggio",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fortissimo",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Song of Transportation",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Swarm song",
+    "type": "mugic",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aqua Shield",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cyclance",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Diamond of Vlaric",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dragon Pulse",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elixir Of Tenacity",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flux Bauble",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gauntlets of Might",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Liquilizer",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedian Cactus",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mowercycle",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mugician's Lyre",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nexus Fuse",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Orb of Foresight",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Phobia Mask",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prism of Vacuity",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Pyroblaster",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ring of Na'arin",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Riverland Star",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skeletal Steed",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Spectral Viewer",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Staff of Wisdom",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stone Mail",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Talisman of the Mandiblor",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Torrent Krinth",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Torwegg",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Viledriver",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vlaric Shard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Whepcrack",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Windstrider",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Danian Carapace",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elementalist Pauldrons",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ice Cloak",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mandiblor Crown",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Scout's Monocular",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stingblade Prototype",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Supercharged Alterant",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sword of Khy'at",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Telebracers",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ur-Shard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Challor",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Entropy Modulator",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Heptadd's Crown",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hunter's Lure",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lightning Canister",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ravita Flower",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Reality Field Generator",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Doomhammer",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Warbeast Power Leash",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wind Whip",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aerodrone",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Algal Wings of Attraction",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Alluring Bait",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aspect Amplifier: Agility",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aspect Amplifier: Bravery",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aspect Amplifier: Might",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aspect Amplifier: Wit",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Brain Amplifier",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Breath of the Desert",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Destructozooka",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hive Amber",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Husk Armor",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Manual of Vidav",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Maxxor's Torch",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mind Prism",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mindclasp",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mirrors of Misplacement",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Parasite Tablet",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Phobia Mask",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Phobia Tabard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Plasma Pounder",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prism of Fright",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prism of Mindlessness",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prism of Sloth",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prism of Vacuity",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Reefshard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sinister Statuette",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Pit Token",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmar's Bionic Steam Arms",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmar's Projector",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Baton of Aa'une",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dractyl Scales",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Amber Shard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Chime Shard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Freshwater Shard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Magma Shard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Shard of the Tidal Crest",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Liquid Thought Evaporator",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Phobia Plates",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vial of Liquid Thought",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blazier's Map Collection",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bronzeflight",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Burithean Axe",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dread Tread",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Evergreen Tunic",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flitflut",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Girgeth Tar",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hornsabre",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ikkatosh's Aichstick",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Levitaar",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedian Balladeers' Flute",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Obliterators",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ozlai's Wreck",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Residual Lightning Dust",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sahrnokk",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Scepter of the Infernal Parasite",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Van Bloot's Sickle",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Warriors of Owayki",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Weightless Energy Vessel",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wing-Fin",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aichlyys Wisp",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Armbands of Lore",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bodal's Dagger",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Crown of Aa'une",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "General's Standard",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gigantroper",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Indigo Sash",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Khybon's Mech-blade",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mipedian Fulgurite",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Muge's Tuningfork",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Riverland Moon",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shard of Solitude",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ankh of Kehn-Sep",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aquatic Familiar",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "AZAIA Mindprobe",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bi-Mowercycle",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Citadel Fragments",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Citadel Lodestone",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Colstone",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Double Edge",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Drilldozer, Customized Rig",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flameblade of Seeryn",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hyperhover",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Shard of the Staunch",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Metabolic Overloader",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mysterious Clawblade",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Orb of Unda",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Orchis Undin",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Phoenix Belt",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Pranker Tanker",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Quranium Pendant",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sandstorm Shroud",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Scarab of Khilai",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skopolon",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stormbird Statues",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sun Chariot of Kehn-Sep",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Trident of Treachery",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ulmanator",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Varanohs",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vlaric Shard, Relic of the Past",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Xerium Armor",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Armor of Earthen Might",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Droskin",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "The Indigo Arc",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flux Bauble",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Orb of Foresight",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Talisman of the Mandiblor",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Bodal's Element Converter",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Shard of Chance",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mommark's Energy Infuser",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Olkiex' Apron",
+    "type": "battlegear",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Allmageddon",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ash Torrent",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Coil Crush",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Degenervate",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Delerium",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ektospasm",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ember Swarm",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Evaporize",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fearocity",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flame Orb",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flash Kick",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flash Mend",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flashwarp",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Frost Blight",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hail Storm",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hive Call",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Incinerase",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Inferno Gust",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Iron Balls",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lavalanche",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lightning Burst",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lucky Shot",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Megaroar",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mirthquake",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Paral-Eyes",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Pebblestorm",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Power Pulse",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Quick Exit",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rip Tide",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rock Wave",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rustoxic",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shadow Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shriek Shock",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Skeletal Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sleep Sting",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sludge Gush",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Spirit Gust",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Squeeze Play",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Steam Rage",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Telekinetic Bolt",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Thunder Shout",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tornado Tackle",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Torrent of Flame",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Toxic Gust",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Unsanity",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Velocitrap",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vine Snare",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Viperlash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Windslash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Accelerated Unity",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Acid Wash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Danihilation",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Desiccate the Land",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elementalist's Psy-Blast",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Freeze Flash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gear Grind",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Granite Balls",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hive-phoon",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Infight",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Malevolent Blast",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mandiblor Might",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Muge's Edge",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mugician Steal",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Pillar Quake",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Reverberate",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Scout's Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Strike of the Meek",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sunder Ground",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Terraport",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Apoc-eclipse",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Arborsmash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blaze Barrage",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Blind Fury",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Cyclone Slam",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dexterous Storm",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Elemental Oxidation",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Enlightened Tenacity",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fear Fight",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Force Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hampering Winds",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Harnessed Rage",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Heptagon Hail",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hurlicane",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hydro Balls",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Liquescent Swirl",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Matagore",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mind Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Progressive Speed",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Purifying Mud",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Reactive Resolution",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Reckless Defeat",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Reckless Reproach",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rot Cloud",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Slashclaw",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stupefying Tide",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Symmetry Slam",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Trampling Tackle",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Twister of Elements",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Web Cocoon",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ash Torrent",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Burning Rain",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Confusion",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Daunting Bravery",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Deceleration",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Delerium",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Deluge of Doom",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Disempowerment Combo",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dry Liquid",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Electro-Web",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ember Swarm",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fear Projection",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flaming Coals",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flashwarp",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ghost Gouge",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gravity Slam",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hammer Dash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hampering Winds",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Heat Rage",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ice Disks",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ice Sheet",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Lightning Burst",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mind Grind",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mindful Finish",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mindsink",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Minor Roar",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Neuro Freeze",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Outsmart",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Outwit",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Perplexing Heat",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Piercing Brilliance",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Plasmarrow",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Poison Panic",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Poison Sphere",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Power Punch",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Primal Smash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Psi-mageddon",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Psychodrain",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Quick Exit",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Radical Ice Balls",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rip Tide",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Screeching Scare",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shadow Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Shriek Shock",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sink Scream",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Slowsand",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Snare Attack",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Spirit Gust",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Streak Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Stupefying Tide",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Terror-fying Tackle",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Timeslow",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Torrent of Flame",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Torrent of Water",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Velocitrap",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vine Snare",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Web Cocoon",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Whirling Wail",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Whirlwind Scythes",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aftermath Feint",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Caustic Cascade",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Electric Rain",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fire Stream",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fluidmight",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Force Balls",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Invader's Tactics",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Kha'rall Crush",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Marksman's Preparation",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mightswing",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Petrifying Power",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Poison Steam",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rage of Aa'une",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rancorous Projection",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sandstrike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Solar Flare",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Supercooled Rain",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Swarming Destruction",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tainted Thunderstorm",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tidal Surge",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Academy Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Acceleration",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aqua Recoil",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Charge of the Brave",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flamebloom",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flying Advantage",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Glacial Balls",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Infectious Implosion",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Landgore",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Magma Hack",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mindrazor",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Morphwrath",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Morphwrath (Prototype)",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Prowl Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Reefquake",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sediment Stormshield",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Slime Slam",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Ultimate Warstance",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Unarmed Brawl Bash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vigorous Gust",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Winterclaw",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Alacritous Force",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Braveglint",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Clashjet",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Coral Balls",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Directed Bravery",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Discipline Destruction",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fearless Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fire Ring",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Funnel Blast",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Geyser Gush",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Grantkae's Stance",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gravel Grind",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Heartsync",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Inner Flood",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Instantaneous Inspiration",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Interthink",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Massblink",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Powercut",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sirocco",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Smartsmack",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Strengthening Bond",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Thermo Rings",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Thinkray",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Unbalanced Charge",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Unified Tribecharge",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Valor Continuum",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Aerosion",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Airize",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Airsault",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Atmosfear",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Before the Storm",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Clean Slide",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Combustion Carnage",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Consuming Flame",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Deadwater Devastation",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Deluge of Doom",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dry Touch",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Dust Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Earth Pulse",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Earthshape",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Eidolon Advance",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Enlightened Tenacity",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Eroding Blast",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Essential Evaporation",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Extinguishing Fountain",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fireram",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flame Breach",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flame Fright",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flood Force",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Fluid Flame",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Force Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Gladiator's Fire",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Grounding Grapple",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Hurlicane",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Incessant Wave",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Incinerase",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Inferno Claws",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Liquescent Swirl",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Magma Might",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Meditative Leap",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mind Mash",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mindvoid",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Mineral Mayhem",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Obscuring Winds",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Outfreeze",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Paraseed",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Perplexing Heat",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Primordial Rage",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Progressive Speed",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Rainspears",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Retaliatory Strike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sleet Slide",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Slowsand",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Smokesurge",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sudden Flare",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Sunder Ground",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Synaptic Acceleration",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Tectostrike",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Terrantula Tackle",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Traditionalist's Charge",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Turbulence Funnel",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vacuum Hemisphere",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Vapor Wipeout",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Voltorch",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Wall of Flame",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Whirlwind Scythes",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Xenocentric Wrath",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Emberwhip",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flurry of Fists",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "M.A.C.A. (Melee Artists Collaborative Attack)",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Allmageddon",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Catacollision",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Frightening Muck",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Carniwin",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Flurry of Fists",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  },
+  {
+    "name": "Nexdoors",
+    "type": "attack",
+    "ability_text": "",
+    "flavor_text": ""
+  }
+]
