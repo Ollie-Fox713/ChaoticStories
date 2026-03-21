@@ -10,3 +10,14 @@ Thumbs.db
 *.psd
 *.ai
 *.sketch
+
+# Environment files
+.env
+.env.local
+.env.*.local
+
+# Private keys and certificates
+*.key
+*.pem
+*.crt
+*.pfx
