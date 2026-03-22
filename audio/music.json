@@ -1,0 +1,9 @@
+{
+  "tracks": [
+    { "id": "hub",     "title": "Dromes Hub",       "artist": "",  "context": "hub",     "file": "music/hub.webm" },
+    { "id": "battle",  "title": "Battle Theme",     "artist": "",  "context": "battle",  "file": "music/battle.webm" },
+    { "id": "perim",   "title": "Perim Exploration", "artist": "", "context": "perim",   "file": "music/perim.webm" },
+    { "id": "store",   "title": "Store",            "artist": "",  "context": "store",   "file": "music/store.webm" },
+    { "id": "landing", "title": "Portal Theme",     "artist": "",  "context": "landing", "file": "music/landing.webm" }
+  ]
+}

@@ -1,3 +1,9 @@
+# ChaoticStories
+
+> **New here?** Check out [HELPME.md](HELPME.md) for a step-by-step beginner's guide on how to install Git, clone this repo, add your files, and submit a pull request.
+
+---
+
 # Story JSON Schema
 
 Stories are adventure narratives stored as JSON in `assets/data/stories/{locale}/`. The seed script upserts them into the `stories` DB table (PK: `id` + `locale`).
@@ -234,6 +240,15 @@ art/
     shirt/
     pants/
     shoes/
+
+audio/
+  music.json       # Track manifest (SOURCE OF TRUTH — pushed from main repo, do not edit here)
+  music/           # Background music tracks (.webm Opus)
+  sfx/             # Sound effects (.webm Opus)
+  voices/          # Character voice lines, organized by creature
+    chaor/
+    maxxor/
+    ...
 ```
 
 ## UI Strings (`i18n/*.json`)
@@ -298,6 +313,68 @@ Drop art files into the appropriate subdirectory. See `art/README.md` for full d
 
 Art files placed here will overwrite existing art in the main project when synced, then get uploaded to the CDN.
 
+## Audio Assets (`audio/`)
+
+Music, sound effects, and character voice lines for the game. All audio files should use **WebM with Opus codec** (`.webm`).
+
+### Music Tracks (`audio/music/`)
+
+Background music that loops per game context (hub, battle, exploration, etc.).
+
+- **Format:** `.webm` (Opus codec), stereo, ~128kbps recommended
+- **Naming:** Use descriptive names matching the manifest (e.g., `hub.webm`, `battle.webm`)
+- **Manifest:** `audio/music.json` is the track registry — it's pushed here automatically from the main project. **Do not edit it here.** To add a new track to the manifest, ask the main project maintainer.
+- **Adding tracks:** Drop `.webm` files into `audio/music/`. They'll be synced to the main project, but won't play until added to the manifest.
+
+### Sound Effects (`audio/sfx/`)
+
+Short clips triggered by game events (attacks, victories, UI clicks, etc.).
+
+- **Format:** `.webm` (Opus codec), mono, ~96kbps recommended
+- **Naming:** Must match the SFX registry in the main project. Current names:
+
+| File | Trigger |
+|------|---------|
+| `click.webm` | Button/nav clicks |
+| `card_hover.webm` | Card hover |
+| `attack_impact.webm` | Attack played |
+| `mugic_cast.webm` | Mugic cast |
+| `ability_activate.webm` | Ability activated |
+| `creature_defeated.webm` | Creature defeated |
+| `combat_start.webm` | Combat begins |
+| `victory_fanfare.webm` | Battle won |
+| `defeat_sting.webm` | Battle lost |
+| `scanquest_start.webm` | Scanquest started |
+| `scanquest_complete.webm` | Reward collected |
+| `location_reveal.webm` | Location revealed |
+| `encounter.webm` | Adventure encounter |
+| `notification.webm` | General notification |
+| `story_text.webm` | Story typewriter |
+| `skill_rolling.webm` | Skill check rolling |
+| `skill_pass.webm` | Skill check passed |
+| `skill_fail.webm` | Skill check failed |
+
+### Voice Lines (`audio/voices/`)
+
+Character voice clips organized by creature name (lowercased, non-alphanumeric replaced with `_`).
+
+- **Format:** `.webm` (Opus codec), mono, ~64kbps recommended
+- **Structure:** `audio/voices/{creature_slug}/{line_id}.webm`
+- **Line IDs:** `default`, `encounter`, `attack` (extensible)
+- **No registry needed** — the game builds paths dynamically. Missing files are silently ignored.
+
+Example:
+```
+audio/voices/
+  chaor/
+    default.webm      # General voice line
+    encounter.webm     # Played when encountered in adventure
+    attack.webm        # Played when attack card is used
+  maxxor/
+    default.webm
+    encounter.webm
+```
+
 ## Adding a New Language
 
 1. Create `i18n/{code}.json` — copy `en.json` and replace all values with `""`
@@ -308,7 +385,7 @@ Art files placed here will overwrite existing art in the main project when synce
 ## Syncing
 
 The main project has a `scripts/sync_i18n/` Go script that:
-1. Pushes `en.json` FROM the main project TO this repo (so translators see the latest keys)
-2. Pulls all non-English translations, stories, and art FROM this repo INTO the main project
+1. Pushes `en.json` and `music.json` FROM the main project TO this repo
+2. Pulls all non-English translations, stories, art, and audio FROM this repo INTO the main project
 
-The CI/CD pipelines automatically clone this repo and run the sync before building, seeding, or uploading assets. Translators and artists just need to push changes here.
+The CI/CD pipelines automatically clone this repo and run the sync before building, seeding, or uploading assets. Translators, artists, and audio contributors just need to push changes here.
