@@ -242,7 +242,9 @@ art/
     shoes/
 
 audio/
-  music.json       # Track manifest (SOURCE OF TRUTH — pushed from main repo, do not edit here)
+  music.json       # Music track manifest (SOURCE OF TRUTH — edit here, pulled into main repo)
+  sfx.json         # SFX manifest (SOURCE OF TRUTH — edit here, pulled into main repo)
+  voices.json      # Voice line manifest (SOURCE OF TRUTH — edit here, pulled into main repo)
   music/           # Background music tracks (.webm Opus)
   sfx/             # Sound effects (.webm Opus)
   voices/          # Character voice lines, organized by creature
@@ -323,15 +325,16 @@ Background music that loops per game context (hub, battle, exploration, etc.).
 
 - **Format:** `.webm` (Opus codec), stereo, ~128kbps recommended
 - **Naming:** Use descriptive names matching the manifest (e.g., `hub.webm`, `battle.webm`)
-- **Manifest:** `audio/music.json` is the track registry — it's pushed here automatically from the main project. **Do not edit it here.** To add a new track to the manifest, ask the main project maintainer.
-- **Adding tracks:** Drop `.webm` files into `audio/music/`. They'll be synced to the main project, but won't play until added to the manifest.
+- **Manifest:** `audio/music.json` is the track registry and lives here as the source of truth. When you add a new track file, also add an entry to the manifest so the game knows about it.
+- **Adding tracks:** Drop the `.webm` file into `audio/music/`, then add an entry to `music.json` with `id`, `title`, `artist`, `context`, and `file` path. Both get synced to the main project.
 
 ### Sound Effects (`audio/sfx/`)
 
 Short clips triggered by game events (attacks, victories, UI clicks, etc.).
 
 - **Format:** `.webm` (Opus codec), mono, ~96kbps recommended
-- **Naming:** Must match the SFX registry in the main project. Current names:
+- **Manifest:** `audio/sfx.json` is the SFX registry. When you add a new SFX file, also add an entry to the manifest.
+- **Adding SFX:** Drop the `.webm` file into `audio/sfx/`, then add an entry to `sfx.json` with `id`, `file`, and `description`. Current effects:
 
 | File | Trigger |
 |------|---------|
@@ -359,17 +362,31 @@ Short clips triggered by game events (attacks, victories, UI clicks, etc.).
 Character voice clips organized by creature name (lowercased, non-alphanumeric replaced with `_`).
 
 - **Format:** `.webm` (Opus codec), mono, ~64kbps recommended
-- **Structure:** `audio/voices/{creature_slug}/{line_id}.webm`
-- **Line IDs:** `default`, `encounter`, `attack` (extensible)
-- **No registry needed** — the game builds paths dynamically. Missing files are silently ignored.
+- **Manifest:** `audio/voices.json` is the voice line registry. When you add a new voice file, also add an entry to the manifest.
+- **Adding voices:** Drop the `.webm` file into `audio/voices/{creature_slug}/`, then add an entry to `voices.json`.
 
-Example:
+**voices.json entry format:**
+```json
+{
+  "creature": "Chaor",
+  "line": "encounter",
+  "file": "voices/chaor/encounter.webm"
+}
+```
+
+| Field | Description |
+|-------|-------------|
+| `creature` | Creature name (exact casing — gets slugified automatically) |
+| `line` | Line ID: `default`, `encounter`, `attack` (extensible) |
+| `file` | Path relative to `audio/` directory |
+
+Example directory structure:
 ```
 audio/voices/
   chaor/
-    default.webm      # General voice line
-    encounter.webm     # Played when encountered in adventure
-    attack.webm        # Played when attack card is used
+    default.webm
+    encounter.webm
+    attack.webm
   maxxor/
     default.webm
     encounter.webm
@@ -385,7 +402,7 @@ audio/voices/
 ## Syncing
 
 The main project has a `scripts/sync_i18n/` Go script that:
-1. Pushes `en.json` and `music.json` FROM the main project TO this repo
-2. Pulls all non-English translations, stories, art, and audio FROM this repo INTO the main project
+1. Pushes `en.json` FROM the main project TO this repo (so translators see the latest keys)
+2. Pulls all non-English translations, stories, art, audio files, and audio manifests (`music.json`, `sfx.json`, `voices.json`) FROM this repo INTO the main project
 
 The CI/CD pipelines automatically clone this repo and run the sync before building, seeding, or uploading assets. Translators, artists, and audio contributors just need to push changes here.
