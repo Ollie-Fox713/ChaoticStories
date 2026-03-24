@@ -1,0 +1,59 @@
+{
+  "id": "chaor_epic_pt4",
+  "title": "The Nest",
+  "desc": "The strongest signal is beneath the UnderWorld Colosseum — the heart of Chaor's power.",
+  "locations": ["UnderWorld Colosseum"],
+  "tribes": [],
+  "unique": true,
+  "guaranteed": true,
+  "rarity": "legendary",
+  "chainId": "chaor_epic",
+  "chainName": "Chaor's Hunt",
+  "chainDesc": "Track an unknown threat across the UnderWorld alongside Chaor himself.",
+  "chainIcon": "🔥",
+  "chainTotalSteps": 5,
+  "chainStep": 3,
+  "chainNext": "chaor_epic_pt5",
+  "chainNextLocation": "UnderWorld City",
+  "chainRequiresFlags": ["chaor_hunt_tower_complete", "chaor_hunt_loyal"],
+  "chainSetsFlags": ["chaor_hunt_nest_complete"],
+  "steps": [
+    {
+      "text": "The UnderWorld Colosseum is empty. Chaor cleared it. No spectators, no guards, no one. Just you, Chaor, and whatever is underneath.\n\nHe tears open a grate in the arena floor with one hand. Below, a tunnel descends into darkness — but your scanner says it's not dark at all. The signal is so dense down here that your screen is practically white with energy.\n\n\"Stay behind me,\" Chaor says. It's the first time he's said anything that sounds like concern.\n\nYou descend. The tunnels beneath the Colosseum are ancient — older than the arena itself. The walls are covered in the alien material, thicker than anywhere else. The bioluminescent glow makes the whole passage pulse like the inside of a living thing.\n\nThen the tunnel opens into a chamber, and you both stop.\n\nIt's a nest. Dozens of the formations, connected by a web of tendrils, pulsing in perfect synchronization. At the center is something larger — a structure that almost looks like it was built, not grown. Your scanner can barely render it. The energy readings are off every chart you have.",
+      "voiceLine": { "creature": "Chaor", "line": "quest_trial_blood" },
+      "options": [
+        { "label": "Get a full scan of the central structure", "skill": "SCAN DEPTH", "pass": 1, "fail": 1 },
+        { "label": "Scan for the entity you glimpsed at Gothos Tower", "skill": "AWARENESS", "pass": 1, "fail": 1 }
+      ]
+    },
+    {
+      "text": "Your scanner catches it again. The shape from Gothos Tower — but closer this time. Your device locks on for half a second before the signature scrambles. In that half-second, you get a partial render.\n\nIt's a creature. But nothing like any creature in your database. Aquatic features. Bioluminescent markings that match the artifacts exactly. Eyes that suggest an intelligence far beyond animal. And then it's gone — dissolved into the walls like it was never there.\n\nYou show Chaor the partial scan. He stares at it for a long time.\n\n\"That's not from any tribe. Not OverWorld. Not Mipedian. Not Danian.\" His voice is low, dangerous. \"Something else has been living under my territory. Building. Growing. Right under my feet.\"\n\nThe chamber shudders. The synchronized pulsing accelerates.\n\nChaor roars — a sound that shakes the stone — and unleashes everything he has. Fire erupts from his body in a wave that fills the entire chamber. The formations shatter. The tendrils burn. The central structure cracks and collapses in on itself.\n\nWhen the flames die, the chamber is scorched black. Silent. The signal on your scanner drops to nothing.\n\nChaor stands in the center of the destruction, chest heaving. He turns to you.\n\n\"We're done here. For now.\"",
+      "options": [
+        {
+          "label": "Follow Chaor back to the surface",
+          "outcome": "reward",
+          "relationshipChanges": [
+            { "creature": "Chaor", "delta": 10 }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewardOverride": {
+    "creature": 0,
+    "battlegear": 50,
+    "mugic": 0,
+    "subLocation": 0,
+    "topLocation": 0
+  },
+  "lootTable": {
+    "creatures": [],
+    "mugic": [],
+    "battlegear": ["Viledriver", "Sword of Khy'at", "The Doomhammer"],
+    "attacks": ["Ash Torrent", "Flame Orb"],
+    "locations": []
+  },
+  "witnessAttacks": ["Ash Torrent", "Flame Orb"],
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+[
+  {"id": "first_blood", "name": "First Blood", "description": "Win your first match", "category": "combat", "icon": "\u2694", "rarity": "common", "hidden": false},
+  {"id": "streak_3", "name": "On Fire", "description": "Win 3 matches in a row", "category": "combat", "icon": "\ud83d\udd25", "rarity": "common", "hidden": false},
+  {"id": "streak_5", "name": "Unstoppable", "description": "Win 5 matches in a row", "category": "combat", "icon": "\u26a1", "rarity": "uncommon", "hidden": false},
+  {"id": "streak_10", "name": "Legendary Streak", "description": "Win 10 matches in a row", "category": "combat", "icon": "\u2605", "rarity": "rare", "hidden": false},
+  {"id": "streak_25", "name": "Myth of Perim", "description": "Win 25 matches in a row", "category": "combat", "icon": "\u2726", "rarity": "legendary", "hidden": false},
+  {"id": "flawless", "name": "Flawless Victory", "description": "Win without losing a single creature", "category": "combat", "icon": "\u25c6", "rarity": "rare", "hidden": false},
+  {"id": "underdog", "name": "Underdog", "description": "Defeat a player ranked higher than you", "category": "combat", "icon": "\u2191", "rarity": "uncommon", "hidden": false},
+  {"id": "comeback", "name": "Against All Odds", "description": "Win with only 1 creature remaining", "category": "combat", "icon": "\u25c8", "rarity": "rare", "hidden": false},
+  {"id": "speed_demon", "name": "Speed Demon", "description": "Win a match in 5 turns or fewer", "category": "combat", "icon": "\u00bb", "rarity": "rare", "hidden": false},
+  {"id": "marathon", "name": "War of Attrition", "description": "Win a match lasting 20+ turns", "category": "combat", "icon": "\u221e", "rarity": "uncommon", "hidden": false},
+
+  {"id": "wins_10", "name": "Proven Warrior", "description": "Win 10 matches", "category": "milestone", "icon": "\u2694", "rarity": "common", "hidden": false},
+  {"id": "wins_50", "name": "Battle-Hardened", "description": "Win 50 matches", "category": "milestone", "icon": "\u2694", "rarity": "uncommon", "hidden": false},
+  {"id": "wins_100", "name": "Centurion", "description": "Win 100 matches", "category": "milestone", "icon": "\u2694", "rarity": "rare", "hidden": false},
+  {"id": "wins_500", "name": "Legend of the Dromes", "description": "Win 500 matches", "category": "milestone", "icon": "\u2694", "rarity": "legendary", "hidden": false},
+  {"id": "games_played_100", "name": "Veteran", "description": "Play 100 matches", "category": "milestone", "icon": "\u25c9", "rarity": "uncommon", "hidden": false},
+
+  {"id": "scans_50", "name": "Scanner Initiate", "description": "Collect 50 cards", "category": "collection", "icon": "\u25c7", "rarity": "common", "hidden": false},
+  {"id": "scans_100", "name": "Avid Collector", "description": "Collect 100 cards", "category": "collection", "icon": "\u25c7", "rarity": "uncommon", "hidden": false},
+  {"id": "scans_250", "name": "Master Scanner", "description": "Collect 250 cards", "category": "collection", "icon": "\u25c7", "rarity": "rare", "hidden": false},
+  {"id": "scans_500", "name": "Perim Archivist", "description": "Collect 500 cards", "category": "collection", "icon": "\u25c7", "rarity": "legendary", "hidden": false},
+
+  {"id": "tribe_overworld", "name": "OverWorld Champion", "description": "Win 10 matches using a majority OverWorld deck", "category": "mastery", "icon": "\u25c6", "rarity": "uncommon", "hidden": false},
+  {"id": "tribe_underworld", "name": "UnderWorld Conqueror", "description": "Win 10 matches using a majority UnderWorld deck", "category": "mastery", "icon": "\u25c6", "rarity": "uncommon", "hidden": false},
+  {"id": "tribe_mipedian", "name": "Mipedian Mirage Master", "description": "Win 10 matches using a majority Mipedian deck", "category": "mastery", "icon": "\u25c6", "rarity": "uncommon", "hidden": false},
+  {"id": "tribe_danian", "name": "Danian Hive Commander", "description": "Win 10 matches using a majority Danian deck", "category": "mastery", "icon": "\u25c6", "rarity": "uncommon", "hidden": false},
+  {"id": "tribe_marrillian", "name": "M'arrillian Deep Lord", "description": "Win 10 matches using a majority M'arrillian deck", "category": "mastery", "icon": "\u25c6", "rarity": "uncommon", "hidden": false},
+
+  {"id": "adventure_first", "name": "Into the Unknown", "description": "Complete your first adventure", "category": "adventure", "icon": "\u2690", "rarity": "common", "hidden": false},
+  {"id": "adventure_10", "name": "Seasoned Explorer", "description": "Complete 10 adventures", "category": "adventure", "icon": "\u2690", "rarity": "uncommon", "hidden": false},
+  {"id": "adventure_50", "name": "Perim Pathfinder", "description": "Complete 50 adventures", "category": "adventure", "icon": "\u2690", "rarity": "rare", "hidden": false},
+
+  {"id": "chaor_quest", "name": "Chaor's Mark", "description": "Hunt the unknown alongside Chaor and earn his scan", "category": "adventure", "icon": "\u2726", "rarity": "legendary", "hidden": true}
+]

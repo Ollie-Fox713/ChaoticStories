@@ -1,0 +1,53 @@
+{
+  "id": "chaor_epic_pt5b",
+  "title": "Van Bloot's Gambit",
+  "desc": "Van Bloot reveals the true scope of his ambitions — and your role in them.",
+  "locations": ["UnderWorld City"],
+  "tribes": [],
+  "unique": true,
+  "guaranteed": true,
+  "rarity": "legendary",
+  "chainId": "chaor_epic",
+  "chainName": "Chaor's Hunt",
+  "chainDesc": "Track an unknown threat across the UnderWorld alongside Chaor himself.",
+  "chainIcon": "🔥",
+  "chainTotalSteps": 5,
+  "chainStep": 4,
+  "chainNext": "",
+  "chainNextLocation": "",
+  "chainRequiresFlags": ["chaor_hunt_pact_complete"],
+  "chainSetsFlags": ["chaor_quest_complete_vanbloot"],
+  "steps": [
+    {
+      "text": "A hidden chamber beneath UnderWorld City. Van Bloot led you here through tunnels that don't appear on any map — passages threaded with the alien growths, pulsing gently in the dark like a heartbeat.\n\nThe room is small. Intimate. The walls are alive with bioluminescent veins, casting everything in that deep-ocean glow. In the center sits a device Van Bloot has been building — part UnderWorld engineering, part alien biology. Your scanner shows energy readings that shouldn't be possible.\n\n\"Chaor burned the nest under the Colosseum,\" Van Bloot says, circling the device. \"But he didn't find all of them. He never does. He's too busy being angry to be thorough.\"\n\nHe stops and faces you.\n\n\"The organism isn't an invasion. It's an infrastructure. Something built it — the creature you scanned — as a power network. A grid that spans the entire UnderWorld, possibly further. Chaor sees a threat. I see the most valuable discovery in Perim's history.\"\n\nHe activates the device. The alien veins in the walls pulse brighter. Your scanner spikes.\n\n\"Your scans made this possible. You mapped the network. You identified the frequencies. Without you, this would have taken me years.\"\n\nVan Bloot extends a claw toward your scanner.\n\n\"One more scan. Record the device's output signature. My researchers can't — their equipment isn't precise enough. Yours is. Do this, and I'll give you something no human has ever had: a full, voluntary scan of Van Bloot. Every secret. Nothing hidden.\"\n\nHis eyes gleam in the bioluminescent light.\n\n\"Chaor gave you brute force. I'm offering you knowledge. Which do you think lasts longer?\"",
+      "options": [
+        {
+          "label": "Scan the device and accept Van Bloot's offer",
+          "outcome": "reward",
+          "rewardCards": ["Van Bloot"],
+          "relationshipChanges": [
+            { "creature": "Van Bloot", "delta": 25 },
+            { "creature": "Chaor", "delta": -15 }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewardOverride": {
+    "creature": 100,
+    "battlegear": 0,
+    "mugic": 0,
+    "subLocation": 0,
+    "topLocation": 0
+  },
+  "lootTable": {
+    "creatures": ["Van Bloot"],
+    "mugic": [],
+    "battlegear": [],
+    "attacks": [],
+    "locations": []
+  },
+  "witnessAttacks": [],
+  "aiBattle": null,
+  "grantAchievements": ["chaor_quest"]
+}

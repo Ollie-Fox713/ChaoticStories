@@ -1,0 +1,22 @@
+{
+  "effects": [
+    { "id": "click",              "file": "sfx/click.webm",              "description": "Button/nav clicks" },
+    { "id": "card_hover",         "file": "sfx/card_hover.webm",         "description": "Card hover" },
+    { "id": "attack_impact",      "file": "sfx/attack_impact.webm",      "description": "Attack played in battle" },
+    { "id": "mugic_cast",         "file": "sfx/mugic_cast.webm",         "description": "Mugic cast" },
+    { "id": "ability_activate",   "file": "sfx/ability_activate.webm",   "description": "Ability activated" },
+    { "id": "creature_defeated",  "file": "sfx/creature_defeated.webm",  "description": "Creature defeated" },
+    { "id": "combat_start",       "file": "sfx/combat_start.webm",       "description": "Combat begins" },
+    { "id": "victory_fanfare",    "file": "sfx/victory_fanfare.webm",    "description": "Battle won" },
+    { "id": "defeat_sting",       "file": "sfx/defeat_sting.webm",       "description": "Battle lost" },
+    { "id": "scanquest_start",    "file": "sfx/scanquest_start.webm",    "description": "Scanquest started" },
+    { "id": "scanquest_complete", "file": "sfx/scanquest_complete.webm", "description": "Reward collected" },
+    { "id": "location_reveal",    "file": "sfx/location_reveal.webm",    "description": "Location revealed in battle" },
+    { "id": "encounter",          "file": "sfx/encounter.webm",          "description": "Adventure encounter opened" },
+    { "id": "notification",       "file": "sfx/notification.webm",       "description": "General notification" },
+    { "id": "story_text",         "file": "sfx/story_text.webm",         "description": "Story typewriter" },
+    { "id": "skill_rolling",      "file": "sfx/skill_rolling.webm",      "description": "Skill check rolling" },
+    { "id": "skill_pass",         "file": "sfx/skill_pass.webm",         "description": "Skill check passed" },
+    { "id": "skill_fail",         "file": "sfx/skill_fail.webm",         "description": "Skill check failed" }
+  ]
+}

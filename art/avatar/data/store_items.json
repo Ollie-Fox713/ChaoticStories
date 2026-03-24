@@ -1,0 +1,42 @@
+[
+  {"id": "head_smile",     "name": "Smile",       "category": "head",  "price": 0, "description": "Friendly smile",        "preview_url": "avatar/head/smile.png",     "avatar_field": "head", "avatar_value": "smile"},
+
+  {"id": "arms_side",      "name": "Side",        "category": "arms",  "price": 0, "description": "Arms at sides",       "preview_url": "avatar/arms/side.png",      "avatar_field": "arms", "avatar_value": "side"},
+
+  {"id": "hair_bedhead",   "name": "Bedhead",     "category": "hair", "price": 0, "description": "Messy bedhead style",   "preview_url": "avatar/hair/bedhead.png",   "avatar_field": "hair", "avatar_value": "bedhead"},
+  {"id": "hair_combed",    "name": "Combed",      "category": "hair", "price": 0, "description": "Neatly combed hair",    "preview_url": "avatar/hair/combed.png",    "avatar_field": "hair", "avatar_value": "combed"},
+  {"id": "hair_natural",   "name": "Natural",     "category": "hair", "price": 0, "description": "Natural hairstyle",     "preview_url": "avatar/hair/natural.png",   "avatar_field": "hair", "avatar_value": "natural"},
+  {"id": "hair_part",      "name": "Part",        "category": "hair", "price": 0, "description": "Side part hairstyle",   "preview_url": "avatar/hair/part.png",      "avatar_field": "hair", "avatar_value": "part"},
+  {"id": "hair_ponytail",  "name": "Ponytail",    "category": "hair", "price": 0, "description": "Ponytail hairstyle",    "preview_url": "avatar/hair/ponytail.png",  "avatar_field": "hair", "avatar_value": "ponytail"},
+
+  {"id": "shirt_blue_striped", "name": "Blue Striped", "category": "shirt", "price": 0, "description": "Blue striped shirt",  "preview_url": "avatar/shirt/blue_striped.png", "avatar_field": "shirt", "avatar_value": "blue_striped"},
+  {"id": "shirt_fire",         "name": "Fire",         "category": "shirt", "price": 0, "description": "Fire design shirt",   "preview_url": "avatar/shirt/fire.png",         "avatar_field": "shirt", "avatar_value": "fire"},
+
+  {"id": "pants_cargo",       "name": "Cargo",       "category": "pants", "price": 0, "description": "Cargo pants",        "preview_url": "avatar/pants/cargo.png",       "avatar_field": "pants", "avatar_value": "cargo"},
+  {"id": "pants_cargo_black", "name": "Black Cargo", "category": "pants", "price": 0, "description": "Black cargo pants",  "preview_url": "avatar/pants/cargo_black.png", "avatar_field": "pants", "avatar_value": "cargo_black"},
+  {"id": "pants_shorts_blue", "name": "Blue Shorts", "category": "pants", "price": 0, "description": "Blue shorts",        "preview_url": "avatar/pants/shorts_blue.png", "avatar_field": "pants", "avatar_value": "shorts_blue"},
+  {"id": "pants_sweats_grey", "name": "Grey Sweats", "category": "pants", "price": 0, "description": "Grey sweatpants",    "preview_url": "avatar/pants/sweats_grey.png", "avatar_field": "pants", "avatar_value": "sweats_grey"},
+  {"id": "pants_tan_jeans",   "name": "Tan Jeans",   "category": "pants", "price": 0, "description": "Tan jeans",          "preview_url": "avatar/pants/tan_jeans.png",   "avatar_field": "pants", "avatar_value": "tan_jeans"},
+  {"id": "pants_torn_jeans",  "name": "Torn Jeans",  "category": "pants", "price": 0, "description": "Torn jeans",         "preview_url": "avatar/pants/torn_jeans.png",  "avatar_field": "pants", "avatar_value": "torn_jeans"},
+
+  {"id": "bg_avatar_kiru_city",       "name": "Kiru City",             "category": "avatar_background",  "price": 150, "description": "The grand capital of the OverWorld",           "preview_url": "avatar/avatar_backgrounds/bg_avatar_kiru_city.png"},
+  {"id": "bg_avatar_underworld_city", "name": "UnderWorld City",       "category": "avatar_background",  "price": 150, "description": "The dark heart of the UnderWorld",            "preview_url": "avatar/avatar_backgrounds/bg_avatar_underworld_city.png"},
+  {"id": "bg_avatar_mipedim_oasis",   "name": "Mipedim Oasis",        "category": "avatar_background",  "price": 150, "description": "Shimmering desert oasis of the Mipedians",    "preview_url": "avatar/avatar_backgrounds/bg_avatar_mipedim_oasis.png"},
+  {"id": "bg_avatar_mount_pillar",    "name": "Mount Pillar",          "category": "avatar_background",  "price": 150, "description": "The towering Danian hive mountain",            "preview_url": "avatar/avatar_backgrounds/bg_avatar_mount_pillar.png"},
+  {"id": "bg_avatar_prexxor_chasm",   "name": "Prexxor Chasm",        "category": "avatar_background",  "price": 300, "description": "The legendary rift between worlds",             "preview_url": "avatar/avatar_backgrounds/bg_avatar_prexxor_chasm.png"},
+  {"id": "bg_avatar_cordac_falls",    "name": "Cordac Falls",         "category": "avatar_background",  "price": 200, "description": "Majestic waterfalls on the OverWorld border",   "preview_url": "avatar/avatar_backgrounds/bg_avatar_cordac_falls.png"},
+
+  {"id": "bg_battle_lava_pond",       "name": "Lava Pond",            "category": "battle_background",  "price": 200, "description": "Molten lava pools of the deep UnderWorld",     "preview_url": "avatar/battle_backgrounds/bg_battle_lava_pond.png"},
+  {"id": "bg_battle_glacier_plains",  "name": "Glacier Plains",       "category": "battle_background",  "price": 200, "description": "Frozen tundra stretching to the horizon",       "preview_url": "avatar/battle_backgrounds/bg_battle_glacier_plains.png"},
+  {"id": "bg_battle_storm_tunnel",    "name": "Storm Tunnel",         "category": "battle_background",  "price": 200, "description": "Crackling electrical storm corridors",          "preview_url": "avatar/battle_backgrounds/bg_battle_storm_tunnel.png"},
+  {"id": "bg_battle_crystal_cave",    "name": "Crystal Cave",         "category": "battle_background",  "price": 250, "description": "Shimmering crystal formations deep underground","preview_url": "avatar/battle_backgrounds/bg_battle_crystal_cave.png"},
+  {"id": "bg_battle_sky_citadel",     "name": "Sky Citadel",          "category": "battle_background",  "price": 300, "description": "Floating fortress high above the clouds",      "preview_url": "avatar/battle_backgrounds/bg_battle_sky_citadel.png"},
+  {"id": "bg_battle_desert_ruins",    "name": "Desert Ruins",         "category": "battle_background",  "price": 200, "description": "Ancient Mipedian temple ruins in the sand",   "preview_url": "avatar/battle_backgrounds/bg_battle_desert_ruins.png"},
+
+  {"id": "cardback_overworld",  "name": "OverWorld Crest",  "category": "card_back", "price": 150, "description": "Noble blue card back bearing the OverWorld crest",       "preview_url": "avatar/card_backs/cardback_overworld.png"},
+  {"id": "cardback_underworld", "name": "UnderWorld Sigil", "category": "card_back", "price": 150, "description": "Dark crimson card back with UnderWorld sigils",          "preview_url": "avatar/card_backs/cardback_underworld.png"},
+  {"id": "cardback_mipedian",   "name": "Mipedian Scales",  "category": "card_back", "price": 150, "description": "Golden card back etched with Mipedian scale patterns",   "preview_url": "avatar/card_backs/cardback_mipedian.png"},
+  {"id": "cardback_danian",     "name": "Danian Hive",      "category": "card_back", "price": 150, "description": "Green card back with Danian hive markings",              "preview_url": "avatar/card_backs/cardback_danian.png"},
+  {"id": "cardback_marrillian", "name": "M'arrillian Deep", "category": "card_back", "price": 200, "description": "Deep purple card back pulsing with M'arrillian energy",   "preview_url": "avatar/card_backs/cardback_marrillian.png"},
+  {"id": "cardback_golden",     "name": "Golden Legacy",    "category": "card_back", "price": 300, "description": "Prestigious golden card back for true collectors",        "preview_url": "avatar/card_backs/cardback_golden.png"}
+]

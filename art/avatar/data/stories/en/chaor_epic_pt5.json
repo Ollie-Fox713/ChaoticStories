@@ -1,0 +1,53 @@
+{
+  "id": "chaor_epic_pt5",
+  "title": "Chaor's Mark",
+  "desc": "The hunt is over. Chaor has something to say.",
+  "locations": ["UnderWorld City"],
+  "tribes": [],
+  "unique": true,
+  "guaranteed": true,
+  "rarity": "legendary",
+  "chainId": "chaor_epic",
+  "chainName": "Chaor's Hunt",
+  "chainDesc": "Track an unknown threat across the UnderWorld alongside Chaor himself.",
+  "chainIcon": "🔥",
+  "chainTotalSteps": 5,
+  "chainStep": 4,
+  "chainNext": "",
+  "chainNextLocation": "",
+  "chainRequiresFlags": ["chaor_hunt_nest_complete"],
+  "chainSetsFlags": ["chaor_quest_complete"],
+  "steps": [
+    {
+      "text": "UnderWorld City. Chaor's throne room. No generals, no guards. Just the two of you.\n\nChaor sits on his throne of volcanic rock, staring at the partial scan on your device — the half-second render of the creature from the nest. The thing that shouldn't exist.\n\nThe silence stretches. Chaor isn't a creature who does silence. But here he is.\n\nFinally, he speaks.\n\n\"Whatever that thing was, it was smart. It was patient. It built a network through my entire territory and I didn't know until a human with a scanner stumbled into it.\" He looks at you. No anger in it. Something closer to respect.\n\n\"You could have run. At Lava Pond, at the Tower, at the Colosseum. Any sane creature would have. But you stayed. You pointed that little device at things that would make my subjects flinch, and you got me data I couldn't get on my own.\"\n\nHe stands. The room gets hotter.\n\n\"I don't know what those things were. I don't know if they're gone. But if they come back, I want to know that someone out there has a scan of me — the real thing, nothing held back. Not because you stole it. Because I gave it to you.\"\n\nHe steps forward and holds still. Completely still. The heat radiating off him drops — he's suppressing it. For you.\n\n\"Do it. Scan me. You earned this.\"",
+      "voiceLine": { "creature": "Chaor", "line": "quest_judgment" },
+      "options": [
+        {
+          "label": "Activate your scanner",
+          "outcome": "reward",
+          "rewardCards": ["Chaor"],
+          "relationshipChanges": [
+            { "creature": "Chaor", "delta": 25 }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewardOverride": {
+    "creature": 100,
+    "battlegear": 0,
+    "mugic": 0,
+    "subLocation": 0,
+    "topLocation": 0
+  },
+  "lootTable": {
+    "creatures": ["Chaor"],
+    "mugic": [],
+    "battlegear": [],
+    "attacks": [],
+    "locations": []
+  },
+  "witnessAttacks": [],
+  "aiBattle": null,
+  "grantAchievements": ["chaor_quest"]
+}

@@ -1,0 +1,58 @@
+{
+  "id": "maxxor_epic_pt3",
+  "title": "Gone",
+  "desc": "You return to Kiru City with proof — but Maxxor isn't here.",
+  "locations": ["Kiru City"],
+  "tribes": [],
+  "unique": true,
+  "guaranteed": true,
+  "rarity": "legendary",
+  "chainId": "maxxor_epic",
+  "chainName": "Raznus",
+  "chainDesc": "A conversation about an old friend draws you into Maxxor's deepest wound.",
+  "chainIcon": "⚔",
+  "chainTotalSteps": 4,
+  "chainStep": 2,
+  "chainNext": "maxxor_epic_pt4",
+  "chainNextLocation": "Forest of Life",
+  "chainRequiresFlags": ["maxxor_hunt_ridge_complete"],
+  "chainSetsFlags": ["maxxor_hunt_kiru_return"],
+  "steps": [
+    {
+      "text": "You come through the gates of Kiru City expecting to find Maxxor waiting. Instead, the city feels wrong. Guards are doubled at every post. Soldiers move in tight formations. Something happened while you were gone.\n\nYou find Gadrel — the same creature you bumped into at the market. He looks shaken.\n\n\"Maxxor's gone. Left for the Forest of Life this morning. Alone.\"\n\n\"Alone?\"\n\n\"He received a message. I don't know what it said, but I saw his face after he read it. I've known Maxxor since he was young. I've seen him angry, I've seen him afraid, I've seen him grieve. This was something else. He walked out of the city without a word to anyone. Not Intress. Not Najarin. No one.\"\n\nGadrel grabs your arm.\n\n\"Intress tried to follow. He told her to stay. She's furious. But she's also scared — she says the message had a Danian seal on it.\"\n\nYour stomach drops. You just saw Danians running covert ops with parasite samples at Ravanaugh Ridge. And now Maxxor — the creature they infected Raznus to get close to — has walked into the forest alone, responding to a Danian message.",
+      "options": [
+        { "label": "\"Where exactly in the Forest of Life?\"", "go": 1 },
+        { "label": "Show Gadrel your scanner data from the ridge", "go": 1 }
+      ]
+    },
+    {
+      "text": "Gadrel looks at your scanner readings. The colour drains from his face.\n\n\"Parasites. They're making more of them.\" His voice cracks. \"Raznus. They did this to Raznus and now they're—\"\n\nHe steadies himself.\n\n\"The message said to meet at the old growth — the deepest part of the forest, where the canopy blocks scanner signals. Maxxor would know that's a trap. He has to know.\"\n\nHe looks at you.\n\n\"But if the message was about Raznus — about a way to cure him, or about what really happened to him — Maxxor would walk into anything. He's never forgiven himself for not being able to save his friend.\"\n\nIntress appears behind Gadrel. She's armed. Her expression is carved from stone.\n\n\"I heard enough. I'm going after him.\"\n\n\"Intress, he told you to—\"\n\n\"I don't care what he told me.\" She looks at you. \"You. Human. You're faster through the forest than I am — no one targets a scanner carrier. Get to the old growth before I do. If this is what I think it is, Maxxor needs to know what you found at the ridge before he walks into whatever they've set up for him.\"\n\nShe's already moving toward the gate.\n\n\"Go. Now.\"",
+      "options": [
+        {
+          "label": "Run for the Forest of Life",
+          "outcome": "reward",
+          "relationshipChanges": [
+            { "creature": "Intress", "delta": 10 }
+          ]
+        }
+      ]
+    }
+  ],
+  "rewardOverride": {
+    "creature": 0,
+    "battlegear": 40,
+    "mugic": 40,
+    "subLocation": 20,
+    "topLocation": 0
+  },
+  "lootTable": {
+    "battlegear": ["Flux Bauble", "Gauntlets of Might"],
+    "mugic": ["Song of Resurgence", "Prelude of Protection"],
+    "creatures": [],
+    "attacks": [],
+    "locations": []
+  },
+  "witnessAttacks": [],
+  "aiBattle": null,
+  "grantAchievements": []
+}

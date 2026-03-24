@@ -1,0 +1,9 @@
+{
+  "tracks": [
+    { "id": "hub",     "title": "Dromes Hub",       "artist": "",  "context": "hub",     "file": "music/Chaotic_OST_ OverWorld.webm" },
+    { "id": "battle",  "title": "Battle Theme",     "artist": "",  "context": "battle",  "file": "music/Chaotic_OST_Battle.webm" },
+    { "id": "perim",   "title": "Perim Exploration", "artist": "", "context": "perim",   "file": "music/Chaotic_OST_Mipedian.webm" },
+    { "id": "store",   "title": "Store",            "artist": "",  "context": "store",   "file": "music/Chaotic_OST_Danian.webm" },
+    { "id": "landing", "title": "Portal Theme",     "artist": "",  "context": "landing", "file": "music/Chaotic_OST_UnderWorld.webm" }
+  ]
+}
