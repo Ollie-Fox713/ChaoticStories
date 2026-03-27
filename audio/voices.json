@@ -1,3 +1,19 @@
 {
-  "voices": []
+  "voices": [
+    { "creature": "Chaor", "line": "encounter", "file": "voices/chaor/encounter.webm" },
+    { "creature": "Chaor", "line": "quest_summons", "file": "voices/chaor/quest_summons.webm" },
+    { "creature": "Chaor", "line": "quest_trial_fire", "file": "voices/chaor/quest_trial_fire.webm" },
+    { "creature": "Chaor", "line": "quest_trial_shadows", "file": "voices/chaor/quest_trial_shadows.webm" },
+    { "creature": "Chaor", "line": "quest_trial_blood", "file": "voices/chaor/quest_trial_blood.webm" },
+    { "creature": "Chaor", "line": "quest_judgment", "file": "voices/chaor/quest_judgment.webm" },
+    { "creature": "Chaor", "line": "combat_start", "file": "voices/chaor/combat_start.mp3" },
+    { "creature": "Chaor", "line": "combat_start", "file": "voices/chaor/combat_start_2.mp3" },
+    { "creature": "Chaor", "line": "combat_win", "file": "voices/chaor/combat_win.mp3" },
+    { "creature": "Chaor", "line": "combat_win", "file": "voices/chaor/combat_win_2.mp3" },
+    { "creature": "Chaor", "line": "combat_win", "file": "voices/chaor/combat_win_3.mp3" },
+    { "creature": "Chaor", "line": "combat_lose", "file": "voices/chaor/combat_lose.mp3" },
+    { "creature": "Chaor", "line": "combat_lose", "file": "voices/chaor/combat_lose_2.mp3" },
+    { "creature": "Chaor", "line": "field_enter", "file": "voices/chaor/field_enter.mp3" },
+    { "creature": "Chaor", "line": "field_enter", "file": "voices/chaor/field_enter_2.mp3" }
+  ]
 }
