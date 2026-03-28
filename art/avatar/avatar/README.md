@@ -21,6 +21,7 @@ avatar/
   avatar_backgrounds/      bg_avatar_{name}.png      — shown behind avatar layers
   battle_backgrounds/      bg_battle_{name}.png      — shown on player's half of battle board
   card_backs/              cardback_{name}.png        — custom card back art for face-down attack cards
+  stickers/                {name}.png                 — profile stickers players can place on their profile page
 ```
 
 ## Naming Convention
@@ -94,6 +95,21 @@ Players choose any hex color for their hair via a color picker, plus an **opacit
 2. Add an entry to `assets/data/store_items.json` with category `card_back`
 3. Re-seed
 
+### Stickers
+
+Profile stickers are decorative images players purchase from the store and place on their profile page. Other players see the placed stickers when viewing the profile.
+
+1. Create a square PNG (~128x128, transparent background) named `{name}.png`
+2. Drop the file into `assets/avatar/stickers/`
+3. Add an entry to `assets/data/store_items.json` with category `sticker`:
+   ```json
+   {"id": "sticker_{name}", "name": "Display Name", "category": "sticker", "price": 100, "description": "...", "preview_url": "avatar/stickers/{name}.png"}
+   ```
+4. Re-seed (`go run ./scripts/seed`)
+5. Sync assets (`go run ./scripts/sync_assets`) to upload the PNG to S3/CDN
+
+Sticker placements are stored server-side in the `player_stickers` table (x/y as percentages, plus scale and rotation). Players place stickers via the "CUSTOMIZE" button on their own profile, which opens a drag-and-drop editor. Max 10 stickers per profile.
+
 ## Serving
 
 - **Local dev** (docker-compose): Served by nginx from the bind-mounted `./assets` volume at `/assets/avatar/`. The nginx location block applies 7-day immutable caching.
@@ -113,4 +129,8 @@ Displayed on each player's half of the battle board in `BattleGame.svelte`. Each
 
 Custom card back art displayed on face-down attack cards in battle. Each player's card back is visible to their opponent. 5:7 aspect ratio (matching card dimensions). Managed as store items (category `card_back`).
 
-All cosmetic assets (avatar backgrounds, battle backgrounds, card backs) are selectable from the Avatar Creator editor and the Store try-on preview. To add a new cosmetic: add the PNG to the appropriate folder, add an entry to `assets/data/store_items.json`, and re-seed.
+### Stickers (`stickers/`)
+
+Decorative images that players purchase from the store and place freely on their profile page. Stickers are ~128x128 transparent PNGs. Players position, scale, and rotate stickers via a drag-and-drop editor on their profile. Placements are stored in the `player_stickers` table and visible to all profile viewers. Managed as store items (category `sticker`).
+
+All cosmetic assets (avatar backgrounds, battle backgrounds, card backs, stickers) are selectable from the Store. To add a new cosmetic: add the PNG to the appropriate folder, add an entry to `assets/data/store_items.json`, and re-seed.
