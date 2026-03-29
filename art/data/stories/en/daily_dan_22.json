@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_22",
+  "title": "Night Patrol",
+  "desc": "The hive exterior at night. Dark, quiet, and full of things that aren't supposed to be there.",
+  "locations": [ "Queen's Gate", "Sands of the Unseen" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Night patrol covers the exterior of Mount Pillar — the rocky slopes, the approach paths, and the border zones where Danian territory meets the open desert. During the day, the sentries at Oipont's Lookout handle surveillance. At night, the lookout is blind, and foot patrols take over.\n\nYour patrol is a three-creature team: you, a veteran Mandiblor named Kresh, and a scout who communicates primarily in hand signals. The route covers the southeastern approach — Queen's Gate to the border markers near the Sands of the Unseen.\n\nKresh hands you a dark-lamp — a lantern with shuttered sides that can be opened to cast light or closed for darkness. \"Lamp closed unless you need to identify something. Open lamp tells everyone within a mile exactly where you are.\"\n\nThe gate closes behind you. The desert is dark, quiet, and vast.",
+      "options": [
+        { "label": "Patrol the approach paths — standard route", "go": 1 },
+        { "label": "Push to the border markers — check the perimeter", "go": 2 }
+      ]
+    },
+    {
+      "text": "The approach paths are carved into the mountain's lower slopes — switchback trails that any attacking force would have to climb. In daylight, they're defensible. At night, they're shadows within shadows.\n\nYou walk the paths by feel and memory. Kresh leads, his veteran senses tuned to the mountain. The scout flanks ten paces right, visible only as occasional hand signals reflected in starlight.\n\nTwo hours of nothing. The night is calm. Insects chirp. The stars wheel slowly overhead.\n\nThen Kresh stops. His hand goes up — the universal signal for \"freeze.\" You freeze.\n\nHe points down the slope. You follow his finger. In the starlight, on the lower path, something moves. Not climbing — traversing. Moving laterally across the slope, parallel to the mountain, as if surveying the approach paths from below.\n\nYou open the dark-lamp a crack — just enough to see detail. A figure, alone, moving carefully. Not Danian. The silhouette is wrong — too slender, limbs too long. It stops, touches the rock wall, then moves on.\n\nKresh signals the scout, who disappears into the darkness to follow. Twenty minutes later, the scout returns. Hand signals: \"Single figure. Left territory via the western ridge. Not identified. Touched seven points on the approach wall.\"\n\nYou check the seven points at dawn. Each one has a tiny mark scratched into the stone — symbols you don't recognize. Kresh copies them into the patrol log.\n\n\"Scouts from the Sands,\" he says. \"Mipedians, probably. Mapping our defenses.\" He frowns at the symbols. \"Or something else. The symbols aren't Mipedian.\"\n\nThe patrol log goes to intelligence. The symbols remain a mystery.",
+      "options": [
+        { "label": "File the patrol report with the unknown symbols", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The border markers are stone pylons set at half-mile intervals around Mount Pillar's territorial perimeter. Each one is inscribed with Danian hive-glyphs — territorial markers that serve as both warning and boundary.\n\nYou check each pylon on your section. Marker twelve: intact. Marker thirteen: intact. Marker fourteen: damaged.\n\nThe damage is fresh. The glyph face has been scratched — not defaced, but altered. Someone added lines to the existing symbols, changing their meaning. Kresh examines the alterations with his dark-lamp.\n\n\"These additions are Danian glyphs,\" he says slowly. \"But old Danian. Pre-hive notation. Nobody uses these anymore.\"\n\nThe altered glyphs, as best Kresh can read them, say: \"Below watches. Below wakes. Below rises.\"\n\nThe scout checks the surrounding sand for tracks. None. No footprints, no disturbance, no evidence that anyone approached the marker. The alterations were made without leaving a trace.\n\nKresh copies the altered glyphs carefully. He's unsettled — you can see it in how he checks behind him more frequently. A veteran Mandiblor who's patrolled this border for years, and something on a stone pylon is making him nervous.\n\n\"Pre-hive notation,\" he repeats. \"That's from before the Danians were organized. Before Mount Pillar. Nobody alive writes like this.\"\n\nHe seals the report. \"The intelligence muges will want to see this. Let them figure out who's writing dead languages on our border markers in the middle of the night.\"\n\nYou walk back to Queen's Gate in silence, the desert's darkness feeling deeper than before.",
+      "options": [
+        { "label": "Return to the gate with the sealed report", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Shadow Strike", "Malevolent Blast" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_guard",
+  "chainName": "Hive Defense"
+}

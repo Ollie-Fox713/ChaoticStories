@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_14",
+  "title": "Embassy Cleaning",
+  "desc": "The OverWorld embassy needs cleaning. The Danians assigned to it have feelings about this.",
+  "locations": [ "Overworld Embassy at Mount Pillar", "Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The OverWorld Embassy at Mount Pillar is a diplomatic necessity and a cleaning nightmare. The OverWorlders furnish their embassy with surface-world materials — wood, cloth, paper — all of which rot, mold, and deteriorate in Mount Pillar's humid underground environment.\n\nThe cleaning crew arrives with mops, anti-fungal solution, and barely concealed resentment. \"Every week,\" mutters the crew lead. \"Every week we scrub mold off their wooden furniture. You know what doesn't mold? Stone. Stone furniture. But no, the OverWorlders need their wooden chairs and fabric curtains.\"\n\nThe embassy staff — two OverWorlders — greet you politely and step aside. They've learned not to comment on the cleaning process.",
+      "options": [
+        { "label": "Start with the main hall — the worst mold accumulates there", "go": 1 },
+        { "label": "Handle the document room — the papers need preservation", "go": 2 }
+      ]
+    },
+    {
+      "text": "The main hall's wooden chairs have a fine coating of green fuzz — Mount Pillar's native mold colonizing the organic surfaces. You spray anti-fungal solution and scrub. The mold comes off in satisfying sheets, revealing the wood grain underneath.\n\nThe fabric curtains are worse. They've absorbed moisture and the mold has penetrated the weave. You take them down, wring them out (green water, excellent), and hang replacement curtains from the embassy's supply closet.\n\nThe OverWorld staffer watches you replace the curtains. \"We order new curtains monthly. The ambassador says they create a 'welcoming atmosphere.' I think they create a mold farm.\"\n\n\"Have you considered stone curtains?\"\n\nThe staffer almost smiles. \"I've suggested mineral tapestries. Heavy, mold-proof, and they actually look better underground. The ambassador said, and I quote, 'Mineral tapestries do not say OverWorld.'\"\n\nYou finish the main hall. The chairs gleam. The fresh curtains are crisp. It looks exactly like an OverWorld room transplanted underground — because that's what it is, and the mold will return because the conditions demand it.\n\nThe crew lead logs the cleaning hours. \"Same time next week. The mold doesn't take vacations and neither do we.\"",
+      "options": [
+        { "label": "Accept the Sisyphean nature of embassy cleaning", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The document room is temperature-controlled — the OverWorlders installed a ventilation system that pulls dry air from the surface through a series of pipes. It works, mostly. The documents stored here are diplomatic records, trade agreements, and communications that would be ruined by moisture.\n\nYou check the ventilation system first. One pipe is partially blocked — condensation has formed inside and is dripping onto a shelf of filed correspondence. You clear the blockage with a long brush, and the drip stops.\n\nThe correspondence beneath the drip is damp but not ruined. You spread the pages on a drying rack — a Danian addition the OverWorlders didn't request but now rely on.\n\nWhile the pages dry, you clean the shelving. Stone shelves — a compromise the embassy staff accepted after the third set of wooden shelves disintegrated. You dust them, check for mold in the crevices, and reorganize the filing system that has drifted into chaos since last week.\n\nThe OverWorld staffer brings you tea — a surface-world blend, served in a ceramic cup, warm and unexpectedly good.\n\n\"Thank you,\" she says. \"I know this assignment isn't popular. The crew lead makes that very clear.\" She looks at the organized shelves. \"But this room keeps the diplomatic relationship functional. The papers in here are the reason Mount Pillar and the OverWorld aren't at each other's throats. Mostly.\"\n\nYou drink the tea. It's better than anything the hive kitchens produce, but you'd never admit that out loud.",
+      "options": [
+        { "label": "Finish the tea and the cleaning", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Ektospasm", "Spirit Gust" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_embassy",
+  "chainName": "Embassy Duty"
+}

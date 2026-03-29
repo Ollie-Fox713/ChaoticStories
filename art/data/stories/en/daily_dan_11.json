@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_11",
+  "title": "The Foraging Party",
+  "desc": "The swamp edge has food if you know where to look. And what not to eat.",
+  "locations": [ "Gloomuck Swamp", "Overworld Embassy at Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The foraging party assembles at dawn — six Danians with collection bags, a field guide to edible species, and the resigned expression of creatures heading into Gloomuck Swamp.\n\nThe swamp's edge is a transition zone between Mount Pillar's dry tunnels and the wet rot of the swamp proper. Here, unusual things grow — tubers that thrive in the mineral runoff, insects that cluster on fungal blooms, and roots that taste terrible but pack enough nutrients to supplement the hive's diet.\n\nThe foraging lead distributes assignments. \"Pairs. Stay within shouting distance. Don't eat anything until I've checked it — last month someone ate a red tuber and spent three days convinced they were an OverWorlder. It took the embassy staff to talk them down.\"\n\nShe glances toward the OverWorld Embassy in the distance. \"They were not amused.\"",
+      "options": [
+        { "label": "Forage the root beds — they're reliable", "go": 1 },
+        { "label": "Hunt the insect clusters — higher nutrition", "go": 2 }
+      ]
+    },
+    {
+      "text": "The root beds are along the swamp's northern edge, where mineral-rich water seeps through gravel deposits. You dig with a short spade, turning the soil to expose the roots below.\n\nSwamp roots are ugly — gnarled, dark, covered in fibrous bark that needs peeling. But inside, the flesh is dense and starchy, packed with carbohydrates the hive needs. You fill your bag methodically, testing each root with the field guide's color chart. White flesh: edible. Yellow flesh: edible but bitter. Red flesh: do not eat (see: OverWorlder incident).\n\nYou find a large cluster of white-flesh roots — eight pounds of clean food from a single dig site. Your partner marks the site for future harvesting. Sustainable foraging means rotating sites, never taking more than half from any one bed.\n\nOn the walk back, you pass the OverWorld Embassy at Mount Pillar — a modest building staffed by two patient OverWorlders who handle cross-tribal paperwork. One of them is outside, tending a small garden of surface plants.\n\n\"Any red tubers today?\" she asks.\n\n\"Only white ones.\"\n\n\"Good. I can't handle another diplomatic incident over hallucinogenic root vegetables.\"\n\nYou deliver eight pounds of roots to the hive kitchens. The cooks accept them without ceremony — foraging is expected, not celebrated. But the hive eats, and eating is what matters.",
+      "options": [
+        { "label": "Deliver the roots and grab a meal", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The insect clusters form on fungal blooms at the swamp's edge — colonies of thumb-sized beetles that feed on decomposing fungus. They're nutritious, easy to harvest, and only mildly hostile.\n\nMildly hostile means they bite. Not venomously, but with the focused determination of insects defending their food source. You wear gloves and use a collection net, sweeping beetles off the fungal blooms into a containment jar.\n\nThe beetles protest. The blooms release spores. Your partner sneezes continuously. It's not glamorous work.\n\nBut the yield is excellent. A single bloom can support two hundred beetles, and you find six active blooms along the swamp edge. Your jars fill quickly — twelve hundred beetles, each one a tiny packet of protein.\n\nYou notice something on the last bloom — a fungal pattern you haven't seen before. The bloom's surface has dark veins running through it, pulsing faintly. The beetles avoid these veins, clustering only on the clean portions.\n\nYou take a sample of the veined fungus for the agricultural team. It could be a new variant, a disease, or something the hive can use. In Mount Pillar, every organism is evaluated for its contribution to the collective.\n\nThe foraging lead examines your sample and the beetle haul. \"Good harvest. And this fungal variant — I've seen this before, in the deep tunnels. It's spreading to the surface.\" She seals the sample. \"The muges will want to see this.\"\n\nYou return to Mount Pillar with twelve hundred beetles and a question about spreading fungus.",
+      "options": [
+        { "label": "Deliver the haul and the fungal sample", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Arborsmash", "Vine Snare" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_foraging",
+  "chainName": "Foraging & Nutrients"
+}

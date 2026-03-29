@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_33",
+  "title": "Boarded Window",
+  "desc": "A tremor shook loose part of an old streetfront, and somebody has to make the damage look intentional.",
+  "locations": [ "UnderWorld City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The old quarter shakes often enough that most residents can tell the difference between a harmless rumble and the kind that drops masonry into the street. Last night's tremor was in the middle: enough to crack one facade window arch and shake a spill of colored vitraux onto the paving, not enough to bring the whole building down. In UnderWorld City that still counts as a repair job, not a disaster.\n\nThe block foreman stands in the street with a pile of boards under one arm and a sack of salvaged glass at his feet. \"Brace the arch and board it clean,\" he says, \"or sort the vitraux and salvage what the light screens can still use. Either way, I want this frontage looking less like panic before evening trade starts.\"",
+      "options": [
+        { "label": "Brace the arch and board over the broken opening", "go": 1 },
+        { "label": "Sort the fallen glass and salvage usable panes", "go": 2 }
+      ]
+    },
+    {
+      "text": "The frame around the window opening is old stone dressed to look finer than the street beneath it, and the tremor has cracked one side joint just enough to shift the weight onto the upper lip. You wedge the opening square again with a jack post, set two fresh braces, and board the whole face over with iron-bound planks cut to sit tight against the arch. It is not elegant. Elegance is not the point.\n\nOnce the boards are fastened, the building stops looking wounded and starts looking merely UnderWorld: patched, stubborn, and prepared to keep using the same wall for another generation out of spite alone. The foreman raps the boarding with his knuckles, hears the solid answer he wanted, and snorts. \"There. Much better. Nothing says civic confidence like hiding the problem behind decent lumber.\"",
+      "options": [
+        { "label": "Stack the extra planks and leave the front secure", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The fallen vitraux lies in bright shards across soot-black stone, reds and yellows and sickly greens that still catch the street crystal glow even from the ground. You sort the spill by color and size, separating the clean breaks from the powdery pieces that are beyond saving. The block foreman sends the worst fragments to slag and keeps the intact panes for the small light screens set over interior alcoves and stair turns.\n\nBy the end of the sorting, the street no longer looks like a shattered chapel. Just a city block mid-repair, which is much the same thing at a lower emotional pitch. The foreman weighs the good glass in both hands and seems almost pleased. \"Not bad,\" he says. \"Enough to patch three interiors and make them look richer than they are.\" In UnderWorld City, that qualifies as restoration.",
+      "options": [
+        { "label": "Bag the salvaged panes and clear the last of the shards", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Malevolent Blast", "Force Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_64",
+  "title": "Fruit Rack",
+  "desc": "The jungle fruit is ripening faster than the drying racks are ready for, and the sorting trays have gone soft with damp.",
+  "locations": [ "Iparu Jungle" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Iparu Jungle grows with the confidence of a place that does not believe in scarcity. Fruit hangs low and heavy along the warm inner paths, bright-skinned and sharp-scented, and the keepers move through it with baskets and knives before the ground insects can make equivalent claims of ownership. Once harvested, the fruit is sliced and laid out on drying racks near the sunnier breaks in the canopy. Today those racks are ready only in theory. The lower trays have taken too much night damp and the sorting table is a sticky little crisis waiting to mature.\n\nThe drying keeper slides a knife into a sheath and points with her free hand. \"Retie the drying racks if you want the frames,\" she says. \"Or scrape and sort the tray table if you prefer the bench. We can grow more fruit. We do not need to waste this much of it proving the point.\"",
+      "options": [
+        { "label": "Retie the drying racks in the sunnier canopy break", "go": 1 },
+        { "label": "Scrape and sort the sticky fruit trays at the table", "go": 2 }
+      ]
+    },
+    {
+      "text": "The drying racks are netted frames hung where filtered sunlight and moving air do the most useful work. Two corner ties have loosened and the lower rack leans just enough to send slices sliding into one another. You retie the frames, level the netting, and restore the staggered line until each rack catches its own fair share of warmth without leaning on the next for support.\n\nOnce the sliced fruit is laid back out, the whole line brightens the clearing in reds, golds, and deep jungle orange. It is practical work and somehow festive besides. The keeper studies the restored racks with clear approval. \"Good. Even in a hidden jungle, abundance prefers organization.\"",
+      "options": [
+        { "label": "Set the spare ties aside and leave the racks catching sun", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The sorting table is meant to separate firm fruit from split fruit, drying slices from fresh stock, and orderly labor from tropical enthusiasm. Right now it is glazed with juice and lined with soft trays that have absorbed more moisture than is good for any system pretending to be hygienic. You scrape the table clean, swap the wet trays for dry ones, and rebuild the sorting line until the whole bench becomes usable again instead of merely fragrant.\n\nThe keeper drops the next basket onto the restored surface and, for once, nothing sticks where it should not. She seems grateful for that in the quiet practical way of someone too busy for speeches. \"Better. Paradise rots quickly when the tables stop keeping up.\"",
+      "options": [
+        { "label": "Hang the wet trays to dry and leave the bench ready", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hampering Winds", "Trampling Tackle" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

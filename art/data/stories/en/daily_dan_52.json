@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_52",
+  "title": "Speaker Circle",
+  "desc": "The thirteen stations need their name plaques and reference tablets back in order before the summit can pretend to be orderly.",
+  "locations": [ "Grand Hall of Muge's Summit" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Grand Hall functions on ceremony because without it the summit would become thirteen strong opinions echoing off crystal until something structural lost patience. Each speaker station has a place marker, a low writing stand, and a shelf for the reference tablets that every attending muge insists are essential and then ignores whenever the discussion becomes personal. After the last session, half the ring is still out of sequence.\n\nThe records attendant carries a stack of name plaques under one arm and an expression worn smooth by repetition. \"Reset the station plaques if you want the circle,\" she says. \"Or sort the reference tablets back to the correct stands if you prefer the shelves. Either way, I would like the summit to begin by disputing theory rather than seating arrangements.\"",
+      "options": [
+        { "label": "Reset the station plaques around the speaker circle", "go": 1 },
+        { "label": "Sort the reference tablets back to the correct stands", "go": 2 }
+      ]
+    },
+    {
+      "text": "The plaques are simple clay markers cut with titles, not names, because Danian institutions trust function more than personality. Still, they matter. Wrong plaque, wrong station, wrong order of speaking rights, and the first hour of the summit is lost to offense disguised as procedure. You walk the ring, matching each marker to its position until the full circle reads cleanly again from entry point to far arc.\n\nThe attendant checks the ring with a quick turn in place and visibly relaxes. For a Danian clerk, that nearly counts as celebration. \"Better,\" she says. \"Now they may begin disagreeing in the proper pattern.\"",
+      "options": [
+        { "label": "Step out of the ring and leave the stations correctly named", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The reference tablets vary from dense harmonic charts to spore standards to notes on structural resonance written in hands sharp enough to wound. During debate they migrate unpredictably. After debate they are simply everywhere. You sort them by station mark, stack the harmonic charts where the interval specialists expect them, and return the fungal standards to the speakers most likely to cite them with unnecessary force.\n\nOnce the stands are in order again, the hall stops looking like a technical storm hit it and starts resembling a venue for informed conflict. The attendant lifts the top tablet from one stack, confirms the mark, and nods. \"Good. Information is much easier to weaponize when shelved correctly.\"",
+      "options": [
+        { "label": "Square the last stack and leave the stands ready", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Mind Strike", "Force Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

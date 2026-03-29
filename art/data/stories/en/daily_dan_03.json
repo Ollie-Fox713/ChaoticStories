@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_03",
+  "title": "Reservoir Duty",
+  "desc": "The water that sustains Mount Pillar. Monitor it, filter it, don't fall in.",
+  "locations": [ "Mount Pillar Reservoir", "Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Mount Pillar Reservoir is the hive's heart — a vast underground lake fed by deep springs, held in a natural stone basin that the Danians have reinforced over centuries. The water is black, still, and deep enough that nobody has measured the bottom.\n\nThe duty station is a stone platform extending over the water's edge, equipped with measuring rods, filtration screens, and a bell used exclusively for emergencies (falling in counts as an emergency).\n\nThe outgoing monitor hands you the logbook. \"Level is stable. Filtration membranes on intake three need checking — flow rate dropped overnight. Could be a clog, could be a membrane failure.\" She yawns. \"Also, something bumped intake two around midnight. Probably a cave fish. Probably.\"\n\n\"Probably?\"\n\n\"The reservoir has things in it. We don't catalogue them. We just make sure the water stays clean.\"",
+      "options": [
+        { "label": "Check intake three — fix the filtration drop", "go": 1 },
+        { "label": "Investigate intake two — what bumped it?", "go": 2 }
+      ]
+    },
+    {
+      "text": "Intake three is accessible via a maintenance walkway — stone slabs bolted to the reservoir wall, slick with moisture, hanging six feet above black water. You edge along it, tool bag over your shoulder, trying not to think about what lives in the water below.\n\nThe intake is a pipe mouth covered by a woven membrane — fine enough to catch sediment but open enough to allow flow. Yours is clogged with biological material — a mat of pale fibers, almost like roots, growing across the membrane surface.\n\nNot roots. Fungal hyphae. The reservoir's native cave fungus has found the membrane and decided it's an excellent growth surface. You peel the mat away — it comes off in sheets, revealing the clean membrane underneath. The flow rate increases immediately.\n\nYou bag the fungal mat for the garden overseer — cave fungus from the reservoir might be useful as a substrate amendment. Or it might be toxic. Either way, someone should look at it.\n\nThe flow readings stabilize. You log the blockage type, clear two more intakes as a precaution (both clean), and return to the platform.\n\nThe reservoir is still and black and quiet. Whatever bumped intake two hasn't repeated. You log it as \"biological interference, non-recurring\" and try not to imagine what's down there.",
+      "options": [
+        { "label": "Complete the shift and log the readings", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Intake two is deeper than three — you have to take the lower walkway, which runs just two feet above the water surface. The stone is wet. Your lamp reflects off the black water below, creating the unsettling illusion that you're walking between two darknesses.\n\nThe intake pipe shows marks. Not damage — contact marks. Something smooth and heavy pressed against the pipe housing, leaving a residue. You collect a sample on your glove. It's slick, slightly iridescent, and smells like deep stone.\n\nMucus. Something with a mucous membrane rubbed against the pipe. Cave fish don't produce this — their scales are dry. Whatever touched the pipe is soft-bodied, large enough to leave a print six inches across, and lives in water so deep and dark that nobody has ever seen it.\n\nYou log the sample with precise notes — size of contact area, residue composition, location, time. The previous monitor's logs show similar incidents over the past month, always at intake two, always between midnight and dawn.\n\nSomething is visiting the pipe. Regularly. As if checking on it.\n\nYou report to the reservoir chief, who reads the log with an expression carefully neutral. \"We're aware of the deep-water contacts. They've been increasing.\" She seals your sample in a glass jar. \"Don't discuss this with the general population. No need for speculation.\"\n\nYou leave the reservoir with the uncomfortable knowledge that Mount Pillar's water supply has a neighbor nobody talks about.",
+      "options": [
+        { "label": "Leave with questions you're not supposed to ask", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Freeze Flash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_water",
+  "chainName": "Water Management"
+}

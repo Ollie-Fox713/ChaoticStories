@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_63",
+  "title": "Vine Walk",
+  "desc": "The hanging vine walk across the lower wet ground has stretched overnight, and the hand line is no better.",
+  "locations": [ "Iparu Jungle" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The hidden jungle floor is not uniformly kind. Some sections are firm with leaf mold and old roots, and some are wet enough that the keepers have learned to suspend their paths instead of arguing with the ground. The vine walk over the lower marshy section is one of those compromises: plaited vine treads, side hand lines, and just enough give to remind you the jungle is alive beneath the construction. After a night of heavy humidity, the center span has stretched longer than the keeper likes.\n\nShe tests the hand line with one pull and grimaces. \"Retension the tread vines if you want the walkway itself,\" she says. \"Or retie the side line to the trunk anchors if you prefer the rails. Either way, I'd like the next crossing to feel deliberate rather than optimistic.\"",
+      "options": [
+        { "label": "Retension the tread vines across the wet ground", "go": 1 },
+        { "label": "Retie the side hand line to the trunk anchors", "go": 2 }
+      ]
+    },
+    {
+      "text": "The tread vines are plaited thick enough to carry weight but flexible enough to sag the moment weather remembers they are still plants. You work the center span from both sides, drawing out the worst of the stretch and re-knotting the joins until the walkway regains its shallow steady curve instead of the lazy dip it had taken on overnight. The line still moves underfoot. It simply stops behaving like a dare.\n\nThe keeper crosses halfway out, bounces once with professional cruelty, and seems satisfied when the span answers with controlled spring rather than wounded complaint. \"Good. Let the jungle remain soft. The walkway should not imitate it too closely.\"",
+      "options": [
+        { "label": "Trim the frayed ends and leave the walk holding firm", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The side hand line runs from trunk to trunk above the tread and matters most in the middle where the wet ground below starts looking uncomfortably fond of ankles. One anchor knot has slipped, another has twisted around a fern-wrapped branch, and the whole line now wanders when it should reassure. You reset the trunk knots, straighten the line, and bring the rail back to hand height all the way across.\n\nOnce corrected, the crossing changes character. The wet green below remains beautiful and inconvenient, but the route over it is clear again. The keeper runs a palm along the taut line and nods. \"Better. A hidden paradise still appreciates good rope.\"",
+      "options": [
+        { "label": "Tuck the spare fiber into the tool pouch and step back", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Web Cocoon", "Progressive Speed" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

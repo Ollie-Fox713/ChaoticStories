@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_12",
+  "title": "Structural Survey",
+  "desc": "Measure the pillars. File the reports. Hope the numbers are good.",
+  "locations": [ "Iron Pillar", "Stone Pillar", "Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The structural survey happens quarterly — teams of engineers measure stress levels in the great pillars that support Mount Pillar's upper levels. If the pillars are sound, life continues. If they're not, things get complicated fast.\n\nYou're assigned to the survey team for the Iron Pillar and Stone Pillar circuits. The chief engineer hands you a measurement kit — stress gauges, a plumb line, calipers, and a logbook with last quarter's readings.\n\n\"Compare every reading to last quarter. Anything that's changed by more than two percent gets flagged. More than five percent gets escalated.\" She pauses. \"More than ten percent means we evacuate the section above the pillar. That's never happened. I'd like to keep it that way.\"",
+      "options": [
+        { "label": "Start with Iron Pillar — the industrial load-bearer", "go": 1 },
+        { "label": "Start with Stone Pillar — the ancient one", "go": 2 }
+      ]
+    },
+    {
+      "text": "Iron Pillar bears the weight of the forge levels and the armory district — the heaviest permanent load in Mount Pillar. The pillar itself is natural stone reinforced with ironstone bolts driven into stress fractures over centuries. Every bolt is numbered. Every bolt gets checked.\n\nYou work section by section. Stress gauge on the pillar face, measure compression, compare to the logbook. Section one: stable. Section two: stable. Section three: one-point-eight percent increase.\n\nNot flagged. But close. You note it and move on.\n\nThe forge vibrations are constant here — a low thrumming that you feel through the gauge handle. The engineer said vibration is the main enemy — it creates micro-fractures that widen over years. You check for visible fractures along the measurement sections. Nothing new.\n\nSection seven: stable. Section eight: one-point-two percent decrease. Compression went down? You re-measure. Same reading. The pillar is under less load than last quarter.\n\n\"That means something above shifted,\" the chief engineer says when you report. \"Load doesn't decrease unless weight moved elsewhere.\" She checks the construction logs. \"They relocated the heavy storage from level four to level six last month. That would redistribute load from Iron Pillar to the support columns.\"\n\nThe numbers make sense. The survey is clean — no flags, no escalations. Iron Pillar holds.",
+      "options": [
+        { "label": "Log the results and move to the next pillar", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Stone Pillar is old. Not Mount-Pillar-old — older. It predates Danian construction, a natural column of layered sediment that the original settlers built around rather than through. The measurement points are harder to read here because the stone's natural grain confuses the gauges.\n\nYou calibrate carefully — adjusting for grain direction, moisture content, temperature. Each reading takes twice as long as Iron Pillar. The chief engineer insists on precision. \"Stone Pillar supports the Queen's residential levels. If this one flags, the political consequences are worse than the structural ones.\"\n\nSection by section, the readings come in. Stable. Stable. Stable. The old stone is holding as it has for centuries — compression values so consistent they form a flat line in the logbook.\n\nUntil section twelve. Two-point-four percent increase. Flagged.\n\nYou re-measure. Two-point-three. Confirmed. Something is putting more load on this section than last quarter. You examine the pillar face — a hairline crack, new, running vertically through the measurement zone.\n\nThe chief engineer examines it personally. \"Thermal crack. The temperature differential between the residential levels and the deep tunnels is creating expansion stress.\" She measures the crack's depth — shallow, surface only, not structural.\n\n\"We'll install a monitoring pin. If the crack widens more than a millimeter per quarter, we intervene.\" She drives a small metal pin across the crack — if it shears, the crack has widened.\n\nThe survey completes without further flags. The pin sits in Stone Pillar like a tiny sentinel, watching for movement that everyone hopes never comes.",
+      "options": [
+        { "label": "File the survey and note the monitoring pin", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Pebblestorm", "Sunder Ground" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_engineering",
+  "chainName": "Structural Engineering"
+}

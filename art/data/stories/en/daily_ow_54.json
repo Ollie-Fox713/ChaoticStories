@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_54",
+  "title": "Bridge Lashings",
+  "desc": "The small footbridge over the side branch is still standing, but not in the confident way the orchard crews would prefer.",
+  "locations": [ "Riverlands" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The orchard branch is too narrow for a proper bridge and too inconvenient for anyone to keep wading it every day, so the Riverlands compromised long ago with a low footbridge of lashed poles, plank strips, and practical optimism. The structure has survived another season, which is admirable. It has not survived it gracefully. Two side lashings have loosened and the stepping stones beneath the near bank are slick enough to suggest the river has opinions on alternatives.\n\nThe bridge hand crouches by the first post with a coil of rope fiber over one shoulder. \"Retie the side lashings if you want the bridge itself,\" she says. \"Or scrape the algae from the stepping stones if you prefer the approach. I only ask that the orchard crew stop announcing their crossings with startled noises.\"",
+      "options": [
+        { "label": "Retie the loosened lashings on the bridge rail", "go": 1 },
+        { "label": "Scrape the algae from the stepping stones at the bank", "go": 2 }
+      ]
+    },
+    {
+      "text": "The lashings have gone slack where wet rope dried and stretched through too many crossings loaded with baskets and impatience. You draw each line tight, work fresh knots into the side rails, and cinch the bridge back into the slight spring it was built to keep instead of the wobble it had started improvising. Once finished, the planks still flex underfoot. They simply stop negotiating about whether they mean it.\n\nThe bridge hand walks the span once, listening to the wood answer the corrected tension. No groan, no sideways shrug, no little twitch in the rail. \"Better,\" she says. \"A bridge like this does not need grandeur. It only needs to stop sounding uncertain.\"",
+      "options": [
+        { "label": "Coil the spare line and leave the bridge steady", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The stepping stones on the near bank are the sort of simple design people stop respecting precisely because it usually works. Today the dark green film across them has moved beyond usual damp and into the realm of direct insult. You scrape the algae back to clean stone, rinse the grit away, and leave the line of steps visible and reliable again from grass edge to bridge lip.\n\nA field hand crosses a minute later carrying two empty orchard baskets and does not slip once. That is all the proof either of you needs. The bridge hand glances from the cleaned stones to the running branch below and nods. \"Good. Let the river remain the wet part of this crossing.\"",
+      "options": [
+        { "label": "Lean the scraper aside and leave the approach safe again", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Thunder Shout", "Reverberate" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

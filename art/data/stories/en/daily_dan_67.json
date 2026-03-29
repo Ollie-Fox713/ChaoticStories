@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_67",
+  "title": "Shelf Cart",
+  "desc": "Moving records through Castle Pillar is mostly a matter of timing and nerve.",
+  "locations": [ "Castle Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The records received at dawn do not stay near the entry floor for long. Once cataloged, they have to be moved to the correct shelves before the next route rotation makes the easy path impossible. Today the transfer stack includes sealed scroll tubes, two waxed tablets, and a crate of copied Mugic notations that an archivist handles the way soldiers handle unstable powder.\n\nThe cart route to the upper reference floor offers two options. The faster path uses the public stair sequence and depends on moving when the bells say move. The slower path uses the lower service rails, where grooves in the stone guide carts through narrower but steadier passages.\n\nA cart master pats the top crate and looks at you with professional skepticism. \"We can trust timing, or we can trust hardware. Pick your faith.\"",
+      "options": [
+        { "label": "Take the upper route and move by bell timing", "go": 1 },
+        { "label": "Use the lower rail route through the service halls", "go": 2 }
+      ]
+    },
+    {
+      "text": "The bell route feels like pushing a library through a clock. At the first tone you roll the cart onto a landing that remains level just long enough to cross. At the second, a stair ahead finishes rotating into place and the cart master's hand lifts in sharp approval. Too early and you would have rammed the cart into a wall. Too late and you would be waiting for the next cycle with every visiting reader in your way.\n\nThe upper halls are worth the pressure. Light falls from narrow shafts onto carved shelf fronts and dustless stone. Readers glance up as the cart passes, then go back to their texts with the absolute confidence of people who assume routes simply exist. You know better now.\n\nWhen the final bell opens the reference floor, you push the cart through with seconds to spare. The cart master exhales, long and dry. \"Good. Books love precision more than readers do.\"",
+      "options": [
+        { "label": "Unload the records onto the waiting shelf table", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The lower rail route is cut directly into the pillar stone: twin grooves for cart wheels, locking stops at each gate, and side channels where workers can step clear when a wall panel decides it needs the space. It is slower than the bell route but far less interested in embarrassing anyone.\n\nYou guide the cart from stop to stop while the master works the gate latches. Each service door opens onto another chamber of practical intelligence: lift pits, ledger alcoves, cleaning racks, tool hooks, the unnoticed skeleton that keeps a place of wonder functioning. The crate of Mugic notations barely rattles once.\n\nBy the time you emerge at the back of the reference floor, the cart master looks almost cheerful. \"See? Hardware. Hardware respects a schedule without requiring poetry.\" He says this while standing inside a rotating knowledge pillar built around puzzle routes and old secrets, which makes the comment better than he probably intended.",
+      "options": [
+        { "label": "Sign the transfer ledger and return the cart", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Elementalist's Psy-Blast", "Mind Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_51",
+  "title": "Rift Lamps",
+  "desc": "The lamp chain along the upper rim has to be reset before Fear Valley becomes all shadow and suggestion.",
+  "locations": [ "Fear Valley" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Fear Valley does not need darkness to be frightening. Darkness only helps it. The rift opens through the UnderWorld like a wound that never finished deciding what shape it wanted, its walls falling away into layered shadow where lamps seem to shrink instead of shine. Even from the upper rim, the air carries the place's peculiar pressure, a feeling behind the eyes that makes every still rock look momentarily prepared to move. Far below, dim glints of mineral and old water catch and vanish so quickly they feel less observed than imagined.\n\nThe rim keeper carries a box of trimmed wicks and fresh lamp oil. \"Reset the cage lamps if you want the rail line,\" she says. \"Or realign the reflector plates behind them if you prefer the finer work. Once the valley starts feeding on shadow properly, the path becomes much less interested in being a path.\"",
+      "options": [
+        { "label": "Trim and relight the cage lamps along the rim", "go": 1 },
+        { "label": "Realign the reflector plates behind the lamps", "go": 2 }
+      ]
+    },
+    {
+      "text": "The cage lamps hang in iron cradles bolted to the rim wall, each one meant to push a narrow cone of light down the walking edge and no farther into the rift than necessary. You clean the glass, trim the blackened wicks, and refill the cups until the lamps burn with steady hostile little flames instead of the tired guttering they had settled into. One by one, the rim takes shape again beneath them: rail, chain posts, warning scratches, the first drop into dark.\n\nWith the full line lit, Fear Valley becomes easier to see and no easier to trust. The light does nothing to soften the place. It simply gives the eye enough certainty to recognize how much remains outside it. The keeper studies the restored chain and nods. \"Better. A place like this should terrify people honestly.\"",
+      "options": [
+        { "label": "Latch the oil box and leave the rim burning clear", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The reflector plates are narrow black-backed pieces of polished metal fixed behind each lamp to throw the beam down the rim instead of wasting it into the open rift. Two have drifted off angle and another has gone dull with ash, leaving one stretch of walkway oddly dim and another bright for no useful reason at all. You wipe the plates clean, loosen the mounts, and tip them back toward the keeper's marks until the light falls where feet actually need it.\n\nThe corrected line changes the whole rim. The chain walkway sharpens. The drop remains a suggestion of depth too large for lamps to solve. Somewhere below, one moving shadow becomes only a twisted outcrop. Another refuses to explain itself either way. The keeper does not follow your gaze. \"Good,\" she says. \"Let the valley keep its tricks. The railing does not need any.\"",
+      "options": [
+        { "label": "Set the wrench down and leave the light aimed true", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Fear Fight", "Shadow Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

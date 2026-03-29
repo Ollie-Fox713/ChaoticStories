@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_31",
+  "title": "Shade Cloth Repair",
+  "desc": "The noon awnings over the public water court tore in the night. By midday, everyone will care.",
+  "locations": [ "Mipedim Oasis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Mipedim Oasis is at its quietest just after sunrise, when the water is still cool, the palms cast long shadows, and the public court has not yet filled with creatures pretending not to notice one another. By noon the same court will be crowded with traders, guards, elders, and children all trying to share the same shade without admitting shade is the point.\n\nThat is why the torn awning matters. One of the broad woven cloths stretched above the central court has ripped along a support seam, leaving a bright slash of open sky where there should be filtered shadow. The shade-keeper looks up at it with personal offense. \"Night wind,\" she says. \"Or someone tied it wrong yesterday and the wind merely finished the argument.\"\n\nShe hands you a spool of desert thread and a bundle of spare ties. \"Patch the torn seam from the top rig, or reset the whole corner line so the cloth pulls evenly again. If the court is still exposed by midday, every complaint in the oasis will become mine.\"",
+      "options": [
+        { "label": "Climb the rig and patch the torn seam directly", "go": 1 },
+        { "label": "Reset the corner line and retension the whole awning", "go": 2 }
+      ]
+    },
+    {
+      "text": "From the top rig, the awning cloth feels less like fabric and more like disciplined sail. The torn seam has feathered where the weave pulled apart, and every gust worries at it as though trying to widen the damage before you can stop it. You feed the thread through with a curved needle, tying short reinforced stitches across the rip while the shade-keeper below keeps the cloth steady with a hooked pole.\n\nThe work is hot even this early. Sunlight through the opening lands across your hands, but with each row of stitching the bright slash narrows. By the time you knot the last line, the patch sits flush against the original weave - visible, yes, but strong. When the keeper tests it with a hard pull from below, the seam holds and the court falls back into patterned shade.\n\nShe folds her arms and studies the repaired cloth as a family crosses beneath it without looking up. \"Good,\" she says. \"If people stop noticing the awnings, it means I did my job. And, briefly, so did you.\"",
+      "options": [
+        { "label": "Climb down and leave the court in cool shadow", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The torn seam is only half the problem. The corner line has slackened enough that the whole awning dips toward the damaged side, forcing the weight into one weak section of cloth. You loosen the anchor knot, pull the line through the side ring a little at a time, and feel the whole span tense under your hands as the fabric rises back into proper alignment.\n\nThe shade-keeper watches the light on the court floor while you work. \"There. Hold. A touch more. No, that's too much - now it thinks it's a drum skin.\" Once the tension lands right, the awning stops sagging and the repaired seam no longer bears the whole burden alone. The patterned light beneath it evens out across the paving stones and the water channel running through the center of the court goes silver instead of white in the filtered sun.\n\nThe keeper nods with the satisfaction of someone whose future complaints have just been reduced by half. \"Excellent. Now the cloth can survive the day, and more importantly, so can everyone's temper.\"",
+      "options": [
+        { "label": "Tie off the line and clear the rig before noon", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Windslash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

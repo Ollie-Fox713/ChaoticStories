@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_49",
+  "title": "Catch Mesh",
+  "desc": "The chain mesh under one of Khybon's patch shelves has torn, which means the next falling scrap will pick its own landing spot.",
+  "locations": [ "Iron Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Every repair shelf bolted to Iron Pillar eventually produces the same byproducts: stray scrap, cut-off rivet ends, slag flakes, and the occasional badly aimed tool nobody will admit to dropping. That is why catch mesh hangs below the busiest patch stations, a chain lattice stretched over support frames to keep the debris from falling farther than the foreman considers acceptable. One section on the west shelf has torn along the edge and the collection pans beneath already show the first warning scatter.\n\nThe scrap keeper hooks a thumb at the drooping mesh line. \"Splice the torn section if you want to work the net,\" she says. \"Or clear the catch pans below before they overload the frame. Both jobs keep falling metal from developing initiative.\"",
+      "options": [
+        { "label": "Splice the torn chain mesh back into the frame", "go": 1 },
+        { "label": "Clear the loaded catch pans beneath the shelf", "go": 2 }
+      ]
+    },
+    {
+      "text": "The torn section has failed where the outer links took too many impacts in one corner and not enough inspection in the intervals between them. You pull the slack clear, hook fresh links through the surviving edge, and draw the mesh back into proper tension so the lattice spreads weight instead of sagging under it. When finished, the frame no longer looks like a tired compromise. It looks ready to be abused professionally again.\n\nThe keeper drops a test handful of scrap from the shelf above. The mesh catches it with a harsh metallic rattle and holds. Exactly the sound she wanted. \"Good. If the repair crew is going to shed pieces all day, the net should at least be enthusiastic about receiving them.\"",
+      "options": [
+        { "label": "Hang the splice pliers back up and leave the mesh taut", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The catch pans under the shelf are heavy even before the scrap inside them decides to be awkward. You slide each pan free, dump the metal fragments into the sorting bin, and brush the fine filings from the corners where they have begun clumping against the iron. By the third pan you can see why the keeper called you over: another shift and the frame would have been holding more weight than anyone designed for with a straight face.\n\nOnce emptied, the pans slide back cleanly and the frame sits higher on its chains. The keeper gives one of them a testing shove and seems pleased when it answers with an ordinary clank instead of a complaint. \"Better. Contained hazards are almost respectable.\"",
+      "options": [
+        { "label": "Latch the last pan and leave the shelf catch ready", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Blind Fury", "Malevolent Blast" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

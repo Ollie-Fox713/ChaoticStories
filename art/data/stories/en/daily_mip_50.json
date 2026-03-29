@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_50",
+  "title": "Guide Rope",
+  "desc": "A guide rope marks the safe approach through the worst part of the field, but the pegs have started to loosen where the sand keeps migrating.",
+  "locations": [ "Mipedim Mirage" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The safest route through the strongest part of Mipedim Mirage is not a road. It is a decision repeated every few body lengths: trust the rope, trust the marked posts, distrust the beautiful thing off to your left. The guide line is anchored by buried pegs and low stone collars, all of which work well until the sand starts moving around them faster than the maintenance crew can lecture it. This morning three sections sag and one corner post leans hard enough to make the whole route look negotiable.\n\nThe line captain checks the drift with a hooked staff. \"Reset the rope tension if you want the long pull,\" she says. \"Or dig out the anchor pegs and reseat them if you prefer the ugly work below the sand. Choose quickly. A route only feels safe while it looks deliberate.\"",
+      "options": [
+        { "label": "Reset the rope tension along the marked approach", "go": 1 },
+        { "label": "Dig out the buried pegs and reseat the anchors", "go": 2 }
+      ]
+    },
+    {
+      "text": "The guide rope has taken on the lazy curve of something asked to do too much by hardware asked to do too little. You walk the line from post to post, drawing the slack through, resetting the knots, and bringing each segment back to firm, readable tension. Once it is right, the route changes character immediately. What had looked like a suggestion becomes instruction. Even the false city wavering to the west seems to lose some of its pull when the rope beneath your hand answers with confidence.\n\nThe captain grips the finished line, gives it one testing tug, and watches the tension carry cleanly down the route. \"Better,\" she says. \"People do not follow certainty because it is loud. They follow it because it does not flinch.\"",
+      "options": [
+        { "label": "Tie off the last knot and leave the route taut", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The anchor pegs are buried where the sand wants to keep them, which would be helpful if it also wanted them stable. You dig each suspect point out by hand and short spade, clear the loose drift from the stone collars, and drive the pegs back into firmer ground beneath until the iron rings stop rocking under load. It is hot, blunt work, and every time you look up the horizon has invented a new impossible feature to distract you from it.\n\nWhen the last anchor is seated, the captain clips the rope back on and leans against it with her full weight. Nothing shifts. The route holds. Beyond it, the mirage continues building towers and lanes out of heat with all the confidence of a liar who has never been corrected. Here, at least, the hardware has been corrected thoroughly. \"Good,\" she says. \"Let the desert perform. We have a path to keep.\"",
+      "options": [
+        { "label": "Brush the sand from the collars and leave the anchors solid", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Trampling Tackle" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

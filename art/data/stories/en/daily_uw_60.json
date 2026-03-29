@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_60",
+  "title": "Wax Tells",
+  "desc": "The sealed side doors in the old barracks wing need fresh wax tells and bar checks before the next watch rotation.",
+  "locations": [ "Stone Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The old barracks wing of Stone Pillar is kept closed not because anyone believes closed stone is safer than open stone, but because there is a long practical tradition of making the ruin cross as many thresholds as possible before it reaches a living person. The side doors are barred, sealed with wax tells at the seam, and checked at each watch change for cracking, drag marks, or any new sign that the past has developed enough energy to express itself materially. Tonight two tells are split and one lower bar drags in its bracket.\n\nThe seal clerk warms a stick of black wax over a lamp and waits for your choice. \"Reset the wax tells if you want the seams,\" she says. \"Or free the lower bar and test the door weight if you prefer the hardware. I do not need reassurance from this corridor. I need useful information.\"",
+      "options": [
+        { "label": "Reset the black wax tells along the door seams", "go": 1 },
+        { "label": "Free the lower bar and test the door hardware", "go": 2 }
+      ]
+    },
+    {
+      "text": "The wax tells are laid thin across the seam in neat little bridges, just enough that a door opening, shifting, or even breathing too hard against its frame leaves a visible lie in the morning. You scrape the broken seals away, warm fresh wax, and draw new black lines across each seam until the whole row of doors is marked again in the clerk's preferred hand. It is delicate work in an unpleasant corridor, which somehow makes it feel more official.\n\nWhen the last seal cools, the doors look watched rather than merely shut. The clerk studies the line and seems comforted by the precision of it. \"Good. If anything opens, I want it forced to confess immediately.\"",
+      "options": [
+        { "label": "Set the wax stick aside and leave the seams newly told", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The lower bar on the third door has picked up grit in the shoe and now drags hard enough that two guards have been mistaking inconvenience for meaningful resistance. You lift it clear, brush the bracket, oil the shoe, and work the weight back and forth until the bar lands with the clean finality the corridor deserves. Once the hardware is moving properly, you test the rest of the row just to be certain none of the other bars have decided to join the performance.\n\nThey have not. The door line is once again boring in the correct ways. The clerk sounds almost cheerful when she hears the third bar slide true. \"Better. I much prefer haunting to be reported by evidence rather than by poor maintenance.\"",
+      "options": [
+        { "label": "Latch the bar home and leave the wing properly secured", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Malevolent Blast", "Shadow Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_26",
+  "title": "Ventilation Duty",
+  "desc": "The embassy's dry-air system is clogging again. If the papers dampen, diplomacy gets expensive.",
+  "locations": [ "Overworld Embassy at Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Overworld Embassy at Mount Pillar survives on compromise. The furniture is wooden because the OverWorlders insist. The walls are stone because Mount Pillar insists harder. And between the two sits a ventilation system built to drag dry air through an underground hive that does not naturally believe in dryness.\n\nThis morning the embassy steward is standing beneath a ceiling vent with one hand outstretched, catching the slow drip from a condensation bead that should not be there. \"If this keeps up,\" she says, looking at the damp spot spreading across the stone, \"the document shelves start swelling by noon and the clerk starts giving me that look.\"\n\nShe hands you a long cleaning brush, a seal kit, and a ladder hook. \"Clear the intake pipes from the upper crawlspace, or reseat the lower vent shutters and get the airflow balanced again. Either would save my afternoon.\"",
+      "options": [
+        { "label": "Climb up and clear the intake pipes", "go": 1 },
+        { "label": "Reset the lower shutters and rebalance the vents", "go": 2 }
+      ]
+    },
+    {
+      "text": "The upper crawlspace is narrow, dusty, and lined with pipes that were clearly designed by someone who expected lighter maintenance workers than humans. You work on your knees, feeding the brush through each run while flakes of damp residue and fungal dust shower onto the cloth laid below.\n\nThe worst blockage is a bend near the outer intake where fine spores have collected into a fibrous mat. You pull it free in one wet, unpleasant length and the pipe gives an immediate answering rush of air. The next vent down the line clears just as fast. By the time you finish the last branch, the embassy has changed from clammy to merely underground.\n\nBelow, the steward checks the document room with the satisfaction of someone watching a disaster downgrade itself into ordinary maintenance. \"Better,\" she says as the shelves stop sweating. \"For one more week, at least. The mountain keeps trying to reclaim this place. Our job is to make it work for the paperwork first.\"",
+      "options": [
+        { "label": "Climb down and enjoy the return of dry air", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The lower vent shutters are small stone-and-brass assemblies set into the base of the walls, meant to direct dry air where the embassy needs it most. Right now half of them are open too wide and the rest are sticking. You kneel with the seal knife and oil rag, loosening each hinge one by one while the steward moves through the rooms holding a strip of cloth to test the current.\n\n\"More to the archive. Less to the hall. Stop there. No, back half a notch.\" The adjustments are tiny, but the effect is not. Air begins moving where it should - across the writing desks, over the shelves, beneath the window ledges where moisture likes to gather.\n\nWhen the last shutter sits correctly, the condensation bead above the hallway vent stops growing. The steward presses the back of her hand to the wall, then nods as if the embassy itself has finally agreed to cooperate. \"There. Dry enough for paper, not so dry the plants complain. That is apparently the diplomatic middle path.\"",
+      "options": [
+        { "label": "Pack up the tools and leave the air in order", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Freeze Flash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

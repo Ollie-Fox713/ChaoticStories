@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_70",
+  "title": "Mire Skiff",
+  "desc": "Messages and supplies still have to cross the backwater, even here.",
+  "locations": [ "Gloomuck Swamp" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Some routes through Gloomuck Swamp are too wet for boardwalk and too narrow for anything bigger than a flat mire skiff. The boats are ugly, shallow, and absolutely necessary. They carry message satchels, reed bundles, scouts with tired legs, and the occasional worker who has finally had enough of wading.\n\nThis morning one skiff is tied at the edge of a backwater run with a seam beginning to leak and the channel ahead half blocked by a fallen snag line. The boat hand has tar, cloth, and a hooked pole, but not enough spare arms for both jobs before the noon traffic starts.\n\n\"Patch or channel,\" she says, thumping the hull once with her palm. \"Either way, I'd prefer not to sink politely in front of witnesses.\"",
+      "options": [
+        { "label": "Patch the leaking seam with tar and cloth", "go": 1 },
+        { "label": "Clear the snag line from the channel", "go": 2 }
+      ]
+    },
+    {
+      "text": "The leak is small, which is how swamp leaks get you. Not dramatic enough to stop the trip at once, just constant enough to turn a manageable crossing into an afternoon spent bailing while pretending not to be annoyed.\n\nYou heat the tar, press cloth into the seam, and smooth a second coat over the patch while the boat hand keeps the hull tilted just enough for the repair to set. The skiff smells of old pitch, wet reeds, and every cargo it has ever carried. When the patch cools, you splash a little water against the outer board and watch none of it come through.\n\nThe boat hand nods once, satisfied. \"Good. Now the only thing this skiff leaks is dignity.\" She means it fondly. The mire boats are not graceful, but grace is not always the point.",
+      "options": [
+        { "label": "Push the skiff off and test the patch", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The snag line is a tangle of reed stems, driftwood, and one long rope of swamp vine caught between two low roots across the narrow run. Left alone, it would trap the first skiff broadside and turn a short trip into a muddy argument with current and insects.\n\nYou work from the bow with the hooked pole while the boat hand braces with the setting line. One snag comes free in a single sucking pull. Another has to be cut loose where the vine wrapped itself twice around a root. When the last of it gives way, the channel opens into a black smooth lane between walls of reeds tall enough to hide the sky.\n\nThe boat hand eases the skiff forward and lets it glide into the cleared run. Water parts with barely a sound. For a few moments the swamp seems almost willing to let passage happen. That mood will not last, but it does not need to. A clear channel now is enough.",
+      "options": [
+        { "label": "Ride the skiff through the newly opened lane", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Rip Tide", "Vine Snare" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_25",
+  "title": "The Old Road",
+  "desc": "An ancient path needs clearing. What's underneath the rockfall?",
+  "locations": [ "Glacier Plains", "Cordac Falls", "Doors of the Deepmines" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Old Road is exactly what it sounds like — a path so ancient that nobody remembers who built it or where it originally led. Sections of it surface periodically across Perim, always made of the same seamless black stone, always perfectly level regardless of terrain.\n\nA fresh rockfall on the Glacier Plains has exposed a new section. A work crew is clearing debris, and they need hands. The exposed road is ten feet wide, ruler-straight, and warm to the touch despite the glacial air.\n\n\"Don't walk on it until we've cleared the full section,\" the foreman says. \"Last time someone walked on an unchecked stretch, they ended up three miles south. Instantly. No transition. Just — somewhere else.\"\n\nHe looks at the black stone with wary respect. \"It's a road. It goes places. We just don't always know where.\"",
+      "options": [
+        { "label": "Help clear rocks the careful way", "go": 1 },
+        { "label": "Examine the road surface for markings", "go": 2 }
+      ]
+    },
+    {
+      "text": "You haul rocks. Lots of rocks. The debris ranges from fist-sized to boulder-sized, and the crew works systematically — clearing from the edges in, never stepping on the black stone itself.\n\nAs you clear, more of the road is revealed. It stretches fifty feet in one direction before disappearing under a glacier. In the other direction, it curves south and vanishes into a cliff face, as if the cliff grew around it.\n\nThe stone is warm under your fingertips. You realize the road isn't just warm — it's humming. The same frequency as the masonry in Gigantempopolis, the same tone as the tuning crystals. Old Mugic. Impossibly old.\n\nThe foreman marks the section on his map. \"That's the seventeenth segment we've found across Perim. Still can't connect them. Still don't know who built them.\" He pats the warm stone. \"But they're still working. After all this time, they're still working.\"",
+      "options": [
+        { "label": "Add your notes to the survey", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "You get on your knees at the road's edge and brush away dust. The stone isn't perfectly smooth — there are markings. Shallow grooves, almost worn away, forming patterns you recognize from the Runic Grove. The same indecipherable script, carved into the road itself.\n\nBut here, partially sheltered by the rockfall, the carvings are sharper. Better preserved. You can see details that the Grove's weathered stones have lost — tiny notches within the grooves, almost like punctuation.\n\n\"These are directional,\" you realize. The notches point. Along the road. Toward the cliff face.\n\nThe foreman looks where you're pointing. The cliff face. Where the road disappears into solid rock. \"You're telling me the road goes through the mountain.\"\n\n\"The road goes somewhere.\"\n\nHe stares at the cliff for a long time. \"We're going to need a bigger crew.\" He writes something in his log, then closes it. \"And maybe some answers we're not ready for.\"",
+      "options": [
+        { "label": "Head back with the survey team", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Pebblestorm", "Rustoxic" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_cartography",
+  "chainName": "Cartography"
+}

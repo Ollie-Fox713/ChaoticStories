@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_17",
+  "title": "Carnival Visit",
+  "desc": "The Carnival of Confusion. Nothing works as expected. That's the point.",
+  "locations": [ "Carnival of Confusion", "Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Carnival of Confusion exists in a pocket of warped space near Mount Pillar — a place where the rules of physics have taken a holiday. Gravity shifts direction. Colors smell. Sound has texture. It's been here longer than anyone remembers, and nobody knows why.\n\nThe Danians use it recreationally. A day at the Carnival is a sanctioned break from the hive's rigid structure — a place where order doesn't apply and chaos is the entertainment.\n\nYou enter through a stone archway that hums with Mugic. The moment you cross the threshold, the ground becomes the ceiling. You're standing upside down, looking \"up\" at the floor you just walked on. Your stomach disagrees with your eyes.\n\nA Danian attendant — walking perpendicular to you on what used to be a wall — waves cheerfully. \"First time? Don't fight the gravity. Let it carry you. Also, don't eat the blue food. The blue food is a lie.\"",
+      "options": [
+        { "label": "Explore the gravity maze", "go": 1 },
+        { "label": "Visit the perception hall", "go": 2 }
+      ]
+    },
+    {
+      "text": "The gravity maze is a series of rooms where gravity points in different directions. Each doorway transitions you to a new orientation — walk through one and suddenly \"down\" is to your left. Walk through another and you're on the ceiling again.\n\nYou navigate by landmarks — a red pillar is always on the \"true\" floor, regardless of your perceived orientation. If the pillar is above you, you're inverted. If it's below, you're right-side up. If it's sideways... you've entered the really confusing section.\n\nThe maze is full of Danians in various states of disorientation. A worker is walking calmly on a wall, eating a snack. Two juveniles are playing catch across a gravity boundary, the ball changing trajectory mid-flight. A muge is sitting cross-legged on the ceiling, meditating, apparently unbothered.\n\nYou make it through the maze in twenty minutes, exiting through a doorway that deposits you right-side up, which feels wrong after so long at odd angles. Your sense of balance needs a moment to recalibrate.\n\nA carnival worker stamps your hand. \"Congratulations. You didn't vomit. That puts you in the top thirty percent.\"\n\nYou're oddly proud of this statistic.",
+      "options": [
+        { "label": "Accept the achievement and move on", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The perception hall is a long corridor where your senses swap. Sight becomes sound. Sound becomes touch. Touch becomes taste. The experience is profoundly disorienting and, according to the attendant, \"deeply educational about the nature of consciousness.\"\n\nYou step inside. The world goes silent — but you can see the silence. It's blue. The walls emit a low hum that you feel as a warm pressure on your skin. When you touch the wall, your tongue registers stone. Your fingers taste granite.\n\nMoving through the hall is like learning to exist from scratch. Each step produces a visual ripple — your footfalls are visible as orange flashes. Your breathing appears as a green mist. Your heartbeat is a slow, steady pulse of warm light at the edge of your vision.\n\nHalfway through, you encounter another visitor — a Danian who's standing still, running their hands along the wall, tasting different sections. \"This part is limestone,\" they say. \"This part is basalt. You can taste the difference. When have you ever been able to taste a wall?\"\n\nNever. You taste the wall. It's chalky, with a mineral bite. They're right — it's limestone.\n\nYou exit the hall with your senses restored to their normal assignments. Colors are colors again. Sounds are sounds. Walls are not for tasting.\n\nBut you remember what granite tastes like. You'll never forget it.",
+      "options": [
+        { "label": "Leave the Carnival with expanded perceptions", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Unsanity", "Delerium" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_carnival",
+  "chainName": "Carnival Trips"
+}

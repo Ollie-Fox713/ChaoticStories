@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_30",
+  "title": "The Assayer's Cup",
+  "desc": "A formal morning audit turns one light basin into a question of precision, trust, and status.",
+  "locations": [ "Mipedian Dew Farm" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Once the first catch basins are filled, the dew farm stops being a field operation and becomes an accounting problem. A water-counter arrives with nested measuring cups, purity strainers, a seal stamp, and a clerk whose entire job appears to be looking disapprovingly at quantities. Each basin is checked for volume, clarity, and transfer loss before it can be entered into the day's ledger.\n\nMost mornings the work is ceremonial because the farm runs well. Today one basin comes in light for its row. Not empty, not suspiciously low, just wrong enough that everyone nearby notices. The clerk marks the line with a thin stroke of black ink. The basin-tender stiffens as if struck.\n\nThe counter rests two fingers on the rim and looks at you. \"Either the measure is off, the transfer was sloppy, or the water picked up sand and sat badly in the cup. Find out which before my clerk decides this is a character issue.\" The clerk does not deny this possibility.",
+      "options": [
+        { "label": "Re-measure the basin and trace the transfer path", "go": 1 },
+        { "label": "Run the purity test and check for suspended grit", "go": 2 }
+      ]
+    },
+    {
+      "text": "You take the suspect basin, the standard cups, and the transfer ladle back along the short path from the row channel to the assay table. The problem reveals itself halfway there. One of the catch trays is sitting on a slight tilt where a support stone has settled unevenly into the sand. Not enough to spill visibly, but enough that the final pour into the basin came in short by a measured fraction every time.\n\nThe counter watches you level the stone, reset the tray, and repeat the transfer under the clerk's stare. This time the cup fills cleanly to the etched line. The clerk bends low enough to confirm it, then makes an irritated sound that probably means the basin-tender is no longer in trouble.\n\n\"Mechanical error,\" the counter says, and the words relax the whole table. The basin-tender exhales through his teeth. The clerk corrects the ledger mark with evident disappointment. The counter hands you the measure cup to put away. \"Good. Precision before blame. That is how records stay useful.\"",
+      "options": [
+        { "label": "Return the corrected basin for sealing", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The purity strainers are fine enough to catch silk fibers and most suspended sand without slowing the whole morning to a crawl. You pour the basin through one, hold it to the light, then compare it against a clean sample from the adjacent row. At first the water looks identical. Then the angle changes and you see it - a faint mineral clouding, almost invisible, likely from a scrape against the tray lip or grit kicked in during transfer.\n\nThe counter has you run the sample again through a second finer screen. The clerk watches every movement as though a dramatic scandal might yet develop from a perfectly ordinary maintenance problem. What settles out is trivial in quantity and annoying in implication: not theft, not negligence, just enough suspended grit to throw the visual line in the measuring cup.\n\nOnce filtered, the basin reads true. The clerk revises the mark. The counter seals the entry and gives the basin-tender a look that is stern only because someone must preserve standards. \"Cleaner pour next time,\" she says. Then, quieter, to you: \"And thank you for proving my clerk wrong before she could enjoy herself too much.\"",
+      "options": [
+        { "label": "Set the clean basin with the rest of the morning's yield", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Scout's Strike", "Mind Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

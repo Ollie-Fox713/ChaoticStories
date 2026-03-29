@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_07",
+  "title": "Fire Wrangling",
+  "desc": "Flame-sprites have escaped their containment pits. Again.",
+  "locations": [ "Lava Pond", "UnderWorld City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Flame-sprites are tiny, bright, and incredibly stupid. They're also the UnderWorld's primary light source — contained in crystal globes, they provide steady illumination without the smoke of torches.\n\nWhen they escape, they're a fire hazard with the intelligence of a confused candle.\n\nA containment worker is chasing three of them down a corridor with a net made of fireproof mesh. \"The lava vent surged last night! Blew the lids off six containment pits! I've caught three, but the rest scattered!\"\n\nA sprite zips past your head, singing — if you can call it singing. It's more like a small fire crackling in a cheerful key.",
+      "options": [
+        { "label": "Help chase the sprites through the tunnels", "go": 1 },
+        { "label": "Try luring them with something they like", "go": 2 }
+      ]
+    },
+    {
+      "text": "You chase a sprite down a side tunnel. It bounces off walls, leaving scorch marks on stone and briefly setting a wall-tapestry on fire. You stamp out the tapestry and keep running.\n\nThe sprite leads you through a kitchen, a sleeping quarters (startled shouts), and into a storage room where it finds a barrel of lamp oil and lands on it, purring.\n\n\"No. No no no.\"\n\nYou approach slowly. The sprite watches you with what might be curiosity and might be malice. You sweep the net over it in one motion. The sprite squeals — a tiny burst of heat — and goes still inside the mesh, sulking.\n\nFour more to go. By the time you've caught them all, you've singed your eyebrows, ruined a tapestry, and earned the grudging respect of a creature whose job is chasing fire for a living.\n\n\"Same thing'll happen next month,\" the worker says. \"It always does.\"",
+      "options": [
+        { "label": "Ask for fireproof eyebrows", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "\"They like heat,\" the worker says. \"More heat, specifically. They escaped heat and they're looking for more heat. If you can make a concentrated heat source...\"\n\nYou find a metal bowl, fill it with forge coals, and set it in the middle of the corridor. Then you wait.\n\nOne by one, the sprites drift toward the bowl. They can't resist. They settle on the coals like glowing moths on a lamp, crackling contentedly. You count them as they arrive — one, two, three, four.\n\nThe worker creeps up with a crystal globe and scoops the first one in. It barely notices. The second puts up a token resistance — a small flare that singes the worker's gloves. The third and fourth go quietly.\n\n\"That's the smartest thing anyone's done during a breakout,\" the worker says. \"Usually we just run and scream.\"\n\nThe last sprite is still missing. You find it an hour later, asleep inside a teapot in the kitchen, glowing softly.",
+      "options": [
+        { "label": "Gently extract the teapot sprite", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Torrent of Flame", "Ember Swarm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_fire",
+  "chainName": "Fire Management"
+}

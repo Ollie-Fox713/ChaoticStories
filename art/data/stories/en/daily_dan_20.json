@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_20",
+  "title": "Root Trimming",
+  "desc": "Invasive roots threaten tunnel walls. Cut them before they cut through.",
+  "locations": [ "Wooden Pillar", "Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Wooden Pillar is the only organic structural support in the pillar system — a colossal tree trunk, petrified and living simultaneously, its roots extending through miles of surrounding tunnels. Most roots are harmless — they follow the rock grain and don't interfere with construction.\n\nSome roots are not harmless. They grow through tunnel walls, cracking stone, displacing supports, and creating water intrusion points. These need trimming before they compromise the infrastructure.\n\nThe root crew assembles with saws, axes, and sealant. The crew chief examines today's target — a root the thickness of your thigh, emerging from the ceiling of corridor twenty-three and growing diagonally across the passage.\n\n\"Standard trim. Cut flush with the ceiling, seal the stump so it doesn't regrow, and patch the stone around the intrusion point.\" She tests the root with her knuckle. \"This one's still growing — green wood. It'll bleed sap when we cut. The sap is acidic. Wear your face guards.\"",
+      "options": [
+        { "label": "Make the cut — you're good with the saw", "go": 1 },
+        { "label": "Prepare the sealant and patch materials", "go": 2 }
+      ]
+    },
+    {
+      "text": "The saw bites into the root and immediately, sap begins to weep — amber-green, viscous, smelling sharply of resin. You saw with steady strokes, the blade cutting through living wood that's harder than you expected. The Wooden Pillar's roots are dense — decades of mineral absorption have made the wood almost as hard as stone.\n\nHalfway through the cut, the root groans. Not the sound of wood splitting — a deeper sound, resonant, as if the tree itself is registering the damage. The crew pauses.\n\n\"Normal,\" the chief says. \"The Pillar is semi-alive. It feels the cuts. It doesn't fight back, but it notices.\" She looks up the corridor, toward where the root connects to the main trunk. \"Probably.\"\n\nYou resume cutting. The root separates with a final crack. The severed section falls and the crew hauls it away — the wood will be recycled for fuel or building material. The stump in the ceiling bleeds sap in a slow, steady flow.\n\nYou seal it — applying a thick paste of calcium compound that reacts with the acidic sap to form a hard, inert cap. The sap flow slows, stops. The cap hardens within minutes.\n\nThe corridor is clear. The stone around the intrusion point is cracked but stable — the patch crew will fill the cracks with mortar tomorrow.\n\n\"Clean cut,\" the chief says. \"The Pillar will grow a new root in a few years. Somewhere else. They always do. It's the oldest game in Mount Pillar — the tree grows, we cut, it grows again somewhere new.\"",
+      "options": [
+        { "label": "Accept the never-ending cycle of root management", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "While the cut team works, you prepare the aftermath. The sealant is a two-part compound — calcium powder and a liquid hardener that must be mixed fresh. It has a ten-minute working window before it sets.\n\nYou time the mix to the cutting progress, listening for the saw's rhythm to change as it approaches the final separation. When the root drops, you're ready — sealant mixed, trowel loaded, face guard in place.\n\nThe stump bleeds. The acidic sap sizzles faintly where it contacts the exposed stone — left untreated, it would slowly dissolve the surrounding rock, widening the intrusion hole. You apply sealant thickly, working it into the cut face and around the stump's circumference.\n\nThe chemical reaction between sealant and sap produces heat — the stump steams briefly as the cap forms. You add a second layer for insurance. The cap sets rock-hard.\n\nThen the stone patch. The intrusion hole is irregular — the root pushed through the stone at an angle, creating a cone-shaped gap. You fill it with mortar mixed with ironstone chips for reinforcement. The patch needs to be strong enough to resist the stone's natural compression and any future root growth.\n\nThe crew chief inspects the finished patch. She taps it. Solid. She probes the sealant cap. Set. She checks the surrounding stone for hidden cracks. None.\n\n\"This is the part that matters,\" she says. \"Anyone can cut a root. The skill is in what comes after — making sure the tunnel is stronger than it was before the root came through.\"\n\nCorridor twenty-three is sealed, patched, and safe. The Wooden Pillar continues its ancient, slow-motion negotiation with Mount Pillar's tunnels.",
+      "options": [
+        { "label": "Pack the tools and move to the next intrusion", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Arborsmash", "Ember Swarm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_engineering",
+  "chainName": "Structural Engineering"
+}

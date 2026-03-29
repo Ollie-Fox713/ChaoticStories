@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_19",
+  "title": "The Archive Dig",
+  "desc": "Texts buried by a sandslide. The knowledge inside might be buried forever.",
+  "locations": [ "Catacombs of the Conjurors", "Iparu Jungle" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The archive collapse happened three days ago. A sandslide in the upper catacombs shifted a support wall, dropping two tons of compacted sand onto a chamber that held scrolls dating back generations. The Conjurors are digging, but they're scholars, not miners.\n\nThe dig team is a strange mix — Conjuror archivists who know what they're looking for, laborers hired for muscle, and you, somewhere in between. The collapsed chamber is half-excavated, a wall of packed sand still blocking the inner shelves.\n\n\"The scrolls on the near shelves are destroyed,\" the lead archivist says, holding up a fragment — sand-soaked, crumbling, the ink blurred beyond reading. \"But the far shelves had sealed cases. If we can reach them before moisture migration ruins the seals, the contents might be intact.\"",
+      "options": [
+        { "label": "Dig toward the sealed cases — careful extraction", "go": 1 },
+        { "label": "Shore up the ceiling first — prevent a second collapse", "go": 2 }
+      ]
+    },
+    {
+      "text": "You dig with hand tools — trowels and brushes, not shovels. The sand is compacted but not stone; it yields with patience. Each layer removed reveals more of the chamber — broken shelving, crushed scrolls, the sad remains of years of careful archiving.\n\nTwo feet in, your trowel hits something hard. A sealed case — stone, lidded, heavy. You brush it clean. The wax seal around the lid is intact. The archivist nearly weeps.\n\n\"Careful. Don't crack the seal. The wax is the only thing keeping sand out of the interior.\"\n\nYou excavate around the case, freeing it from the packed sand. It takes an hour. Three more cases emerge behind it — all sealed, all intact. The fourth has a cracked lid, sand already infiltrating. The archivist sets it aside for emergency conservation.\n\nThe three good cases are carried out like newborns — cradled, steady, protected from vibration. In the light, the archivist opens one. Inside: scrolls wrapped in oiled leather, dry, pristine, untouched.\n\nShe reads the first line and goes still. \"These are Conjuror origin texts. We thought they were lost in the Iparu migration. They've been here the whole time, misfiled in a secondary archive.\"\n\nThe sandslide destroyed common records but revealed something priceless. The archivist can't stop smiling.",
+      "options": [
+        { "label": "Help carry the cases to safe storage", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The ceiling above the dig site is cracked — the same stress that caused the sandslide. If it shifts again while people are inside, the dig team becomes part of the archive.\n\nYou recruit two laborers and start shoring. The technique comes from jungle construction — you've seen it in Iparu, where heavy canopy trees threaten to drop limbs on workers below. Wooden frames braced with wedges, distributing load across the widest possible area.\n\nThe catacombs don't have wooden beams, but they have stone slabs and plenty of packed sand for wedging. You improvise — stacking flat stones into columns, wedging them tight against the ceiling cracks, creating a lattice of support that would hold even if the sand above shifted again.\n\nThe archivists watch nervously. Every hammer blow on the wedges sends dust cascading from the cracks. But the ceiling holds. The cracks stop widening. The supports take the load.\n\n\"Now we dig,\" you say.\n\nWith the ceiling secure, the dig proceeds faster. The team reaches the sealed cases within an hour — four stone boxes, three intact, one cracked. The contents are rescued, carried out through a tunnel that won't collapse because you shored it properly.\n\nThe lead archivist records your name in the archive log. \"The person who saved the texts by saving the ceiling first.\" She pauses. \"That's a better legacy than most scholars get.\"",
+      "options": [
+        { "label": "Accept the archivist's thanks", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Arborsmash", "Pebblestorm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_conjuror",
+  "chainName": "Conjuror's Work"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_01",
+  "title": "Fungus Farming",
+  "desc": "The bioluminescent gardens feed the hive. The fungus has opinions about how it's tended.",
+  "locations": [ "Mount Pillar", "Mount Pillar Reservoir" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The fungus gardens glow. Not metaphorically — the primary food crop of Mount Pillar is a bioluminescent fungus that produces its own soft blue light. The caverns where it grows need no torches. The fungus provides.\n\nIt also provides problems. Fungus doesn't grow in rows. It grows where it wants, at the speed it wants, in patterns that mycologists spend careers trying to predict. Today's problem: a patch in garden seven has stopped glowing. Dark fungus is dead fungus, and dead fungus means a food shortfall.\n\nThe garden overseer prods the dark patch with a stick. \"Could be water table shift — the reservoir level dropped last week. Could be contamination from the upper tunnels. Could be the fungus is just sulking. They do that.\"\n\n\"Fungus sulks?\"\n\n\"Everything in Mount Pillar has an opinion.\"",
+      "options": [
+        { "label": "Check the water table — test the moisture levels", "go": 1 },
+        { "label": "Check for contamination — test the soil", "go": 2 }
+      ]
+    },
+    {
+      "text": "You push a moisture probe into the substrate — the composted material that the fungus grows in. The reading is low. Not critically low, but below optimal. The fungus is thirsty.\n\nThe irrigation system is a network of clay pipes fed from the reservoir above. You trace the pipes to garden seven's feed junction. The valve is partially closed — not shut, but restricted. Someone adjusted it and didn't mark it in the log.\n\nYou open the valve fully. Water seeps into the substrate — slow, even, the clay pipes distributing it across the garden bed. Within an hour, the substrate darkens with moisture. Within two hours, the first faint glow reappears in the darkened patch.\n\nThe overseer watches it brighten. \"Water. It's always water. The reservoir crew adjusted flows for the upper gardens and forgot about seven.\" She marks the valve position in the log. \"The fungus forgives if you fix it fast. Leave it too long and it dies out of spite.\"\n\nBy evening, garden seven is glowing again — soft blue light filling the cavern, the fungus pulsing gently as it metabolizes the fresh water. The overseer harvests a test sample. It's healthy, edible, and faintly warm.\n\n\"Good catch. The hive eats because the water flows.\"",
+      "options": [
+        { "label": "Watch the garden glow back to life", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "You take a substrate sample from the dark patch and carry it to the testing station — a stone bench with reagent bottles and a magnifying lens. The standard contamination test is simple: add the reagent, watch the color.\n\nThe sample turns yellow. That's wrong. A clean sample turns blue. Yellow means chemical contamination — something in the substrate that shouldn't be there.\n\nYou trace the contamination upward. The garden beds are layered — compost on stone, with drainage channels underneath. The drainage channel for garden seven connects to the upper tunnel system, where mining operations sometimes produce runoff.\n\nYou crawl into the drainage channel. It's tight, dark, and smells like wet minerals. Twenty feet in, you find the source — a seep from the tunnel above, dripping greenish water onto the substrate from below. Copper runoff from a vein the miners exposed last week.\n\nThe fix is a clay plug — standard drainage repair. You seal the seep and redirect the water to a waste channel. The contaminated substrate will need replacing, but the seep is stopped.\n\nThe overseer orders a substrate swap — fresh compost from the lower vats. It'll take a week for the fungus to recolonize, but the garden will recover.\n\n\"Copper kills fungus dead,\" she says. \"And nobody tells the gardeners when they open new veins. I'll be having words with the mining crew.\"",
+      "options": [
+        { "label": "Leave the overseer to her words with the miners", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hive-phoon", "Vine Snare" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_farming",
+  "chainName": "Fungus Farming"
+}

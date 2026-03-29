@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_38",
+  "title": "Packing Bed",
+  "desc": "Harvested crystal is only useful if it survives the trip out of the cave.",
+  "locations": [ "Crystal Cave" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Raw crystal coming out of Crystal Cave looks indestructible right up until a careless elbow or a bad crate proves otherwise. The mined pieces are brought to a padded packing bed near the entrance, where each shard, spine, or cut block is sorted for destination before it ever sees daylight. Some are headed to builders. Some to Mugic workers. Some are too irregular for anything but study. All of them deserve better than being tossed into a box because someone grew impatient.\n\nThe packing mistress nods toward two work tables. \"Sort the cut blocks by fit and face quality,\" she says. \"Or line the travel crates for the longer spines. One job decides what can be used. The other decides whether it arrives usable.\"",
+      "options": [
+        { "label": "Sort the cut blocks by quality and destination", "go": 1 },
+        { "label": "Line the travel crates for the long crystal spines", "go": 2 }
+      ]
+    },
+    {
+      "text": "The cut blocks are easier to stack than the natural spines, but harder to judge. You check each face for hidden fractures, scrape away the remaining grit from the trimmed edges, and set the blocks into separate groups: clean build stock, resonance stock, and rough pieces better suited for local repairs than transport. Under the cave light, the good blocks seem lit from their own centers, dense red with black shadows folded into the depth of them.\n\nBy the time the last group is set, the table has become an inventory instead of a gamble. The packing mistress lifts one of the resonance blocks, turns it once in the light, and sets it into the proper bin without question. \"Good eye,\" she says. \"The cave grows beauty. Our job is deciding which kind of usefulness it became.\"",
+      "options": [
+        { "label": "Tag the sorted piles and clear the table for the next load", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The long crystal spines are worse than awkward. They are top-heavy, sharp at both ends, and full of hidden leverage that turns a short bump into an expensive crack. The travel crates for them are built deep and narrow, lined with wool pads, leather corners, and felt braces that keep the pieces from kissing one another on the road out. You fit each lining strip, test the spacing with the first spine, then reset the supports until the piece sits suspended instead of wedged.\n\nWhen the final crate is packed, you can rock it gently without hearing even the smallest click from inside. That is the only result the packing mistress cares about. She gives the crate one measured shove, listens, and nods. \"There. Now the crystal can leave the cave without learning what a wagon wheel feels like.\" A practical victory, but in Crystal Cave practical victories are often the ones that glitter best.",
+      "options": [
+        { "label": "Seal the crate and move it to the outbound line", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Mind Strike", "Sunder Ground" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_32",
+  "title": "Moss on the Steps",
+  "desc": "The cliff stairs beside the falls are slick again, and the morning traffic does not forgive slips.",
+  "locations": [ "Cordac Falls" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "There are prettier duties at Cordac Falls than step scraping, but not many more necessary ones. The cliff stairs linking the upper rail to the lower service landings stay wet even on clear days. Mist settles. Moss takes hold. Boots slide. This morning the stair captain has already posted warning cloth at both ends of the run, which means somebody nearly went over before breakfast.\n\nShe hooks a thumb toward the descent. \"The treads need scraping all the way to the second landing,\" she says. \"Handrail sockets need fresh grit and resin if you would rather work slower and keep everyone upright afterward. Either way, I want those warnings down before the first cargo line comes through.\"",
+      "options": [
+        { "label": "Scrape the treads clean and roughen the stone", "go": 1 },
+        { "label": "Reset the handrail sockets with grit and fresh resin", "go": 2 }
+      ]
+    },
+    {
+      "text": "The moss comes away in dark wet curls under the hooked blade, slick as soap and twice as irritating. You work each tread in turn, scraping down to sound stone and then cross-scoring the surface so boots will catch instead of skid. By the tenth step your shoulders know exactly how long the stair run is. By the twentieth, the warning cloth above you is already snapping in cleaner air.\n\nWhen the whole run is finished, the difference is obvious before anyone tests it. The steps no longer shine. Water beads on the grooves instead of glazing across them. The stair captain sends a runner down and watches him climb back up without a single cautious sidestep. \"Good enough,\" she says, which at Cordac counts as high praise. \"Now the stairs can go back to being unpleasant instead of dangerous.\"",
+      "options": [
+        { "label": "Stack the scraped moss for disposal and reopen the stair", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The handrails along the cliff side fit into iron sockets cut into the stair edge, each one packed with coarse grit and sealed with resin so the posts do not wobble under wet hands and tired weight. Two sockets have loosened and another has taken on enough spray damage that the rail rocks when pushed. You clear the old packing, tamp fresh grit into the cavities, and seat each post again before pouring warmed resin around the base.\n\nIt is slower work than scraping, and more than one impatient carrier peers down the closed stair like frustration might dry the resin faster. Still, once the rails set, the whole descent feels different under hand. Solid. Trustworthy. The stair captain gives the nearest post a hard shake, gets no movement at all, and pulls the warning cloth free. \"There,\" she says. \"The falls can keep the mist. We get to keep the footing.\"",
+      "options": [
+        { "label": "Put away the resin pot and clear the line for traffic", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Sunder Ground", "Vine Snare" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

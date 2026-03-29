@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_16",
+  "title": "The Fight Card",
+  "desc": "Tonight's Colosseum schedule needs organizing. Everyone has an opinion.",
+  "locations": [ "UnderWorld Colosseum", "UnderWorld City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Colosseum fight card is posted at noon for the evening's bouts. But first, someone has to make it. That someone, today, is the matchmaker — a grizzled creature with ink-stained claws and a talent for pairing fighters who will produce maximum violence.\n\n\"Problem is, everyone wants the main event slot. And everyone thinks they deserve it.\" She shoves a stack of fighter profiles at you. \"Help me sort. We need six bouts. Two openers, three mid-card, one main event. The openers should be fast. The mid-card should build. The main event should make people forget they have homes to go to.\"\n\nThe profiles are detailed: win records, fighting styles, rivalries, crowd appeal ratings.",
+      "options": [
+        { "label": "Suggest matchups based on rivalries", "go": 1 },
+        { "label": "Suggest matchups based on fighting style contrasts", "go": 2 }
+      ]
+    },
+    {
+      "text": "You pair fighters who hate each other. It's the simplest formula and the most effective. Two border-territory rivals for the opener — they'll come out swinging. A grudge match from a botched trade deal for mid-card. And for the main event, two commanders whose units have been competing for the same assignment.\n\nThe matchmaker reviews your pairings and grins. \"You think like an UnderWorlder. Hatred sells.\" She writes the card. The profiles get nailed to the announcement board at noon.\n\nBy evening, the Colosseum is packed. The grudge matches deliver exactly what the crowd wants — raw, personal, vicious. The main event goes seven exchanges before one commander finally drops. The crowd is still screaming when you leave.\n\nThe matchmaker finds you at the exit. \"Same thing next week? I could use someone who reads grudges.\"",
+      "options": [
+        { "label": "Consider the offer", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "You look at fighting styles. Speed versus power. Range versus close combat. Element-heavy versus pure physical. The contrasts create drama — the audience wants to see a question answered. Who wins when fire meets technique? When brute force meets agility?\n\nThe matchmaker is skeptical. \"Style matchups are for the OverWorld. Our crowd wants blood.\"\n\nBut she lets you try. The opener is a speedster against a tank — the speedster dances, the tank absorbs, the crowd starts out bored and ends up on their feet when the speedster finally lands the decisive hit.\n\nMid-card is an Earth-element grappler against a Fire-element striker. The arena hisses with steam when fire meets stone. The crowd loves it.\n\nBy the main event, the matchmaker has stopped being skeptical. \"Fine. Your way works too.\" She watches the main event — a technical fighter against an intimidator. The technical fighter wins in an upset that has the crowd roaring.\n\n\"Grudges sell fast,\" she admits. \"But contrasts sell repeat tickets.\"",
+      "options": [
+        { "label": "Take the compliment and the free admission for next week", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Flash Kick", "Velocitrap" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_arena",
+  "chainName": "Colosseum Work"
+}

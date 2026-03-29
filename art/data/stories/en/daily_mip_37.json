@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_37",
+  "title": "Cache Seals",
+  "desc": "The buried water caches along the flats need checking before the next caravan trusts them.",
+  "locations": [ "Sha-Kree Flats" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Anyone can cross Sha-Kree Flats once with enough arrogance. Crossing it regularly requires planning. The caravan caches buried along the route are small by design and carefully hidden under marked sand circles, each one sealed against grit, heat, and opportunists. This morning's inspection matters because a trade train is due through tomorrow and nobody wants to learn the state of the water by opening a dry jar at midday.\n\nThe cache keeper kneels beside the first marker ring with a brush in one hand and a wax knife in the other. \"We can check the ceramic mouths and seal wax directly,\" she says, \"or brush out the marker hollows and refresh the sand signs so the right caravan finds the right cache. Both jobs matter. Only one lets you stay kneeling longer.\"",
+      "options": [
+        { "label": "Open the cache mouths and inspect the seals", "go": 1 },
+        { "label": "Refresh the marker hollows and route signs", "go": 2 }
+      ]
+    },
+    {
+      "text": "The cache jars sit below the surface with only their sealed mouths accessible once the top sand is brushed clear. You lift each clay cap carefully, check the wax ring for cracks, and test the leather pull loops that let the next crew draw the jars without digging like amateurs. Most are sound. One cap has shifted a hair from thermal creep, enough to invite fine grit if left another day.\n\nYou reseat the cap, warm fresh wax around the seam, and press the keeper's stamp into it while the old mark is still soft enough to take the impression. It is small work and not at all dramatic, which is exactly why it matters. By the time you finish the line, every jar is ready to meet a thirsty caravan with its dignity intact. The keeper brushes sand back over the last cap and says, \"Good. Water is easiest to respect before you need it.\"",
+      "options": [
+        { "label": "Stamp the log and leave the caches sleeping under sand", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The marker system is simple if you know it and invisible if you do not. Shallow sand hollows, angled pebble sets, and one or two wind-facing scratches on the nearest route pole, enough to guide the right caravan without advertising water to every passerby on the flats. Overnight drift has softened half of them. Another day and they would stop being signs and start being suggestions.\n\nYou brush each hollow clean, deepen the windward edge, and reset the pebble angles until the code reads clearly again from the proper approach. It is a strange kind of writing, meant to survive in a land that keeps trying to erase it. When you finish, the keeper walks the approach line once and finds every cache without hesitation. \"There,\" she says. \"Subtle enough to hide, clear enough to save lives. That is the balance.\"",
+      "options": [
+        { "label": "Sweep your tracks wide and leave the signs in order", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Scout's Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_08",
+  "title": "Harvest of the Hanging Gardens",
+  "desc": "The gravity-defying orchards are in season. Picking is... complicated.",
+  "locations": [ "Forest of Life", "Riverlands" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "In the Forest of Life, some trees grow upside down. Their roots grip the underside of stone arches, and their fruit hangs upward — or downward, depending on your perspective. Gravity here is a suggestion, not a rule.\n\nA harvest crew is gathered at the base of an inverted orchard. The fruit is ripe: heavy golden globes that glow faintly, bobbing in a breeze that blows in the wrong direction.\n\n\"We need someone light,\" the foreman says, eyeing you. \"Light enough that the gravity inversion won't spin you. Last person we sent up weighed too much and got stuck on the ceiling for three hours.\"\n\nHe hands you a basket with a strap. \"Fill it. Don't look down. Or up. Honestly, don't look anywhere.\"",
+      "options": [
+        { "label": "Climb up into the inverted canopy", "go": 1 },
+        { "label": "Suggest shaking the trees from below", "go": 2 }
+      ]
+    },
+    {
+      "text": "The transition happens about ten feet up. One moment you're climbing normally. The next, your stomach lurches and down becomes up. You're standing on the underside of a branch, looking down at the sky. The ground is above you. The crew looks like ceiling decorations.\n\nThe fruit is everywhere — warm golden globes the size of your fist. You twist them free and drop them into your basket. They fall upward, into the basket, which is strapped to your chest and now functions as a ceiling-facing bowl.\n\nIt's disorienting. Beautiful. Completely wrong. You fill the basket and carefully descend back through the gravity threshold. Your stomach flips again. The crew cheers.\n\n\"Fourteen! That's the best haul today.\"",
+      "options": [
+        { "label": "Hand over the basket", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "\"Shake them? You want to shake a gravity-inverted tree?\" The foreman considers this. \"Actually, that might work. The ripe ones have weak stems.\"\n\nYou find a long pole and whack the nearest trunk. The tree shudders. Three golden globes detach — and fall upward, deeper into the inverted canopy. Four more detach and fall downward, toward you. You catch two. One hits the foreman. One bounces into the underbrush.\n\n\"Fifty-fifty,\" the foreman says, rubbing his head. \"Half go up, half come down. Not efficient, but not bad.\" You keep whacking. By afternoon, you've collected nine fruit and lost eleven to the ceiling.\n\n\"We'll send someone up for the rest,\" the foreman says. \"But you've saved them half the climbing.\"",
+      "options": [
+        { "label": "Collect your share of the harvest", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Vine Snare", "Arborsmash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_harvest",
+  "chainName": "Gardens & Harvest"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_32",
+  "title": "Palm Thinning",
+  "desc": "The oasis date palms need pruning before dead fronds start dropping into the springs.",
+  "locations": [ "Mipedim Oasis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Mipedim Oasis is not merely water. It is shade, fruit, cool soil, and the stubborn fact that something living decided to flourish in the middle of a desert that objects to the concept. The palms are part of that bargain. They hold the shade, feed the market, and drop dead fronds into everything if no one keeps ahead of them.\n\nThis morning the grove keeper is standing beneath a date palm with a hooked pruning knife and the expression of someone trying to decide which of several avoidable problems should become today's priority. One tree overhangs the spring walk, where brittle fronds are starting to shed onto the water. Another has a fruit cluster hanging too low over the path, tempting children and attracting birds.\n\n\"Take the pruning knife and clear the dead fronds above the spring,\" she says, \"or brace the low fruit cluster and thin it before it tears its own stem loose. Either way, the tree wins if we ignore it.\"",
+      "options": [
+        { "label": "Prune the dead fronds over the spring path", "go": 1 },
+        { "label": "Brace and thin the low date cluster", "go": 2 }
+      ]
+    },
+    {
+      "text": "Dead palm fronds do not fall gracefully. They cling until one decides not to, then come down all at once with enough weight and spite to make the path regret being underneath. You climb the lower trunk pegs, hook the first brittle stem, and cut it loose in controlled sections so it lands on the stones instead of in the spring channel.\n\nThe keeper gathers the fallen lengths as you work, sorting the useful leaf ribs from the dry waste. \"Nothing leaves the oasis unused if I can help it,\" she says. \"Even bad fronds become cord, mats, or fuel. The desert gets enough for free already.\"\n\nBy the time you cut the last hanging frond, the path is clear and the water below is reflecting uninterrupted strips of sky through the palm shade. The keeper looks up through the newly opened canopy and nods once. \"Better. Now the spring can stay beautiful for another week before the grove remembers it is alive.\"",
+      "options": [
+        { "label": "Carry the cut fronds to the sorting stack", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The low fruit cluster is heavy enough to bend the stem toward the path, and half the dates are still too green to harvest cleanly. If the cluster tears free early, the grove loses weeks of good fruit and the path gains a sticky disaster. You loop a support strap around the bunch, tie it to the trunk, and start thinning the outer dates so the weight redistributes along the stem.\n\nIt is patient work. Every fruit you remove has to be checked - too soft and it goes to immediate use, too hard and it stays, split skins discarded before insects find them first. The cluster rises slowly as the strain eases. By the time you finish, the support line is carrying only part of the weight and the remaining dates sit high enough that passersby can no longer \"accidentally\" sample them.\n\nThe grove keeper tests the strap with both hands and seems satisfied. \"Good. Now the tree keeps its fruit and the children keep their innocence, or at least their excuses.\" In Mipedim, that counts as horticultural success.",
+      "options": [
+        { "label": "Leave the support line snug and the fruit secure", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Arborsmash", "Vine Snare" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

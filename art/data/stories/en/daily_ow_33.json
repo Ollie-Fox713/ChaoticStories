@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_33",
+  "title": "Flow Marker Ledger",
+  "desc": "Border water disputes begin with someone reading the river honestly.",
+  "locations": [ "Cordac Falls" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Cordac Falls is too large to belong to anyone in the ordinary sense, which has never stopped anyone from trying. The OverWorld keeps intake ledgers for diversion channels above the gorge, partly for engineering, partly because every argument over water starts with numbers and grows worse from there. This morning's ledger check matters because last night's melt run was heavier than expected, and nobody wants to discover the shift in the middle of an official complaint.\n\nThe clerk at the gauge station closes the book around one finger and looks upriver. \"Upper markers first if you trust the stone cuts,\" she says. \"Lower float box if you trust moving parts. I trust neither until someone reads both.\"",
+      "options": [
+        { "label": "Read the upper stone markers along the intake wall", "go": 1 },
+        { "label": "Clear the lower float box and verify the moving gauge", "go": 2 }
+      ]
+    },
+    {
+      "text": "The upper markers are simple by design: carved depth lines cut into black stone, readable from the wall path with a dry eye and a steady hand. Mist has silvered the whole intake face, but the river line is still visible where the water darkens the cut numbers. You take the reading at three points, compare them to the prior day's marks, and note the rise: present, measurable, but not yet enough to threaten the channel braces.\n\nBack at the station the clerk copies your numbers into the ledger with the careful satisfaction of someone whose favorite thing in the world is a disputed fact becoming a documented one. She taps the page once. \"Good. If anyone complains about diversion volume later, we can answer with measurements instead of voices.\" At Cordac Falls, that is as close to peace as a ledger ever gets.",
+      "options": [
+        { "label": "Blot the ink and leave the intake to its steady work", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The lower float box sits in a sheltered pocket beside the diversion channel, where a sealed wooden arm rises and falls with the water level and transfers the movement to a marked dial above. It is a clever system when it is clean and a liar when it is not. Today the box is half choked with silt and strands of river weed, enough to make the float stick a full mark below where it should be.\n\nYou lift the inspection grate, clear the muck by hand, and rinse the box until the float lifts free and the dial climbs to match the sounder readings from the wall above. The clerk watches the pointer settle, then gives a short laugh that has no humor in it at all. \"There. Now it tells the truth. You would think that would be a lower bar for equipment.\" She writes down the corrected figure and adds a maintenance note in the margin. Honest river, honest box, honest ledger. For a border post, that is a decent morning.",
+      "options": [
+        { "label": "Latch the grate and let the dial hold steady", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Mind Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

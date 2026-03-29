@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_42",
+  "title": "Privacy Screens",
+  "desc": "The lounge's silk screens have drifted out of alignment, which is how private conversations stop being private.",
+  "locations": [ "Mipedim Lounge" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "At the Mipedim Lounge, privacy is architecture before it is trust. Silk screens hang between conversation pits, carved lattice panels break sightlines without killing the air, and narrow walking lanes let guests arrive and leave without crossing the center of every negotiation. Tonight one whole bank of screens has shifted after a clumsy supply delivery, and the room now offers more direct views than good manners permit.\n\nThe floor mistress points at the offending line with a look of personal offense. \"Retie the hanging screens if you like ladder work,\" she says. \"Or reset the rolling lattice tracks below if you would rather crawl around quietly and be ignored by everyone important later. Both are necessary. One is simply less visible.\"",
+      "options": [
+        { "label": "Retie the upper silk screens and restore the sightlines", "go": 1 },
+        { "label": "Reset the lower lattice tracks and sliding panels", "go": 2 }
+      ]
+    },
+    {
+      "text": "The silk screens sway from fine chain and weighted tassels, meant to move just enough for air and no more than that unless someone decides to make an entrance of it. Two knots have slipped and one tassel weight has cracked, leaving the whole run canted so badly that the third alcove can now see directly into the fifth. You replace the bad weight, retie the slips, and adjust the lengths until the screens hang in clean staggered folds again.\n\nOnce the line is corrected, the room becomes itself. Views open where they should, vanish where they should not, and the center lane regains its sense of curated chance rather than accidental exposure. The floor mistress walks the path once, glancing side to side without appearing to, and seems content. \"Good. Let them gossip. We are not here to let them overhear for free.\"",
+      "options": [
+        { "label": "Gather the old tassels and leave the screens properly hung", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The lower lattice panels slide in shallow tracks cut into the floor and table bases, giving the lounge a way to redraw itself without looking as if it is working too hard to do so. Right now two tracks are half clogged with dust and one panel is riding crooked on a warped guide shoe. You clear the grit, reseat the shoe, and draw each screen back and forth until the movement is silent and clean enough to satisfy a room that notices everything while pretending not to.\n\nBy the end, the lounge can divide itself on command again. A merchant pair can disappear from a warrior's line of sight in one soft motion. A family table can become a negotiation bay with a pull and a turn. The floor mistress tests the repaired panel with one finger and allows a brief smile. \"There. Now the room can keep secrets again.\"",
+      "options": [
+        { "label": "Brush out the last track and leave the panels gliding", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Hampering Winds" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_46",
+  "title": "Heat Bloom",
+  "desc": "The mirage field shows its hand best at dawn, when the first survey line has to be set before the heat turns certainty into guesswork.",
+  "locations": [ "Mipedim Mirage" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "At dawn, Mipedim Mirage looks almost honest. The air is still cool enough to keep its lies shallow, and the long flats of stone and sand hold steady lines a little longer before the heat begins lifting whole false horizons into the sky. That is why the survey crews work first light. Reference poles, mirrored sight frames, measured spacing, written notes before the desert grows imaginative. From the ridge, you can already see the first wavering shapes where nothing built by hands has ever stood.\n\nThe line reader plants a staff in the sand and watches the distance as if waiting for it to misbehave. \"Carry out the reference poles if you want the fieldwork,\" she says. \"Or adjust the mirrored sight frames on the ridge if you prefer the finer measurements. Do it now. Once the heat blooms properly, the mirage will start offering opinions.\"",
+      "options": [
+        { "label": "Carry the reference poles out along the dawn survey line", "go": 1 },
+        { "label": "Adjust the mirrored sight frames on the ridge", "go": 2 }
+      ]
+    },
+    {
+      "text": "The reference poles matter because they stay where they are told while the rest of the landscape starts inventing alternatives. You carry them out by measured pace, plant each one at the marked interval, and check the line back to the ridge after every placement. At first the poles are simple dark cuts against pale sand. Then the sun climbs a little higher and the spaces between them begin filling with impossible suggestions: a low wall where there is none, a distant roofline trembling into and out of shape, an entire false lane opening off to the side and disappearing when you blink.\n\nBy the time the last pole is in, the real path holds. That is the point. The line reader studies the spacing through narrowed eyes and allows herself a quiet sound of approval. Beyond the poles the desert can pretend anything it likes. Within them, the morning has been forced to admit one clean truth.",
+      "options": [
+        { "label": "Return to the ridge and leave the true line standing", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The mirrored frames are less dramatic than the mirage and far more useful. Mounted on short brass pivots along the ridge, they catch fixed points the eye can trust when the open flats start rising into false structures and impossible roads. You clean a haze of night dust from the mirrors, reset two sighting marks, and turn each frame until the known stone outcrops align again with the etched guide notches. As the light strengthens, the desert below grows stranger by the minute while the frames grow calmer.\n\nLook through the wrong gap and the flats seem to hold a city. Look through the corrected mirror and the city collapses into heat and distance. The line reader checks your last adjustment and exhales through her teeth. \"Good. Wonder is free,\" she says. \"Crossing into it carelessly costs more.\"",
+      "options": [
+        { "label": "Cover the mirrors and leave the ridge ready for the next reading", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Dexterous Storm", "Spirit Gust" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

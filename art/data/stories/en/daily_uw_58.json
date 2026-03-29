@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_58",
+  "title": "Guide Rope",
+  "desc": "The rope line through the first silent gallery has loosened, which is exactly how a familiar route becomes a foolish one.",
+  "locations": [ "Stone Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The first gallery past the threshold is called silent not because it lacks sound, but because sound refuses to behave there in ways anyone still trusts. Footsteps return from the wrong arch. A cough seems to happen farther ahead than the throat that made it. To keep the route from depending on interpretation, a guide rope runs the full length of the gallery, looped through iron rings at shoulder height and fixed to floor pegs where the passage widens unexpectedly. This morning the central span hangs with too much give.\n\nThe rope keeper rests a coil of fresh line on one hip. \"Retension the gallery rope if you want the main span,\" she says. \"Or reseat the floor pegs at the widening if you prefer the lower work. Either way, the route should feel certain even if the corridor does not.\"",
+      "options": [
+        { "label": "Retension the main guide rope through the gallery", "go": 1 },
+        { "label": "Reseat the floor pegs at the widening", "go": 2 }
+      ]
+    },
+    {
+      "text": "The rope should answer the hand with steady resistance, not a question. You walk the gallery line, drawing out the slack, resetting the knots at each ring, and pulling the central span back to the keeper's marks until the whole route once again reads as one continuous instruction through the shifting acoustics. When you test it on the return pass, the rope now leads without hesitation from threshold to the far turn.\n\nThe keeper runs a hand down the restored line and seems visibly less interested in the corridor's opinion of itself. \"Good. A place may distort echoes all it likes. It does not get the rope.\"",
+      "options": [
+        { "label": "Tie off the last knot and leave the gallery guided", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "At the gallery widening, the floor pegs keep the rope from bowing outward into the open space where the sound grows its worst ideas. Two pegs have lifted a fraction from the stone and the line now cuts a lazy curve through the center instead of hugging the safe edge. You drive the pegs back into their sockets, clear the grit from the holes, and draw the rope through until the widening becomes a bend in the route rather than an invitation to improvise.\n\nThe keeper tests the corrected path by walking it without once looking down. When she reaches the far end without touching open air or wrong wall, she nods. \"Better. Familiar danger is manageable. Wandering into new geometry is for other people.\"",
+      "options": [
+        { "label": "Pocket the peg hammer and leave the widening disciplined", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Blind Fury" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

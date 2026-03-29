@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_07",
+  "title": "Ceiling Repair",
+  "desc": "Cracks in the ceiling. In an underground city, that's an emergency.",
+  "locations": [ "Mount Pillar", "Iron Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The crack appeared overnight — a jagged line running twenty feet across the ceiling of residential corridor twelve. Dust falls from it in a constant trickle. The residents below have been evacuated.\n\nThe structural crew arrives with scaffolding, mortar, and worried expressions. The crew lead examines the crack from a scaffold platform, pressing her palm flat against the stone.\n\n\"It's not moving. Good. If it were spreading, we'd hear it.\" She traces the crack with her finger. \"Surface fracture, probably from the mining vibrations on level nine. The rock here is thinner than spec — whoever cut this corridor took too much from the ceiling.\"\n\nShe chalks repair zones along the crack. \"We inject mortar, install tension bolts, and reinforce with ironstone strapping from the Iron Pillar stockpile. This corridor stays evacuated until it cures.\"",
+      "options": [
+        { "label": "Mix and inject the mortar", "go": 1 },
+        { "label": "Install the tension bolts", "go": 2 }
+      ]
+    },
+    {
+      "text": "The mortar is a Danian recipe — powite stone dust mixed with reservoir water and a bonding agent made from processed fungal resin. It sets rock-hard in four hours and bonds to existing stone as if it grew there.\n\nYou mix it in a trough — dry ingredients first, water slowly, stirring until the consistency is thick but pourable. The fungal resin goes in last. It smells sweet, almost pleasant, and the mortar turns from gray to pale amber.\n\nInjection is done with a pressure pump — you fill the pump's reservoir, insert the nozzle into the crack, and pump. The mortar flows into the fracture, filling the gap from inside, bonding to both surfaces.\n\nYou work along the crack methodically. Twenty feet of injection, checking pressure readings at each point. Too much pressure and you'll force the crack wider. Too little and the mortar won't penetrate the full depth.\n\nThe crew lead monitors from below, watching for mortar drips — they indicate the crack is filled to capacity. When the first amber drop appears, she calls a halt. \"Full. Let it cure.\"\n\nFour hours later, the crew lead tests the repair. She strikes the ceiling with a hammer — the sound is solid, resonant, the same note as uncracked stone. The mortar has bonded.\n\n\"Good fill. The corridor will outlast us.\" She marks the repair in the structural log. \"Residents can return tomorrow. Tonight, we listen. If the stone talks, we come back.\"",
+      "options": [
+        { "label": "Listen for the stone's silence", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Tension bolts are ironstone rods driven perpendicular to the crack, pulling the separated stone faces together. They work like stitches — the crack can't widen with bolts spanning it.\n\nYou drill anchor points with a hand-cranked bore — slow, precise work. Each hole must be the exact diameter of the bolt, angled correctly to cross the crack at the optimal point. Too shallow and the bolt won't hold. Too deep and you risk breaking through to the level above.\n\nThe drill bites stone. Chips fly. The crew lead calls depth as you drill — \"Four inches. Six. Eight. That's depth. Stop.\"\n\nYou install eight bolts along the twenty-foot crack. Each one is hammered in, then capped with a tension nut that tightens the bolt incrementally, drawing the crack's faces together. The stone groans — a low, deep sound that means the compression is working.\n\nThe final step is ironstone strapping — flat bars of ironstone bolted across the crack's surface, distributing the tension load. You install four straps. The ceiling now looks wounded but healing — the straps and bolts a visible reminder that someone fixed what was breaking.\n\nThe crew lead inspects each bolt, each strap. \"Solid work. The mortar team will fill between the bolts tomorrow.\" She looks at the cracked corridor with professional satisfaction. \"This section is stronger now than before it cracked. The bolts hold better than the original stone.\"\n\nThe residents will return to a ceiling held together by Danian engineering. They'll walk under the straps every day and never think about them. That's the point.",
+      "options": [
+        { "label": "Pack the tools and move to the next job", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Sunder Ground", "Squeeze Play" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_construction",
+  "chainName": "Hive Construction"
+}

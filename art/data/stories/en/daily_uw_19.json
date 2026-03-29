@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_19",
+  "title": "Scouting Detail",
+  "desc": "The periphery needs checking. Nobody volunteers for this one.",
+  "locations": [ "Stone Pillar", "Fear Valley", "Lava Pond" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The wild periphery of the UnderWorld — the zones too unstable, too strange, or too dangerous for permanent settlement. Patrol routes run through them because something has to watch the borders, even the ones that border nothing anyone wants.\n\nYour patrol partner is a scout who's done this route fifty times. She walks with one hand on her weapon and the other holding a compass that doesn't work here.\n\n\"The compass spins in the Maelstrom zone. Always has. I carry it anyway. Habit.\" She checks the useless needle and pockets it. \"We follow the wall markers. Red markers out, blue markers back. If you see a green marker, we've gone wrong. There are no green markers on this route.\"",
+      "options": [
+        { "label": "Follow the red markers — standard patrol", "go": 1 },
+        { "label": "Ask what the green markers are", "go": 2 }
+      ]
+    },
+    {
+      "text": "The patrol is uneventful for the first hour. Red markers every hundred paces, painted on the wall. The tunnels are wide and empty. Quiet. Normal quiet.\n\nThen the wind starts. Not wind from outside — there is no outside. Wind from nowhere, blowing from a direction that doesn't exist on the compass (not that the compass works). The Maelstrom zone.\n\nThe scout marks her log: \"Wind active, direction anomalous, intensity moderate.\" She's done this before. The wind pushes at your back, then your face, then from below. Your feet leave the ground for half a second.\n\n\"That's new,\" the scout says, making a note. She doesn't seem alarmed. \"Vertical component. Haven't recorded that before.\"\n\nThe wind dies. The patrol continues. Blue markers back. You reach the outpost and file the report. The scout adds her log to a shelf of identical logs, stretching back years. Fifty patrols, each slightly different, each slightly wrong.",
+      "options": [
+        { "label": "File your portion of the report", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "\"Remnants from the old survey. Before my time. The original pathfinders used green to mark explored tunnels. But some of those tunnels aren't where they used to be. The green markers move.\"\n\nShe says this matter-of-factly. \"Not fast. Not far. But if you compare old maps to current positions, some green markers have shifted. Like the tunnels rearranged themselves.\"\n\nYou patrol. Red markers, steady and stationary. The tunnels are empty and cold. You log ambient conditions, structural observations, any sign of creature activity.\n\nAt the turnaround point, the scout stops. There's a marker on the wall. Green.\n\n\"That's new,\" she whispers. She checks her map. No green marker is supposed to be here. The paint is old — chipped, faded. But the wall is freshly exposed, as if something peeled away the covering stone to reveal what was underneath.\n\nShe logs it. Takes a photo with a light-sketch device. Turns around.\n\n\"Blue markers back,\" she says. Her voice is very calm. She doesn't look at the green marker again.",
+      "options": [
+        { "label": "Follow the blue markers home", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Delerium", "Blind Fury" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_intelligence",
+  "chainName": "Intelligence Work"
+}

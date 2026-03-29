@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_62",
+  "title": "Wasteland Markers",
+  "desc": "Outside the phase seam, the approach stakes and dust lines have drifted again, which is how trusted routes become lost routes.",
+  "locations": [ "Iparu Jungle" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "On the outside, the approach to Iparu Jungle looks like somewhere nobody sensible would bother. That is part of the point. A narrow lane of half-buried stakes and dust-scraped guide stones marks the correct path toward the concealed portal, but wind has moved across it all night and the near markers now sit in the kind of uncertainty that gets people lost within sight of what they need. The keepers prefer not to explain the rest of the route to anyone who misses the beginning.\n\nThe approach hand shoulders a bundle of fresh stakes. \"Drive the marker line back into place if you want the outer route,\" she says. \"Or comb the dust signs clean around the guide stones if you prefer the ground work. Either way, the jungle does not reveal itself to people who cannot follow instructions.\"",
+      "options": [
+        { "label": "Drive the marker stakes back along the hidden approach", "go": 1 },
+        { "label": "Comb the dust signs clean around the guide stones", "go": 2 }
+      ]
+    },
+    {
+      "text": "The stakes are cut low and dark so they can be found by those looking for them and ignored by everyone else. You carry them out along the remembered line, drive each one into the hard ground, and sight back toward the entrance stones after every placement to keep the route straight through terrain determined to erase it. Once the final post is seated, the path becomes readable again, a quiet set of instructions across land that insists it has none.\n\nThe approach hand walks the line once without slowing and seems satisfied when each marker catches at the right distance. \"Good. Hidden places stay hidden best when the intended path remains the only sensible one.\"",
+      "options": [
+        { "label": "Set the mallet down and leave the route discreetly marked", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The guide stones are surrounded by combed dust patterns so the route can be read even in low light or after half a night's shifting wind. Right now the signs are blurred into something halfway between instruction and accident. You smooth the dust around each stone, redraw the directional sweeps with the comb board, and restore the entry marks until the whole approach speaks in the careful quiet language the keepers prefer.\n\nTo anyone else, it still looks like wind on sand. To someone meant to be here, the path has become clear again. The approach hand studies the cleaned signs and nods. \"Better. A secret route is mostly patience with maintenance.\"",
+      "options": [
+        { "label": "Brush the comb board clean and leave the signs speaking softly", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Scout's Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,5530 @@
+[
+  {
+    "ability": "Deal 20 damage to target Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Even before the first three notes finish playing, OverWorlders scramble for the nearest shelter.",
+    "id": "183",
+    "name": "Canon of Casualty",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target creature takes 5 less damage from Air or Fire attacks.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"There is but one true language, and that is Mugic. All else is gibberish.\" - Donmar",
+    "id": "175",
+    "name": "Cascade Symphony",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageReduction",
+              "value": 5,
+              "options": [
+                "Air",
+                "Fire"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Activate Hive.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "What repels some attracts others. Is preference learned or ingrained?",
+    "id": "191",
+    "name": "Chorus of the Hive",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "activateHive"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 5 damage to target Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Minimalism to the max.",
+    "id": "165",
+    "name": "Decrescendo",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy target Battlegear.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "As his Windstrider decomposes into shrapnel, Bodal calculates that it will take 56.4 seconds before he splats on the ground.",
+    "id": "184",
+    "name": "Discord of Disarming",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "destroyBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 15 damage to target Creature with Air or Fire.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "No matter how many you carry with you, a song can never weigh you down.",
+    "id": "166",
+    "name": "Ember Flourish",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 15
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Invisibility: Strike 15\".",
+    "artist": "",
+    "cost": "1",
+    "flavor": "When a melody becomes memory, it will never disappear.",
+    "id": "197",
+    "name": "Fanfare of the Vanishing",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 15,
+              "keyword": "invisStrike"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 5 Courage, Power, Wisdom, Speed, and Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Large is good. Larger is better. But really, really big is sometimes best.",
+    "id": "167",
+    "name": "Fortissimo",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Speed"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Energy"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 15 damage to target Creature with Earth or Water.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Protect the land and the land will protect you.",
+    "id": "168",
+    "name": "Geo Flourish",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 15
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains an Elemental Type of your choice.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "All elements stem from nature—as does the Cothica itself.",
+    "id": "176",
+    "name": "Hymn of the Elements",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Shuffle target player's Attack Deck or Location Deck.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "In desperate situations, turmoil and confusion can be one's allies.",
+    "id": "169",
+    "name": "Interlude of Consequence",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "shuffle"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target engaged Creature gains 10 Energy. Deal 5 damage to another target engaged Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"A little bit more for me, a little bit less for you. Perfect!\"\n—Zalvar",
+    "id": "185",
+    "name": "Melody of Malady",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Energy"
+            },
+            {
+              "type": "damage",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target attack deals 0 damage.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Trust your ears, not your eyes.",
+    "id": "198",
+    "name": "Melody of Mirage",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "attackDealsZero"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 10 damage to target Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"Anyone can imitate a melody, but to hear it in one's head for the very first time... that is a gift.\" \n—Najarin",
+    "id": "170",
+    "name": "Minor Flourish",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Return target Mugic Card from your discard pile to your hand.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Everything that was once lost will be found again.",
+    "id": "177",
+    "name": "Mugic Reprise",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "recoverMugic"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "The active Location loses all abilities.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"If you have all that you need, you are always home.\" \n—From an ancient Mugician text",
+    "id": "199",
+    "name": "Notes of Neverwhere",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "disableLocation"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 10 damage to target OverWorld Creature. Damage dealt by Fire attacks to that Creature is reduced by 5.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Mugicians choose host Creatures along tribe affiliations.",
+    "id": "178",
+    "name": "OverWorld Aria",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 10
+            },
+            {
+              "type": "damageReduction",
+              "value": 5,
+              "options": [
+                "Fire"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target Mugic.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Cacophony signaled the beginning of the end of peace for the Mugicians.",
+    "id": "179",
+    "name": "Refrain of Denial",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "DOP",
+    "special_logic": {
+      "keywords": {
+        "negate": true
+      }
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target Generic or OverWorld Mugic.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"No such thing as Mugicians! Now fight!\" \n—Dardemus",
+    "id": "186",
+    "name": "Refrain of Denial, (OverWorld)",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target OverWorld or UnderWorld Mugic.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"The secret to using Mugic is to not try to solve its mysteries.\" \n—Lore",
+    "id": "192",
+    "name": "Refrain of Denial, (OverWorld/UnderWorld)",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Fire 5\" and \"Air 5\".",
+    "artist": "",
+    "cost": "1",
+    "flavor": "When anger is all-consuming, hatred is the gateway to a hideous power.",
+    "id": "187",
+    "name": "Song of Asperity",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Fire"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Fire",
+              "value": 5
+            },
+            {
+              "type": "elementGrant",
+              "element": "Air"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Air",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Change the target of target Mugic or ability with a single target.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "Beauty is in the ears of the beholder - even discordant notes sound harmonious in dire situations.",
+    "id": "200",
+    "name": "Song of Deflection",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "redirect"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 10 damage to target Creature with Air or Fire.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Fire consumes air, suffocating the earth.",
+    "id": "171",
+    "name": "Song of EmberNova",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 10 Courage, Power, Wisdom, and Speed.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "180",
+    "name": "Song of Focus",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Speed"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 10 damage to target Creature. Another target Creature gains \"Fire 5\".",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"My legs or my Mugician? There is no choice. Cut them off!\" \n—Miklon",
+    "id": "188",
+    "name": "Song of Fury",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 10
+            },
+            {
+              "type": "elementGrant",
+              "element": "Fire"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Fire",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Look at the top two cards of target player's Attack Deck or Location Deck. Put one of them on top of that deck and the other on the bottom.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Take care when peering into the future. Sometimes it is best to not know what comes.",
+    "id": "172",
+    "name": "Song of Futuresight",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "scry"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 10 damage to target Creature with Earth or Water.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Forsake the land and the land will forsake you.",
+    "id": "173",
+    "name": "Song of GeoNova",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 5 Courage, Power, Wisdom, and Speed for each Danian in play.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Listen and learn the true strength of the Danian tribe—when you face one, you contend with all.",
+    "id": "193",
+    "name": "Song of Mandiblor",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Speed"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 10 damage to target Creature. That Creature gains \"Air 5\".",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Tiaane believes that each Mugic is but a small piece of a great opus.",
+    "id": "201",
+    "name": "Song of Recovery",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 10
+            },
+            {
+              "type": "elementGrant",
+              "element": "Air"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Air",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "All damage dealt by attacks to the caster is reduced by 5.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Even the proudest Danian would never deny a chance to harden his shell.",
+    "id": "194",
+    "name": "Song of Resistance",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageReduction",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 20 damage to target Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"Our understanding of Mugic is the direct inverse of our gratitude for its existence.\" \n—Najarin",
+    "id": "181",
+    "name": "Song of Resurgence",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Return target UnderWorld Creature Card in your discard pile to play in any open space.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "The Mugicians believed that anything that once was cannot be lost forever.",
+    "id": "189",
+    "name": "Song of Revival, (UnderWorld)",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "revive"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature cannot move.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "A melody has the power to move you... or not.",
+    "id": "182",
+    "name": "Song of Stasis",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "immobilize"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Range\" and \"Swift 1\".",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The usefulness of Mugic in battle is but a side effect. Its true purpose remains unknown.",
+    "id": "195",
+    "name": "Song of Surprisal",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "range",
+              "value": 1
+            },
+            {
+              "type": "keywordGrant",
+              "value": 1,
+              "keyword": "swift"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target engaged Creature gains 10 Energy. Deal 10 damage to another target engaged Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Your strength is now mine, my weakness is now yours!",
+    "id": "196",
+    "name": "Song of Symmetry",
+    "past": "",
+    "rarity": "Rare",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Energy"
+            },
+            {
+              "type": "damage",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses 15 Courage, Power, Wisdom, and Speed.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "One cannot move forward if one's always watching one's own back.",
+    "id": "190",
+    "name": "Song of Treachery",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": -15,
+              "stat": "Courage"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target creature loses Invisibility.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "A melody may help you see things more clearly, so how can sound be invisible?",
+    "id": "174",
+    "name": "Song of Truesight",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "removeKeyword"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target engaged Creature loses all abilities.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Even the simplest sounds can resonate in one's mind.",
+    "id": "202",
+    "name": "Trills of Diminution",
+    "past": "",
+    "rarity": "Common",
+    "set": "DOP",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "removeAllAbilities"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Swap your Attack Discard pile with your Attack Deck, the shuffle your Attack Deck.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Though he appeared exhausted, he was merely getting his second wind.",
+    "id": "71",
+    "name": "Cascading Rondo",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "shuffle"
+            },
+            {
+              "type": "shuffle"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 5 damage to target Creature.\nIf the caster of this Mugic is a Muge, deal an additional 10 damage.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "A sword can pierce the body, but a song can pierce the soul.",
+    "id": "87",
+    "name": "Casters' Warsong",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 5
+            },
+            {
+              "type": "damage",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature may play Mugic of any tribe.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Some speak of the one true song, the Mugic that unites all Perim.",
+    "id": "88",
+    "name": "Chorus of Cothica",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 30 in the discipline of your choice.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Mugic can raise the spirit to immeasurable heights.",
+    "id": "66",
+    "name": "Composition of Concentration",
+    "past": "",
+    "rarity": "Common",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 30,
+              "stat": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains all Elemental Types your Creatures have.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Harmonies can never be sung alone.",
+    "id": "76",
+    "name": "Danian Element Choral",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "gainAllElements"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Creatures you control gain \"Defender\".",
+    "artist": "",
+    "cost": "1",
+    "flavor": "What inspires us to sacrifice ourselves for the ones that we love?",
+    "id": "67",
+    "name": "Defender's Song",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "defender",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses 30 in the discipline of your choice.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Mugic can sink the spirit to immeasurable depths.",
+    "id": "72",
+    "name": "Dissonance of Distraction",
+    "past": "",
+    "rarity": "Common",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses X Elemental Types of your choice.",
+    "artist": "",
+    "cost": "x",
+    "flavor": "Some believe the Cothica and nature are irrevocably linked... understand one and rule the other!",
+    "id": "73",
+    "name": "Elemental Denial",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementRemove",
+              "element": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses an Elemental Type of your choice. If that Creature has no Elemental Types, it cannot move instead.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "77",
+    "name": "Elemental Elegy",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementRemove",
+              "element": "choice"
+            },
+            {
+              "type": "immobilize"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target player removes all cards in his or her general discard pile from the game.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "It was the most beautiful song I've ever heard... but now I can't even remember a single note.",
+    "id": "89",
+    "name": "Forgotten Origins",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "exile"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Flip target Battlegear face-up or face-down.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Most Muges believe that the problem with machines is that they exist at all.",
+    "id": "83",
+    "name": "Gear Glissando",
+    "past": "",
+    "rarity": "Common",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "flipBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Deactivate Hive.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "How absurd! The Danians act courageous, but they're merely thespians pretending to be warriors! We will rend their dirty hides into chaos!",
+    "id": "74",
+    "name": "Hive Destruction",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "deactivateHive"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Deactivate Hive.\nWhen you play Hive Unsung, you may pay a Mugic counter. If you do, return Hive Unsung to your hand when it resolves.",
+    "artist": "",
+    "cost": "0",
+    "flavor": "Some songs leave the audience in silence.",
+    "id": "78",
+    "name": "Hive Unsung",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "deactivateHive"
+            },
+            {
+              "type": "optional"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Infect up to two target Uninfected Creatures.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "A tune so chilling that it makes your skin crawl.",
+    "id": "79",
+    "name": "Infectious Melody",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "infect"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Draw two Attack Cards, then discard two Attack Cards.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "When Plan A fails, switch to Plan B. \nWhen Plan B fails... flee!",
+    "id": "84",
+    "name": "Melodic Might",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "discardAndDraw"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "If target Creature with 30 or less Scanned Energy would take greater than 10 damage from a single source, it takes 10 damage instead.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "90",
+    "name": "Melody of the Meek",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageCap"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 50 in the discipline of your choice.\nTarget Creature gains 50 in another discipline of your choice.  (You may target the same Creature.)",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "68",
+    "name": "Momental Virtuosity",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 50,
+              "stat": "choice"
+            },
+            {
+              "type": "statMod",
+              "value": 50,
+              "stat": "differentChoice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Fireproof 10\", \"Airproof 10\", \"Earthproof 10\", and \"Waterproof 10\".",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Perhaps the Cothica is in the light, the land, the very winds that blow!",
+    "id": "69",
+    "name": "Prelude of Protection",
+    "past": "",
+    "rarity": "Common",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 10,
+              "keyword": "fireproof"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 10,
+              "keyword": "airproof"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 10,
+              "keyword": "earthproof"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 10,
+              "keyword": "waterproof"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 5 damage to target Creature for each Mandiblor you control and each Infected Creature in play, then Uninfect all Creatures.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "This may sting a little. But usually, a lot.",
+    "id": "80",
+    "name": "Purge Dirge",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageScaled"
+            },
+            {
+              "type": "uninfect"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": "1"
+  },
+  {
+    "ability": "Heal 10 damage to target Creature.\nIf the target of Recurring Rescue has 30 or less Scanned Energy, return Recurring Rescue to your hand when it resolves.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Ahh... a song so soothing that OverWorlders yearn to hear it again and again.",
+    "id": "70",
+    "name": "Recurring Rescue",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 10
+            },
+            {
+              "type": "returnToHand"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses 50 in the discipline of your choice. \nTarget Creature gains 50 in another discipline of your choice. (You may target the same Creature.)",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "75",
+    "name": "Serenade of Subordinance",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": -50,
+              "stat": "choice"
+            },
+            {
+              "type": "statMod",
+              "value": 50,
+              "stat": "differentChoice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Creatures you control gain the Creature Type Mandiblor in addition to their other types.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "All I heard was the buzzing... the deafening, maddening buzzing!",
+    "id": "81",
+    "name": "Song of Encompassing",
+    "past": "",
+    "rarity": "Common",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantTribe"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "If target Creature has Fire, it gains \"Fireproof 10\"; if it has Air, it gains \"Airproof 10\"; if it has Earth, it gains \"Earthproof 10\"; if it has Water, it gains \"Waterproof 10\".",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "82",
+    "name": "Song of Resilience",
+    "past": "",
+    "rarity": "Common",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Fire"
+            },
+            {
+              "type": "elementGrant",
+              "element": "Air"
+            },
+            {
+              "type": "elementGrant",
+              "element": "Earth"
+            },
+            {
+              "type": "elementGrant",
+              "element": "Water"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature you control may not be the target of Mugic or abilities.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "How seven little notes can create such diverse wonders is one of the great, unsolvable mysteries of Perim.",
+    "id": "85",
+    "name": "Song of Shelter",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target unengaged Mipedian Creature you control swaps spaces with another target unengaged Mipedian Creature you control.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Beware if you see two sets of footprints... but only one Mipedian.",
+    "id": "86",
+    "name": "Switch Riff",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ZOTH",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "relocate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Swap any Battlegear equipped to two target Creatures controlled by the same player.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "It's true that we can accomplish great feats alone, but together, we can accomplish miracles.",
+    "id": "86",
+    "name": "Armament Adagio",
+    "past": "",
+    "rarity": "Common",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "swapBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy all Battlegear equipped to target engaged Creature. That Creature gains 10 Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"Even lifeless machines have a life force.\" \n—Vidav",
+    "id": "78",
+    "name": "Echoes of Empty Hands",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "destroyBattlegear"
+            },
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Energy"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "The next time an attack would deal damage to a Creature this turn, it deals damage to target engaged Creature of your choice instead.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "The existence of Mugic is proof enough that nothing is impossible.",
+    "id": "87",
+    "name": "Fighters' Fanfare",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "redirect"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": "1"
+  },
+  {
+    "ability": "Choose one:\nMove target Mirage Location in play to any place on the Battleboard. \nIf the active Location is a Mirage, put it into play on any space on the Battleboard and reveal a new active Location.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "88",
+    "name": "Hymn of Teleportation",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "chooseOne"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Infect target Uninfected engaged Creature. If Hive is Active, Uninfect all Creatures controlled by an opponent and deal 5 damage to target engaged Creature for each Creature Uninfected this way instead.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "84",
+    "name": "Melody of Parasitic Mayhem",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "infect"
+            },
+            {
+              "type": "conditionalAlternative"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "When target attack deals damage, deal the same amount of damage to the Creature that played that attack.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The eyes show that which can be seen, but the ears reveal that which is real.",
+    "id": "79",
+    "name": "Rhyme of the Reckless",
+    "past": "",
+    "rarity": "Rare",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageReflect"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target engaged Creature gains 30 Energy. Checks and Challenges on Attacks that Creature plays deal no damage.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "82",
+    "name": "Song of Desperation",
+    "past": "",
+    "rarity": "Rare",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 30,
+              "stat": "Energy"
+            },
+            {
+              "type": "disableChecks"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": "1"
+  },
+  {
+    "ability": "Choose one: \nHeal 10 damage to target Creature.\nDeal 10 damage to target Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "What brings happiness to one brings pain to another.",
+    "id": "80",
+    "name": "Song of the Dyad",
+    "past": "",
+    "rarity": "Common",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "chooseOne"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Sacrifice a Battlegear equipped to an unengaged UnderWorld Creature you control. If you do, destroy target Battlegear.",
+    "artist": "",
+    "cost": "0",
+    "flavor": "As his Ice Cloak vanished, Bodal calculated he had 8.5 seconds until the firestorm immolated him.",
+    "id": "83",
+    "name": "Strain of Ash",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "sacrificeBattlegear"
+            },
+            {
+              "type": "destroyBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": "1"
+  },
+  {
+    "ability": "Choose one: \nShuffle target Mirage Location into its owner's Location Deck.\nIf the active Location is a Mirage, shuffle it into its owner's Location deck and that player reveals a new active Location.",
+    "artist": "",
+    "cost": "0",
+    "flavor": "",
+    "id": "76",
+    "name": "Strain of Clarity",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "chooseOne"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": "1"
+  },
+  {
+    "ability": "Destroy all Battlegear equipped to Creatures at target Mirage Location. Shuffle that Mirage Location into its owner's Location Deck.",
+    "artist": "",
+    "cost": "0",
+    "flavor": "",
+    "id": "89",
+    "name": "Strain of Expensive Delusions",
+    "past": "",
+    "rarity": "Rare",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "destroyBattlegear"
+            },
+            {
+              "type": "shuffle"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": "1"
+  },
+  {
+    "ability": "Uninfect up to three Infected Creatures. Target Danian Creature gains a Mugic counter for each Creature Uninfected Strain of Infection way.",
+    "artist": "",
+    "cost": "0",
+    "flavor": "Little parasites, big rewards.",
+    "id": "85",
+    "name": "Strain of Infection",
+    "past": "",
+    "rarity": "Rare",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "uninfect"
+            },
+            {
+              "type": "mugicCounter"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": "1"
+  },
+  {
+    "ability": "Remove any number of OverWorld Creatures in your discard pile from the game. Heal 10 damage to target Creature for each card you remove this way.",
+    "artist": "",
+    "cost": "0",
+    "flavor": "",
+    "id": "81",
+    "name": "Strain of the Tide",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "exile"
+            },
+            {
+              "type": "healScaled"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": "1"
+  },
+  {
+    "ability": "Sacrifice a Battlegear. If you do, return another Battlegear from your discard pile to play equipped to an unequipped Creature you control.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "90",
+    "name": "Tune of Xerium",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "sacrificeBattlegear"
+            },
+            {
+              "type": "recoverBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": "1"
+  },
+  {
+    "ability": "Remove up to three target cards in a player's general discard pile from the game.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Do not dwell on the past. What's lost is best forgotten.",
+    "id": "77",
+    "name": "Void Dirge",
+    "past": "",
+    "rarity": "Common",
+    "set": "SS",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "exile"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 50 Speed.\nIf your engaged Creature won Initiative this turn, Allegro's cost is reduced by 2 Mugic counters.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Even with Spectral Viewers, the invasion squad could no longer find the elusive Mipedians.",
+    "id": "190",
+    "name": "Allegro",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "keywords": {
+        "costReduction": {
+          "condition": "wonInitiative",
+          "reduction": 2
+        }
+      },
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 50,
+              "stat": "Speed"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Recklessness 5.\"",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"Be gone, you fool! The Cothica won't save Perim! Look at the devastation even a hint of its power can cause!\" \n—Sobtjek",
+    "id": "191",
+    "name": "Aria of Enragement",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "recklessness"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 20 damage to target Creature that has no Disciplines greater than 25.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Always pick off the weak before they grow up and pick you off",
+    "id": "156",
+    "name": "Ballad of the Belittled",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target Mugic and return that card to its owner's hand.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "There is nothing worse for a Muge than the stunning sound of silence.",
+    "id": "157",
+    "name": "Cadence Clash",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 30 Energy and \"Recklessness 10.\"",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"This is where we draw the line! Protect the Riverlands!\" \n—Tartarek",
+    "id": "158",
+    "name": "Carnivore's Keening",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 30,
+              "stat": "Energy"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 10,
+              "keyword": "recklessness"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 5 damage to target Creature for each Mugic counter spent to play Chromatic Postlude.",
+    "artist": "",
+    "cost": "X",
+    "flavor": "\"What you call 'overkill' is what I call 'being thorough.'\" \n—Takinom",
+    "id": "180",
+    "name": "Chromatic Postlude",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageScaled"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature plays its abilities as if that Creature's controller also controlled a Chieftain.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "As his eyes glazed over, all he could think was, \"Obey, obey, obey.\"",
+    "id": "159",
+    "name": "Deep Dirge",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy target Creature with 0 Speed and 0 Power.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Under the burning sun, even the hardiest desiccate in a matter of minutes.",
+    "id": "192",
+    "name": "Desert's Wrathsong",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "and": [
+              {
+                "type": "statCheck",
+                "stat": "Speed",
+                "threshold": 0,
+                "operator": "=="
+              },
+              {
+                "type": "statCheck",
+                "stat": "Power",
+                "threshold": 0,
+                "operator": "=="
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "destroyCreature"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": "1"
+  },
+  {
+    "ability": "Deal 5 damage to target Creature. Deal an additional 10 damage to that Creature if it has Water.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"The fire of the UnderWorld will burn forever!\" \n—Chaor",
+    "id": "181",
+    "name": "Deserter's Finale",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 5
+            },
+            {
+              "type": "damage",
+              "value": 10,
+              "element": "Water"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature with Invisibility gains \"Invisibility: Disarm.\"",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Each time Tangath tried to pick up his blade his unseen foe knocked it away again.",
+    "id": "193",
+    "name": "Disarming Theme",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "invisDisarm",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target activated Creature ability.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Mugic, like memory, is fleeting.",
+    "id": "175",
+    "name": "Dissonance of Will",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 10 Energy.\nIf Hive is active, that Creature gains an additional 10 Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "With my hive family, I am more \"we\" than \"me.\"",
+    "id": "185",
+    "name": "Domestic Hive Hymn",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Energy"
+            },
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Energy"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 15 damage to target Mandiblor.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Though Mandiblors are treated as the dregs of society, Queen Illexia loves all her children equally.",
+    "id": "186",
+    "name": "Draining Dirge",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 15
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains or loses Courage, Power, Wisdom and Speed to make its Disciplines equal to its Scanned Disciplines and cannot be the target of Mugic or abilities.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "",
+    "id": "160",
+    "name": "Duality Dirge",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "resetStats"
+            },
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 20 Wisdom, 15 Courage, 10 Speed and 5 Power.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Najarin found it more interesting than prophetic that he had seven letters in his name.",
+    "id": "176",
+    "name": "Ecstatic Fanfare",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 20,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": 15,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Speed"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Power"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 15 damage to target M'arrillian Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Melodies to some, noise to others.",
+    "id": "161",
+    "name": "Effervescent Etude",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 15
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 10 Energy and 10 Wisdom.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"We all fail, my friend. But how we respond to failure - now that is the sign of a champion.\" \n—Maxxor",
+    "id": "177",
+    "name": "Empowering Serenade",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Energy"
+            },
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Wisdom"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Exhaust all Disciplines 5.\"",
+    "artist": "",
+    "cost": "1",
+    "flavor": "As the battle dragged on from days to weeks, the battalion lost the will to keep fighting.",
+    "id": "162",
+    "name": "Etude of Exhaustion",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "exhaustAllDisciplines"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses 20 Power, 15 Speed, 10 Courage and 5 Wisdom.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Before: Chaor \nAfter: H'earring",
+    "id": "182",
+    "name": "Falsetto",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": -20,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": -15,
+              "stat": "Speed"
+            },
+            {
+              "type": "statMod",
+              "value": -10,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": -5,
+              "stat": "Wisdom"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 25 Courage and 25 Wisdom. If the target is a Minion, it gains another 25 Courage and 25 Wisdom.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "163",
+    "name": "Fanfare of the Brain",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 25,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": 25,
+              "stat": "Wisdom"
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Minion"
+          },
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 25,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": 25,
+              "stat": "Wisdom"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Exhaust all Disciplines 15.\"",
+    "artist": "",
+    "cost": "2",
+    "flavor": "\"If you have patience, you can win a war without fighting a single battle.\" \n—Vidav's teachings",
+    "id": "164",
+    "name": "Fatiguing Falsetto",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 15,
+              "keyword": "exhaustAllDisciplines"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 15 Energy and \"Recklessness 5.\"",
+    "artist": "",
+    "cost": "1",
+    "flavor": "With adrenaline pumping through his veins, Ragetrod hardly felt a thing when he rammed headfirst through three stone pillars.",
+    "id": "183",
+    "name": "Final Fugue",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 15,
+              "stat": "Energy"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "recklessness"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains a Mugic counter and \"Water 5.\"",
+    "artist": "",
+    "cost": "2",
+    "flavor": "\"Defeat the enemy from within. When they no longer know whom to trust, they'll crumble on their own!\" \n—Phelphor",
+    "id": "165",
+    "name": "Fluidmorpher's Fanfare",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "mugicCounter",
+              "value": 1
+            },
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "water"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 10 damage to target Creature.\nIf your engaged Creature dealt 20 or more attack damage this turn, Improvisational Melody's cost is reduced by 2 Mugic counters.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "184",
+    "name": "Improvisational Melody",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "keywords": {
+        "costReduction": {
+          "condition": {
+            "engagedCreatureDealtDamage": ">=",
+            "threshold": 20
+          },
+          "value": 2
+        }
+      },
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Activate Hive.\nIf your engaged Creature has taken 15 or more attack damage this turn, Intense Polyphony's cost is reduced by 2 Mugic counters.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Against the Danians, there is no such thing as a one-on-one fight.",
+    "id": "187",
+    "name": "Intense Polyphony",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "keywords": {
+        "costReduction": {
+          "condition": "engagedTook15DamageThisTurn",
+          "reduction": 2
+        }
+      },
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "activateHive"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 15 damage to target Creature.\nIf your engaged Creature won a Wisdom Challenge this turn, Melody of Miracles' cost is reduced by 2 Mugic counters.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "178",
+    "name": "Melody of Miracles",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "keywords": {
+        "costReduction": {
+          "condition": "engagedWonWisdomChallenge",
+          "reduction": 2
+        }
+      },
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 15
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy target Battlegear equipped to an engaged Creature.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Mugic is a sword that pierces invulnerable armor, a shield that blocks unstoppable strikes.",
+    "id": "166",
+    "name": "Melody of Mirrored Actions",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "destroyBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Sacrifice a Minion Creature. If you do, target engaged Creature gains Energy equal to the Scanned Energy of the sacrificed Creature.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "I know you think you gave it your all, but I bet I can coax out a little more.",
+    "id": "167",
+    "name": "Nourishing Nocturne",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "sacrificeCreature"
+            },
+            {
+              "type": "healScaled"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 15 Energy and 15 to all Disciplines.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "When a mere seven notes can change the course of history, that is the very definition of a miracle.",
+    "id": "179",
+    "name": "Odd Opus",
+    "past": "",
+    "rarity": "Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 15
+            },
+            {
+              "type": "statMod",
+              "value": 15,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": 15,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": 15,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": 15,
+              "stat": "Speed"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Sacrifice an unengaged Creature. If you do, target engaged Creature loses X from each Discipline where X is the sacrificed Creature's Scanned Disciplines. If the sacrificed Creature is a Minion, engaged Creatures also lose 10 Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "168",
+    "name": "Predator's Song",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "sacrificeCreature"
+            },
+            {
+              "type": "statLossEqualToSacrificeDisciplines"
+            },
+            {
+              "type": "damage",
+              "value": 10,
+              "stat": "Energy"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 10 damage to target Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Strike first, strike fast, strike hard, strike last.",
+    "id": "169",
+    "name": "Prelude to Dominance",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Remove a Minion Creature Card in your general discard pile from the game. If you do, deal damage to target engaged Creature equal to the removed card's Scanned Energy.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "170",
+    "name": "Psionic Serenade",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "exile"
+            },
+            {
+              "type": "damageScaled"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": "1"
+  },
+  {
+    "ability": "Target Mandiblor gains \"Outperform Courage 5.\" If it is Infected, it gains \"Earth 5.\" If Hive is active, it also gains 15 Energy.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "188",
+    "name": "Rhythms of Rage",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "Courage"
+            },
+            {
+              "type": "elementGrant",
+              "element": "Earth"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Earth",
+              "value": 5
+            },
+            {
+              "type": "statMod",
+              "value": 15,
+              "stat": "Energy"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 25 to a Discipline of your choice. That Creature loses 25 to another Discipline of your choice.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Every up has a down, every left has a right. The Cothica is always in balance.",
+    "id": "194",
+    "name": "Selective Strain",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 25,
+              "stat": "choice"
+            },
+            {
+              "type": "statMod",
+              "value": -25,
+              "stat": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature's Disciplines cannot be increased or decreased by Mugic or abilities.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "If every counter has a counter, what can we count on?",
+    "id": "171",
+    "name": "Song of Stable Shields",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses 20 to a Discipline of your choice.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "When the wise become dumb \nOr the fast become slow \nThey've already lost \nAnd they don't even know",
+    "id": "172",
+    "name": "Specific Diminishing",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": -20,
+              "stat": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Flip target Battlegear face-down.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Unfortunately for Gronmar, his Telebracers sputtered and died seconds before the toxic tidal wave struck him full force.",
+    "id": "173",
+    "name": "Surprising Riffs",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "flipBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 5 to all Disciplines for each Mandiblor you control.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "189",
+    "name": "Symphony of Similarity",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statGainPerCount",
+              "value": 5,
+              "stat": "all"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Your opponent reveals X Mugic Cards from his or her hand and you choose one of them. Your opponent discards the chosen card.",
+    "artist": "",
+    "cost": "X",
+    "flavor": "If you eliminate the cause, you'll never face the consequences.",
+    "id": "174",
+    "name": "Tonal Destruction",
+    "past": "",
+    "rarity": "Common",
+    "set": "MI",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "reveal"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "If Aa'une the Oligarch, Projection won combat this turn while equipped with Baton of Aa'une and you played Rage of Aa'une this turn, flip over Aa'une the Oligarch, Projection.",
+    "artist": "",
+    "cost": "4",
+    "flavor": "",
+    "id": "83",
+    "name": "Calling of Aa'une",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "flipCreature"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 20 damage to target Fluidmorpher.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "It was hardly fair. As their mortal wounds instantly healed, the irresistible force became even more unstoppable.",
+    "id": "84",
+    "name": "Curemorph Chords",
+    "past": "",
+    "rarity": "Common",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy target Creature with 0 Speed.",
+    "artist": "",
+    "cost": "4",
+    "flavor": "As his pulse plummeted, his heart beat slower... slower... and fell silent.",
+    "id": "85",
+    "name": "Decelerating Requiem",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "statCheck",
+            "stat": "Speed",
+            "threshold": 0,
+            "operator": "=="
+          },
+          "effects": [
+            {
+              "type": "destroyCreature"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target Mugic.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "When Bodal realized that only four of his seven notes played, he calculated that he only had 2.5 seconds until Erak'tabb's tentacle squished him like an overripe djobwon.",
+    "id": "86",
+    "name": "Denial Refrain of the Deep",
+    "past": "",
+    "rarity": "Common",
+    "set": "ROTO",
+    "special_logic": {
+      "keywords": {
+        "negate": true
+      }
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Target M'arrillian or Minion cannot move or play activated abilities.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "When Perim is at its darkest, the Cothica lights the path of hope.",
+    "id": "82",
+    "name": "Harmonies of the Wind",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "immobilize"
+            },
+            {
+              "type": "removeAllAbilities"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 5 damage to target engaged Creature for each Mugic counter on opposing Creatures.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "79",
+    "name": "Intress' Healing Ballad",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "healScaled",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 5 damage to target engaged Creature for each Mugic counter on opposing Creatures.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "",
+    "id": "80",
+    "name": "Kopond's Composition",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageScaled",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": "1"
+  },
+  {
+    "ability": "Destroy target Creature with 0 Power.",
+    "artist": "",
+    "cost": "4",
+    "flavor": "When a pebble becomes as heavy as a boulder, your life will soon be over.",
+    "id": "87",
+    "name": "Mightsingers Requiem",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "statCheck",
+            "stat": "Power",
+            "threshold": 0,
+            "operator": "=="
+          },
+          "effects": [
+            {
+              "type": "destroyCreature"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 5 damage to target Creature and deal 5 damage to another target Creature for each Danian you control with Water.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "81",
+    "name": "Mindproof March",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "healScaled",
+              "value": 5
+            },
+            {
+              "type": "damageScaled",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy target Creature with 0 Courage.",
+    "artist": "",
+    "cost": "4",
+    "flavor": "There is no need to fight if your foe is in flight!",
+    "id": "88",
+    "name": "Requiem of Fear",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "statCheck",
+            "stat": "Courage",
+            "threshold": 0,
+            "operator": "=="
+          },
+          "effects": [
+            {
+              "type": "destroyCreature"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy target Creature with 0 Wisdom.",
+    "artist": "",
+    "cost": "4",
+    "flavor": "A word to the wise: the wise need no words.",
+    "id": "89",
+    "name": "Requiem of Lost Minds",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "statCheck",
+            "stat": "Wisdom",
+            "threshold": 0,
+            "operator": "=="
+          },
+          "effects": [
+            {
+              "type": "destroyCreature"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target M'arrillian or Generic Mugic.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "The silence was deafening.",
+    "id": "77",
+    "name": "Sound of Noise",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy target Creature with no Mugic counters.",
+    "artist": "",
+    "cost": "6",
+    "flavor": "Who knows why Mugicians exist. Just be thankful they do.",
+    "id": "90",
+    "name": "Unheard Melody",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "statCheck",
+            "stat": "Mugic",
+            "threshold": 0,
+            "operator": "=="
+          },
+          "effects": [
+            {
+              "type": "destroyCreature"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": "1"
+  },
+  {
+    "ability": "Target Creature gains \"Recklessness 5.\"\nWhen you play Vexing Waveform you may pay an additional 2 Mugic counters. If you do, the target Creature gains an additional \"Recklessness 5.\"",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "78",
+    "name": "Vexing Waveform",
+    "past": "",
+    "rarity": "Rare",
+    "set": "ROTO",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "recklessness"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Destroy all Battlegear equipped to engaged Creatures. Then, if you only control Mipedians, return a Battlegear from your discard pile to play equipped to your engaged Creature.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "85",
+    "name": "Armament Alteration Anthem",
+    "past": "",
+    "rarity": "Rare",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "destroyBattlegear"
+            },
+            {
+              "type": "recoverBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Sacrifice an unengaged Mandiblor. If you do, return target Danian from your discard pile to play in the Battleboard space where the sacrificed Mandiblor was. If you control only Danians, return it in any open space instead.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "82",
+    "name": "Choral of the Apparition",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "sacrificeCreature"
+            },
+            {
+              "type": "revive"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Invisibility: Surprise\" and \"Invisibility: Strike 10.\"",
+    "artist": "",
+    "cost": "2",
+    "flavor": "The desert wind erases footprints, making the invisible even more undetectable.",
+    "id": "86",
+    "name": "Dirge of the Desert",
+    "past": "",
+    "rarity": "Common",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "invisSurprise",
+              "value": 1
+            },
+            {
+              "type": "keywordGrant",
+              "value": 10,
+              "keyword": "invisStrike"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains an Elemental Type of your choice. If you control only OverWorld Creatures, that Creature also gains \"Element 5\" of the chosen Elemental Type.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "76",
+    "name": "Fanfare of Elemental Champions",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "choice"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "element": "chosen",
+              "keyword": "elementalDamage"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 30 damage to target Creature. If you control only OverWorld Creatures, it gains 30 Energy instead.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "\"I know enough about Mugic to know that I know very little indeed.\" \n—Najarin",
+    "id": "77",
+    "name": "Harmonious Highsong",
+    "past": "",
+    "rarity": "Rare",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 30
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target engaged Creature loses 30 to all Disciplines.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "As sudden fatigue overwhelmed his body, Bodal calculated that he had 4.3 seconds to escape before he became Milla'iin's appetizer.",
+    "id": "88",
+    "name": "Intimidating Melody of M'arr",
+    "past": "",
+    "rarity": "Rare",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "Speed"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 5 damage to your engaged Creature for each Elemental Type it has. If you control only Danian Creatures, also deal 5 damage to the opposing engaged Creature for each Elemental Type that Creature has.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "83",
+    "name": "Katharaz's Cacophony",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "healScaled",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Minion gains 2 Mugic counters.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "With thousands of different Creatures having millions of unique talents, Aa'une has infinite methods to abuse and exploit them.",
+    "id": "89",
+    "name": "March of the M'arrillian Minions",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "mugicCounter",
+              "value": 2
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Minion plays its abilities as if its controller did not also control a Chieftain.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"If we fail to rescue our friends soon, we will never turn back the tide.\" \n—Maxxor",
+    "id": "78",
+    "name": "Minion's Freesong",
+    "past": "",
+    "rarity": "Common",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target opposing engaged Creature loses all Elemental Types. If you control only UnderWorld Creatures, deal 5 damage to that Creature for each Elemental Type lost this way.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "79",
+    "name": "Nocturne of the Elements",
+    "past": "",
+    "rarity": "Rare",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementRemove",
+              "element": "all"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 10 damage to target Creature for each Mugic counter on it.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "It was a sound I never heard before. As if the Mugicians were screaming in pain.",
+    "id": "80",
+    "name": "Roar of the Mob",
+    "past": "",
+    "rarity": "Common",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageScaled",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 10 damage to target Creature. If you control only UnderWorld Creatures, also destroy that Creature's Battlegear.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Achieving the impossible is simple... as long as you know which seven notes to play.",
+    "id": "81",
+    "name": "Shock Song",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 10
+            },
+            {
+              "type": "destroyBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Mugic and activated abilities may not be played. (Mugic and activated abilities played before this resolves are unaffected.)",
+    "artist": "",
+    "cost": "3",
+    "flavor": "The tune died, as did any chance of reclaiming the Riverlands.",
+    "id": "90",
+    "name": "Symphonic Pelagic Maresong",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "disableChecks"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": "1"
+  },
+  {
+    "ability": "Target Creature gains \"Earth 5\" and \"Air 5.\" If you only control Mipedian Creatures, it also gains \"Outperform Speed 5.\"",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Never forget your roots. All answers lie there.",
+    "id": "87",
+    "name": "Symphony of the Guard",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "earth"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "air"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "Speed"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Danian gains 10 Energy. If Hive is active, it also gains 10 Courage for each Danian you control.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Unite and fight... or divide and die!",
+    "id": "84",
+    "name": "Unisong",
+    "past": "",
+    "rarity": "Common",
+    "set": "TOTT",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "energyMod",
+              "value": 10
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "Danian"
+          },
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 10,
+              "stat": "Courage",
+              "extra": {
+                "hive": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target Elemental Attack.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "84",
+    "name": "Adaptive Progression",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature cannot be healed or gain Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "If you make sure the weak remain weak, the outcome will never be bleak.",
+    "id": "82",
+    "name": "Denying Dirge",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target non-Mipedian gains \"Invisibility: Strike 30.\"",
+    "artist": "",
+    "cost": "2",
+    "flavor": "\"A secret shared can never be unshared... but so be it.\" \n—Prince Iflar",
+    "id": "86",
+    "name": "Iflar's Improvisation",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "value": 30,
+              "keyword": "invisStrike"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Relocate target Mirage on the Battleboard to any space.",
+    "artist": "",
+    "cost": "0",
+    "flavor": "As they wandered from sand dune to sand dune in search of the Cothica, little did they know that the Cothica was never there to begin with.",
+    "id": "87",
+    "name": "Illusion Glissando",
+    "past": "",
+    "rarity": "Rare",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "relocate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature engaged with a non-UnderWorlder you control loses an Elemental Type of your choice and loses 30 to all Disciplines.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "\"I never thought an UnderWorlder would save my life. I owe you... unfortunately.\" \n—Gespedan",
+    "id": "83",
+    "name": "Intertwined Melody",
+    "past": "",
+    "rarity": "Rare",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementRemove",
+              "element": "choice"
+            },
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": -30,
+              "stat": "Speed"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \n10 Energy if it's an OverWorlder.\n\"Fire 5\" if it's an UnderWorlder.\n20 to all Disciplines if it's a Danian.\n\"Invisibility: Strike 10\" if it's a Mipedian.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "77",
+    "name": "Jig of Reinforcement",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "tribeConditional"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Choose a Tribe. Creatures of that Tribe may not gain Mugic counters.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "The Mugician's singing turned into screams. There will be no more music this day.",
+    "id": "78",
+    "name": "Monophone Mayhem",
+    "past": "",
+    "rarity": "Rare",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "preventMugicGain"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Infect X Uninfected Creatures. If you control a non-Danian, Infect another X Uninfected Creatures.",
+    "artist": "",
+    "cost": "X",
+    "flavor": "Where most see the tragedies of war, the wise see opportunity.",
+    "id": "85",
+    "name": "Ode to Obscurity",
+    "past": "",
+    "rarity": "Rare",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "infect"
+            },
+            {
+              "type": "infect"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 5 damage to target Creature for each Tribe you control.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "One is none. \nTwo may do. \nThree? Maybe. \nBut four... we soar!",
+    "id": "79",
+    "name": "Opus Opposed",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "healScaled",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target M'arrillian or Minion gains 10 Energy for each Minion in all discard piles.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Living in harsh waters, the M'arrillians learned to scrounge even the smallest shred to survive.",
+    "id": "88",
+    "name": "Ostinato of Oban'emre",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "healScaled",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains 30 Wisdom and \"Outperform Wisdom 5.\"",
+    "artist": "",
+    "cost": "1",
+    "flavor": "As Milla'iin fell into his lava trap, Bodal calculated that it would boil into a yummy seafood soup in 32.8 seconds.",
+    "id": "80",
+    "name": "Skysong Arpeggio",
+    "past": "",
+    "rarity": "Rare",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 30,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "keywordGrant",
+              "value": 5,
+              "keyword": "Wisdom"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target non-OverWorlder gains 20 Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"There are seven tenets to victory, and it is no coincidence that seven notes are the keys to each.\" \n—Vidav's teachings",
+    "id": "81",
+    "name": "Vidav's Voicing",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "FUN",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 20
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target attack. The next attack played deals 0 damage.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Each note a melody, each melody an aria, each aria a symphony, each symphony a miracle.",
+    "id": "184",
+    "name": "Aegis Airia",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            },
+            {
+              "type": "attackDealsZero"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Remove a Creature Card in your general discard pile from the game. If you do, activate Hive.",
+    "artist": "",
+    "cost": "0",
+    "flavor": "Resourceful and efficient, Danians recycle everything in order to survive... including corpses!",
+    "id": "179",
+    "name": "Ancestral Anthem",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "exile"
+            },
+            {
+              "type": "activateHive"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains Earth. If that Creature already has Earth, it gains \"Earth 5\" instead.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The earth split, toppling the towers, erasing the castle from memory.",
+    "id": "163",
+    "name": "Anthem of Stone",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Earth"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Earth",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Creatures engaged with the caster lose all Elemental Types.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Isolated from the embrace of the universe, Heptadd felt alone, empty and - for the first time - afraid.",
+    "id": "174",
+    "name": "Battlesong of Depletion",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementRemove",
+              "element": "all"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Caster heals 25 Damage.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The search for the Cothica is also a search into yourself. You cannot find one without the other.",
+    "id": "169",
+    "name": "Battlesong of Renewal",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 25
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "When target opposing Creature heals or gains Energy from a Mugic or activated ability, the caster of this Mugic also heals or gains that much Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "185",
+    "name": "Bonding Battlesong",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 20 damage to target Creature. If the caster of this Mugic has Fire, deal an additional 10 damage.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Flames feed upon flames in a voracious conflagration.",
+    "id": "175",
+    "name": "Consuming Cacophony",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 20
+            },
+            {
+              "type": "damage",
+              "value": 10,
+              "element": "Fire"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature cannot gain Elemental Types.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Once again, \"Mugic Tester\" ranked as the second most dangerous job in Perim... just behind Chaor's sparring partner.",
+    "id": "176",
+    "name": "Counterpoint of Chaos",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature fails all Discipline checks on attacks it plays.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "His strength faltered \nHis bravery waned \nHis feet dragged \nAs we went insane",
+    "id": "177",
+    "name": "Decomposition",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "grantAbility"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses 5 Energy and 5 to all Disciplines.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Aivenna dug deep, willing herself to keep fighting... but her body had nothing left to give.",
+    "id": "164",
+    "name": "Diminuendo",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 5
+            },
+            {
+              "type": "statMod",
+              "value": -5,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": -5,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": -5,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": -5,
+              "stat": "Speed"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains Fire. If that Creature already has Fire, it gains \"Fire 5\" instead.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The grey coat of ash choked the petals, wilting the leaves, wilting the soul.",
+    "id": "165",
+    "name": "Dischord of Flame",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Fire"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Fire",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target attack deals 10 less damage for each Elemental Type that attack has.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"You call that a Pebblestorm?! That was more like a Pebblebreeze!\" \n—Wamma",
+    "id": "180",
+    "name": "Elemental Counterpoint",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageReduction",
+              "value": 10,
+              "extra": {
+                "perElement": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature loses X Elemental Types of your choice.",
+    "artist": "",
+    "cost": "x",
+    "flavor": "Some believe the Cothica and nature are irrevocably linked... understand one and rule the other!",
+    "id": "73",
+    "name": "Elemental Denial",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementRemove",
+              "element": "choice"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains all Elemental Types Creatures in your discard pile have.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"As long as you believe that the impossible is only what has yet to be accomplished, everything is possible.\" \n—Lore",
+    "id": "181",
+    "name": "Empowering Encore",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "gainAllElements"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Heal 25 damage to target Creature. If the caster of this Mugic has Water, that Creature also gains a Mugic counter.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "Seven notes... infinite possibilities.",
+    "id": "170",
+    "name": "Fluid Fugue",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 25
+            },
+            {
+              "type": "mugicCounter",
+              "value": 1,
+              "element": "Water"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Flip target Battlegear face-up or face-down.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Most Muges believe that the problem with machines is that they exist at all.",
+    "id": "83",
+    "name": "Gear Glissando",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "flipBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains Water. If that Creature already has Water, it gains \"Water 5\" instead.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "And with one final wave, the flood washed away all remaining traces of the now-forgotten civilization.",
+    "id": "166",
+    "name": "Harmonics of Water",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Water"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Water",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains Air. If that Creature already has Air, it gains \"Air 5\" instead.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The tornado ripped across the fields, destroying the harvest, starving the land.",
+    "id": "167",
+    "name": "Howl of the Wind",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Air"
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Air",
+              "value": 5
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Negate target Mugic unless the Creature that played it pays an additional Mugic counter.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "When the Mugicians sing, all of Perim is blessed.",
+    "id": "171",
+    "name": "Interlude of Interruption",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target engaged Creature gains 5 Energy for each Elemental Type the opposing engaged Creature has. If the caster of this Mugic has Earth, the target Creature gains an additional 5 Energy for each Elemental Type the opposing engaged Creature has.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "",
+    "id": "182",
+    "name": "Rocky Refrain",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "healScaled",
+              "value": 5
+            },
+            {
+              "type": "heal",
+              "value": 5,
+              "element": "Earth"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 10 damage to target Creature for each Elemental Type it has.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The rain not only nourishes but drowns. The embers warm as well as burn.",
+    "id": "178",
+    "name": "Searing Symphony",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damageScaled",
+              "value": 10
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": "1"
+  },
+  {
+    "ability": "Negate target Mugic or ability that targets a Creature with Invisibility.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "Unseen, unheard, unhittable... unbeatable!",
+    "id": "186",
+    "name": "Silent Requiem",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "negate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains \"Range\" and \"Swift 3.\" If the caster of this Mugic has Air, that Creature also gains \"Invisibility: Surprise.\"",
+    "artist": "",
+    "cost": "2",
+    "flavor": "As the thief sped away, Gespedan blamed himself for leaving the battle plans out in the open.",
+    "id": "187",
+    "name": "Sonata of Storms",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "range",
+              "value": 1
+            },
+            {
+              "type": "keywordGrant",
+              "value": 3,
+              "keyword": "swift"
+            },
+            {
+              "type": "keywordGrant",
+              "element": "Air",
+              "keyword": "invisSurprise",
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Choose one: \nHeal 10 damage to target Creature.\nDeal 10 damage to target Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "What brings happiness to one brings pain to another.",
+    "id": "80",
+    "name": "Song of the Dyad",
+    "past": "",
+    "rarity": "Common",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "chooseOne"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Target Creature gains all of its Scanned Elemental Types.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"As ice, liquid and vapor are different forms of water, the four elements are simply different forms of nature.\" \n—Intress",
+    "id": "172",
+    "name": "Song of Elemental Attunement",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "resetElements"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Relocate target Creature you control to any unoccupied space on the Battleboard.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"There's no shame in losing a fight. There's only shame in losing your life.\" \n—Headmaster Ankhyja",
+    "id": "188",
+    "name": "Song of Translocation",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "relocate"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "If the caster is engaged, the opposing engaged Creature and the caster each gain Energy equal to their lowest Discipline.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "In a maddening gyre, delving into the secrets of Mugic only reveals more secrets.",
+    "id": "168",
+    "name": "Swartbron Battlesong",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "healScaled"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "M'arrillian",
+    "unique": ""
+  },
+  {
+    "ability": "Target attack or Mugic deals 0 damage.",
+    "artist": "",
+    "cost": "2",
+    "flavor": "As Maxxor fearlessly charged through the rain of flaming arrows, he added another tale to his legend.",
+    "id": "173",
+    "name": "Symphony of Shielding",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "attackDealsZero"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Caster gains 15 Energy and Creatures engaged with caster lose 15 Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"Mugic is older than time and stronger than power. It will outlast us all.\" \n—Tharc",
+    "id": "183",
+    "name": "Unbalancing Battlesong",
+    "past": "",
+    "rarity": "Rare",
+    "set": "AU",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "heal",
+              "value": 15
+            },
+            {
+              "type": "damage",
+              "value": 15
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 20 damage to target Creature on your side of the Battleboard.\nThat Creature's controller discards a random Mugic Card from his or her hand.",
+    "artist": "",
+    "cost": "3",
+    "flavor": "",
+    "id": "17",
+    "name": "Najarin's Tower of Song",
+    "past": "",
+    "rarity": "Ultra Rare",
+    "set": "LR",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 20
+            },
+            {
+              "type": "discard"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "OverWorld",
+    "unique": ""
+  },
+  {
+    "ability": "Flip target face-down Battlegear face-up. Destroy that Battlegear at the start of the next turn.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "",
+    "id": "18",
+    "name": "Ulmar's Activating Arpeggio",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "LR",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "flipBattlegear"
+            },
+            {
+              "type": "destroyBattlegear"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "UnderWorld",
+    "unique": "1"
+  },
+  {
+    "ability": "Target Creature gains 5 Courage, Power, Wisdom, Speed, and Energy.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "\"The Cothica existed before the beginning. It will survive long past our end.\" \n—Najarin",
+    "id": "17",
+    "name": "Fortissimo",
+    "past": "",
+    "rarity": "Super Rare",
+    "set": "OP1",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Courage"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Power"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Wisdom"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Speed"
+            },
+            {
+              "type": "statMod",
+              "value": 5,
+              "stat": "Energy"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Generic",
+    "unique": ""
+  },
+  {
+    "ability": "Turn the top card of your Location Deck face up. This becomes the new active location",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The shortest distance between two points is not always a straight line",
+    "id": "",
+    "name": "Song of Transportation",
+    "past": "",
+    "rarity": "Uncommon",
+    "set": "BR",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "newLocation"
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Mipedian",
+    "unique": ""
+  },
+  {
+    "ability": "Deal 15 damage to target Creature.",
+    "artist": "",
+    "cost": "1",
+    "flavor": "The insects eclipsed the sun, turning day into night",
+    "id": "",
+    "name": "Swarm song",
+    "past": "",
+    "rarity": "Rare",
+    "set": "BR",
+    "special_logic": {
+      "hooks": [
+        {
+          "event": "mugic_cast",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 15
+            }
+          ]
+        }
+      ]
+    },
+    "tribe": "Danian",
+    "unique": ""
+  }
+]

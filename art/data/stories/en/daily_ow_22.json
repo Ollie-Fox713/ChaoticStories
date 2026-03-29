@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_22",
+  "title": "Runestone Reading",
+  "desc": "A new glyph has been exposed. Nobody can read it. Yet.",
+  "locations": [ "Runic Grove", "Forest of Life", "Castle Bodhran" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "A storm uprooted a tree in the Runic Grove, exposing a flat stone face covered in symbols that haven't seen daylight in centuries. A small crowd has gathered — mostly scholars, a few curious soldiers, and one deeply frustrated translator who's been staring at the glyphs since dawn.\n\n\"It's not Mugician script. It's not any tribal language I know. It's older.\" She traces a finger over a spiral glyph without touching it. \"But look — this pattern repeats. Here, here, and here. If I could figure out what it represents, I might crack the rest.\"\n\nThe spiral glyph does look familiar. You've seen something like it before, but you can't place where.",
+      "options": [
+        { "label": "Study the spiral pattern more closely", "go": 1 },
+        { "label": "Check the other glyphs for context clues", "go": 2 }
+      ]
+    },
+    {
+      "text": "The spiral has seven turns. Each turn is slightly different — thicker lines, thinner lines, lines that branch into smaller spirals. You realize it's not decoration. It's notation. Like musical notation. Seven turns. Seven notes.\n\n\"It's Mugic,\" you say.\n\nThe translator freezes. She counts the turns. Counts the variations. Her eyes widen. \"Seven notes. Of course. It's a Mugic score carved in stone. Pre-Mugician. Before they had instruments, before they had notation — they carved the songs directly.\"\n\nShe starts copying the glyphs frantically. \"If I'm right, this is one of the oldest songs ever recorded. Nobody alive has heard it.\" She looks at the stone with something approaching reverence. \"Nobody alive has heard it yet.\"",
+      "options": [
+        { "label": "Help her copy the remaining glyphs", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The other glyphs are more varied — angular shapes, crossed lines, dots arranged in constellations. You sketch each one in your notebook. Without understanding them, you look for patterns.\n\nYou find one. Every third glyph is slightly larger than the others, and each large glyph contains the spiral motif in miniature. It's a rhythm. Large-small-small, large-small-small.\n\n\"A cadence,\" the translator murmurs when you show her. \"It's structured like a chant. The large glyphs are stresses. The small ones are beats between.\" She starts tapping the rhythm on her knee. \"This isn't writing. It's a performance score. Someone carved instructions for a ritual.\"\n\nShe copies everything, twice, on different paper in case one is lost. \"Thank you. This is years of work. I've been studying the Grove for a decade and this is the biggest find since—\" She stops. \"Since ever, maybe.\"",
+      "options": [
+        { "label": "Leave her to her breakthrough", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Mind Strike", "Delerium" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_library",
+  "chainName": "Lore Keeping"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_02",
+  "title": "The Mugic Tuning",
+  "desc": "The communal Mugic amplifier is off-key. The whole district can hear it.",
+  "locations": [ "Kiru City", "Lake Ken-I-Po" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Something is wrong with the resonance tower in the eastern quarter. It's supposed to amplify Mugic broadcasts — weather warnings, market hours, the dawn chime. Instead, it's emitting a low, warbling drone that makes your teeth itch.\n\nEvery Mugic-sensitive creature within three blocks has a headache. A muge apprentice is standing at the base of the tower, looking up with an expression of profound dread.\n\n\"The tuning crystals are misaligned. Someone has to climb up and re-seat them. I would, but...\" She gestures at the tower. It's very tall. The drone makes the stonework vibrate under your fingers.",
+      "options": [
+        { "label": "Climb the tower yourself", "go": 1 },
+        { "label": "Help the apprentice figure it out from down here", "go": 2 }
+      ]
+    },
+    {
+      "text": "The climb isn't the hard part. The hard part is that the closer you get to the tuning crystals, the louder the drone becomes. By the time you reach the top, it's not a sound anymore — it's a pressure, a wobble in reality itself. Your vision swims.\n\nThe crystals are arranged in a seven-pointed star. One has shifted about two inches to the left. You nudge it back into place with your palm.\n\nSilence. Beautiful, perfect silence.\n\nThen the dawn chime rings out, clear and bright, and the eastern quarter collectively exhales. The apprentice cheers from below. Your ears ring for the rest of the afternoon, but it was worth it.",
+      "options": [
+        { "label": "Climb back down, ears ringing", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The apprentice pulls out a hand-drawn diagram of the crystal array. It's covered in notes, corrections, and corrections to the corrections. Together, you work through the resonance equations — if the third crystal is flat, adjusting the seventh should compensate...\n\nShe hums a counter-frequency. You hum along. It takes four tries, but on the fifth attempt, the drone wobbles, warps, and snaps into harmony. The dawn chime rings out, slightly late but perfectly tuned.\n\n\"I've never done that from ground level before,\" she says, staring at her diagram like it just performed a miracle. \"That shouldn't have worked.\"\n\nBut it did.",
+      "options": [
+        { "label": "Accept her thanks", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Thunder Shout", "Reverberate" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_mugic",
+  "chainName": "Mugic Arts"
+}

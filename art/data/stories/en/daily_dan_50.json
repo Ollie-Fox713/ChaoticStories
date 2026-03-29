@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_50",
+  "title": "Duty Plaques",
+  "desc": "The next cycle's assignments have arrived, and the plaque wall and wake pulls both need to be set before the barracks rises again.",
+  "locations": [ "The Barracks" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Barracks wake by sound but they move by assignment. Along the central wall hangs a grid of clay duty plaques cut with lane numbers, patrol marks, salvage shifts, training rotations, and special summons that no one pretends to enjoy receiving. Above them runs the wake system: weighted pull cords leading to bells and striking boards placed through the galleries so the right section rises at the right time and the whole chamber does not erupt at once.\n\nThe duty clerk arrives with a stack of fresh plaques still damp from the kiln. \"Hang the new assignments if you want the wall,\" she says. \"Or retension the wake pulls and test the bell line if you prefer the ropes. One tells the barracks where to go. The other tells it when to stop sleeping.\"",
+      "options": [
+        { "label": "Hang the fresh duty plaques on the assignment wall", "go": 1 },
+        { "label": "Retension the wake pulls and test the bell line", "go": 2 }
+      ]
+    },
+    {
+      "text": "The plaque wall only works when every mark sits in the right lane and sequence. You sort the fresh clay tablets by shift, slot patrol and drill orders into their proper rows, and move two special summons to the upper corner where they are harder to miss and harder to misinterpret. Once the last damp plaque is hung, the wall changes from a collection of labels into a map of the entire next cycle's labor.\n\nThe clerk scans it from left to right, lips moving as she confirms the rows. When she reaches the end without flinching, she seems satisfied. \"Good. Confusion wastes more bodies than exhaustion ever did.\"",
+      "options": [
+        { "label": "Step back from the wall and leave the cycle mapped", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The wake pulls run through pulleys blackened by dust and use just enough weight to sound the bell boards without jerking the whole line into chaos. Two cords have slackened and the southern gallery bell now answers a half-beat late, which is enough to annoy anyone who values synchronized misery. You tighten each line, oil the pulley eyes, and test the pulls one by one until the bell notes strike in proper sequence from gallery to gallery.\n\nThe clerk listens with her head tilted, following the sound through the barracks as if hearing the shape of tomorrow. This time the pattern lands exactly where it should. \"Better,\" she says. \"Now everyone can wake at the correct moment and resent it together.\"",
+      "options": [
+        { "label": "Coil the spare rope and leave the wake line true", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Danihilation", "Accelerated Unity" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

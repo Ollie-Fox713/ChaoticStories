@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_18",
+  "title": "Caravan Guard",
+  "desc": "Protect a trade caravan through the storm tunnels. The bandits know the schedule.",
+  "locations": [ "Sha-Kree Flats", "Mipedim Valley" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The caravan is twelve pack-beasts carrying bolts of spider-silk, casks of oasis water, and sealed containers of spices worth more than everything else combined. Three merchants, two drivers, and you — the hired guard.\n\nThe caravan master is blunt. \"Bandits hit the last three caravans on this route. Always at the storm tunnel entrance. They wait until the caravan is half inside, then block both ends.\" She checks the horizon. \"We could go around — three extra hours in open desert. Or we go through and hope our timing is off from what they expect.\"\n\nThe storm tunnel is a natural passage through a rock formation — sheltered, cool, and the fastest route. Also, a perfect ambush point.",
+      "options": [
+        { "label": "Go through the tunnel — but change the timing", "go": 1 },
+        { "label": "Take the desert route — avoid the tunnel entirely", "go": 2 }
+      ]
+    },
+    {
+      "text": "Caravans usually enter the tunnel at midday. You suggest entering at dawn — three hours early, before the heat forces the bandits out of their hiding spots.\n\nThe caravan master agrees. You wake the camp before first light and march in the pre-dawn cold. The pack-beasts grumble but move. By the time the sun crests the dunes, you're at the tunnel entrance.\n\nThe tunnel is empty. Your footsteps echo off cool stone walls. The caravan moves through in single file, beasts and merchants pressed close. You walk point, scanning every shadow, every alcove.\n\nHalfway through, you find the ambush camp — empty. Cold fire pit, scattered food scraps, rope for blocking the tunnel ends. They were here. They're not here now.\n\nYou exit the far side into morning sunlight. The caravan master exhales. \"That was either good timing or good luck. I'll take either.\"\n\nThe rest of the journey is uneventful. The spices reach market. The merchants pay your fee plus a bonus for the early-start idea. You file the ambush camp location with the patrol authority.\n\nSomewhere in the tunnel, bandits arrive at midday to an empty road and wonder what happened.",
+      "options": [
+        { "label": "Collect your pay and the bonus", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The desert route is brutal. Three hours of open sand with no shade, no shelter, and the sun turning the air to soup. The pack-beasts slow. The merchants complain. The water supply takes a hit.\n\nBut nobody ambushes you. Because nobody is stupid enough to ambush in open desert where there's nowhere to hide and the attackers would be as miserable as the caravan.\n\nThe caravan master watches the distant storm tunnel as you pass it by. \"They're in there right now. Waiting. Getting annoyed. Eventually they'll realize we're not coming.\"\n\n\"Will they follow?\"\n\n\"In this heat? Bandits are lazy. That's why they're bandits instead of merchants.\"\n\nThe extra hours cost water and patience, but the cargo arrives intact. The merchants calculate the loss — three canteens of extra water versus the potential loss of the entire cargo to bandits. The math is obvious.\n\n\"We should establish the desert route as standard,\" the caravan master says, wiping sweat from her face. \"It's awful, but awful and safe beats comfortable and robbed.\"\n\nYour pay comes with a water bonus — an extra canteen for the return trip. You've earned every drop.",
+      "options": [
+        { "label": "Take the water bonus and head home", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Squeeze Play", "Dexterous Storm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_guard",
+  "chainName": "Border Watch"
+}

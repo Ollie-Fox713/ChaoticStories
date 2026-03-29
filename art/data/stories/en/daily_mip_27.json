@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_27",
+  "title": "Wind Marker Reset",
+  "desc": "The air shifted overnight, and the whole field has to be recalibrated before the dew window closes.",
+  "locations": [ "Mipedian Dew Farm" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The dew farm does not simply wait for moisture. It hunts it. Marker poles line the outer edge of the field - ribbons, mirrored plates, and shallow stone dishes arranged to read the air before the nets do. This morning every one of them is wrong.\n\nThe wind-reader stands in the center lane with her sleeves rolled back and annoyance written across her face. Overnight currents shifted two points east. If the markers stay where they are, the best nets will face dry air while the weaker rows catch the field's only good humidity. \"We have one collection window,\" she says. \"The desert does not reschedule for poor calibration.\"\n\nShe hands you a pouch of fastening pins and points to the outer ring. \"Either climb the marker poles and reset the ribbons by hand, or work the ground line and realign the screens from below. Fast is good. Precise is better.\"",
+      "options": [
+        { "label": "Climb the poles and reset the marker ribbons directly", "go": 1 },
+        { "label": "Stay on the ground and realign the screens from the guide line", "go": 2 }
+      ]
+    },
+    {
+      "text": "The poles are taller than they looked from below. From the top rung, the whole dew farm spreads out in pale rows, each net hanging still in the pre-dawn half-light. Up here the air is easy to read. You can feel where the cold current breaks against your wrist, where the warmer drift slides past it, where the ribbons were left facing yesterday's weather instead of today's.\n\nYou reset them one by one - unpin, turn, secure, test. By the third pole, the first corrected ribbon is streaming in a clean eastward line. By the sixth, the mirrored plates farther downfield are catching the right angle of light. When you climb down, the wind-reader has stopped frowning long enough to watch the nets begin to wake in sequence.\n\n\"There,\" she says as a low silver sheen appears across the eastern rows first, exactly where she wanted it. \"That is the difference between guessing and measurement.\" The words are meant for the apprentices nearby, but she lets you keep them.",
+      "options": [
+        { "label": "Watch the corrected field start collecting evenly", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The ground line is less dramatic than the poles and more complicated. Each screen responds to two others; each marker dish reflects what the next lane should be doing rather than what it is doing now. You work by sequence instead of instinct, kneeling in cold sand to compare ribbon shadows, mirrored glints, and the faint curl of moisture on the stone lips of the dishes.\n\nAt first it feels like chasing errors. Then the pattern snaps into place. The outer screens turn. The inner guide cords settle. A row that had been catching nothing takes on the soft granular shine that means the air there is finally condensing. The wind-reader crouches beside one of the dishes, watches a bead form on the rim, and gives a brief satisfied breath through her nose.\n\n\"Good. You read systems instead of parts.\" She rises and looks down the field as more nets take the change. \"That's rarer than climbing.\" In Mipedian work, that is a serious compliment.",
+      "options": [
+        { "label": "Finish the line and let the field do the rest", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Dexterous Storm", "Hampering Winds" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

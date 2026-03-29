@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_06",
+  "title": "The Mirage Report",
+  "desc": "Three sightings reported overnight. At least one is real. Probably.",
+  "locations": [ "Mipedim Mirage", "Sha-Kree Flats" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The mirage-reader's office is a stone hut half-buried in sand, its walls covered in pinned reports. Each report describes something someone saw in the desert — an oasis that wasn't there yesterday, a caravan that vanished when approached, a tower that only exists at noon.\n\nThe reader herself looks exhausted. \"Three reports overnight. A lake to the east, a stone fortress to the north, and a column of Danian soldiers marching south.\" She pins each report to the wall. \"One of these is real. If I send scouts to all three and two are mirages, I've wasted six hours and twelve canteens of water. If I ignore the real one, something gets missed.\"\n\nShe hands you a mirage-glass — a lens that supposedly distinguishes real heat signatures from refracted light.",
+      "options": [
+        { "label": "Investigate the lake to the east", "go": 1 },
+        { "label": "Investigate the Danian column to the south", "go": 2 }
+      ]
+    },
+    {
+      "text": "You trek east with the mirage-glass. The lake shimmers on the horizon — blue, inviting, impossibly perfect. Through the glass, you can see the heat distortion clearly. The water ripples in patterns that don't match the wind.\n\nBut as you get closer, something changes. The mirage-glass shows a secondary image beneath the lake — something solid, partially buried. The lake is fake. But there's something real underneath it.\n\nYou dig where the glass indicates. Two feet down, your fingers hit smooth stone — a buried waymarker from an old trade route, exposed by last night's wind shift. The mirage formed naturally over the heated stone surface.\n\nYou mark the waymarker's position on your map. The mirage-reader will want to know — old trade routes mean old water caches. Some of them might still hold.\n\n\"Not a lake,\" you report back. \"But maybe something better.\"",
+      "options": [
+        { "label": "File the waymarker coordinates", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The Danian column is the most concerning report. If real, it means scouts near Mipedian territory. You head south with the mirage-glass raised.\n\nThe column appears after twenty minutes — dark shapes moving in formation against the pale sand. Through the glass, the heat signatures are... wrong. Too uniform. Too evenly spaced. Real creatures generate variable heat — these are identical.\n\nYou watch for ten minutes. The column doesn't advance. It doesn't retreat. It marches in place, repeating the same movements in a loop. A mirage, but an unusually persistent one — the heat layers are trapped between two dune ridges, creating a natural echo chamber for light.\n\nYou sketch the formation and head back. The mirage-reader studies your drawing. \"Interesting. The mirage is reflecting something real — just something that happened hours ago. The heat signature is a ghost. Danians were here, but they've already gone.\"\n\nShe marks the area for patrol. Ghost or not, someone was marching near the border.",
+      "options": [
+        { "label": "Report the ghost-march finding", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Scout's Strike", "Dexterous Storm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_navigation",
+  "chainName": "Desert Navigation"
+}

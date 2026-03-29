@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_61",
+  "title": "Phase Morning",
+  "desc": "The hidden jungle wakes in mist and birdcall, but the dew nets and portal stones still need their daily reset.",
+  "locations": [ "Iparu Jungle" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "From the wasteland side, Iparu Jungle is a rumor with poor advertising: hot emptiness, broken stone, and a subtle portal line easy to miss if you are not meant to find it. Step through the right shimmer and the world changes so completely it feels less like travel than contradiction. Wet green air closes around you. Broad leaves turn the light gold and emerald overhead. Water runs somewhere near enough to hear but not yet see. Every root and fern seems to have grown under the assumption that abundance was normal all along and the desert beyond was the strange part.\n\nThe morning keeper is already moving between the entry stones and the first dew nets. \"Reset the dew nets if you want the lower garden,\" she says. \"Or clean the portal stones if you prefer the entrance line. The jungle may be hidden. It still expects competent mornings.\"",
+      "options": [
+        { "label": "Reset the dew nets along the misty lower path", "go": 1 },
+        { "label": "Clean the portal stones at the hidden entrance", "go": 2 }
+      ]
+    },
+    {
+      "text": "The dew nets hang between wet trunks and low branch hooks where the jungle's morning mist condenses faster than the keeper can set basins under it. Overnight sag and leaf litter have spoiled half the line. You pull each net taut, shake the caught debris free, and angle the collection lips back toward the jars so the gathered water runs where it should instead of dripping uselessly into the fern beds below.\n\nOnce the line is corrected, the nets begin to pearl over again. Droplets gather, join, and fall in thin bright threads into the waiting jars while the hidden canopy above turns slowly greener with the rising light. The keeper watches the first clean stream form and nods. \"Good. A paradise still appreciates a working catch line.\"",
+      "options": [
+        { "label": "Swap the filling jars and leave the nets drinking the mist", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The portal stones are plain on purpose from the wasteland side and precise on purpose within the jungle. Moss, water film, and drifting pollen have blurred the inner alignment marks that help trusted travelers approach the phase break without missing it and walking face-first into unnecessary confusion. You wipe the stones clean, clear the notch lines, and set the two low marker bowls back into place until the entry once again reads clearly to those who know how to look.\n\nWhen you step back, the effect is subtle but complete. The seam between desert and jungle remains almost invisible until the angle catches and the green beyond seems to breathe through it. The keeper glances from the cleared stones to the dense leaves inside the threshold and allows a small satisfied smile. \"Better. Wonders are easier to maintain when the doorway remembers where it is.\"",
+      "options": [
+        { "label": "Set the cleaning cloth aside and leave the threshold true", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Dexterous Storm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

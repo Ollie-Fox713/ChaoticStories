@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_13",
+  "title": "Sand Glass Crafting",
+  "desc": "The desert makes glass where lightning meets sand. Collecting it is the hard part.",
+  "locations": [ "Rao'Pa Sahkk", "Sha-Kree Flats" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Sand glass — fulgurite — forms when lightning strikes desert sand. The heat fuses silica into hollow tubes of natural glass, twisted and branching like frozen lightning. They're beautiful, fragile, and worth a small fortune to the right buyer.\n\nThe problem is finding them. Lightning strikes leave scorch marks that fade within hours. The glass tubes are buried under the surface, sometimes a foot deep, and they shatter if you dig carelessly.\n\nA glass hunter has agreed to take you along. She surveys the flats from a ridge, reading the sand for discoloration — the faint greenish tint that fused silica leaves.\n\n\"There,\" she points. \"Last night's storm hit that patch. See the color? That's fresh glass, still cooling underground.\"",
+      "options": [
+        { "label": "Dig carefully with the extraction tools", "go": 1 },
+        { "label": "Survey the area for more strike points first", "go": 2 }
+      ]
+    },
+    {
+      "text": "The extraction kit is delicate — soft brushes, wooden picks, a bellows for clearing loose sand. No metal tools. Metal conducts residual static from fresh fulgurite, which can discharge painfully.\n\nYou brush sand away in layers, working outward from the center of the discolored patch. Six inches down, your brush clicks against something hard. Glass. You clear around it, revealing a twisted tube of amber-green glass, branching like a tree root. It's warm to the touch.\n\nThe hunter crouches beside you. \"Good formation. Three branches, clean walls, no fractures.\" She produces a padded box. \"Ease it out. Rock it gently — they anchor in the compacted sand below.\"\n\nYou rock the fulgurite free. It comes out in one piece — eighteen inches long, hollow, catching the light in ways that make it seem to glow from within. The hunter packs it in the box between layers of silk.\n\n\"That's a twenty-credit piece,\" she says. \"Maybe thirty if the color holds. Good eye, good hands.\" She splits the find — your share is ten credits and the satisfaction of holding frozen lightning.",
+      "options": [
+        { "label": "Admire the frozen lightning", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "You climb a higher ridge for a better vantage point. From up here, the flats spread out like a canvas, and the discoloration patterns tell a story — last night's storm walked southeast across the sand, leaving a trail of strike points.\n\nYou count seven distinct patches of green-tinted sand. Seven potential fulgurite sites, spread across a quarter mile. The hunter is impressed.\n\n\"I usually find two or three per storm. Seven is a haul.\" She marks each site with a small flag. \"We work them in order — closest first. The sun heats the sand and the glass becomes more brittle as it cools unevenly.\"\n\nYou work three sites before the heat becomes dangerous. The first yields a single straight tube — simple but clean. The second is empty — the lightning struck but the sand was too loose to fuse properly. The third is the prize: a branching formation with five arms, glass so clear you can see through it.\n\nThe hunter wraps each piece with reverence. \"Storm season is short. Another week, maybe two, then the winds shift and the lightning moves north.\" She looks at the remaining four flags. \"We'll come back at dawn. The glass will keep.\"\n\nShe hands you your share of the haul — eight credits and a small fragment of amber glass, too cracked to sell but beautiful in the light. \"First-timer's keepsake. Welcome to the trade.\"",
+      "options": [
+        { "label": "Pocket the amber glass fragment", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Lightning Burst", "Flashwarp" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_craft",
+  "chainName": "Desert Crafts"
+}

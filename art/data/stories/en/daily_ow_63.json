@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_63",
+  "title": "Golden Skim",
+  "desc": "The forest's quiet channels gather a bright surface film that has to be lifted before the basins cloud over.",
+  "locations": [ "Forest of Life" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The side channels of the Forest of Life move slowly enough to look motionless until you kneel beside them. Then you see the drift: clear water sliding under root shadows, carrying a fine gold sheen shed from the high blossoms and broad leaves. Left alone too long, the surface film gathers in soft mats that dull the reflection bowls and turn the drinking basins cloudy.\n\nA basin keeper is already at work with a skimming net and a row of mesh trays. \"Nothing here rots,\" she says, dragging the net once along the channel lip. \"That does not mean nothing collects.\" She tips the captured film into a tray and the gold settles like powdered sunlight.\n\nThe morning's work splits neatly. The long channel needs a steady hand with the skim net, or the spill steps need their mesh catches emptied before the water backs up over the stones.",
+      "options": [
+        { "label": "Work the skim net along the long channel", "go": 1 },
+        { "label": "Empty and reset the mesh catches at the spill steps", "go": 2 }
+      ]
+    },
+    {
+      "text": "The skim net must stay just at the surface. Too deep and you stir mud that the channel has spent days settling. Too shallow and the gold film slips under the rim and reforms behind you. The keeper shows you the angle once, then leaves you to find the rhythm yourself.\n\nSoon the work becomes almost hypnotic. Pull, lift, shake into tray. Pull, lift, shake into tray. As the channel clears, the water changes character. It stops looking ornamental and starts looking alive, reflecting the underside of leaves so sharply that the forest seems doubled. A dragonfly the size of your thumb skims the reopened surface and keeps going, its wings catching green light.\n\nWhen you reach the far basin, the keeper holds one tray up to the sun. \"Pigment,\" she says. \"And sometimes Mugic ink, if the day has been strange enough.\" In the Forest of Life, even maintenance leaves behind something luminous.",
+      "options": [
+        { "label": "Stack the trays and admire the clear water", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The spill steps are set where the channel drops through three shallow stone lips into the drinking basins below. Each step carries a fine mesh catch to trap the gold film before it can gather into something thick and stubborn. By midmorning all three are full.\n\nYou lift each frame carefully and tip the collected sheen into waiting bowls. The material is lighter than wet leaves and heavier than dust, clinging to the mesh in shining strands before finally letting go. Underneath, the water resumes its clean, glassy fall from one step to the next.\n\nThe keeper resets the last frame and tests the flow with her fingers. \"Better,\" she says. \"Now the basins will show the sky again.\" It is an odd thing to preserve in a forest where the canopy rules every view, but when you look into the cleared water and see a perfect patch of blue between the leaves, the effort makes immediate sense.",
+      "options": [
+        { "label": "Leave the spill steps running clear", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Vine Snare" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_31",
+  "title": "First Light Survey",
+  "desc": "Every morning, someone has to check how Cordac Falls is waking up before the crossings open.",
+  "locations": [ "Cordac Falls" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Cordac Falls belongs to dawn in a way most places do not. Before the traffic ropes are opened and before the first patrol crosses the bridge line, the whole gorge has to be read: mist height, wind pull, river color, spray surge, the shifting brightness where the water drops into the earth and becomes more glare than liquid. From the overlook path the falls look impossible, a white wall breaking into gold wherever the early light catches the mist.\n\nThe survey captain hands you a slate clipped with the morning chart. \"Upper prisms need wiping and reading,\" she says. \"Lower spray markers need resetting after last night's surge. High walk if you want the broad view. Mist shelf if you want to come back wetter and more useful.\"",
+      "options": [
+        { "label": "Walk the upper overlook and read the prism posts", "go": 1 },
+        { "label": "Climb down to the mist shelf and reset the spray markers", "go": 2 }
+      ]
+    },
+    {
+      "text": "The prism posts stand at measured intervals along the cliff rail, each one fitted with a cut crystal that throws the dawn light differently depending on how thick the mist is. Most mornings the work is simple: wipe the crystal faces clear, check the color band on the chart, and mark whether the crossings open full, partial, or not at all. This morning the air is clear enough that every prism answers bright and clean.\n\nFrom the upper path you can see half the border waking at once. Bridge lines emerging from fog. Watchfires paling into smoke. Patrol cloaks dark with spray. Far below, the heart of the falls flashes so hard it seems to pulse through the stone under your boots. You finish the chart, hang the green crossing ribbons at the rail posts, and hand the results back to the captain. She glances at the slate, then out over the gorge. \"Good,\" she says. \"Let the rest of them call this routine. It still knows how to stop you in your tracks.\"",
+      "options": [
+        { "label": "Open the morning routes and let the border wake", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The mist shelf sits low enough that the falls stop sounding like distant thunder and start sounding immediate, like stone and water arguing at arm's length. Spray markers are set into the wall here in a ladder of carved notches and bronze pins. They tell the survey crew how high the surge climbed overnight and whether the lower paths will be usable when the hauling teams come through.\n\nTwo of the upper pins are bent and one of the notched boards has taken a pounding from the spray. You straighten the bronze, replace the loosened pegs, and mark the fresh water line while cold mist beads on your sleeves and runs off the cliff in silver threads. The work keeps your hands busy, but the place does not stop being enormous just because you are measuring it. When you climb back up with the corrected readings, the survey captain compares the marks to the prior week's chart and nods. \"Moderate rise, nothing more. Good. The falls can be magnificent today without also being troublesome.\"",
+      "options": [
+        { "label": "File the readings and leave the shelf to the mist", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Hydro Balls" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

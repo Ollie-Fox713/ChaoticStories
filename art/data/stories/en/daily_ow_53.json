@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_53",
+  "title": "Ford Stakes",
+  "desc": "Last night's rain shifted the shallow crossing, so the stake line and guide rope have to move with it.",
+  "locations": [ "Riverlands" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Riverlands teach the same lesson every season: a shallow crossing is only shallow until the current gets ideas. The ford west of the market path still looks passable from the bank, but the guide stakes now lean toward water that runs darker and faster than the keeper likes. A family with two carts is already waiting nearby, pretending not to be worried while watching the rope line with intense interest.\n\nThe ford keeper shoulders a bundle of fresh stakes. \"Drive the new line across the shallower side if you want the river work,\" she says. \"Or retie the guide rope from bank to bank if you prefer to keep your boots drier. Either way, I would rather not let the river choose our path for us today.\"",
+      "options": [
+        { "label": "Drive the new stake line through the shallower crossing", "go": 1 },
+        { "label": "Retie the guide rope along the corrected route", "go": 2 }
+      ]
+    },
+    {
+      "text": "You carry the stakes out in measured steps, testing the bottom with the shaft before driving each one into the gravel bed. The current presses harder than it first appeared, but the corrected route holds where the keeper said it would: firmer footing, lower pull, cleaner line back to the bank. One post at a time, the crossing changes from suggestion to instruction.\n\nWhen the final stake goes in, the waiting carts seem to relax all at once. The keeper squints along the new line and nods. \"Good. Water may wander. People carrying flour prefer less experimentation.\"",
+      "options": [
+        { "label": "Wade back to shore and leave the new line standing", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The guide rope is there for hands more than eyes, stretched low enough to catch and steady a crossing body when the riverbed goes uncertain underfoot. Right now it still follows yesterday's route, which would have been excellent yesterday and foolish today. You untie the old line, walk it over to the new stakes, and draw it taut from bank to bank until the whole crossing reads clear even to someone seeing it for the first time.\n\nThe keeper gives the rope a testing pull and seems satisfied when the tension carries cleanly from post to post. The first cart driver crosses a moment later with one hand on the line and no interest in drama. \"Better,\" the keeper says. \"A working ford should feel obvious. That is most of its value.\"",
+      "options": [
+        { "label": "Tie off the last knot and leave the ford trustworthy again", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Mind Strike", "Quick Exit" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

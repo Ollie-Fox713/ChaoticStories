@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_41",
+  "title": "Morning at the Gate",
+  "desc": "Before the work lines reach Queen's Gate, the recognition stones and assembly markings need to be ready for the whole hive.",
+  "locations": [ "Queen's Gate" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Queen's Gate wakes before most of Mount Pillar. The great arch catches the first working light from the upper tunnels, the plaza stones take on a pale sheen from fresh-washed traffic lanes, and the recognition blocks sit in their housings waiting to flash blue, red, yellow, or the one color no one wants to see. Before the lines of workers, couriers, and fighters start moving through, the gate has to look and function like the hinge of the hive it is.\n\nThe morning captain passes you a polishing cloth and a chalk box. \"Recognition stones if you want the finer work,\" she says. \"Assembly block markers if you want the broader one. We open in ten minutes either way.\"",
+      "options": [
+        { "label": "Polish the recognition stones before traffic starts", "go": 1 },
+        { "label": "Refresh the plaza block markings for the day", "go": 2 }
+      ]
+    },
+    {
+      "text": "The recognition stones are set waist-high along the main lanes, dark and smooth until a glyph touches them and color wakes under the surface. Dust, oil, and clay film do not stop them from working, but they dull the response enough to make a busy line hesitate. You clean each face in turn, working the cloth in slow circles until the black stone reflects the arch and the lane ropes clearly again.\n\nBy the time the first queue forms, every block answers crisply. Blue blooms fast under valid glyphs. Yellow holds steady where it should. Even the testing red looks clean and uncompromising. The morning captain watches three quick checks go through without a single pause and seems satisfied. \"Good. The gate may judge harshly. It does not need to judge slowly.\"",
+      "options": [
+        { "label": "Fold the cloth and leave the stones ready for the rush", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The plaza beyond the arch doubles as an assembly ground during alarms, and that only works if every block marker is visible even under stress. Overnight foot traffic and one careless supply cart have smeared the white lane numbers and blurred two section outlines enough to invite trouble later. You repaint the block edges, freshen the numerals, and reset the directional arrows until the whole plaza reads clearly again from the arch mouth.\n\nIt is routine until you step back and see what the markings actually do. They turn open stone into ordered movement before anyone is even standing on it. The first workers of the morning walk across the refreshed lines without looking down once, trusting the system because the system looks ready. The captain studies the corrected blocks and nods. \"There. If we need the plaza in a hurry, it will remember what it is for.\"",
+      "options": [
+        { "label": "Cap the chalk and leave the plaza in clean order", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Accelerated Unity", "Danihilation" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

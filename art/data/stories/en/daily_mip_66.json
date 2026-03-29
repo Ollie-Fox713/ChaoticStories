@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_66",
+  "title": "Horizon Watch",
+  "desc": "Before the heat rises, surveyors take the morning measure of the ocean with no water.",
+  "locations": [ "Rao'Pa Sahkk" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "On the right morning, Rao'Pa Sahkk looks less like desert than like a sheet of hammered bronze laid all the way to the horizon. The flats are so level that dawn arrives across them like light across still water. The heat has not started lying yet. Distance, for a little while, remains honest.\n\nThat is when the horizon-watch crews go out. A Mipedian surveyor waits beside a folded chart cloth with a rack of smoked lenses under one arm and a bundle of black signal poles under the other. \"Once the shimmer builds,\" she says, glancing east, \"the sea wakes up and every judgment gets worse. We take our measure before that happens.\"\n\nThis morning's circuit splits in two. The far line needs its black poles planted where the sand remains firmest, or the chart cloth needs someone patient enough to log the first shimmer bands through smoked glass before the light turns reckless.",
+      "options": [
+        { "label": "Carry the black poles out along the far line", "go": 1 },
+        { "label": "Log the early shimmer bands through smoked glass", "go": 2 }
+      ]
+    },
+    {
+      "text": "The farther you walk from camp, the more Rao'Pa Sahkk resembles open water. The packed sand under your boots stays dry and hard, but your eyes keep insisting the world ahead is rippling. When you look back, the tents and cargo sleds seem to sit on a low island of stone in the middle of a bronze sea.\n\nYou drive the black poles in at measured intervals while the surveyor checks each one against her line cord. They stand thin and sharp against the brightening flats, like ship masts with no ships attached. By the third marker, the first real shimmer has begun and the ground ahead appears to lift and fall in slow false waves.\n\nThe surveyor squints along the line with obvious approval. \"Good. Now the lane will still make sense when the mirage starts inventing bays.\" She says it in the same tone another worker might use for fence posts or drainage ditches. In Rao'Pa Sahkk, even wonder has to be practical before noon.",
+      "options": [
+        { "label": "Take in the false sea and head back", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The chart cloth is striped in charcoal and pale clay, weighted at the corners so it lies flat on the packed sand. From a kneeling position behind the smoked lens, you watch the horizon change by degrees and call out what the glass reveals before naked sight begins believing the wrong things.\n\nAt first the bands are simple: a low silver blur to the south, a bright plate to the east, a narrow dark seam where the flats hold last night's coolness a little longer. Then the false water begins to form. A shallow bay appears where there is only level ground. A ridge becomes a dark shoreline. The surveyor marks each lie on the cloth with wax chalk because cataloguing the deception is the only reliable way to pass through it later.\n\nBy full sunrise the whole edge of the world is wavering. Without the chart, you would swear there were distant channels and bright inlets waiting ahead. With it, you see something even stranger: a desert so perfectly made that it can impersonate an ocean every single day.",
+      "options": [
+        { "label": "Roll the cloth and save the morning's reading", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Dexterous Storm", "Windslash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

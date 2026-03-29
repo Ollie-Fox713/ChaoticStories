@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_19",
+  "title": "Crystal Cleaning",
+  "desc": "The resonance crystals that power Kiru City's warning system need polishing.",
+  "locations": [ "Crystal Cave", "Kiru City", "Runic Grove" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Beneath Kiru City, in caves carved by ancient Mugicians, are the resonance crystals that power the city's early warning system. If an enemy army approaches, the crystals vibrate, sending alerts through the city's foundations that every building can feel.\n\nBut crystals accumulate grime. Dust, mineral deposits, the occasional colony of cave-beetles that mistake them for eggs. A maintenance crew makes the rounds every season, and today they're short-handed.\n\nThe crew chief hands you a soft cloth and a bottle of solution. \"Wipe each crystal until it rings clear when you tap it. Dull ring means dirty. No ring means dead — mark it for replacement. And don't touch the blue ones bare-handed.\"",
+      "options": [
+        { "label": "Ask why not the blue ones", "go": 1 },
+        { "label": "Start polishing — the cave is cold", "go": 2 }
+      ]
+    },
+    {
+      "text": "\"The blue ones store charge. Touch them bare and you'll feel like you licked a thunderstorm.\"\n\nYou handle the blue ones with extra cloth. Each crystal is a different shape — some are pillars, some are clusters, some are flat discs embedded in the walls. You wipe, tap, listen. Clear ring, move on. Dull ring, polish harder.\n\nMost of them clean up easily. But deep in the back of the cave, you find one that won't ring at all. No matter how much you polish, it stays silent. Dead.\n\nYou mark it with chalk. The crew chief examines it and sucks air through her teeth. \"That one's been dead a while. There's a blind spot in the northeast warning grid that we couldn't figure out. This is it.\"\n\nShe sounds relieved and annoyed simultaneously. \"Good find. Bad that we missed it.\"",
+      "options": [
+        { "label": "Help her log the dead crystal's position", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The cave is cold. The solution on the cloth makes your fingers numb within minutes. You develop a rhythm: wipe, tap, listen, move. The crystals ring like glass bells when clean — a beautiful, eerie sound that echoes through the cavern.\n\nYou've polished about twenty when you notice something. One of the crystals is already clean. Spotless. And it's vibrating — not ringing, but humming. A low, continuous tone.\n\nYou tap it. The hum changes pitch but doesn't stop. The crystal is responding to something. Receiving a signal.\n\nThe crew chief comes over and listens. Her face goes through several expressions. \"That's... not one of ours. That frequency isn't in the warning system.\" She places a hand on the crystal. \"It's picking something up from deep below. Way below.\"\n\nShe marks it with red chalk instead of white. \"Keep polishing. I need to report this.\"",
+      "options": [
+        { "label": "Keep polishing and try not to think about it", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Lightning Burst", "Ektospasm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_crystal",
+  "chainName": "Crystal Tending"
+}

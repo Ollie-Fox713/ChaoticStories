@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_39",
+  "title": "Fulgurite Sorting",
+  "desc": "The storm-hunters brought in a good haul of lightning glass. Now someone has to separate beauty from breakage.",
+  "locations": [ "Sha-Kree Flats" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "By the time fulgurite reaches the sorting shade on Sha-Kree Flats, the dangerous part is over and the delicate part begins. The storm-hunters have already dug the lightning glass out of the strike beds and carried it back wrapped in silk and soft sand. Now the haul lies on padded tables in branching tubes and twisted amber spines, some clear enough to hold the light, some cracked beyond trade, all of it looking as if a storm had decided to leave handwriting behind.\n\nThe sorter at the main table nods toward two waiting trays. \"Grade the straight pieces for clarity and wall thickness,\" she says, \"or pack the branching forms before the sun and clumsy hands finish what the lightning started. Both jobs require patience. Only one lets you admire the glass longer.\"",
+      "options": [
+        { "label": "Grade the straight tubes for sale quality", "go": 1 },
+        { "label": "Pack the branching forms into travel frames", "go": 2 }
+      ]
+    },
+    {
+      "text": "Straight pieces are judged with almost insulting rigor. You lift each tube into the angled light, check the wall for bubbles, test the mouth for hairline cracks, and lay it into the correct tray: common trade, fine trade, or local workshop only. The best pieces seem lit from within, pale gold at the center and green at the edges, the exact memory of the strike still somehow suspended in them.\n\nIt takes longer than expected because the better the glass, the more you want to keep looking at it. The sorter does not mind. She only minds mistakes. When the last tray is filled, she counts three fine pieces, nine common, and one cracked tube suitable only for practice cutting. \"A good storm,\" she says, not with excitement but with the even respect of a creature discussing rainfall. On Sha-Kree Flats, lightning is weather until someone sorts the results into value.",
+      "options": [
+        { "label": "Cover the trays and leave the graded glass in order", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The branching forms are the fragile prize, too awkward for ordinary crates and too valuable to risk with careless packing. You nest each one into a travel frame lined with wool silk and dry sand, tying the anchor threads just tight enough to hold without biting into the glass. It is almost like packing bones from some elegant storm-bred creature that vanished before anyone could name it.\n\nBy the time the last frame is sealed, the shade table has transformed from clutter to inventory. Nothing protrudes. Nothing rattles. Nothing is left where one bad elbow could turn a trader's week's profit back into glittering sand. The sorter taps the nearest frame and listens for movement. There is none. \"Good,\" she says. \"Now it can cross the flats once more without becoming the flats again.\"",
+      "options": [
+        { "label": "Stack the frames in the caravan shade and brush off the table", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Lightning Burst", "Flashwarp" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

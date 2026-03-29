@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_01",
+  "title": "Catching the Courier Winds",
+  "desc": "Message-scrolls are caught in the updrafts. Someone has to chase them down.",
+  "locations": [ "Kiru City", "Cordac Falls" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The courier office is in chaos. A gust from the falls caught the morning dispatch — forty sealed scrolls, spinning upward on thermals like startled birds. They tumble through the air above the city streets, trailing wax-seal ribbons.\n\nA frantic courier shoves a net into your hands. \"The blue-ribbon ones are military orders. The red ones are trade invoices. If we lose the blue ones, someone doesn't get reinforcements. If we lose the red ones, I don't get paid.\"\n\nTwo scrolls spiral past — one blue, one red — heading in opposite directions.",
+      "options": [
+        { "label": "Chase the blue-ribbon military scroll", "go": 1 },
+        { "label": "Grab the red-ribbon trade invoice", "go": 2 }
+      ]
+    },
+    {
+      "text": "You sprint across a rooftop, leaping a gap between buildings, and snag the blue scroll out of the air just before it clears the city wall. The wax seal is intact — good. The contents are someone's problem, not yours.\n\nFrom up here you can see a dozen more scrolls caught in lazy spirals above the market district. The courier below gives you a thumbs up and points at the next cluster.\n\nYou spend the next hour on rooftops, snatching scrolls from thermals, untangling one from a weather vane, and prying another from the talons of a very confused bird that thought it was lunch.\n\nBy the time the winds die down, you've recovered eleven scrolls. Not bad.",
+      "options": [
+        { "label": "Return the haul to the courier office", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The red scroll is heavier than it looks — the invoice is wrapped around a small pouch of trade samples. You catch it mid-bounce off a market awning and tuck it into your belt.\n\nThe courier waves you toward the falls, where a cluster of scrolls is pinned against the mist-wall by crosswinds. You wade into the spray, plucking scrolls from the wet air like fruit from a vine. Three of them are already soaked through — the ink is running.\n\n\"Salvageable,\" the courier says, squeezing water from one. \"Barely. But I'll take barely over lost.\"\n\nYou wring out your clothes and hand over seven damp but intact scrolls. The courier presses a few credits into your palm.",
+      "options": [
+        { "label": "Pocket the credits", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Windslash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_courier",
+  "chainName": "Courier Service"
+}

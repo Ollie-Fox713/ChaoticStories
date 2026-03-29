@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_23",
+  "title": "Venom Milking",
+  "desc": "Desert creatures produce venom worth its weight in gold. Extracting it is the problem.",
+  "locations": [ "The Hunter's Perimeter", "Mipedim Oasis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The venom lab is a stone building at the edge of the Hunter's Perimeter, windowless and cool. Inside, a dozen creatures sit in glass-walled enclosures — sand vipers, dune scorpions, a particularly angry razor-beetle that hurls itself against the glass whenever someone walks past.\n\nThe venom mistress is calm in the way that people who handle lethal creatures daily are calm — the calm of total attention.\n\n\"Milking day. I need an assistant.\" She holds up a collection vial. \"You hold the vial. I handle the creature. Do not flinch. Flinching startles them. Startled venomous creatures bite. I've been bitten eleven times. I don't recommend it.\"\n\nShe gestures at the enclosures. \"We start with the vipers — they're predictable. The scorpions are tricky. We don't touch the razor-beetle unless we absolutely have to.\"",
+      "options": [
+        { "label": "Start with the vipers — ease into it", "go": 1 },
+        { "label": "Ask about the razor-beetle — what makes it special?", "go": 2 }
+      ]
+    },
+    {
+      "text": "The vipers are three feet of coiled muscle and fangs. The mistress reaches into the enclosure with bare hands — no gloves, because gloves reduce sensitivity, and sensitivity keeps you alive.\n\nShe grips the first viper behind the head with a practiced motion. It wraps around her arm, muscles flexing, but the head is immobilized. She positions the fangs over the collection vial.\n\n\"Tap the jaw. Gently. Right there.\" She indicates a spot behind the venom glands.\n\nYou tap. The viper's mouth opens reflexively, fangs extending, and a drop of amber liquid rolls into the vial. Then another. The venom collects slowly — each drop worth more than a day's wages.\n\nThree vipers milked, nine drops total. The mistress returns each one to its enclosure with the same unhurried precision. The vipers coil and watch her go, seemingly unbothered by the process.\n\n\"Viper venom goes to the healers,\" she says, sealing the vials. \"Diluted, it's an anticoagulant. Concentrated, it stops hearts. Same substance, different dosage. That's nature's sense of humor.\"\n\nShe hands you a sealed vial — your share. \"For the healers' stockpile. Tell them we're running low on anticoagulant. And tell them to stop using it for headaches — it's not for headaches.\"",
+      "options": [
+        { "label": "Deliver the venom to the healers", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "\"The razor-beetle,\" the mistress says, glancing at the enclosure where the beetle is currently trying to chew through reinforced glass. \"Its venom is the most valuable substance in Mipedian territory. One drop paralyzes a full-grown creature for twelve hours. The military uses it for their tranquilizer darts.\"\n\nShe pauses. \"The problem is that razor-beetles don't have venom glands you can milk. The venom is distributed through their entire exoskeleton. To collect it, you have to scrape the shell. While the beetle is conscious. And angry. Which is always.\"\n\nShe opens a drawer and produces a glass scraping tool and the thickest leather gloves you've ever seen. \"I handle. You scrape. The beetle will try to cut you — those mandibles can shear bone. The gloves will protect you for about three seconds. Work fast.\"\n\nThe extraction is chaos. The mistress pins the beetle with padded tongs while you scrape the shell, collecting amber residue on the glass tool. The beetle screams — a high-pitched shriek that makes your teeth vibrate. It thrashes. It spits. It clips the edge of your glove and the leather parts like paper.\n\nThirty seconds of scraping yields a quarter-vial of venom. The mistress releases the beetle, which retreats to its corner and glares with the intensity of a creature planning revenge.\n\n\"Quarter-vial is good,\" she says. \"That's twenty credits' worth of paralytic, enough for forty darts.\" She examines your glove. \"You'll need new gloves. The beetle took a souvenir.\"\n\nYour hands are shaking. The beetle is still glaring. You've never worked harder for twenty credits.",
+      "options": [
+        { "label": "Accept payment for hazardous duty", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Rustoxic", "Web Cocoon" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_hunt",
+  "chainName": "Hunting & Venom"
+}

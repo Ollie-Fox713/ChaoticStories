@@ -1,36 +1,76 @@
-# Art Assets
+# assets — Static Assets
 
-Place art files here to sync them into the main Chaotic project.
+Card images, card data JSON, and UI artwork. Served locally by nginx (docker-compose) or via CDN (`assets.portal-to-perim.com`) in production.
 
-## Directory Structure
+## Structure
 
 ```
-art/
-  cards/
-    creatures/     Card art for creatures (PNG, 5:7 portrait ratio)
-    attacks/       Card art for attacks (PNG, 5:7 portrait ratio)
-    battlegear/    Card art for battlegear (PNG, 5:7 portrait ratio)
-    mugic/         Card art for mugic (PNG, 5:7 portrait ratio)
-    locations/     Card art for locations (PNG, 7:5 landscape ratio)
-  ui_images/       UI art (map images, backgrounds, etc.)
-  avatar/
-    body/          Avatar body layer PNGs (512x768 transparent)
-    hair/          Avatar hair layer PNGs
-    shirt/         Avatar shirt layer PNGs
-    pants/         Avatar pants layer PNGs
-    shoes/         Avatar shoes layer PNGs
+assets/
+  cards/          Card images (~1211 PNG files)
+    attacks/      Attack card images
+    battlegear/   Battlegear card images
+    creatures/    Creature card images
+    locations/    Location card images
+    mugic/        Mugic card images
+  data/           Card stat data (JSON, source of truth for seeding)
+    attacks.json
+    battlegear.json
+    creatures.json
+    locations.json
+    mugic.json
+    achievements.json  Achievement definitions (seeded into achievement_definitions table)
+    location_loot.json Per-location loot table pools
+    stories/        Adventure story JSON (locale-based)
+      README.md     Full story JSON schema reference
+      en/           English stories (10 files)
+  avatar/         2D layered avatar PNGs (52 files, 512x768 transparent)
+    body/         Skin tone body silhouettes
+    hair/         Hair style overlays
+    shirt/        Shirt overlays
+    pants/        Pants overlays
+    shoes/        Shoes overlays
+    stickers/     Profile stickers (~128x128 transparent PNGs)
+    README.md     Full asset spec, naming convention, z-order, file list
+  ui_images/      UI artwork
+    Map_of_the_OverWorld.png
+    Map_of_the_UnderWorld.png
 ```
 
-## File Naming
+## Card Images
 
-- **Card art**: Use the exact card name as the filename (e.g., `Maxxor.png`, `Song of Fury.png`)
-- **Avatar layers**: Use the format `{body}_{pose}_{variant}.png` (e.g., `male_idle_brown.png`)
-- **UI images**: Use descriptive names matching existing conventions
+Image URL pattern: `/assets/cards/{category}/{CardName}.png`
 
-## Notes
+The `art_link` field in the `cards` DB table stores this path. To re-download card images from the Chaotic fandom wiki:
 
-- Files placed here will overwrite existing art in the main project when synced
-- All card types except locations use **5:7** aspect ratio (portrait)
-- Locations use **7:5** aspect ratio (landscape)
-- Avatar PNGs should be 512x768 with transparent backgrounds
-- After syncing, art must be uploaded to S3 via `go run ./scripts/sync_assets`
+```bash
+go run ./scripts/scraper
+```
+
+**Local dev**: Assets are bind-mounted into the nginx container via `docker-compose.yml` — no rebuild needed after scraping.
+
+**Production**: Upload to S3 with `go run ./scripts/sync_assets`, served via Cloudflare CDN at `https://assets.portal-to-perim.com`.
+
+## Card Data JSON
+
+Each JSON file is an array of card objects. Fields vary by card type but common fields include: `name`, `set`, `rarity`, `ability`, `special_logic` (JSONB for engine-parseable effects).
+
+**Note:** The JSON files do NOT include a `type` field — the type is implicit from which file the card is in (e.g. cards in `creatures.json` are creatures). When loading in tests, set `cd.Type` explicitly after calling `cardDataFromRaw()`.
+
+These JSON files are the **source of truth for tests** — all card-under-test data in `cmd/api/*_test.go` is loaded from these files via `loadCards()`/`loadCardsBySet()` and converted with `cardDataFromRaw()`.
+
+### Card Sets (13 total)
+| Code | Name | Cards |
+|------|------|-------|
+| DOP | Dawn of Perim | 239 |
+| AU | Alliance Unraveled | 246 |
+| MI | M'arrillian Invasion | 231 |
+| TOTT | Turn of the Tide | 123 |
+| ROTO | Rise of the Oligarch | 103 |
+| FUN | Forged Unity | 101 |
+| SS | Secrets of the Lost City (Silent Sands) | 100 |
+| ZOTH | Zenith of the Hive | 120 |
+| LR | League Rewards | 24 |
+| OP1 | Organized Play 1 | 24 |
+| BR | Beyond the Doors | 14 |
+| FAS | Fire and Stone | 15 |
+| SAS | Starter (Alliances) | 1 |

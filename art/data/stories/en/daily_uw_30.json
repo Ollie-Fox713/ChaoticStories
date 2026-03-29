@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_30",
+  "title": "Safety Chain Check",
+  "desc": "Last night's tremor loosened the chain rails above the pond. Someone has to trust them before anyone uses them.",
+  "locations": [ "Lava Pond" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The walkways above Lava Pond rely on chain rails because stone railings crack, wood burns, and good intentions do not stop anyone from falling into boiling rock. After a night tremor, every anchor point has to be checked before the shift traffic resumes in earnest.\n\nThe rail master meets you at the first bend with a coil of replacement links over one shoulder and a testing hook in hand. One section of chain is sagging where the wall anchor shifted. Another sounds wrong when struck - a thin, bright note instead of the heavy ring of healthy metal. \"Pick your nuisance,\" he says. \"Re-seat the wall anchor, or swap out the weakened links before somebody mistakes familiarity for safety.\"\n\nBelow the ledge, the pond rolls against the chamber edge with the patience of something that knows gravity is on its side.",
+      "options": [
+        { "label": "Re-seat the loosened wall anchor", "go": 1 },
+        { "label": "Replace the weakened links in the rail section", "go": 2 }
+      ]
+    },
+    {
+      "text": "The wall anchor has shifted just enough to matter. The bolt itself still holds, but the stone around it has cracked into a shallow spider pattern from the tremor. You set a wedge plate behind the mounting bracket while the rail master keeps tension on the chain, then drive two side pins into the healthier stone above the break to spread the load.\n\nIt is awkward, sweaty work done with one shoulder pressed against hot rock and one boot planted very carefully on a ledge nobody sane would call generous. But when the last pin seats, the bracket stops creeping. The chain pulls tight again and stays there even when the rail master leans his full weight against it to test the repair.\n\nHe grunts once, satisfied. \"Good. Now it'll hold a worker instead of just a theory.\" Around Lava Pond, that is a meaningful distinction.",
+      "options": [
+        { "label": "Holster the hammer and clear the walkway", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "A bad rail section announces itself if you listen long enough. Three links from the bend, one ring is too bright, too thin, the sound of metal that has gone hard and brittle from too many heat cycles. You lock the chain in place with a clamp, knock the suspect links free, and thread the replacement section through while the rail master keeps muttering about crews who trust rails they haven't inspected.\n\nThe new links are heavier, still dark from the forge, and they settle into the line with a satisfying weight. Once the clamps come off, the repaired section hangs true, no weak note, no visible warp, just a proper chain ready to be leaned on by people carrying more confidence than balance.\n\nThe rail master strikes the section once with the testing hook. This time the sound is right - low, solid, final. \"There,\" he says. \"If anyone falls now, it won't be because we gave them bad chain.\" At Lava Pond, that is the sort of reassurance people actually accept.",
+      "options": [
+        { "label": "Collect the old links and mark the rail fit for use", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Ember Swarm", "Force Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_51",
+  "title": "Braided Dawn",
+  "desc": "At first light, the field sluices and little branch crossings have to be opened in the right order or the whole morning starts crooked.",
+  "locations": [ "Riverlands" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "In the Riverlands, morning arrives in layers. First the mist pulls low over the braided streams. Then the grasses brighten. Then the water itself starts carrying the sky in narrow silver lengths between the fields. By the time the first work crews reach the branch channels, the day already looks half-built out of reflection. Small sluice gates wait along the irrigation cuts, and the little plank crossings between them still hold beads of cold river mist. The whole landscape feels patient in a way only a place with reliable water can manage.\n\nThe channel keeper carries a hook staff and a coil of fresh ribbon ties. \"Lift the field sluices if you want the gate line,\" she says. \"Or retie the crossing ribbons on the branch bridges if you would rather work the paths. Either way, the Riverlands wake by water first and feet second.\"",
+      "options": [
+        { "label": "Lift the field sluices along the dawn channel", "go": 1 },
+        { "label": "Retie the crossing ribbons on the branch bridges", "go": 2 }
+      ]
+    },
+    {
+      "text": "The sluice boards are light enough to lift by hand and heavy enough to matter the moment they move. You work the line in sequence, raising each gate just enough to send a clean narrow current into its field cut without robbing the next channel downstream. As each board comes up, the water changes character. What had been still pooled edges becomes movement with purpose, slipping into furrows, curving around the grass roots, and taking the new light with it.\n\nBy the time the last gate is set, the whole field row has started shining in bands. The keeper stands with her boots in the damp grass and watches the water distribute itself through the land with professional satisfaction. \"Good,\" she says. \"People praise harvests. What they ought to praise is the hour before one becomes possible.\"",
+      "options": [
+        { "label": "Set the hook staff aside and leave the channels flowing", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The branch crossings are plain planks with ribbon markers tied to the side posts so workers can find them quickly when the mist sits thick over the low channels. Two ribbons have frayed into useless tassels and another has come loose enough to wrap the post instead of signaling from it. You retie the line from bridge to bridge, knotting fresh blue and white strips where the keeper wants them so the paths read clearly over the waking fields.\n\nAs the mist lifts, the ribbons begin to answer the breeze one by one, small bright motions over the silver water. The effect is simple and beautiful, exactly the sort of thing Riverlands workers no longer stop to notice because they are too busy depending on it. The keeper does notice. She glances over the restored line and nods. \"Better. A place this gentle can still lose people if the paths decide to hide.\"",
+      "options": [
+        { "label": "Coil the spare ribbon and leave the crossings marked", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Hydro Balls" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

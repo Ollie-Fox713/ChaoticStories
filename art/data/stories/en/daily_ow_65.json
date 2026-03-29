@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_65",
+  "title": "Burnline Watch",
+  "desc": "One scar in the forest does not heal, and someone has to tend the silence around it.",
+  "locations": [ "Forest of Life" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Most of the Forest of Life looks untouched by time, but there is one quarter where the old UnderWorld assault still shows. A strip of bark remains blackened. A section of stone is fused into dark glass. The surrounding green presses close and goes no farther. The damage does not spread, does not fade, does not accept erasure. It simply endures.\n\nThe wardens keep a low boundary cord around the burnline, not because the place is dangerous in any ordinary sense, but because creatures are always tempted to step too near and see whether the forest still feels pain there. A pair of memorial plaques and a shallow water bowl stand at the safest viewing point, all of them dusted with fine grit from the morning wind.\n\nA senior warden meets you with a bundle of replacement cord and a soft brush. \"We keep it clean,\" she says. \"We keep it honest. That is all this place asks of us.\"",
+      "options": [
+        { "label": "Reset the boundary cord and stone stakes", "go": 1 },
+        { "label": "Brush the plaques and refill the water bowl", "go": 2 }
+      ]
+    },
+    {
+      "text": "The old cord comes up in silence. Even the birds farther back in the trees seem to give this strip of ground a little extra distance. You set the new line through low stakes of pale stone, measuring the curve so visitors can see the scar clearly without feeling invited into it.\n\nUp close, the burnline is harder to dismiss as history. The bark has bubbled and frozen in place. The soil beside it is still black, yet no ash lifts when the wind crosses. A child on the path asks her mother why the forest never fixed this part. The mother has no answer. The warden beside you does not offer one.\n\nWhen the final knot is tied, the boundary looks modest and absolute. Not a fence, not a punishment, just a line acknowledging that some wounds are part of the landscape now. In Perim, even the places devoted to life remember fire.",
+      "options": [
+        { "label": "Step back and keep the watch", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The plaques are simple by OverWorld standards, their lettering cut deep and left undecorated. You brush the dust from the grooves, wipe the stone clean, and refill the bowl beside them until its surface lies smooth enough to reflect both the blackened strip and the green canopy above it.\n\nThat reflection is the part you keep noticing. In the bowl, scar and leaf share the same still water without correction or argument. The forest does not deny what happened here, but neither does it surrender the rest of itself to it. The warden watches you straighten the last plaque and lowers her voice as if the place deserves that much.\n\n\"Some visitors want answers,\" she says. \"Most of us come here for proportion.\" She does not explain further. Looking into the bowl, you think you understand anyway.",
+      "options": [
+        { "label": "Leave the memorial in quiet order", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Enlightened Tenacity", "Mind Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

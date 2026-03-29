@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_24",
+  "title": "Storm Watch",
+  "desc": "An elemental storm is coming. The settlements need warning.",
+  "locations": [ "Stronghold Morn", "Ravanaugh Ridge", "Glacier Plains" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The sky over Ravanaugh Ridge has turned the color of a bruise — purple-black, shot through with veins of green lightning that doesn't fork downward but sideways, connecting cloud to cloud in a crackling web.\n\nAn elemental storm. Not regular weather — Perim weather. The kind where the rain might be ice, or fire, or something that hasn't decided yet.\n\nA weather watcher is shouting over the rising wind. \"I need runners! Three settlements on the lee side don't have resonance towers — they won't know it's coming until it hits. Someone needs to warn them!\"\n\nThe first settlement is close. The other two are further, in opposite directions.",
+      "options": [
+        { "label": "Take the two far settlements — you're fast", "go": 1 },
+        { "label": "Take the close one and help them prepare", "go": 2 }
+      ]
+    },
+    {
+      "text": "You run. The wind is at your back, which helps, then at your face, which doesn't. Green lightning crawls across the sky like luminous cracks in glass.\n\nThe first far settlement is a farming hamlet. They see the sky and don't need much convincing — within minutes they're securing livestock, sealing windows, and moving water barrels under cover. An elder presses a wrapped parcel of bread into your hands. \"For the road. Run fast.\"\n\nThe second settlement is a mining camp. They're underground already and didn't notice the sky. You bang on the mine entrance until a foreman emerges, sees the lightning, and starts cursing in three languages.\n\n\"Get inside!\" he shouts — at you, at everyone. But you need to get back.\n\nYou make it to Stronghold Morn just as the storm breaks. The rain is ice — not frozen rain, but liquid ice, cold beyond cold. It shatters on the stone walls like glass. You dive inside the fortress and watch the storm through arrow slits. It's terrible and beautiful.\n\nAll three settlements report in by morning. No casualties.",
+      "options": [
+        { "label": "Eat the elder's bread. You earned it.", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The close settlement is a cluster of homes around a communal well. They've already seen the sky and are panicking.\n\n\"The storm shutters won't hold!\" someone yells. \"They haven't been repaired since last season!\"\n\nYou spend the next hour in a frenzy of practical work: nailing shutters, stacking sandbags around foundations, moving children and elders into the stone-walled community hall. A carpenter hands you a hammer. You drive nails until your arm aches.\n\nThe storm hits while you're securing the last shutter. The rain is ice — liquid cold that freezes on contact. It builds on the shutters in crystalline layers. But the shutters hold. The sandbags hold. The community hall holds.\n\nInside, families huddle together by lamp-light while ice-rain drums on the roof. Someone starts humming. Others join. It's not organized — just sound, filling the silence between thunderclaps.\n\nBy dawn, the storm has passed. The settlement is frosted white but intact. The carpenter finds you and shakes your hand. \"Stay for breakfast. You've earned it.\"",
+      "options": [
+        { "label": "Stay for breakfast", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Freeze Flash", "Inferno Gust" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_patrol",
+  "chainName": "Border Watch"
+}

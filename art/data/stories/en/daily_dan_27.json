@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_27",
+  "title": "Surface Garden",
+  "desc": "The embassy's imported plants need care in a place that was never meant to keep leaves alive.",
+  "locations": [ "Overworld Embassy at Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Just outside one embassy window sits a narrow row of surface plants in stone troughs - oah, jij, and two other species the steward names with quiet pride and the Danian grounds workers refer to collectively as \"mold bait.\" Their leaves are pale from underground life, their roots packed into imported soil that has to be guarded from fungus and excess damp.\n\nThe assistant steward is crouched over the troughs with a pruning knife and three polished reflector plates. \"They do better with reflected lamp light than direct heat,\" she says. \"They also do better without Mount Pillar trying to digest them.\" One plant has blackening edges on its lower leaves. Another has roots pressing up against the lip of the trough.\n\nShe offers you a choice of work with the seriousness of a battlefield quartermaster. \"Repot and trim the root-bound trough, or reset the reflector array so the whole row gets proper light. I would like them all alive by evening.\"",
+      "options": [
+        { "label": "Repot the crowded trough and trim the damaged leaves", "go": 1 },
+        { "label": "Reset the reflector plates and rebalance the light", "go": 2 }
+      ]
+    },
+    {
+      "text": "The root-bound plant resists being moved, clinging to the damp soil as if it has decided Mount Pillar is now part of it. You work it free gently, shaking off clotted dirt and cutting away the blackened roots before setting it into a fresh trough lined with dry gravel and new soil from a sealed crate.\n\nThe assistant steward watches your pruning with the attention of someone trying not to hover and failing. \"Raznus brought the first cuttings,\" she says after a moment. \"Every clerk since has been told to keep them alive. Not because they matter strategically. Because the room feels wrong without them.\"\n\nOnce the damaged leaves are trimmed and the roots have space again, the plant seems to settle. Its stems stop sagging. Its smaller leaves lift toward the lamp heat along the sill. The steward waters it with a measured cup and exhales. \"Good. It looks less homesick now. Or perhaps I do.\"",
+      "options": [
+        { "label": "Step back and let the plants recover", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The reflector plates hang on adjustable brackets near the window, angled to catch lamp glow and throw it across the leaves without scorching them. Right now two are pointing too high and one has dulled under a film of fungal dust. You polish the metal, loosen the brackets, and turn them a degree at a time while the assistant steward checks the leaf surfaces for warmth.\n\nAt first nothing seems to change. Then the far trough - the one that has been paling for days - catches the corrected light and the upper leaves take on a deeper green. Moisture beads along the waxy edges. The whole little garden begins to look less like a failed experiment and more like a stubborn extension of the surface.\n\n\"There,\" the steward says softly. \"That is the trick. Not forcing the embassy to be home. Just giving it enough light to remember what home looked like.\" She says it to the plants, or to you, or to the room itself. In an underground embassy, the distinction is not always important.",
+      "options": [
+        { "label": "Leave the garden brighter than you found it", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Vine Snare", "Hydro Balls" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

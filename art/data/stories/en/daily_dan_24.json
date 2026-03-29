@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_24",
+  "title": "The Tremor Report",
+  "desc": "A minor quake shook the tunnels. Assess the damage before it gets worse.",
+  "locations": [ "Mount Pillar", "Iron Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The tremor hit at dawn — a five-second shudder that rattled fixtures, cracked a water pipe on level four, and woke every Danian in the hive simultaneously. Minor quakes happen occasionally — Mount Pillar sits on a geologically active zone. The protocol is immediate assessment.\n\nYou're assigned to damage assessment team two — covering levels five through eight, including the Iron Pillar junction. The team lead distributes assessment forms.\n\n\"Visual inspection of all load-bearing walls. Check every pillar contact point. Log any new cracks, any changes to existing cracks, any water intrusion. If you see daylight where there shouldn't be daylight, evacuate the section and call it in.\"\n\nShe hands you a crack gauge — a thin card with graduated wedge markings. \"Measure every crack. Width matters. Anything over two millimeters gets flagged.\"",
+      "options": [
+        { "label": "Assess levels five and six — the residential corridors", "go": 1 },
+        { "label": "Assess levels seven and eight — the Iron Pillar junction", "go": 2 }
+      ]
+    },
+    {
+      "text": "Levels five and six are residential — densely occupied corridors with rooms branching off the main passage. The residents are awake, nervous, checking their walls.\n\nYou work systematically. Room by room, wall by wall. Your crack gauge slides into every fracture, measuring width. Most are pre-existing — logged in previous assessments, unchanged by the tremor. You note each as \"NFC\" — no further change.\n\nLevel five, corridor three: a new crack. It runs vertically along a wall-ceiling joint, two feet long. Your gauge reads one-point-five millimeters. Below the flag threshold, but new cracks are always noted.\n\nLevel six, corridor one: a water stain on the ceiling that wasn't there yesterday. The tremor shifted something in the piping above — not a burst, but a loosened joint that's weeping. You mark it for plumbing repair.\n\nLevel six, corridor four: a section of mucus seal has delaminated from the stone wall. The tremor's vibration broke the adhesive bond, leaving a palm-sized patch of exposed stone. You mark it for re-sealing.\n\nNo structural damage. No flagged cracks. No daylight. The residential levels weathered the tremor as they've weathered every tremor — with minor cosmetic damage and a population of nervous Danians who want reassurance.\n\nYou provide it. \"All clear. Maintenance issues only. No structural concerns.\" The relief is visible. Living inside a mountain requires trust in the mountain.",
+      "options": [
+        { "label": "File the assessment and reassure the residents", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The Iron Pillar junction is where the hive's heaviest loads converge — forge district above, armory to the east, the great storage halls to the west. If the tremor damaged anything critical, this is where it would show.\n\nThe Iron Pillar itself is your first check. You run your hands along the ironstone bolts that reinforce the natural stone — feeling for looseness, for shifts, for the subtle wrongness that indicates a bolt has moved. Bolts one through twelve: solid. Bolt thirteen: tight but with a different resonance when you tap it. Not loose — but the stone around it has changed.\n\nYou measure. The stone surrounding bolt thirteen has a new hairline crack — less than a millimeter, barely visible, but there. The crack radiates outward from the bolt, suggesting the tremor concentrated stress at that point.\n\nThe team lead examines it. \"Sub-threshold, but it's new and it's at a stress concentration point.\" She takes a photograph with a charcoal rubbing. \"We'll install a monitoring pin. If the next tremor widens this, we pull bolt thirteen and refit.\"\n\nThe rest of the junction checks out clean. The forge district ceiling shows no new damage. The armory walls are solid. The storage halls have some shifted inventory — crates that slid during the tremor — but no structural issues.\n\nYour assessment: one new crack at a stress point, monitoring recommended. The hive's skeleton held through the tremor. It's built to hold through worse.\n\nThe team lead submits the full report. \"Minor quake, minor damage. The mountain gives and the mountain holds.\" She pauses. \"But the quakes are getting more frequent. Three this quarter, up from one. The geologists are watching.\"",
+      "options": [
+        { "label": "File the report and note the frequency trend", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Sunder Ground", "Pebblestorm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_engineering",
+  "chainName": "Structural Engineering"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_52",
+  "title": "Intake Screens",
+  "desc": "The reed screens at one of the irrigation cuts are choking on river weed and silt again.",
+  "locations": [ "Riverlands" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Irrigation in the Riverlands is less about finding water than persuading it to behave. At each field cut, woven reed screens sit across the intake to keep out weed mats, larger fish, and the drifting tangles that every healthy river seems determined to contribute. Today's eastern intake has gone sluggish, the screen bowed slightly under a green weight of growth and silt that the field hands have already started glaring at from a distance.\n\nThe intake keeper plants her boots on the bank and hands you a hooked rake. \"Clear the reed screen if you want the river side,\" she says. \"Or reset the overflow pins in the side gate if you prefer the dry bank. One gets the water moving. The other keeps it from getting ambitious once it does.\"",
+      "options": [
+        { "label": "Clear the weed and silt from the reed screen", "go": 1 },
+        { "label": "Reset the overflow pins on the side gate", "go": 2 }
+      ]
+    },
+    {
+      "text": "The screen comes up in wet stubborn handfuls of river life, all of it slippery and offended at being removed from where it had drifted quite happily. You hook the mat free, drag the worst of it to shore, and rinse the woven reeds until clear water can push through the intake again instead of bulging uselessly against it. Once the blockage breaks, the channel takes a deep clean breath and starts running with the calm speed the keeper had been waiting for.\n\nShe kneels to watch the current settle and seems visibly less burdened by civilization. \"Good. A river has every right to wander. A field cut does not.\"",
+      "options": [
+        { "label": "Heap the pulled weed clear of the bank and leave the intake open", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The overflow pins decide how much excess water is allowed to escape into the relief ditch before a full field cut turns itself into a broader opinion about ownership. Two pins have worked loose and the side gate sits crooked in its slot, which explains the wet patch creeping toward the lower field path. You reseat each pin, test the gate travel, and return the relief line to the keeper's marks until the whole assembly stops looking opportunistic.\n\nThe next surge through the intake behaves itself beautifully, a narrow ribbon of excess slipping into the relief ditch and no more than that. The keeper watches the gate hold and seems pleased by the absence of drama. \"Better. In the Riverlands, success often looks like nothing overflowing in a memorable way.\"",
+      "options": [
+        { "label": "Tap the last pin snug and leave the side gate true", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Vine Snare", "Pebblestorm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

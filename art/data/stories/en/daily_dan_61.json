@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_61",
+  "title": "Opening Circuit",
+  "desc": "Before visitors arrive, the carnival has to decide what kind of place it wants to be today.",
+  "locations": [ "Carnival of Confusion" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Before the Carnival of Confusion opens, it has to be asked what kind of place it intends to be today. That question is answered with ladders, weighted ribbons, polished plates, and the patient work of attendants who know that impossible spaces can still be prepared.\n\nThis morning the entry court is smaller than usual, but the ticket booth beside it has unfolded into a tree-lined lawn complete with a pond floating three feet above the grass. Doors hang where walls should be. A stair turns slowly through open air, not enough to throw anyone off, just enough to remind you that direction here is a negotiation.\n\nA Danian attendant with a satchel of ribbon weights presses a slate into your hands. \"Opening circuit,\" she says. \"We mark the stable routes before the visitors arrive. If we do it well, the carnival feels delightful. If we do it badly, it feels personal.\"",
+      "options": [
+        { "label": "Hang the direction ribbons along the upper rail", "go": 1 },
+        { "label": "Set the mirror plates at the entry doors", "go": 2 }
+      ]
+    },
+    {
+      "text": "The turning stair carries you up through slow-moving air that smells, in sequence, like rain, hot metal, and sugar. From the upper rail you can see half the carnival preparing itself. A narrow arcade has become a wide parade walk. A tiny service shed now contains a moonlit garden. Somewhere below, a bell rings and the sound drifts sideways.\n\nThe attendant hands you ribbon bundles in coded colors. Amber means the local down is reliable. Blue means the floor may become a wall without notice. White means the area is beautiful and not worth the paperwork. You tie each streamered weight where the rail curves, then watch the tassels settle toward whichever direction the court currently trusts.\n\nBy the time you finish the ring, the place looks less like chaos and more like choreography. The first guests arrive through the arch just as the ribbons begin to flutter in a shared rhythm. One child sees the floating pond, gasps, and grabs her father's hand. The attendant beside you nods with quiet satisfaction. \"There,\" she says. \"Now it feels welcoming.\"",
+      "options": [
+        { "label": "Watch the carnival open", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The mirror plates are carried in padded frames because they do not reflect what stands in front of them. They reflect what a doorway believes it is connected to. Set one poorly and you get a beautiful lie. Set one well and newcomers can tell which arch will return them to the same courtyard and which one will deposit them in a music room hanging under a ceiling orchard.\n\nYou kneel at each entry frame while the attendant levels the plates with a brass pin. One mirror shows the gate behind you. One shows a stair that currently has no wall attached to it. One reflects the inside of a room full of hanging lanterns even though the doorway in front of it still opens onto an empty hall. \"That one will finish waking in about an hour,\" the attendant says, making a note on her slate.\n\nWhen the last plate settles, the whole court acquires a strange kind of clarity. The doors are still impossible, but they are impossible in an organized way. A pair of early visitors pause to study the reflections before stepping through, and both choose correctly. The attendant smiles without looking surprised. \"Good. We spared them the broom closet that becomes a canyon by noon.\"",
+      "options": [
+        { "label": "Leave the mirrors shining", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Unsanity", "Quick Exit" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

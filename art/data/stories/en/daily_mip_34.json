@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_34",
+  "title": "Perimeter Veil Check",
+  "desc": "The reed screens and sight-break cloths around the oasis edge need inspection before the sun gets high.",
+  "locations": [ "Mipedim Oasis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Mipedim Oasis survives partly because it exists and partly because it is difficult to see all at once. The outer approaches are lined with reed screens, pale sight-break cloths, and low planting walls designed to fracture lines of vision from the desert. Anyone who reaches the oasis uninvited has already passed too many chances to turn back.\n\nA perimeter watcher walks you along the eastern edge at first light, checking each veil with the same expression a treasurer might use while counting gold. One reed screen has split at the lower binding where the night wind worried it loose. Farther on, a sight-break cloth has slipped off its anchor, leaving a clean line from one dune rise to the outer palms.\n\nThe watcher taps both problems with her staff. \"Repair the split screen where the path bends, or rehang the cloth on the dune-facing side. Neither flaw is dramatic. That is why they matter.\"",
+      "options": [
+        { "label": "Rebind the split reed screen at the path turn", "go": 1 },
+        { "label": "Rehang and tension the slipped sight-break cloth", "go": 2 }
+      ]
+    },
+    {
+      "text": "The reed screen is built from narrow lengths woven onto a flexible frame, meant to move a little with the wind without opening into gaps a scout could exploit. The lower binding has frayed through where sand wore at it overnight. You crouch in the cool shade of the outer wall and rethread fresh cord through the split section, lashing the frame tight in short, deliberate knots.\n\nOnce the broken edge is secure, the watcher has you step back and walk the approach line from three different angles. From each one, the path now breaks correctly - palms hidden, water glints interrupted, the oasis reduced to fragments of shadow and wall until you are almost on top of it. That, apparently, is what success looks like.\n\nThe watcher rests her staff across her shoulders and nods once. \"Good. Security is rarely impressive when it works. It is simply absent from other people's plans.\"",
+      "options": [
+        { "label": "Trim the spare cord and leave the screen whole", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The sight-break cloth hangs between two stone posts on a line of braided fiber, light enough to move with the wind and dense enough to blur the shapes behind it into harmless pale motion. At the moment it is drooping from one side, which turns subtle concealment into obvious negligence.\n\nYou haul the line back into place, retie the upper anchor, and work the lower weights until the cloth sits at the right angle to the dune. Too taut and it snaps in the next gust. Too loose and it bellies inward, revealing the palm line every time the wind shifts. The watcher tests your work by standing out on the rise and narrowing her eyes toward the oasis. After a long moment she comes back with what passes for approval.\n\n\"Better. Now it looks like heat shimmer and sand instead of a missing thought.\" She says this as if it is a normal thing to say about cloth. In Mipedim, perhaps it is.",
+      "options": [
+        { "label": "Tie off the final weight and clear the perimeter", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Scout's Strike", "Hampering Winds" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

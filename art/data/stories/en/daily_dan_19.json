@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_19",
+  "title": "The Message Relay",
+  "desc": "Pass a message through the hive's chain relay. Don't lose a word.",
+  "locations": [ "Mount Pillar", "Oipont's Lookout", "Queen's Gate" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The hive's message relay is faster than any courier — a chain of Danians stationed at intervals through Mount Pillar's corridors, each one receiving a verbal message and repeating it to the next station. A message can cross the entire hive in under four minutes.\n\nThe catch: it has to arrive intact. Every word, every number, every inflection. The relay isn't telephone — Danian memory is precise, and relay operators train for accuracy. A dropped word in a military order could be catastrophic.\n\nYou've been assigned to relay station fourteen — midway between Oipont's Lookout and Queen's Gate. The relay supervisor tests you.\n\n\"Repeat after me: 'Priority alert, sector nine, structural anomaly at junction four-seven, request engineering survey within two hours, authorization code amber-six.'\"\n\nYou repeat it. Perfectly. She nods.\n\n\"Good. Now do that under stress, with noise, at speed, for an eight-hour shift.\"",
+      "options": [
+        { "label": "Take the station — focus on perfect repetition", "go": 1 },
+        { "label": "Monitor the relay — check for accuracy along the chain", "go": 2 }
+      ]
+    },
+    {
+      "text": "The first message arrives at station fourteen forty minutes into your shift. The operator at station thirteen speaks it clearly, at relay speed — fast but enunciated.\n\n\"Supply requisition, fungal garden twelve, request forty units calcium powder, twenty units binding compound, delivery to lower processing by end of shift, authorization code green-three.\"\n\nYou turn to station fifteen's operator and repeat. Word for word. No hesitation.\n\nThe messages come faster as the day progresses. Routine supply requests give way to shift changes, maintenance reports, and the occasional priority alert that makes your heart spike.\n\n\"Priority: water main breach, level six, corridor eighteen, flooding active, request emergency crew and pump detail, authorization amber-nine.\"\n\nYou pass it at speed. Station fifteen passes it onward. Four minutes later, you hear the emergency horn from level six. The pump crew is dispatched. The message worked.\n\nBy the end of the shift, you've relayed forty-three messages. The accuracy check — a supervisor comparing sent messages with received messages at both ends — shows zero errors at your station.\n\n\"Clean station,\" the supervisor says. \"That's uncommon for a first shift. Most new operators drop a word or transpose a number.\" She marks your evaluation. \"You're on the active roster. Same station, next shift cycle.\"\n\nYou leave with a new appreciation for words. Every one matters.",
+      "options": [
+        { "label": "Accept the roster assignment", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The accuracy monitor walks the relay chain, comparing messages at random stations to check for drift — the gradual mutation of a message as it passes through multiple operators.\n\nYou carry a sealed copy of each originated message and compare it to what arrives at downstream stations. Station eight: perfect match. Station twelve: perfect match. Station nineteen: one word changed.\n\nThe original: \"Engineering survey, corridor eight, stress reading at four-point-two percent.\"\nStation nineteen's version: \"Engineering survey, corridor eight, stress reading at four-point-two present.\"\n\n\"Percent\" became \"present.\" A small change that alters meaning. You flag it and trace the error — station sixteen's operator heard \"percent\" as \"present\" in a section of tunnel where water drip creates background noise.\n\nThe fix is environmental — install a sound-dampening panel near station sixteen to reduce the drip noise. You requisition the panel through the relay itself (ironic) and the installation is scheduled for tomorrow.\n\nThree more checks through the day. Two are clean. One shows a number transposition — \"forty-seven\" became \"forty-eight\" at station twenty-two. The operator is retested and found to have a slight hearing bias toward the next number in sequence. She's reassigned to a quieter station.\n\nThe relay's accuracy depends on these checks. Every error caught is an order that arrives intact, a supply request that delivers the right amount, a priority alert that sends the crew to the right corridor.\n\n\"The hive speaks through us,\" the supervisor says. \"Every word is a thread. Cut one and the fabric tears.\"",
+      "options": [
+        { "label": "Complete the accuracy report", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Reverberate", "Shriek Shock" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_relay",
+  "chainName": "Message Relay"
+}

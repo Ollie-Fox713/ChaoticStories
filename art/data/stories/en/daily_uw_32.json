@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_32",
+  "title": "Geyser Grates",
+  "desc": "A neighborhood vent line has started coughing sparks through the street grates again.",
+  "locations": [ "UnderWorld City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "UnderWorld City accepts fire the way other places accept weather. Most of the time that means living with heat, smoke, and the occasional argument about who set what on fire first. Sometimes it means the street vents start spitting sparks through the grates again, which is how an ordinary block turns into a set of very urgent opinions.\n\nThe vent warden is already there with a hook pole and a bucket of red chalk. \"The line is not ready to blow,\" she says, watching a grate cough a spray of orange embers into the air, \"but it is feeling argumentative. We can scrape the clinker out of the vent mouths, or repaint the hazard rings and close the block until the pressure settles. Your choice, but decide before someone uses the street anyway.\"",
+      "options": [
+        { "label": "Scrape the vent mouths and clear the hot buildup", "go": 1 },
+        { "label": "Repaint the hazard rings and lock the block down", "go": 2 }
+      ]
+    },
+    {
+      "text": "The grate bars are hot enough to make the hook pole sing when it touches them. You lift each cover just far enough for the warden to keep watch while you knock loose the black glassy clinker caked around the vent throat. It breaks free in heavy chunks and lands smoking on the paving. Under that crust the line can finally breathe, and the next rush of heat comes up clean instead of explosive.\n\nBy the third grate the spark bursts have fallen to harmless spit. By the fifth, the street is making ordinary UnderWorld noises again instead of little threats. The warden kicks the last clinker heap into a slag bucket and gives the nearest grate a look usually reserved for difficult relatives. \"Better,\" she says. \"Now it can go back to being hot without trying to prove a point.\"",
+      "options": [
+        { "label": "Drop the grates back into place and reopen the lane", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Closing a block in UnderWorld City requires less persuasion than clarity. Creatures will ignore danger, but most of them will not ignore explicit danger chalked in thick red circles around a street vent and backed by iron hook bars across both entries. You work from grate to grate, repainting the hazard rings, marking the no-step lane, and hanging the closure tags that tell even impatient carriers the city would prefer not to burn them today.\n\nThe work is half paint and half attitude. One cart driver complains until the warden points at the sparks coming through the nearest grate and asks whether he would like the block reopened in writing. He decides he would not. When the last ring is fresh and the hook bars are seated, the vent line can sulk in peace until the pressure drops. The warden studies the sealed street and says, \"Good. Nothing says civic order quite like everybody obeying fire for once.\"",
+      "options": [
+        { "label": "Cap the chalk bucket and leave the warnings vivid", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Ember Swarm", "Steam Rage" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

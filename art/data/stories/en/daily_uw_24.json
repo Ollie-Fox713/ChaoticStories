@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_24",
+  "title": "Furnace Duty",
+  "desc": "The great furnaces burn all night. Someone has to keep them fed.",
+  "locations": [ "UnderWorld City", "Iron Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The great furnaces of UnderWorld City never go out. They heat the forges, warm the residential caverns, and power the ventilation systems that keep the air breathable. Without them, the UnderWorld is just a cold, dark hole.\n\nNight shift on furnace duty is eight hours of shoveling fuel, checking temperatures, and listening to the deep heartbeat of the city's thermal core.\n\nThe shift supervisor — a creature so heat-adapted that her skin is permanently flushed red — hands you a shovel. \"Feed when the gauge drops below the red line. Check the vents every hour. And don't fall asleep. Last person who fell asleep woke up with singed ears. The furnace doesn't care if you're tired.\"",
+      "options": [
+        { "label": "Start shoveling — stay alert", "go": 1 },
+        { "label": "Check the ventilation system first", "go": 2 }
+      ]
+    },
+    {
+      "text": "Shovel. Feed. Check gauge. Repeat.\n\nThe rhythm is meditative in a way that sneaks up on you. The furnace breathes — a slow inhalation of fuel, a steady exhalation of heat. The gauge rises and falls like a pulse. You learn to anticipate the drops, shoveling a beat ahead.\n\nAt the third hour, the supervisor makes tea on the furnace wall. Literally — she sets a kettle on the iron casing and it boils in thirty seconds. She offers you a cup. It tastes like minerals and warmth.\n\n\"Twelve years on this shift,\" she says. \"People think it's boring. It's not. The furnace talks. Temperature variations, fuel consumption patterns, ventilation resistance. If you listen, it tells you how the city is doing.\"\n\nShe taps the gauge. \"Tonight, the city is sleeping well. Temperature's stable. Fuel consumption's normal. Everyone's home.\"\n\nYou finish the shift at dawn. The furnace burns on. The city wakes up warm.",
+      "options": [
+        { "label": "Hand off the shovel and step into cooler air", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The ventilation system is a network of stone channels that draw fresh air from the surface and distribute it through the city. Where the channels pass near the furnaces, the air is heated — the UnderWorld's central heating, built centuries ago by engineers whose names are literally carved into the walls.\n\nYou check the channels. Most are clear. But one — the secondary north channel — is partially blocked. Something has grown across the intake. Not rock, not mineral deposits. Something organic. Dark, fibrous, like roots.\n\nThe supervisor comes over and looks. \"That's new.\" She touches the growth. It's warm. Warmer than the ambient heat from the furnaces. \"This isn't from the surface. The surface roots don't get this deep.\"\n\nShe scrapes it away with a tool. It comes off in strips, each one pulsing faintly with its own heat source. She bags a sample.\n\n\"I'll send this to the engineers. Probably nothing.\" She doesn't sound like she thinks it's probably nothing.\n\nYou spend the rest of the shift shoveling. The furnace burns. The ventilation runs clear. The sample sits in its bag on the supervisor's desk, pulsing.",
+      "options": [
+        { "label": "Finish the shift and don't think about the roots", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Torrent of Flame", "Elementalist's Psy-Blast" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_forge",
+  "chainName": "Forge & Smithing"
+}

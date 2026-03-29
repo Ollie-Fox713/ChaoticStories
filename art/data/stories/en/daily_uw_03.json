@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_03",
+  "title": "Forge Work",
+  "desc": "The communal forge is hot. The battlegear blanks aren't going to hammer themselves.",
+  "locations": [ "UnderWorld City", "Iron Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The communal forge never cools. It can't — it's built directly over a magma vent, and the heat rises through the floor in permanent waves that make the air above the anvils ripple like water.\n\nA smith tosses you a leather apron that's more scar than leather. \"You know how to hold a hammer?\"\n\nYou nod.\n\n\"Good. Hit what I tell you to hit. Stop when I tell you to stop. If the metal turns blue, drop it and run.\"\n\nHe pulls a glowing orange bar of iron from the forge with tongs. \"This is going to be a shield rim. Or a very expensive mistake.\"",
+      "options": [
+        { "label": "Hit the metal — follow his lead", "go": 1 },
+        { "label": "Ask about the blue metal warning", "go": 2 }
+      ]
+    },
+    {
+      "text": "CLANG. CLANG. CLANG. The rhythm is everything. The smith flips the bar between strikes, turning it, shaping it with tongs while you hammer the flat faces. Orange fades to red. Red to dark cherry. Back into the forge. Back out glowing.\n\nThe bar stretches, curves, becomes recognizable. A shield rim — curved to protect, thick enough to stop a blade. Your arms burn. Sparks embed themselves in your apron and die there.\n\nAfter an hour, the rim is done. The smith quenches it in a trough of oil that erupts in flame when the hot metal hits it. Normal, apparently.\n\n\"Not bad,\" the smith says, examining the rim. \"Little thick on the left side. But it'll hold.\" He hangs it on a rack of completed parts. \"Tomorrow: sword blanks. Those are harder.\"",
+      "options": [
+        { "label": "Peel off the apron and nurse your blisters", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "\"Blue means the metal's absorbed too much elemental energy from the vent. It becomes unstable. Last time, a blue bar exploded and embedded shrapnel in the ceiling.\" He points up. Sure enough — metal fragments stud the stone above, some still faintly glowing.\n\n\"That was six months ago,\" he adds.\n\nWith that cheerful warning, you begin. The work is simple — hit the bright spot, avoid the tongs, keep the rhythm. The smith is precise. Every strike of his smaller hammer refines what your bigger one shapes. You're the force. He's the finesse.\n\nThe bar stays orange. No blue. The shield rim emerges from the iron like it was always in there, waiting to be revealed. When it's done, the smith holds it up to the forge-light and squints.\n\n\"Clean work. No stress fractures.\" The highest praise he'll give. You'd shake his hand, but your palms are blistered and his are callused beyond feeling.",
+      "options": [
+        { "label": "Head to the cooling room", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Flash Kick", "Force Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_forge",
+  "chainName": "Forge & Smithing"
+}

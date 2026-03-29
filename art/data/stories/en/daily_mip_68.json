@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_68",
+  "title": "Distance Cloth",
+  "desc": "On a flat this featureless, even the eye has to be trained before a crossing.",
+  "locations": [ "Rao'Pa Sahkk" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "One of the first lessons caravan crews learn about Rao'Pa Sahkk is that the eye cannot be trusted by itself. The flats are too level, the light too hard, the shimmer too eager to compress or stretch distance until a whole hour of walking looks like ten minutes and a nearby ridge feels a day's march away.\n\nThat is why the survey camp keeps distance cloths. Each is a long striped runner of pale and dark panels laid straight across the flats before a major crossing. Against those repeating marks, the brain relearns proportion. Near becomes near again. Far becomes honestly far.\n\nA Mipedian measurer unrolls today's cloth and checks the wind. \"Anchor the near line, or take the far end out and draw it taut,\" she says. \"Either way, by the time we're done the desert will lie a little less convincingly.\"",
+      "options": [
+        { "label": "Anchor the near line with glass pegs", "go": 1 },
+        { "label": "Carry the far end out and tension the cloth", "go": 2 }
+      ]
+    },
+    {
+      "text": "The near edge has to be exact because every later reading depends on it. You set the glass pegs through brass eyelets, press them down into the packed crust with a mallet, and brush the cloth flat until the first run of alternating panels lies straight and unwarped.\n\nFrom up close it looks almost absurd: just a long band of color laid across emptiness. Then the measurer steps back with her lens and begins calling observations. A sled at the camp edge that had seemed almost beside you now resolves into its true distance. The next marker out, which looked absurdly far, turns out to be exactly where her slate said it would be.\n\n\"There,\" she says after the fourth peg line is set. \"Now the young escorts won't mistake a half-day stretch for a short errand.\" In Rao'Pa Sahkk, training the senses is not philosophy. It is route discipline.",
+      "options": [
+        { "label": "Finish the anchors and let the crew study the line", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Taking the far end out is the stranger half of the job. You walk and walk over sand so level it feels theoretical, the rolled cloth under one arm growing heavier with every step while camp behind you shrinks into a cluster of dark scratches at the edge of brightness.\n\nAt the distance marker, you turn and pull the cloth tight. Suddenly the whole measure becomes legible. The stripes run back toward camp like a ruler laid across the false sea, cutting the shimmer into fixed segments the eye can no longer stretch without argument. Even from here you can see the measurer's satisfaction when the line comes true.\n\nBy the time you walk back along the cloth, the morning escorts are already studying it before their departure. They pace the panels, compare the known spacing to the horizon, and begin adjusting their expectations. Out here, that small correction can keep a whole crossing from turning into confusion.",
+      "options": [
+        { "label": "Roll the far end in and hand over the tally", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Flashwarp", "Mind Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

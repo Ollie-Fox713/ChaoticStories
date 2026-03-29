@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_53",
+  "title": "Courage Bells",
+  "desc": "The little warning bells on the rest alcove line are there to tell frightened hands they are still on real hardware.",
+  "locations": [ "Fear Valley" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Midway down one of the patrolled routes, a narrow rest alcove opens in the wall beside a run of small chain-guided benches and a line of hand bells fixed at intervals along the support rail. The bells are not ceremonial. When Fear Valley starts pressing too hard on a patrol, the prescribed response is simple: hold the rail, ring the nearest bell, count the answered notes, remember that sound still travels through actual metal. Today two bells are mute and the third has started rattling on its bracket like it shares the valley's nerves.\n\nThe alcove keeper lifts a leather roll of tiny clappers and pins. \"Replace the seized clappers if you want the bells themselves,\" she says. \"Or tighten the bench braces under the rest rail if you prefer the seating. A frightened creature should not discover faulty equipment at the moment it needs proof.\"",
+      "options": [
+        { "label": "Replace the seized clappers in the warning bells", "go": 1 },
+        { "label": "Tighten the bench braces along the rest rail", "go": 2 }
+      ]
+    },
+    {
+      "text": "The bell clappers are small iron tongues and far too easy to neglect until one refuses to answer a shaking hand. You open the casings, free the seized pivots, and replace the worst of the worn pieces with fresh clappers from the keeper's roll. Then you test each bell in order. The first gives a high clean note. The second answers lower. By the end of the line, the alcove holds a full descending sequence of real, ordinary sound, which in Fear Valley is more comfort than most architecture can offer.\n\nThe keeper listens to the completed run with her head bowed slightly, not reverent, exactly, but respectful of what the bells accomplish. \"Better,\" she says. \"Panic dislikes counted things.\"",
+      "options": [
+        { "label": "Close the last casing and leave the bell line responsive", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The bench rail is there to support patrols during the moments when the valley's pressure turns legs unreliable and self-respect distant. A brace under the second seat has worked loose, and another farther down clicks against the stone every time anyone shifts weight onto it. You crawl the line with a brace key, tighten each shoe against the wall, and bring the whole run back to solid, uninteresting stability.\n\nOnce the clicking stops, the alcove becomes calmer without changing in any way you could sketch. The benches simply hold their shape and let the rail remain the important part. The keeper presses a palm to the nearest seat and nods. \"Good. If creatures are going to question reality here, the furniture should decline to participate.\"",
+      "options": [
+        { "label": "Pocket the brace key and leave the alcove dependable", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Blind Fury", "Shriek Shock" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

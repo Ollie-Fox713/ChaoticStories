@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_12",
+  "title": "Stonemasonry",
+  "desc": "Ancient walls need mending. The stones hum when you touch them.",
+  "locations": [ "Gigantempopolis", "Castle Bodhran", "Crystal Cave" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The walls of Gigantempopolis were built by beings so large that their doorways are arches fifty feet tall. Now those arches are crumbling at the edges, shedding stones the size of your torso.\n\nA mason's crew is working at the base of the eastern wall. They've got mortar, chisels, and a problem: the ancient stones hum. Not loudly — a deep vibration you feel in your chest more than hear in your ears. Old Mugic, woven into the masonry centuries ago. Every stone you remove sings a different note.\n\n\"The trick,\" the lead mason says, \"is matching the replacement stone's frequency. If you get it wrong, the wall rejects it. Literally. Spits it out.\"",
+      "options": [
+        { "label": "Try to match stones by sound", "go": 1 },
+        { "label": "Help mix the resonance mortar instead", "go": 2 }
+      ]
+    },
+    {
+      "text": "You press your ear to the wall. The stone you need to replace hums at a warm, low pitch — somewhere between a cello and a purring cat. You sort through the replacement pile, tapping each one and listening.\n\nMost are wrong. Too high, too sharp, too hollow. But one — a rough-hewn block with a crack through the middle — vibrates at almost exactly the right frequency. The crack gives it a slight warble, but it's close.\n\nYou slot it in. The wall hums louder for a moment, testing the new stone. The warble resonates through the surrounding blocks. Then the hum settles. The wall accepts it.\n\n\"Not bad for a first timer,\" the mason says. \"That warble will smooth out in a few decades.\"",
+      "options": [
+        { "label": "Appreciate the geological patience", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Resonance mortar is disgusting. It's made from ground crystal, mineral oil, and something the mason calls \"singing clay\" — a gray paste that vibrates in your hands as you mix it.\n\nThe mixing is rhythmic: fold, press, fold, press. Too fast and the mortar screams — a thin, painful whine that makes the crew wince. Too slow and it goes dead, losing its resonance entirely. You have to find the tempo.\n\nIt takes four batches before you get it right. The fifth batch hums contentedly under your hands, a warm tone that matches the wall's frequency. The mason scoops it up and trowels it into the gaps between stones. The wall absorbs it, the hum strengthening.\n\n\"Good batch,\" she says. That's the highest compliment in masonry.",
+      "options": [
+        { "label": "Wash the singing clay off your hands", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Pebblestorm", "Sunder Ground" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_stonemasonry",
+  "chainName": "Stonemasonry"
+}

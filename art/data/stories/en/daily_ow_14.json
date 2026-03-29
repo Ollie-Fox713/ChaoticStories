@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_14",
+  "title": "Sentry Shift",
+  "desc": "Guard duty at the Deepmines. Don't listen to the doors.",
+  "locations": [ "Doors of the Deepmines", "Cordac Falls", "Dranakis Threshold" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "You've drawn the worst assignment in Perim: six hours at the Doors of the Deepmines.\n\nFour guards are always posted — one from each tribe, a tradition so old that nobody remembers who started it. Today's rotation is you, a Danian who hasn't blinked since you arrived, a Mipedian who keeps going partially invisible when she's nervous, and an UnderWorlder who brought a chair.\n\nThe doors themselves are massive. Bronze, or something like bronze, covered in symbols that don't match any known language. They don't creak. They don't rattle. They are perfectly, absolutely, unnervingly still.\n\nThe UnderWorlder leans back in his chair. \"First time?\"\n\nYou nod.\n\n\"Don't listen.\"",
+      "options": [
+        { "label": "Ask what he means by 'don't listen'", "go": 1 },
+        { "label": "Just stand guard quietly", "go": 2 }
+      ]
+    },
+    {
+      "text": "\"I mean don't listen.\" He doesn't elaborate.\n\nThe first hour is fine. Boring. The Danian stares at the doors. The Mipedian flickers. The UnderWorlder reads a book he apparently brought in his chair.\n\nThe second hour, you hear it. Not a sound — an absence of sound. A silence so deep it has texture. Like the space behind the doors is pulling at the air, drinking the ambient noise from your side.\n\nYour ears strain toward it. You catch yourself leaning forward.\n\nThe UnderWorlder snaps his book shut. \"You're listening.\"\n\nYou straighten up. The silence recedes. The ambient noise returns — wind, dripping water, the Danian's breathing.\n\n\"It does that,\" the Mipedian says, fully visible for once. \"It's worse in the third hour. Just... focus on something else.\"\n\nYou make it through all six hours by counting the symbols on the door frame. You count 847. When your replacement arrives, you walk away quickly and don't look back.",
+      "options": [
+        { "label": "Never volunteer for this shift again", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "You stand. You watch. You do not listen.\n\nThe first three hours pass in rigid boredom. You count stones in the floor. You study the door's surface — the symbols are intricate, recursive, each one containing smaller versions of itself. You wonder who carved them. You decide you don't want to know.\n\nIn the fourth hour, the Danian breaks his silence. \"It moved.\"\n\nEveryone looks at the doors. They are perfectly still. The Danian's mandibles work.\n\n\"The left one. Three millimeters. Inward.\"\n\nThe UnderWorlder stands up from his chair for the first time. The Mipedian goes fully invisible. You stare at the left door.\n\nNothing. It doesn't move. The silence behind it is the same as always — deep, pulling, thirsty.\n\n\"Maybe not,\" the Danian says eventually. But he doesn't sit down. None of you do, for the remaining two hours.",
+      "options": [
+        { "label": "File the incident report (inconclusive)", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Shadow Strike", "Fear Fight" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_patrol",
+  "chainName": "Border Watch"
+}

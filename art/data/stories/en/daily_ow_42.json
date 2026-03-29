@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_42",
+  "title": "Citizenship Queue",
+  "desc": "The People's Area has filled early with claim forms, renewals, and too many applicants for one orderly line.",
+  "locations": [ "Kiru City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The citizenship office in the People's Area was built with OverWorld optimism and reinforced with practical stone. Its counters are broad, its notice boards clear, and its queue ropes suggest that orderly progress is both possible and morally desirable. Then the morning applicants arrive. By second bell the room is full of renewals, district transfers, sponsorship affidavits, and one family arguing over whether a cousin should be listed as resident, guest, or \"temporarily inevitable.\"\n\nThe clerk at the front desk slides a stack of wax tablets toward you without interrupting her explanation to a Mipedian merchant. \"Sort the district claims if you want the records job,\" she says. \"Or stand by the seal board and direct people to the right windows if you would rather manage the line itself. Both help. One leaves less room for shouting.\"",
+      "options": [
+        { "label": "Sort the district tablets and matching seal slips", "go": 1 },
+        { "label": "Work the seal board and direct applicants to the right desks", "go": 2 }
+      ]
+    },
+    {
+      "text": "The tablets are not difficult, only relentless. Outer ring residency, trade permits, housing renewals, sponsorship marks, proof of service, and all the little corrections that turn a life into legible records. You sort them by district and seal color, re-bundle a stack that was tied in the wrong order, and catch one clerk's copy before it vanishes under a pile of unrelated petitions. By the time the front desk calls for the next batch, what had looked like a bureaucratic landslide has become several neat columns with actual meaning.\n\nThe clerk skims the top group, then taps the stack approvingly with her stylus. Behind her, the line has not become cheerful, but it has become tractable. In Kiru City that counts as a civic triumph. \"Good,\" she says. \"Now the paperwork can proceed to disappointing people in the correct sequence.\"",
+      "options": [
+        { "label": "Carry the sorted bundles to the district shelves", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Working the seal board means translating process into motion before frustration turns inventive. You stand beside the wall chart and send applicants by mark and purpose: blue for housing renewal, red for trade declaration, white for initial claim, green for sponsorship review. A Danian courier tries to join the wrong line because it looks shorter. An elderly OverWorlder insists she has always used the second window and refuses to let history begin changing today. A Mipedian trader becomes briefly difficult about whether a concealed document counts as presented. Somehow, between patience and repetition, they all end up where they belong.\n\nBy midmorning the rope lanes actually move. No one thanks the seal board, which is the natural state of all successful infrastructure, but the clerk at the desk notices the difference immediately. She glances toward the shortened line, then toward you. \"Better,\" she says. \"The city can absorb a great deal. We prefer not to test that capacity before noon.\"",
+      "options": [
+        { "label": "Straighten the queue ropes and let the line keep moving", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Mind Strike", "Quick Exit" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

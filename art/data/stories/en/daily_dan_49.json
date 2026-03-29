@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_49",
+  "title": "Recovery Trough",
+  "desc": "After a hard drill cycle, the wash troughs and cooling paste station need to be reset before the next wave of bodies comes through.",
+  "locations": [ "The Barracks" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The recovery side of the Barracks is quieter than the training side, but not gentler. Here the work is mineral wash, cooling paste, joint wraps, and the blunt practical art of getting combat-conditioned bodies ready to do it all again tomorrow. The long wash troughs are still cloudy from the last cycle, and the paste bowls at the grinding bench have gone crusted at the edges where the mix was left too long in the open air.\n\nThe medic attendant points with her mixing spatula. \"Grind a fresh cooling batch if you want the bench work,\" she says. \"Or scrub the wash troughs and lay fresh pads if you prefer the wet side. Both need doing before the next line comes limping in pretending it does not hurt.\"",
+      "options": [
+        { "label": "Grind a fresh batch of cooling paste at the bench", "go": 1 },
+        { "label": "Scrub the wash troughs and lay out fresh recovery pads", "go": 2 }
+      ]
+    },
+    {
+      "text": "The cooling paste starts as mineral flakes, damp fungus pulp, and a measured scoop of binding gel that turns the whole mixture into something the attendant insists is soothing despite all visible evidence to the contrary. You grind the flakes smooth, work the pulp into them, and keep folding until the paste loses its grit and takes on the dense pale consistency the station prefers. The smell is earthy, bitter, and unmistakably medicinal.\n\nThe attendant tests a smear on the back of her wrist and grunts approval. That seems to be the highest grade available here. \"Good. Smooth enough to spread, sharp enough to wake a bruise up before it goes to sleep.\" In Danian medicine, that apparently counts as comfort.",
+      "options": [
+        { "label": "Cover the fresh bowl and leave the bench stocked", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The troughs are carved stone channels fed by cool runoff and drained twice between cycles because no one in the Barracks has time for lingering grime. You drain the murky water, brush the stone down to clean grain, and rinse the basins until the next fill runs clear. Then you stack fresh absorbent pads along the side rail where the recovery crews can grab them without hunting around while somebody impatient bleeds on the floor.\n\nBy the time the last trough refills, the room has changed from aftermath to readiness. The attendant walks the rail, checks the water line, and flicks one of the clean pads into straighter alignment. \"Better,\" she says. \"Pain will arrive on schedule. It helps if the room does too.\"",
+      "options": [
+        { "label": "Hang the brush to dry and leave the recovery line ready", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Stupefying Tide", "Freeze Flash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

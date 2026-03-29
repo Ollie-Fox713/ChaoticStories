@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_20",
+  "title": "Starlight Festival Prep",
+  "desc": "The festival is tonight. The lanterns aren't strung. The stage isn't built.",
+  "locations": [ "Mipedim Oasis", "Mipedim Lounge" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Starlight Festival happens once a year, when the desert sky is clearest and the stars seem close enough to touch. The oasis transforms for the night — lanterns, music, food, and a tradition where every Mipedian tells one true story to a stranger.\n\nRight now, the oasis looks like a construction disaster. Lantern strings are tangled on the ground. The stage is half-built, one leg shorter than the others. The food preparation area has attracted a family of sand-skimmers who are eating the decorative dried fruits.\n\nThe festival coordinator is having a quiet crisis. \"Six hours until sundown. I need lanterns hung, the stage leveled, and someone to deal with the skimmers. Pick something. Pick anything.\"",
+      "options": [
+        { "label": "String the lanterns — you have a head for heights", "go": 1 },
+        { "label": "Fix the stage — you have a feel for carpentry", "go": 2 }
+      ]
+    },
+    {
+      "text": "The lanterns are glass spheres filled with bioluminescent moss — they glow a soft amber when activated, and the effect of hundreds of them strung between the oasis palms is supposed to be spectacular. If you can get them up there.\n\nYou climb the first palm with a coil of lantern string. The technique is wrapping — looping the string around the trunk and securing it with hooks driven into the bark. At the top, you stretch the string to the next palm and repeat.\n\nFrom up here, the oasis is beautiful even without the lanterns. The water reflects the afternoon sky. The preparation chaos below looks almost organized from altitude.\n\nYou hang sixty lanterns across eight palm trees. Each one is carefully hooked, the moss packed tight so it won't shift in wind. As the sun sets, the coordinator activates them — a pulse of Mugic that wakes the moss.\n\nThe oasis lights up. Sixty amber spheres glow between the palms, their light reflecting in the water below, doubling the effect. The gathered Mipedians go quiet for a moment — that collective intake of breath that means something is genuinely beautiful.\n\nThe coordinator finds you. \"Stay for the festival. That's not a request. You earned it.\"\n\nYou stay. The stories told that night are true and strange and funny and sad. The lanterns hold until dawn.",
+      "options": [
+        { "label": "Stay for the stories and the starlight", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The stage is a platform of wooden planks on stone legs — simple construction, but the sand beneath one leg has shifted, leaving it wobbling. Every test footstep produces a lurch that would send performers into the audience.\n\nYou dig out the short leg and pack the hole with gravel from the oasis shore — heavier than sand, less prone to shifting. You tamp it flat and reset the leg. Level.\n\nBut the planks are warped from sun exposure. You flip the worst ones — the underside is smoother, less bowed. You add cross-bracing with spare lumber, turning the wobbly platform into something solid.\n\nThe sound check is your reward. A musician steps onto the stage with a wind-drum — a Mipedian instrument that captures air currents and translates them into rhythm. She plays a test pattern. The stage doesn't move. The sound resonates off the platform and carries across the oasis.\n\n\"Good stage,\" she says, which from a musician is the only review that matters.\n\nThe festival begins at starfall. The stage holds three musicians, two storytellers, and a Mugic demonstration that shakes the planks with subsonic vibration. Your cross-bracing holds through all of it.\n\nYou watch from the crowd, eating festival food and listening to true stories. The stage is the heart of the festival, and it's steady because you made it steady.",
+      "options": [
+        { "label": "Enjoy the festival from the crowd", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Reverberate", "Enlightened Tenacity" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_social",
+  "chainName": "Social Customs"
+}

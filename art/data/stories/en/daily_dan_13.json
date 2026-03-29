@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_13",
+  "title": "The Compost Churn",
+  "desc": "The great compost vats need turning. It smells exactly as bad as you think.",
+  "locations": [ "Mount Pillar", "Mount Pillar Reservoir" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The compost vats are industrial-scale fermentation chambers carved into Mount Pillar's lower levels. Organic waste from the hive — food scraps, shed chitin, fungal trimmings — goes in. Nutrient-rich substrate for the fungal gardens comes out. The process takes weeks, constant monitoring, and a strong stomach.\n\nToday is churn day. The vats need turning — the composting material must be mixed to ensure even decomposition. Without churning, the center overheats and the edges go cold, producing uneven substrate that the fungus rejects.\n\nThe churn crew assembles around Vat Four — the largest, twenty feet across and ten feet deep. The smell hits you from the door. It's not just bad — it's complex. Layers of decomposition, each contributing its own note to a symphony of organic rot.\n\nThe foreman hands you a churn paddle — a long-handled tool with a broad head. \"Clockwise. Keep moving. Don't stop or the paddle sinks and you'll never get it back.\"",
+      "options": [
+        { "label": "Churn the vat — keep the paddle moving", "go": 1 },
+        { "label": "Monitor the temperature — check the readings", "go": 2 }
+      ]
+    },
+    {
+      "text": "You plunge the paddle into the compost. The resistance is immediate — the material is dense, semi-solid, and fights every stroke. Clockwise, like the foreman said. Push, pull, push, rotate. The surface breaks and churns, releasing gas that stings your eyes.\n\nThe crew works in shifts — three minutes churning, three minutes breathing by the door. You churn until your arms burn, then tag out. The next churner takes your spot without breaking rhythm.\n\nThree hours. Twelve rotations per crew member. By the end, Vat Four's contents are uniformly mixed — the temperature readings even across the entire surface. The foreman tests a sample.\n\n\"Good churn. See the color? Uniform dark brown. That means even decomposition.\" He crumbles the sample between his fingers. \"Texture is right — moist but not wet, crumbly but not dry. This will be ready for the gardens in two weeks.\"\n\nHe logs the churn and marks the calendar. \"Same time in four days. The vats don't wait.\"\n\nYou wash your arms in reservoir water three times. The smell persists through two of them. By the third, you can almost pretend you spent the morning doing something else.\n\nThe fungus gardens don't care what it cost to feed them. They'll glow, they'll grow, and the hive will eat.",
+      "options": [
+        { "label": "Wash up and accept the smell as temporary", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The temperature probes are embedded in the vat walls — twelve probes at different depths, each connected to a reading dial on the exterior. You record each reading while the churn crew works.\n\nPre-churn, the readings show the expected pattern — hot center (decomposition generates heat), cold edges, a temperature gradient that needs flattening. You call readings to the foreman as the churning progresses.\n\n\"Center: one-forty. Edge: ninety-two. Delta: forty-eight.\"\n\nThe churn brings the center material outward and the edge material inward. The temperature delta narrows with each rotation.\n\n\"Center: one-twenty-eight. Edge: one-oh-four. Delta: twenty-four.\"\n\nBy the second hour, the readings converge. \"Center: one-sixteen. Edge: one-twelve. Delta: four.\"\n\nThe foreman nods. \"Four degrees. That's within tolerance. Stop churn.\"\n\nThe temperature uniformity means the microbial population is evenly distributed — the same organisms working the same material at the same rate across the entire vat. It's biology managed by engineering, and it works.\n\nYou log the final readings and note an anomaly in probe eight — it's reading slightly higher than its neighbors, which could mean a localized hot spot or a failing probe. You flag it for calibration.\n\nThe foreman checks the probe. \"Good catch. If that probe reads high, we under-churn its section, and the substrate comes out patchy.\" He marks it for replacement.\n\nThe vat is done. The numbers are clean. The fungal gardens will receive consistent substrate because someone watched the thermometers.",
+      "options": [
+        { "label": "Close the vat log with clean numbers", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Steam Rage", "Rustoxic" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_farming",
+  "chainName": "Fungus Farming"
+}

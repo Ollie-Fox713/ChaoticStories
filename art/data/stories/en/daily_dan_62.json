@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_62",
+  "title": "Pocket Table",
+  "desc": "Loose belongings and shifting gravity are a bad combination.",
+  "locations": [ "Carnival of Confusion" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "At the inversion arch, every visitor is expected to empty their pockets. This is not because the carnival mistrusts its guests. It is because anything loose will eventually become airborne, cross a gravity seam, and turn into someone else's emergency. The rule board is written in six languages and currently hangs upside down.\n\nThe pocket table is already crowded. A Danian pair has surrendered seven polished pebbles, three snack cones, and a spool of silk thread. An OverWorld courier produces a whole second belt from under his cloak. A Mipedian merchant insists he has nothing to declare, then reluctantly admits his invisible dice still count as objects when they strike someone in the forehead.\n\nThe table keeper sorts trays by risk, not ownership. \"Heavy things bruise. Sharp things linger. Sentimental things cause arguments. Help me before the line reaches the wall and decides that means ceiling.\"",
+      "options": [
+        { "label": "Sort the surrendered items by weight", "go": 1 },
+        { "label": "Clip numbered scent tags to each tray", "go": 2 }
+      ]
+    },
+    {
+      "text": "Sorting by weight sounds simple until the carnival starts interfering with your definition of simple. One tray of stone tokens becomes suspiciously light whenever it nears the arch. A string of brass bells grows heavy enough to dent the tabletop until you move it two feet to the left. The table keeper only grunts and slides more waxed trays into place.\n\nStill, order emerges. Heavy tools go to the grounded bins. Small valuables go to netted shelves bolted to the post. Anything edible is separated from everything sharp after a child nearly retrieves a sugar twist and a fishing hook in the same handful. The merchant's invisible dice are finally discovered because they keep tapping against the tray when the air changes direction.\n\nBy midday the line moves cleanly. Guests grumble, laugh, and surrender their nonsense before entering. More importantly, nothing spends the afternoon ricocheting across a gravity seam. The table keeper pushes a stamped claim chit into your palm. \"Efficient work,\" he says. \"You prevented six apologies and at least one concussion.\"",
+      "options": [
+        { "label": "Let the next visitors step forward", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The numbered clips are strung with thin scent-thread because names are not always enough in a place where doors shuffle and colors occasionally smell like other colors. The keeper hands you bundles of brass tags rubbed with different oils. Resin for court A. Mint for court B. Cedar for the stable return gate. Bitter peel for the lost-property shelf.\n\nYou work down the table, clipping and knotting as fast as the trays fill. The system is oddly elegant. A little Danian carries away a tag that smells of honey and knows exactly which bin will hold her pebbles when she returns. An elderly OverWorld traveler thanks you because numbers are trustworthy even when hallways are not. The Mipedian merchant pockets his claim chit, then asks whether the thread on his dice tray can be tied somewhere more discreet. The keeper tells him no.\n\nWhen the afternoon crowd starts exiting, the table becomes the calmest place in the whole carnival. Dizzy visitors follow scent and number back to their belongings with obvious relief. A system that looked absurd an hour ago now feels like the only sensible thing in the building.",
+      "options": [
+        { "label": "Keep the trays moving", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Progressive Speed" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

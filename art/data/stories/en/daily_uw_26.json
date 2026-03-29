@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_26",
+  "title": "Heat Shield Patching",
+  "desc": "The basalt screens over the work ledges have cracked. At Lava Pond, shade is survival.",
+  "locations": [ "Lava Pond" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The work ledges around Lava Pond are survivable only because someone has spent generations making them slightly less fatal than the rest of the chamber. One of those improvements is the line of heat shields mounted above the lower shelves - slabs of treated basalt and hammered plate that deflect the worst of the radiant blast when the pond runs hot.\n\nThis morning two of the shields have cracked along their mounting points. From the ledge you can see the red light breathing through the split every time the lava below heaves and settles. The repair foreman squints up at the damage, wipes sweat off his brow, and hands you a patch kit that smells like hot resin and iron filings. \"Patch the split from the face,\" he says, \"or reinforce the bracket mounts before the next surge shakes them loose. Either one keeps the crew from roasting by midday.\"\n\nThe air tastes metallic. The pond below bubbles once, hard enough to make the ledge tremble under your boots.",
+      "options": [
+        { "label": "Patch the cracked shield face with seal compound and plate", "go": 1 },
+        { "label": "Reinforce the shield brackets before they shear off", "go": 2 }
+      ]
+    },
+    {
+      "text": "The patch compound has to be pressed into the crack while it is still warm enough to flow and not so warm that it sloughs straight back out. You work with the foreman holding the spare plate against the split while you smear the black resin into every fissure and hammer the patch tabs flat over it.\n\nThe shield fights you the whole time, radiating stored heat through your gloves and throwing back the pond's glow into your face. But once the plate is seated and the resin hardens, the red line in the crack disappears. The next heat pulse from below strikes the repaired face and rolls sideways instead of through.\n\nThe foreman leans back, studying the patch as another wave of heat passes over the ledge. \"Good enough,\" he says, which in the UnderWorld is often the same as excellent. The workers on the shelf below stop glaring upward and get back to their hauling. That is the real proof the repair held.",
+      "options": [
+        { "label": "Step back and let the shield take the next surge", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The brackets are the problem before the shield becomes the problem. One mount bolt has warped and the lower brace is half a finger from slipping out of its groove. You wedge a support bar under the shield while the foreman drives the damaged pin free with three vicious blows of a hammer.\n\nThe replacement pin goes in hot from the forge cart, glowing dull orange while you guide it through the bracket collar and lock ring. Once it seats, you tighten the side braces until the whole assembly stops rattling and begins feeling like stone again instead of an argument waiting to happen.\n\nA fresh burst from the pond hits a minute later. The shield holds. No shudder, no screech of metal, no flake of basalt falling past your face into the lava. The foreman thumps the brace with his fist and nods. \"There. Now if the pond kills anyone today, it will have to work harder for it.\"",
+      "options": [
+        { "label": "Lower the support bar and clear the ledge", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Ash Torrent", "Ember Swarm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

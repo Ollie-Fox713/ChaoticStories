@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_41",
+  "title": "Glassfire",
+  "desc": "At dusk, the tower's stained-glass windows and brazier mirrors have to be set so the halls glow exactly as menacingly as intended.",
+  "locations": [ "Gothos Tower" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Gothos Tower does not become dramatic at dusk. It becomes precise. As the daylight thins, the stained-glass windows begin taking what remains of it while the interior braziers wake one by one below them, feeding color back into the halls through red, black, and sulfur-yellow panes. The effect is not bright. It is worse than bright. It makes every stair and arch feel chosen.\n\nThe glass-keeper is already working through a tray of soot cloths and mirror tacks. \"Take the lower window line and clean the panes if you want the filthier job,\" she says. \"Or shift the brazier mirrors and colored shields if you prefer to shape the light itself. Either way, if the tower looks ordinary tonight, someone important will become unreasonable.\"",
+      "options": [
+        { "label": "Clean the soot from the lower stained-glass panes", "go": 1 },
+        { "label": "Reset the brazier mirrors and colored shields", "go": 2 }
+      ]
+    },
+    {
+      "text": "The soot gathers in thin black films that dull the glass without ever admitting they have done so. You unclip each lower pane guard, wipe the residue away in careful circles, and clear the lead joins where ash has packed into the corners. As the last daylight slips lower, the change becomes obvious. The windows stop looking merely dark and begin glowing from within, reds deep as coals and yellows like old brass held near flame.\n\nSeen from the stair landing, the tower no longer looks inhabited. It looks conjured. The keeper steps back beside you and studies the hall with professional severity. \"Better,\" she says. \"People should never be able to decide whether this place is lit or bleeding.\"",
+      "options": [
+        { "label": "Clip the guards shut and leave the glass burning with dusk", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The brazier mirrors are small, blackened plates mounted behind the flame bowls, each one angled to throw just enough light into the glass to distort the depth of the corridor beyond. You loosen the mounts, tip them by degrees, and reset the colored shields where the last shift left them too warm on one side and too flat on the other. When the angles are right, the flame does not merely illuminate the hall. It reaches into the windows and returns changed.\n\nA red wash climbs one wall while a sicklier yellow settles across the opposite stair. Shadows lengthen exactly where the architect would have wanted them. The keeper checks the far arch, then the nearer landing, and gives one curt nod. \"Good. The tower should always seem larger than the creature standing in it.\"",
+      "options": [
+        { "label": "Set the tools aside and let the hall menace properly", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Ember Swarm", "Shadow Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

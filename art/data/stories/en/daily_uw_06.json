@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_06",
+  "title": "Shadow Market",
+  "desc": "The black market operates in total darkness. Bring your other senses.",
+  "locations": [ "UnderWorld City", "Gothos Tower" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Shadow Market earns its name. No lights. No torches. No bioluminescent fungi. The tunnels where it operates are sealed against all light sources — the merchants prefer it that way. Anonymity is the product. Everything else is secondary.\n\nA guide meets you at the entrance, their voice coming from somewhere to your left. \"Stay close. Walk where I walk. If someone touches you, it's a merchant. If something touches you, don't ask what it was.\"\n\nThe darkness is absolute. Your eyes never adjust because there's nothing to adjust to.",
+      "options": [
+        { "label": "Follow the guide's footsteps by sound", "go": 1 },
+        { "label": "Use your scanner's faint glow to navigate", "go": 2 }
+      ]
+    },
+    {
+      "text": "You listen. Footsteps ahead — soft, deliberate, confident. You match the rhythm, placing your feet where the guide's were. Around you, the market whispers. Voices negotiate in murmurs. Something changes hands with a soft clink. Someone laughs quietly at a price.\n\nA hand grips your wrist. \"Battlegear. Surplus. Good condition.\" A voice, close. Something cold and metallic is pressed into your palm for inspection. It's smooth, well-made, heavier than you'd expect.\n\n\"How much?\" you ask the darkness.\n\n\"How much do you have?\"\n\nYou negotiate blind. Literally. By touch, by weight, by the merchant's tone. When you leave the tunnel, blinking in the relative light of the UnderWorld's dim glow, you're holding a piece of battlegear that's either a bargain or a disaster. You can't tell until you clean it.\n\nIt's a bargain. Barely used. You got lucky. Or the darkness made you shrewd.",
+      "options": [
+        { "label": "Pocket the find and leave", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "\"Put that away!\" The guide hisses. \"Light draws attention you don't want.\"\n\nYou kill the scanner's glow. But in the half-second it was on, you saw the tunnel — packed with creatures, stalls made of cloth, goods piled on blankets. And everyone looking at you.\n\nThe transactions happen faster after that. Merchants approach, sensing a newcomer who doesn't know the rules. They push goods into your hands — bottles, blades, scrolls, things that squirm. You give most of them back.\n\nBut one merchant offers something interesting: a crystal that hums when you hold it. Not Mugic — something quieter. Older. \"From the deep places,\" the merchant whispers. \"Found it in a tunnel that nobody goes down anymore.\"\n\nYou buy it. Cheap. The merchant seems glad to be rid of it.\n\nOutside, in the light, the crystal is pale blue and warm. It hums in a frequency that makes your scanner flicker. You're not sure what you bought. But it's yours now.",
+      "options": [
+        { "label": "Pocket the crystal and wonder", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Shadow Strike", "Unsanity" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_market",
+  "chainName": "Shadow Trade"
+}

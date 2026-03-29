@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_34",
+  "title": "Ash Cart Route",
+  "desc": "If the ash piles are not collected by noon, the whole district starts breathing them.",
+  "locations": [ "UnderWorld City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Every fire in UnderWorld City leaves something behind, and almost all of it eventually becomes somebody else's problem. Furnace ash, vent grit, cookfire soot, burned splinters from bad tempers, all of it drifts into the gutters and curb slots until the sweep carts come through. Today's route is already behind, which means every passing boot is lifting a little black cloud into the district air.\n\nThe ash master thumps the side of the empty cart and points down the street. \"Load the street piles first if you like a shovel,\" she says. \"Clear the curb slots first if you prefer smaller tools and worse posture. Either way, if we leave this much ash in place, the whole lane starts tasting like yesterday.\"",
+      "options": [
+        { "label": "Shovel the street piles into the cart before traffic scatters them", "go": 1 },
+        { "label": "Clear the curb slots and drainage cuts by hand", "go": 2 }
+      ]
+    },
+    {
+      "text": "The street piles look manageable until you start moving them. Ash is light until it is compacted, then suddenly every shovel load has the weight of damp insult. You work from mound to mound while the ash master keeps the cart positioned just ahead of the foot traffic, catching the spill before boots and wheels can spread it back across the paving.\n\nOnce the largest drifts are loaded, the lane stops smoking under every step. The air clears enough for the crystal light to look like light again instead of glowing through dirt. The ash master levels the cart with the back of her shovel, then eyes the now-breathable street with approval. \"Good,\" she says. \"Now the district can go back to cursing the heat instead of swallowing it.\"",
+      "options": [
+        { "label": "Wheel the loaded cart toward the slag yard", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The curb slots are worse than the piles because they collect everything fine enough to travel and heavy enough to stay. Ash, grit, broken scale, furnace dust, bits of coal glass, all packed into the drainage cuts where heat shimmer keeps the whole mixture dry enough to rise if disturbed. You kneel with a narrow scoop and clear each slot until the carved channels show through again.\n\nIt is filthy work and immediately useful. Street runoff has somewhere to go again. Foot traffic stops kicking black crescents up the walls. Even the ash master's expression improves by one full degree, which is not nothing. She tips the scoop contents into the sorting bin for reuse and says, \"There. Waste collected, lane cleared, air less offensive. Civic beauty at its finest.\"",
+      "options": [
+        { "label": "Dump the last scoop into the bin and close the route", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Desiccate the Land", "Sunder Ground" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

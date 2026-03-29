@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_20",
+  "title": "Weapon Testing",
+  "desc": "New battlegear prototypes need testing. The dummies aren't complaining yet.",
+  "locations": [ "UnderWorld Colosseum", "Iron Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Colosseum's back range is where new battlegear goes before it goes to fighters. Stone training dummies stand in rows, scarred and chipped from years of abuse. A weapons tester has three prototypes on a table.\n\n\"Fire-gauntlet. Ice-lance. And... this.\" She holds up something that looks like a shield that's been folded into a claw. \"The smith calls it a 'defense-blade.' I call it an accident waiting to happen.\"\n\nShe needs someone to swing them while she observes. The dummies wait patiently.",
+      "options": [
+        { "label": "Test the fire-gauntlet", "go": 1 },
+        { "label": "Test the defense-blade — the weird one", "go": 2 }
+      ]
+    },
+    {
+      "text": "The fire-gauntlet fits over your hand like a metal glove. It's warm — a heating coil runs through the fingers, drawing from a small fire-crystal in the wrist. The tester nods. \"Hit the dummy. Full force.\"\n\nYou punch. The gauntlet connects and the fire-crystal ignites — a burst of flame that wraps around the dummy's torso. Stone cracks from the thermal shock. The impact travels up your arm and into your shoulder.\n\n\"Power's good. Ignition's clean.\" The tester makes notes. \"Try again, lighter.\"\n\nYou punch lighter. The flame is smaller, more controlled. A ring of fire around the impact point. The tester nods. \"Responsive to force. Good design.\"\n\nThree more punches, three more data points. By the end, the dummy is blackened and cracked but standing. Your knuckles ache through the metal. The fire-crystal is dim — nearly spent.\n\n\"Battery life is the problem,\" the tester says. \"Five punches and it's done. Needs more crystal.\" She marks the prototype. \"Promising. Not ready.\"",
+      "options": [
+        { "label": "Peel off the gauntlet and flex your hand", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The defense-blade is awkward. You hold it like a shield, but the blade extends from the bottom edge — meaning that to block, you have to be prepared to cut. Defense and offense in the same motion.\n\n\"It's theoretical,\" the tester says. \"Block high, the blade catches the attacker's weapon and deflects downward into their body. In theory.\"\n\nIn practice, you swing the defense-blade at the dummy. The shield portion connects, absorbing impact. The blade, angled wrong, scrapes across the stone without cutting. You try again. This time the blade catches — gouging a line across the dummy's midsection.\n\n\"The angle's too steep,\" you say. \"The blade needs to be offset about ten degrees.\"\n\nThe tester blinks. She measures the angle. \"You're right. Ten degrees would catch on the natural deflection path.\" She marks the prototype extensively. \"The smith is going to love you. Or hate you. Same thing, with smiths.\"",
+      "options": [
+        { "label": "Suggest the offset and duck before the smith hears", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Force Strike", "Flash Kick" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_forge",
+  "chainName": "Forge & Smithing"
+}

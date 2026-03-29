@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_32",
+  "title": "Junction Markers",
+  "desc": "A busy mid-level crossing has worn its route markings down to guesswork.",
+  "locations": [ "Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Junction Eleven is where Mount Pillar stops being elegant and starts being busy. Four corridors, two ramps, one freight lane, and enough passing traffic to grind the floor ridges smooth between one shift bell and the next. The clay direction plaques on the wall are blurred with condensation and shoulder-scuffs, and the raised route strips underfoot have flattened into polite suggestions. For creatures who live by rhythm and flow, that is close to an insult.\n\nThe traffic recorder stands at the center post counting bodies with one claw and taking notes with the other. \"If the upper-route glyphs stay blurred, half tonight's food run ends up at the wrong court,\" she says. \"If the floor ridges stay flat, the down-ramp clogs again. Repress the wall plaques, or reset the floor markers before the evening lanes fill.\"",
+      "options": [
+        { "label": "Repress the wall plaques and sharpen the route glyphs", "go": 1 },
+        { "label": "Reset the floor ridges and lane strips", "go": 2 }
+      ]
+    },
+    {
+      "text": "The wall plaques are soft clay set into shallow stone frames, meant to be renewed whenever wear starts winning. You mix fresh color into the replacement clay, press it into the frames, and stamp each route glyph with the carved blocks the recorder keeps wrapped in oilcloth. Upper ramps, labor courts, storage lanes, brood access, all of it has to be legible at a glance and from a distance.\n\nBy the third plaque you understand why the recorder cares so much. The junction does not slow down just because you are working. Couriers still cut through at speed. Workers still glance once and choose a lane without breaking stride. A clear mark keeps them moving; a weak one invites hesitation, and hesitation becomes a knot in the whole corridor. When the final plaque is pressed and the color dries to a firm matte, the recorder studies the wall and then the traffic slipping past it. No one pauses. No one asks directions. \"Good,\" she says. \"That means it is working.\"",
+      "options": [
+        { "label": "Clean the stamp blocks and leave the junction readable", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The floor markers matter most when the glow is low and the traffic is thick. They are narrow ridges of resin-backed chitin laid into the stone so creatures can feel their lane even when they are carrying tools, food, or bundles and not looking down. At Junction Eleven most of those ridges have been worn almost level. You pry out the worst sections, fit fresh strips into the channels, and seal them with warmed resin while the recorder diverts traffic around you in sharp, efficient bursts.\n\nOnce the resin cools, the difference is immediate. The down-ramp lane stops wandering into the freight path. The workers coming off the lower shifts follow the ridges without bunching shoulder to shoulder. Even the couriers cut cleaner turns around the center post. It is not dramatic work. Nobody applauds a floor. But by the time the junction hits full evening volume, movement has become smooth again, almost musical in its precision. The recorder marks the time on her slate and says, \"There. We have turned a problem back into a route.\"",
+      "options": [
+        { "label": "Pack the resin tools and let the lanes hold their shape", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Sunder Ground", "Squeeze Play" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

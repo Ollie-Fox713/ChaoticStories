@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_11",
+  "title": "Magmon's Cookfire",
+  "desc": "A feast is being prepared. The ovens are lava vents.",
+  "locations": [ "Lava Pond", "UnderWorld City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The feast hall near Lava Pond has no ovens. It has vents — natural fissures in the floor where magma heat rises in controlled jets. Cooking here is less about temperature control and more about survival.\n\nA cook is wrestling a slab of stone-boar onto a grate suspended over a vent. The heat is so intense that the air shimmers four feet above the grate. She's sweating rivers.\n\n\"You! Hold the spit. Turn when I say. Don't stand directly over the vent unless you want to be part of the meal.\"",
+      "options": [
+        { "label": "Grab the spit and start turning", "go": 1 },
+        { "label": "Help with the side dishes instead", "go": 2 }
+      ]
+    },
+    {
+      "text": "The spit is iron, thick as your wrist, and hot enough that you need leather wraps on your hands. The stone-boar hisses and pops on the grate, fat dripping into the vent where it ignites in brief, fragrant flares.\n\n\"Turn!\" The cook barks. You rotate the spit. The boar's underside is perfectly charred — black-brown, crispy, smelling of smoke and something like cinnamon.\n\n\"Other way!\" You reverse. The cook bastes with a brush dripping dark sauce that sizzles on contact.\n\nAn hour later, the boar is done — carved at the table by the cook with a blade that's been heated in the vent until it glows. The slices are perfect. The meat falls apart. The feast hall fills with creatures who eat in appreciative silence.\n\nThe cook hands you a plate. \"First cut goes to the spit-turner. Tradition.\"",
+      "options": [
+        { "label": "Eat the best meal of your life", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The side dishes are prepared on smaller vents — lower heat, more control. You're assigned to a vat of cave-mushroom stew that needs constant stirring to prevent scorching.\n\nThe mushrooms are enormous — caps the size of dinner plates, stems as thick as your arm. Chopped, they release a dark broth that smells earthy and rich. You stir with a wooden paddle while the cook adds ingredients: dried herbs, rendered fat, a pinch of something she calls \"fire salt\" that makes the stew glow briefly orange.\n\n\"Not too fast,\" she warns. \"The mushrooms break if you're rough. Gentle circles.\"\n\nGentle circles over a lava vent. Only in the UnderWorld.\n\nThe stew is served in stone bowls that retain heat for hours. You eat yours standing by the vent, watching the feast unfold. The cook nods at your empty bowl.\n\n\"You stirred well. Most people burn it. Come back next feast.\"",
+      "options": [
+        { "label": "Make a mental note: next feast", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Steam Rage", "Torrent of Flame" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_food",
+  "chainName": "Provisions"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_14",
+  "title": "The Diplomat's Escort",
+  "desc": "An OverWorld diplomat needs a desert guide. He's terrified of sand.",
+  "locations": [ "OverWorld Embassy at Mipedim", "Mipedim Oasis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The OverWorld diplomat is standing at the embassy door, staring at the desert like it personally offended him. He's dressed for Kiru City — heavy boots, formal cloak, a hat designed for rain that has never seen rain.\n\n\"I need to reach the oasis for the trade summit,\" he says. \"My usual escort is... indisposed.\" He adjusts his cloak. Sand is already working its way into the fabric. \"I was told the walk is twenty minutes. I've been told many things about the desert. Most of them were lies.\"\n\nHe has three cases of documents, a portable writing desk, and a canteen that appears decorative.\n\n\"Is that canteen functional?\"\n\n\"It was a gift from the ambassador. It has our seal engraved on it.\"\n\n\"But does it hold water?\"\n\nHe looks at you as if you've asked whether the sky holds clouds.",
+      "options": [
+        { "label": "Take the direct route — fast and exposed", "go": 1 },
+        { "label": "Take the sheltered route — longer but shaded", "go": 2 }
+      ]
+    },
+    {
+      "text": "The direct route is twenty minutes across open sand. For a Mipedian. For an OverWorlder in formal boots carrying three cases, it's forty-five.\n\nThe diplomat struggles immediately. His boots sink. His cloak catches wind. Sand fills his decorative canteen within the first five minutes because he left it open. He drops a case, picks it up, drops a different case, and at one point walks in a complete circle because the dunes all look identical.\n\nYou guide him by landmarks he can understand — not dune shapes (which change) but fixed points. \"See that rock formation? Walk toward it. When it's on your left, turn right.\"\n\nHe follows instructions precisely, which is his one saving grace. Diplomats are good at following protocols. The desert becomes a protocol: hydrate every ten minutes, stop when dizzy, never put your hand down without looking first.\n\nYou arrive at the oasis forty minutes late. The diplomat is sunburned, sand-caked, and his formal cloak looks like it was attacked by a particularly aggressive dune. But his documents are intact, his writing desk is undamaged, and he has survived the desert.\n\n\"That was the worst walk of my life,\" he says, pouring sand out of his boots. \"Same time tomorrow for the return trip?\"",
+      "options": [
+        { "label": "Agree, and suggest different boots", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The sheltered route follows a series of rock overhangs and canyon walls that provide intermittent shade. It takes twice as long but the diplomat won't cook alive.\n\nHe's grateful for the shade and uses the slower pace to ask questions. \"Why do the Mipedians use invisibility for commerce? Isn't that counterproductive?\" \"How does water exist here at all?\" \"What is that creature and should I be concerned?\"\n\nThe creature in question is a sand-skimmer — harmless, about the size of a cat, sunning itself on a rock. It regards the diplomat with the lazy contempt that desert creatures reserve for outsiders.\n\n\"It's harmless.\"\n\n\"It's looking at me.\"\n\n\"Everything in the desert looks at everything. Constant vigilance is a survival trait.\"\n\nHe writes this down. Diplomats write everything down.\n\nYou arrive at the oasis only fifteen minutes late. The diplomat is intact — slightly dusty but not sunburned, his dignity mostly preserved. He fills his decorative canteen with actual water and drinks from it.\n\n\"This is better than the embassy water,\" he admits. \"Don't tell the ambassador I said that.\"\n\nHe tips you five credits and asks if you're available for the return trip. \"The sheltered route again, please. I have more questions about sand-skimmers.\"",
+      "options": [
+        { "label": "Accept the escort contract", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Velocitrap" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_diplomat",
+  "chainName": "Diplomatic Service"
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_10",
+  "title": "The Chain Gang",
+  "desc": "Ceiling reinforcement. Heavy chains. Heavier consequences if they fail.",
+  "locations": [ "UnderWorld City", "Stone Pillar", "Eye of the Maelstrom" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The UnderWorld ceiling doesn't hold itself up — not entirely. Between the great pillars, massive chains are anchored into the rock, creating a web of iron that distributes stress across the entire cavern system.\n\nThe chains need tightening every season. Thermal expansion loosens the anchors, and a loose chain is a chain waiting to fail.\n\nThe rigging crew is hauling a new section of chain up a scaffold. Each link is the size of your head and weighs more than you do. \"Grab a winch handle,\" the foreman shouts down. \"We need four on the crank to lift this section.\"",
+      "options": [
+        { "label": "Get on the winch — lift the chain", "go": 1 },
+        { "label": "Volunteer for the anchor inspection instead", "go": 2 }
+      ]
+    },
+    {
+      "text": "The winch is brutal. Four of you crank in unison — one-two-three-PULL, one-two-three-PULL. The chain rises agonizingly slowly, each link clinking against the scaffold as it ascends.\n\nAbove, riggers guide the chain into its anchor bracket. The bracket is a steel cradle bolted into the ceiling rock. From up there, they can see the entire chain web — hundreds of links crossing the cavern like a metal sky.\n\n\"Tension!\" someone yells from above. You crank harder. The chain goes taut. The ceiling groans — a deep, geological sound that you feel in your spine.\n\nThen the groan settles. The chain holds. The ceiling doesn't move.\n\n\"Good tension,\" the foreman says. \"Lock the winch.\"\n\nYou lock it. Your arms are going to hurt for three days. But the ceiling is staying up. That's worth something.",
+      "options": [
+        { "label": "Climb down slowly — your arms are done", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Anchor inspection means climbing. You scale the scaffold to where the chains meet the ceiling, forty feet up. From here, the UnderWorld looks different — smaller, more fragile. You can see the chains spreading out in every direction, a web holding a world together.\n\nThe anchor bolts are the size of your fist. You check each one with a torque wrench — testing for play, for looseness, for the millimeter of movement that means the beginning of failure.\n\nMost are solid. Three need tightening — thermal expansion has backed them out a quarter-turn. You wrench them back. Simple. Routine.\n\nBut the fourth anchor is different. The bolt is fine. The rock around it isn't. Hairline cracks radiate from the bolt hole, as if the stone is slowly splitting.\n\nYou flag it. The foreman climbs up to look. \"Stress fracture. Old one — been growing for years.\" He marks it for reinforcement. \"Good eye. That bolt was three seasons from pulling free.\"\n\nThree seasons from a chain dropping. Three seasons from a section of ceiling following. The margin is always thinner than you think.",
+      "options": [
+        { "label": "Climb down with the satisfaction of prevention", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Squeeze Play", "Sunder Ground" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_pillar",
+  "chainName": "Pillar Maintenance"
+}

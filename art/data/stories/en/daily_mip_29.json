@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_29",
+  "title": "Cistern Sealing",
+  "desc": "Stored water is more vulnerable than the nets if the cistern lid is not sitting true before sunrise.",
+  "locations": [ "Mipedian Dew Farm" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The storage cistern sits at the end of the collection channels under a heavy stone lid that should fit perfectly and currently does not. One edge is lifting by less than a thumb's width. That is enough to matter. In the desert, stored water lost to heat or grit is worse than water not collected at all - collected water already belongs to somebody.\n\nThe cistern-keeper kneels by the seam with a lamp, seal paste, and a clay knife worn smooth from use. \"Hairline shift in the ring,\" she says. \"Could be dried seal. Could be mineral bloom on the inner lip. Could be both if the day wants to be difficult.\" She raps the lid once with her knuckles. \"We fix it before the sun clears the ridge. After that the stone warms and the whole job gets worse.\"\n\nShe gestures to the tools laid out on a cloth. \"Patch the outer seam from above, or go down into the shade chamber and clear the inner lip so the lid can seat cleanly.\"",
+      "options": [
+        { "label": "Repair the cracked outer seam from the top", "go": 1 },
+        { "label": "Descend into the chamber and clear the inner lip", "go": 2 }
+      ]
+    },
+    {
+      "text": "From above, the work is a race against temperature. You scrape the old seal out of the lifted edge, knead fresh clay paste until it warms in your palms, and press it into the seam in slow, even lengths. Too much and the lid will ride high. Too little and the heat will crack it by noon.\n\nThe cistern-keeper checks your line with the tip of her knife, shaving away excess where it swells and adding a thumbprint more where the groove dips. Together you work around the rim until the troublesome edge settles lower, then lower again, until at last the stone meets stone with the blunt, satisfying weight of a proper seal.\n\nThe first direct sunlight touches the top of the lid as you smooth the final seam. The keeper leans her ear against the stone, listening for escaping air, then nods. \"Held.\" She sounds relieved but not surprised. \"Good. Stored water should feel boring. Exciting water means someone made a mistake.\"",
+      "options": [
+        { "label": "Step back and let the sealed lid cool in place", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The shade chamber below the lid is cooler than the rest of the farm, the air damp with stored condensation and stone breath. Your lamp throws a weak circle over the inner lip of the cistern ring, where a pale crust of mineral bloom has built up just enough to keep the lid from sitting flush. It flakes under the scraper in brittle ribbons.\n\nYou work your way around the chamber inch by inch, clearing the deposit and wiping the stone smooth with a damp cloth while the keeper above shifts the lid a fraction at a time. Each adjustment changes the light overhead. Each pass makes the gap smaller. When you finish the final section, the lid drops into place with a heavy, final sound that echoes through the chamber walls.\n\nBy the time you climb back out, the keeper is pouring a thread of water along the seam to test for leaks. It holds. No seepage, no hiss, no settling grit. She caps the seal jar and hands you the lamp. \"There. Invisible work,\" she says. \"The best kind. If we did it right, no one thinks about this cistern at all today.\"",
+      "options": [
+        { "label": "Leave the chamber knowing the water will keep", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Vine Snare" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

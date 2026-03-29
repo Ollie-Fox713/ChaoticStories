@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_29",
+  "title": "Cooling Trench",
+  "desc": "A side trench that draws heat away from the landing shelves has started to clog with glassy crust.",
+  "locations": [ "Lava Pond" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Not every channel at Lava Pond carries lava. Some carry the difference between working heat and impossible heat. Along the lower landing shelves runs a cooling trench - a carved side run that pulls overflow heat and vent steam away from the work area so crews can stay on the rock longer than a few miserable minutes.\n\nToday the trench is glazing over with black volcanic crust. The shelf foreman drags a boot through the airflow and grimaces. \"Too still,\" he says. \"If we lose the draw, this whole platform cooks by noon and nobody unloads anything until nightfall.\"\n\nHe hands you a flat chisel, a long rake, and a set of vent keys. \"Chip the crust out by hand, or reset the side sluice gates and force the flow through the cleaner channel. Either gets my shelf back.\"",
+      "options": [
+        { "label": "Chip out the glassy crust and reopen the trench", "go": 1 },
+        { "label": "Reset the side gates and redirect the heat flow", "go": 2 }
+      ]
+    },
+    {
+      "text": "The crust forms in layers, each one a cooled skim of mineral and ash fused smooth by the trench's own heat. The first blows of the chisel barely mark it. Then a seam gives and a whole sheet peels away in brittle black curls, exposing the red-hot slot beneath. After that the work turns into rhythm: chip, hook, rake clear, step back from the heat burst that follows.\n\nBy the time you clear the second choke point, the trench starts drawing properly again. Hot air slides sideways along the cut instead of rising straight onto the shelf. Workers two platforms down stop mopping sweat off their faces with open hostility and return to their loads.\n\nThe foreman crouches by the reopened section, testing the pull with a strip of cloth that snaps toward the trench at once. \"Good,\" he says. \"That was becoming everyone's personality problem.\" At Lava Pond, improved working conditions are measured in how much less angry the crew becomes.",
+      "options": [
+        { "label": "Rake the last fragments clear and reclaim the shelf", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The side sluice gates are heavy bronze shutters built into the trench walls, used to force the heat draw through whichever channel is least fouled. The left gate still moves. The right one sticks half-open, its hinge packed with mineral scale. You brace the vent key in the socket and lean until the mechanism grudgingly shifts.\n\nOnce the jam breaks, the rest of the work becomes fine adjustment. A little more to the left and the lower shelf gets relief but the upper path takes the full blast. A touch back and the whole trench loses momentum. You and the foreman tune the gates by inches, watching the steam threads and heat shimmer change until the airflow stabilizes where it should.\n\nWhen the balance finally lands right, the trench hums instead of sputtering. The shelf foreman closes his eyes for one second, feeling the temperature drop from murderous to merely terrible. \"Perfect,\" he says. \"Now the day can proceed at its usual level of suffering.\"",
+      "options": [
+        { "label": "Lock the gates and leave the trench drawing cleanly", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Ash Torrent", "Desiccate the Land" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

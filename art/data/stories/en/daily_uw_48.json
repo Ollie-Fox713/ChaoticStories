@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_48",
+  "title": "Quake Plumbs",
+  "desc": "After last night's shudder, the plumb chains and chalk gauges need to be reset before the next tremor makes the old readings worthless.",
+  "locations": [ "Iron Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The tremor itself was brief. The evidence is not. Chalk lines have jumped at the seam brackets, three plumb chains still swing just enough to make the eye uncertain, and the record slate at the lower gantry has last night's numbers crossed out and replaced with the sort of irritated question marks that mean the monitoring crew has lost patience with geology again. Iron Pillar never gets the luxury of ignoring a quake. It only gets the task of measuring what changed.\n\nThe monitoring hand taps the seam with a chalk stick. \"Mark fresh gauge lines if you want the wall work,\" she says. \"Or settle the plumb chains and note their offsets if you prefer the hanging rig. Both need doing before the next shake gives us another layer of lies.\"",
+      "options": [
+        { "label": "Mark fresh gauge lines at the seam brackets", "go": 1 },
+        { "label": "Settle the plumb chains and log their offsets", "go": 2 }
+      ]
+    },
+    {
+      "text": "The chalk gauges are simple because simplicity survives tremors better than theory. A line across the seam, a date mark, and a clean edge to tell whether the bracket has shifted by a hair or a handspan. You wipe the broken marks away, draw fresh lines at each monitoring point, and number the new set in order so the next crew can read change instead of history piled on top of history.\n\nWhen you finish, the seam wall looks almost orderly despite the pillar beneath it. The monitoring hand checks the new marks and seems relieved by their crispness. \"Good. If the mountain wants to move, it can at least be polite enough to do so against a clear reference.\"",
+      "options": [
+        { "label": "Cap the chalk and leave the seam ready for the next reading", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The plumb chains hang from the gantry roof over measured boards, each one giving the pillar a chance to confess what direction it tried to shove the platform when the tremor came through. Right now two chains still carry a lazy twist and another has wrapped itself half a turn around the hook. You steady them, free the tangle, and wait until each chain points down with the kind of stubborn honesty engineers tend to worship.\n\nThen you log the offsets. A fraction east on one line, nearly centered on the next, a wider drift at the outer span where the last patch section took the quake badly. The monitoring hand copies the numbers onto the slate and nods. \"There. Much better. Panic is useless. Measurements at least can be alphabetized.\"",
+      "options": [
+        { "label": "Hang the slate pencil back up and leave the chains true", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Sunder Ground", "Reckless Defeat" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

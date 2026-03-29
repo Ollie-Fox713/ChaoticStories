@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_68",
+  "title": "Route Chalk",
+  "desc": "The public puzzle path only stays public if someone keeps its signals readable.",
+  "locations": [ "Castle Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Castle Pillar keeps its deeper secrets by ensuring most visitors never get past the public routes. That system works only because the public routes are maintained with the same care as the locks. Floor glyphs, turn marks, and timing circles wear down under hundreds of boots. When that happens, ordinary scholars begin drifting toward doors meant for other kinds of traffic.\n\nA route keeper unfolds a chalk kit on the outer landing: wax sticks, mineral dust, thin brushes, and a small oil jar for the pivot teeth in the nearest puzzle gate. \"We do not make the route easy,\" she says. \"We make it honest. That is different.\"\n\nYou can renew the floor sigils on the reader's approach, or oil the pivot-door teeth and test the gate that separates the public path from a service branch most visitors should never even notice.",
+      "options": [
+        { "label": "Renew the floor sigils on the public approach", "go": 1 },
+        { "label": "Oil and test the pivot gate", "go": 2 }
+      ]
+    },
+    {
+      "text": "The sigils are geometric but not abstract. Each one tells the body something simple: stand here, wait for the bell, turn with the stair, do not follow the tempting arch that seems shorter. You brush away old dust, mix fresh mineral chalk, and redraw the symbols until each line is crisp against the stone.\n\nAs the marks return, so does the route's confidence. A pair of visiting copyists reaches the landing and hesitates only a second before seeing the circle that tells them where to stop. They wait there, the stair turns, and the correct door arrives exactly where it should. Neither of them knows how close they were to a very different corridor.\n\nThe route keeper watches them go and nods. \"Good. Most successful guidance is invisible from the guided side.\" Castle Pillar does a great deal of its work that way.",
+      "options": [
+        { "label": "Cap the chalk and leave the path readable", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The pivot gate sits disguised as ordinary carved wall until the latch is released. Behind the seam, thick stone teeth mesh with a hidden turn column that decides whether the next corridor is meant for readers, workers, or no one at all. When the teeth go dry, the whole motion becomes ugly and loud.\n\nYou work the oil into the joints with a thin brush while the keeper tests the gate in partial turns. The difference is immediate. What had shuddered now glides. The seam closes tight enough to disappear, then opens again with no more complaint than a deep breath.\n\nOnce the mechanism is running cleanly, the keeper resets the latch and wipes the excess from the stone. \"There,\" she says. \"Now scholars may continue believing the library simply likes them.\" She does not sound resentful about the illusion. Only practical.",
+      "options": [
+        { "label": "Lock the gate and step back onto the public line", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Mind Strike", "Sunder Ground" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

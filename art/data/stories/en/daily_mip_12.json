@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_12",
+  "title": "The Lookout",
+  "desc": "Border watch. Hours of nothing, then something moves.",
+  "locations": [ "The Hunter's Perimeter", "Sands of the Unseen" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The lookout post is a stone platform on a ridge overlooking the border sands. From here, you can see three miles in every direction — which means three miles of absolutely nothing. Sand. Heat shimmer. More sand.\n\nThe outgoing lookout hands you a spyglass and a logbook. \"Write down anything that moves. Anything. A dust devil, a lizard, a shadow that doesn't match its source. The Danians have been probing again — small groups, testing response times.\"\n\nShe pauses at the ladder. \"Also, don't fall asleep. Last lookout who fell asleep woke up surrounded by Danian scouts who'd been watching him for an hour. They left a note: 'Your security is our concern.'\"\n\nYou settle in. The sun is merciless. The sand is hypnotic. The spyglass shows miles of empty desert.",
+      "options": [
+        { "label": "Watch the north sector — that's where probes usually come", "go": 1 },
+        { "label": "Watch the south sector — the Sands of the Unseen border", "go": 2 }
+      ]
+    },
+    {
+      "text": "North sector. You glass the dunes systematically — left to right, near to far, looking for movement, color changes, anything that breaks the pattern. For two hours, there's nothing.\n\nThen: a shadow. Not moving, but present where it shouldn't be. A dune's shadow should point west at this hour. This shadow points south. You fix the spyglass on it.\n\nThe shadow is too dark. Too defined. Natural shadows in sand have soft edges — heat diffusion blurs them. This shadow has sharp borders. Something is casting it, something that isn't a dune.\n\nYou log it. Bearing, distance, estimated size. Then you watch. For twenty minutes, the shadow doesn't move. Then it shifts — three feet south, in a single instant. No gradual movement. Just... relocation.\n\nInvisibility. Something invisible is moving between the dunes, and its shadow is betraying it.\n\nYou signal the response team with a mirror flash. By the time they reach the area, whatever it was has gone. But the tracks remain — three-toed, deep, heading northeast. Not Danian.\n\nThe response team leader studies the tracks with a frown. \"These aren't from any tribe I recognize.\" He copies the track pattern into the log. \"Good catch. Stay sharp.\"",
+      "options": [
+        { "label": "Log the unknown tracks and stay alert", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "South sector borders the Sands of the Unseen — the stretch of desert where Mipedian invisibility works best, where the sand itself seems to hide things. Watching it through a spyglass is an exercise in uncertainty. Things appear and disappear. You can never be sure what's real.\n\nYou focus on the ground — footprints are harder to fake than visual illusions. The sand near the border shows normal wind patterns for an hour. Then you notice a line of disturbed sand — too regular to be wind, too straight to be animal.\n\nSomeone walked a precisely straight line across open desert. The footprints are shallow — a light creature, or one distributing weight carefully. They come from the south and stop at the border markers.\n\nJust stop. No return tracks. No deviation. Someone walked to the border, reached the markers, and vanished. Not turned invisible — the footprints would show departure. Vanished, as if they stepped out of the world.\n\nYou log it with a note: \"Single track, south approach, terminates at marker 7. No egress. Recommend investigation.\"\n\nThe evening lookout reads your log and looks unsettled. \"Third time this month,\" she mutters. \"Third time someone walks up to the border and stops existing.\"\n\nNeither of you has an explanation. You leave the post with the uncomfortable feeling that the desert is watching back.",
+      "options": [
+        { "label": "Leave the post with questions unanswered", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Shadow Strike", "Fear Fight" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_guard",
+  "chainName": "Border Watch"
+}

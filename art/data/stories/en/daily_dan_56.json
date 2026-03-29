@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_56",
+  "title": "High Signal",
+  "desc": "Before dawn burns the haze away, the lookout's flags and crystal mirrors have to be set for the day's first long sighting.",
+  "locations": [ "Oipont's Lookout" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "At Oipont's Lookout, morning begins above most of the UnderWorld's weather. The high platforms of Mount Pillar catch the first usable light along their outer rails while haze still sits in the lower approaches, and for a little while the whole frontier seems arranged in layers beneath you: dark valley mouths, ash-colored ridges, the faint shimmer of Mipedian distance, and, on the cleanest days, the far suggestion of OverWorld heights almost too remote to trust. The signal masts, mirror frames, and observation boards all stand quiet in that thin hour before the first report is sent.\n\nThe platform keeper checks the wind ribbons with narrowed eyes. \"Set the signal flags if you want the mast line,\" she says. \"Or polish the crystal mirrors on the east rail if you prefer the light work. Either way, the horizon deserves at least one honest look before the patrol logs start arguing with it.\"",
+      "options": [
+        { "label": "Set the signal flags along the high mast line", "go": 1 },
+        { "label": "Polish the crystal mirrors on the east rail", "go": 2 }
+      ]
+    },
+    {
+      "text": "The signal flags are folded by pattern on a long shelf inside the rail hut: one for routine, two for unexpected movement, three for open threat, and several more for the long compound messages the lower posts complain about but obey anyway. You carry the first set to the mast line, check the wind, and rig each flag to its morning position so the opening shift can raise a message in seconds instead of rummaging for certainty when something appears on the ridge.\n\nFrom the mast platform, the view opens so wide it stops feeling tactical and starts feeling improbable. Mount Pillar drops away in ledges below you, and all the approaches to Danian territory seem briefly knowable at once. The keeper joins you at the mast rail and watches the first flag stir into shape. \"Good,\" she says quietly. \"A high place earns its keep by seeing farther than fear.\"",
+      "options": [
+        { "label": "Latch the halyards and leave the mast line ready", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The crystal mirrors are mounted low along the east rail to catch dawn and throw it toward the lower relay posts when smoke, distance, or terrain make flags slow. Dust from the upper platforms and faint mineral haze have blurred the faces until they answer the sun weakly and with poor discipline. You polish each mirror clean, adjust the angle marks, and set the line back to the keeper's calibrations until the first edge of light begins leaping from frame to frame in clear hard flashes.\n\nThe signals are beautiful in the accidental way useful things sometimes become. Dawn touches one mirror, then another, then the whole rail starts speaking brightness down the mountain. The keeper watches the restored line and allows a small nod. \"Better. If the hive must warn itself, it may as well do so with elegance.\"",
+      "options": [
+        { "label": "Cover the last cloth and leave the rail answering the dawn", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Accelerated Unity", "Reverberate" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

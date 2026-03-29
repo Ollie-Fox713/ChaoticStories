@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_60",
+  "title": "Hush Chimes",
+  "desc": "The approach ring around the Great Tree uses small chimes and bench lines to keep the grove calm without anyone having to shout.",
+  "locations": [ "Runic Grove" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The approach ring around the Great Tree does not forbid noise. It simply persuades people out of it. Small clay chimes hang from the outer boughs and bench rails curve between the roots where visitors can sit, sketch, or give up briefly on understanding. When the wind moves through properly, the chimes answer in a low irregular pattern that seems to make even the talkative lower their voices without noticing why. This morning half the line hangs quiet and one bench has begun to rock on its root brace.\n\nThe ring keeper fingers a bundle of fresh chime cords. \"Retie the clay chimes if you want the bough line,\" she says. \"Or tighten the bench braces if you prefer the seating. Either way, the grove does better when its silence is helped rather than demanded.\"",
+      "options": [
+        { "label": "Retie the clay chimes along the outer bough line", "go": 1 },
+        { "label": "Tighten the bench braces between the roots", "go": 2 }
+      ]
+    },
+    {
+      "text": "The chimes are not tuned in any scholarly sense, but they do have a pattern the keeper insists the grove prefers. You retie each little clay cup at the proper spacing and length, replacing two worn cords and setting the line back into motion as the breeze passes through. Soon the low notes begin returning from one side of the ring to the other: a soft answer from bark and clay that makes the whole approach feel more deliberate.\n\nA pair of late visitors step into the ring mid-repair and instinctively lower their conversation when the chimes wake again. The keeper notices and seems pleased. \"Good. The Tree asks for attention. It is nice when the surroundings remember to assist.\"",
+      "options": [
+        { "label": "Trim the spare cord and leave the chime line murmuring", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The benches are built low between the roots and braced into the living wood with a care that suggests the carpenter would rather have negotiated with weather than with the Great Tree directly. One brace has loosened enough to make the whole seat shift under weight, and another emits a little click every time someone leans to sketch. You tighten both braces, reset the foot blocks, and test the line until the benches feel rooted rather than temporarily attached.\n\nOnce the rocking stops, the whole ring regains a small dignity. A stable seat is not much of a miracle, but in a place where people come hoping to decipher ancient bark, it helps. The keeper presses a palm to the repaired rail and nods. \"Better. Reflection is easier when the furniture stops participating.\"",
+      "options": [
+        { "label": "Pocket the brace key and leave the ring ready for quiet company", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Thunder Shout", "Enlightened Tenacity" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

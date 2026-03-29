@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_42",
+  "title": "Organ Bellows",
+  "desc": "The great organ has started wheezing in two pipes, which is a mechanical issue only until somebody important hears it.",
+  "locations": [ "Gothos Tower" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Some towers announce themselves with banners, some with guards, some with the sensible choice of leaving strangers uncertain whether to enter at all. Gothos Tower prefers the organ. Its notes roll through the black stone at odd hours, never loud enough to be called a performance and never soft enough to ignore. Today two pipes in the upper rank have gone breathy, which leaves the whole instrument sounding less like dread and more like a draft.\n\nThe organ keeper opens the side case and exposes a confusion of leather, rods, and weighted slats. \"Patch the bellows seams if you want the real problem,\" she says. \"Or climb to the pipe rank and rebalance the stops if you prefer height to glue. I do not care which. I care that the tower stop sounding uncertain.\"",
+      "options": [
+        { "label": "Patch the cracked seams in the bellows chamber", "go": 1 },
+        { "label": "Rebalance the upper stops and pipe weights", "go": 2 }
+      ]
+    },
+    {
+      "text": "The bellows leak in two finger-thin splits where the leather has dried harder than the keeper likes to admit. You sand the edges, press warm pitch into the cracks, and lay patched strips over them while the keeper works the pedals in slow test strokes. With each seal the breath steadies. The next low note holds instead of fraying at the edge, and the chamber stops sounding like an animal with a bad lung.\n\nWhen the keeper pulls the full test chord, it rolls through the gallery with exactly the right amount of threat. Dust trembles from a beam overhead. Somewhere higher in the tower a door closes, perhaps in approval, perhaps in complaint. The keeper listens to the fading note and allows herself a tight smile. \"There. Menace should resonate, not whistle.\"",
+      "options": [
+        { "label": "Close the bellows case and leave the organ breathing deeply", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The climb to the upper rank is narrow, vertical, and designed by someone who believed maintenance was best performed by the desperate. At the top, the stops and counterweights show the problem clearly: one lever binding, one weight hung a notch low, both enough to send the wrong air through the wrong throat. You free the sticky stop, shift the weight, and test the travel until the mechanism moves with smooth, predatory certainty.\n\nThe keeper below strikes the keys again. This time the upper note enters cleanly over the darker chord beneath it, thin and sharp in the exact way the tower seems to favor. The sound threads through the stairwells and down the halls like a warning delivered by architecture itself. \"Good,\" the keeper calls up. \"If the organ must haunt anyone, it should at least do so competently.\"",
+      "options": [
+        { "label": "Descend the ladder and leave the pipe rank in tune", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Shriek Shock", "Unsanity" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_17",
+  "title": "Courier Run",
+  "desc": "Sealed orders for three outposts. The sun is already high.",
+  "locations": [ "Kiru City", "Stronghold Morn", "Ravanaugh Ridge" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Three sealed pouches. Three outposts. The garrison commander hands them to you with the calm efficiency of someone who does this every day.\n\n\"Stronghold Morn gets the blue seal. Ravanaugh Ridge gets the red. The listening post on the north trail gets the black.\" She pauses. \"The black seal is time-sensitive. If it's not delivered by sundown, the orders inside expire and I have to write new ones. I hate writing new ones.\"\n\nThe three destinations form a rough triangle. You can't reach all of them in a straight line.",
+      "options": [
+        { "label": "Go north first — deliver the time-sensitive black seal", "go": 1 },
+        { "label": "Go to Stronghold Morn first — it's closest", "go": 2 }
+      ]
+    },
+    {
+      "text": "The north trail is steep and loose-rocked. You reach the listening post in under an hour — a camouflaged stone hut staffed by two sentries with exceptional hearing and very little to say.\n\nOne takes the black pouch, breaks the seal, reads the contents, and nods. That's it. No thank you, no conversation. The listening post listens.\n\nYou double back and hit Stronghold Morn by midday. The garrison there is livelier — they offer you water and bread while the duty officer reads the blue-seal orders.\n\nRavanaugh Ridge is the last stretch. By the time you arrive, the sun is low and your legs are announcing their resignation. The ridge patrol takes the red pouch and gives you a thermal updraft shortcut back to Kiru City that cuts the return trip in half.\n\nThe garrison commander checks your timestamps. \"All three before sunset. Efficient.\"",
+      "options": [
+        { "label": "Collapse into a chair", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Stronghold Morn is an hour's easy walk on well-maintained roads. The garrison takes the blue pouch and stamps your delivery log. Efficient, boring, done.\n\nRavanaugh Ridge is trickier — the trail climbs steeply and the wind picks up. You deliver the red pouch to a patrol that's sheltering behind a rock formation. They offer you dried meat. You accept.\n\nThe north trail is last. You're racing the sun now, legs burning on the steep grade. The listening post appears in the fading light — just barely. You hand over the black pouch with minutes to spare.\n\nThe sentry breaks the seal, reads, and nods. Then: \"Cutting it close.\" It's the most words you've heard from a listening post sentry. You take it as high praise.\n\nThe walk back is long, dark, and uphill. Worth it.",
+      "options": [
+        { "label": "Report all deliveries complete", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Progressive Speed" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_courier",
+  "chainName": "Courier Service"
+}

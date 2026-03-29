@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_54",
+  "title": "Pitch Bowls",
+  "desc": "The pitch-testing station needs fresh water and sorted tuning shards before anyone starts claiming the hall itself is off-key.",
+  "locations": [ "Grand Hall of Muge's Summit" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Just beyond the main ring sits the pitch station: a practical little insult to anyone who thinks authority excuses bad tuning. Crystal bowls, water jars, tuning shards, and a set of marked trays wait there for the muges who insist on proving a point before the full summit begins. The station is indispensable, which is why it has been left in a state best described as persuasive evidence for supervision.\n\nThe interval keeper lifts one clouded bowl and frowns at the line of residue around its inner lip. \"Refill the pitch bowls if you want the water work,\" she says. \"Or sort the tuning shards back into their proper trays if you prefer the crystals. Both help. A hall like this can embarrass a careless note before the speaker finishes taking a breath.\"",
+      "options": [
+        { "label": "Rinse and refill the pitch bowls at the station", "go": 1 },
+        { "label": "Sort the tuning shards back into their marked trays", "go": 2 }
+      ]
+    },
+    {
+      "text": "The bowls work because their water reveals what ears deny. A true note leaves a clean pattern. A false one troubles the surface in ways that are hard to argue with and harder to forgive. You rinse away the mineral line in each bowl, refill them to the keeper's marks, and set the line back on the station rail so every water surface sits equally still and equally judgmental.\n\nThe keeper hums a testing note over the first bowl. The ripples rise, organize, and settle exactly as she expected. That appears to please her greatly. \"Good. Nothing improves a debate like a witness that cannot be shouted at.\"",
+      "options": [
+        { "label": "Hang the rinsing cloth and leave the bowls ready to judge", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The tuning shards are narrow crystal pieces cut to known pitches and stored in felt-lined trays by interval. In theory, no one mixes them. In practice, every summit produces one moment where too many hands reach for too much certainty at once. You sort the shards by tone mark, return the smallest half-step pieces to their slot, and separate the brighter upper-range cuts from the heavier low-note references they never should have been stacked beside.\n\nOnce restored, the tray line looks precise enough to make a point before anyone says a word. The keeper taps one shard lightly and listens to the note settle into the chamber. \"Better,\" she says. \"If they are going to disagree about harmony, the tools should not join in.\"",
+      "options": [
+        { "label": "Close the felt trays and leave the pitch station in order", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Elementalist's Psy-Blast" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

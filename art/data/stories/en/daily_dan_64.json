@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_64",
+  "title": "Balance Court",
+  "desc": "After enough inversions, every visitor needs a bench and something sour.",
+  "locations": [ "Carnival of Confusion" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "By midday the Balance Court is fuller than half the attractions. The carnival offers no shame in that. When your sense of up has been corrected six times in an hour, dignity ranks below sitting still and convincing your stomach to stay where it belongs.\n\nThe recovery patio is built for exactly this stage of the day. Slanted benches hold visitors at reassuring angles. Weighted foot bars help the body believe in gravity even when the courtyard is making no such promises. Clay cups of sour root tea wait on a warming stone beside stacks of cool cloths.\n\nA patient Danian attendant looks over the crowd and gives you a choice. \"We are low on tea and three benches have drifted out of balance. Pick whichever kind of mercy you prefer.\"",
+      "options": [
+        { "label": "Help prepare and serve the sour tea", "go": 1 },
+        { "label": "Reset the weighted benches and foot bars", "go": 2 }
+      ]
+    },
+    {
+      "text": "The tea is brewed from bitter root, mint leaf, and a slice of dried fruit sharp enough to wake a room. You pour cup after cup while the attendant passes out cool cloths and quietly ignores every creature insisting they are not actually dizzy.\n\nThe court has its own rhythm. A young Danian who loved the turning stair five minutes ago now sits very still with both hands around a cup. An OverWorld guard drinks his tea in one swallow and claims he only stopped because the benches looked interesting. A Mipedian trader, face carefully composed, asks whether there is a less visible corner in which to recover. The attendant points to one without comment.\n\nBy the time the kettle is empty, the whole patio feels steadier. People breathe deeper. Conversation returns. The tea does not make the carnival less strange, but it makes that strangeness easier to carry in the body.",
+      "options": [
+        { "label": "Refill the cups and let the court settle", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Each bench in the court is built around a hidden weight track. When the local down begins to drift, staff slide iron disks through the channel and move the foot bars until seated bodies feel a clean pull toward something reliable. It is practical work in a place that otherwise prefers spectacle.\n\nYou kneel beside the frames, unlock the weight catches, and listen for the attendant's instructions. \"More to the left on that one. Less on the far bench. That corner is trying to become a ceiling again.\" The adjustments are small, but the effect is immediate. A visitor who had been gripping the edge of a seat loosens his hands the moment the balance comes right.\n\nWhen the last bar clicks into place, the whole court exhales. People stop bracing and start resting. The attendant taps the nearest bench with obvious approval. \"There. The carnival can be generous when it is translated correctly.\"",
+      "options": [
+        { "label": "Leave the benches in good order", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Delerium", "Freeze Flash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

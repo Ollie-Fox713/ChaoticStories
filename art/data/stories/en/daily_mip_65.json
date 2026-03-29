@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_65",
+  "title": "Pool Screens",
+  "desc": "The spring pool's leaf screens and insect curtains need resetting before the evening draw starts.",
+  "locations": [ "Iparu Jungle" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "At the heart of the jungle lies a spring pool clear enough to look unreal even after everything else Iparu Jungle has already asked you to accept. Water slips out from a stone lip under broad hanging vines, fills a basin of pale green light, and then runs away again into channels no one here seems worried about losing. The keepers use the pool for drinking water, rinsing produce, and every other ordinary need that has to continue even inside a miracle. Tonight the draw line is due to start, but the leaf screens are loaded and one insect curtain has wrapped itself around a post in protest.\n\nThe pool keeper kneels beside the outlet with a hooked skimmer. \"Clear the leaf screens if you want the waterline,\" she says. \"Or reset the insect curtains along the draw path if you prefer the hanging cloth. Either way, the spring should remain the cleanest opinion in the jungle.\"",
+      "options": [
+        { "label": "Clear the leaf screens at the spring outlet", "go": 1 },
+        { "label": "Reset the insect curtains along the draw path", "go": 2 }
+      ]
+    },
+    {
+      "text": "The leaf screens sit where the first overflow leaves the basin, catching fallen petals, drifting fronds, and the occasional ambitious beetle before any of it can continue into the draw jars below. You lift the screens, clear the gathered mat of green and gold, and set them back into the grooves until the outflow resumes its clean glassy run into the channel. The pool itself seems to brighten in response, though that may simply be relief talking through water.\n\nThe keeper watches the restored spill line and gives a small approving breath. \"Good. The jungle can be wild everywhere else. Here, it is asked to behave like a spring.\"",
+      "options": [
+        { "label": "Shake the last leaves into the compost basket and leave the outlet clear", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The insect curtains hang in pale strips along the path where the evening jars are carried from the pool to the cool racks beyond. One curtain has twisted itself useless and another drags too high to block anything except optimism. You untangle the first, retie the second, and space the whole line back into a proper soft barrier that keeps the flying nuisance of the jungle from joining every trip by default.\n\nAs the air cools, the curtain line starts moving lightly in the gathering shade, pale cloth against glossy leaves and green dusk. It does not make the pool any less strange. It simply makes service to it more tolerable. The keeper tests the path through the restored curtains and nods. \"Better. A hidden paradise still has insects. That is how you know it is not pretending.\"",
+      "options": [
+        { "label": "Step clear of the curtain line and leave the path usable", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Flashwarp" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

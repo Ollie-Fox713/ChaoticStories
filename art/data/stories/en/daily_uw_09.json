@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_09",
+  "title": "Tunnel Boring",
+  "desc": "New tunnels need digging. The rock has other opinions.",
+  "locations": [ "Cordac Falls Plungepool", "Everrain" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Expansion never stops in the UnderWorld. New tunnels mean new territory, new resources, new advantages. Today's dig is cutting a supply route between two existing corridors — a shortcut that'll save haulers an hour each way.\n\nThe boring crew is six strong. You make seven. The lead borer hands you a pick.\n\n\"Rock's mixed here. Sandstone layers over basalt. The sandstone crumbles easy. The basalt doesn't crumble at all. If your pick bounces, switch to the drill.\" She points at a hand-crank drill that looks like it was designed by someone who hates arms.\n\n\"And if you hit water, yell.\"",
+      "options": [
+        { "label": "Start picking at the face", "go": 1 },
+        { "label": "Ask how likely water is", "go": 2 }
+      ]
+    },
+    {
+      "text": "The sandstone comes away in satisfying chunks. You settle into a rhythm — pick, lever, clear, advance. The tunnel extends inches at a time. The air is thick with dust despite the ventilation holes drilled into the ceiling.\n\nThen your pick bounces. Basalt. You switch to the drill and grind away, the crystal bit screaming against the harder rock. Progress slows to a crawl.\n\nAt shift's end, the tunnel has advanced four feet. It needs to go thirty more. The lead borer measures and nods.\n\n\"Four feet. Not bad for mixed rock.\" She marks the face with chalk — a line showing where tomorrow's crew should start. \"The basalt layer should thin out in another six feet. Then it's sandstone again. Easy money.\"\n\nNothing about tunnel boring feels like easy money. But the shortcut will exist because you helped start it. That counts.",
+      "options": [
+        { "label": "Hand in the pick and stretch your shoulders", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "\"Very likely.\" The lead borer doesn't sugarcoat it. \"We're between Cordac Falls overhead and the Everrain seepage below. This whole region is saturated. Hit the wrong spot and you get a fountain.\"\n\nYou dig carefully. Tapping first, listening for the hollow sound of a water pocket. The crew respects the caution — nobody wants to drown in a tunnel.\n\nSix feet in, you hear it. A dull thud instead of a solid ring. Water. Close. You mark the spot and the crew diverts the tunnel angle, cutting around the pocket instead of through it.\n\nIt adds two extra feet of digging, but nobody gets wet. The lead borer examines your marks and nods.\n\n\"Good ears. Last crew hit a pocket and flooded three corridors. Took a week to pump out.\" She traces the diversion on her map. \"This is the better route anyway. Less risk of collapse.\"",
+      "options": [
+        { "label": "Accept the compliment and the sore muscles", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Desiccate the Land", "Pebblestorm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_tunnel",
+  "chainName": "Tunnel Work"
+}

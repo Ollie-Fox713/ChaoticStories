@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_49",
+  "title": "Causeway Moss",
+  "desc": "Mist has glazed the castle causeway in moss, and the rail lights need to find the path again before evening.",
+  "locations": [ "Lake Ken-I-Po" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The causeway to Najarin's castle crosses water that always looks calmer than it is. In daylight the lake lies bright and glassy on both sides, broken only by reed shadows and the occasional ring where something turns below. At dusk the whole approach becomes stranger: pale stone, rising mist, warm windows above, and the sense that you are walking toward a thought someone built out over the water. That is why the moss matters. One slick seam underfoot and the spell becomes a fall.\n\nA scraper, a lamp cloth, and a box of polished reflector cups wait on the first pillar. You can clear the moss from the walking stones, or clean and reseat the rail reflectors before evening.",
+      "options": [
+        { "label": "Scrape the moss from the causeway stones", "go": 1 },
+        { "label": "Clean and reseat the rail reflectors", "go": 2 }
+      ]
+    },
+    {
+      "text": "The moss peels up in damp green ribbons, leaving pale stone and sharp seams beneath. You work section by section, scraping the walking line clear and brushing the loosened growth into baskets before the lake wind can spread it back across the path. With every length you finish, the causeway stops looking ornamental and resumes looking trustworthy.\n\nBy the time you reach the castle side, the surface on both sides of the path is catching late color from the sky: silver near the stone, rose farther out, then a cooler blue where the deeper water begins. The cleaned path runs through it like a deliberate answer.",
+      "options": [
+        { "label": "Carry the moss baskets aside and reopen the crossing", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The reflector cups are small, but after dark they turn the causeway into a visible promise. You wipe the damp film from each one, tighten loose mounts, and angle the polished faces back toward the path so lanternlight will travel where tired feet need it. When the first lamps are lit, the effect is immediate. One warm point becomes another, then another, until the whole rail seems strung with low stars.\n\nOut on the lake, the real stars begin falling in brief white threads above the horizon, and their reflections cross the dark water between the rail lights. For a moment the causeway looks less built than conjured, a narrow constellation leading straight to Najarin's door.",
+      "options": [
+        { "label": "Latch the lantern cup and leave the rail catching light", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Vine Snare", "Pebblestorm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

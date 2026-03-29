@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_39",
+  "title": "Signal Gongs",
+  "desc": "The start gongs, warning bells, and announcer tubes all need to agree on what a bout is doing.",
+  "locations": [ "UnderWorld Colosseum" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Colosseum communicates by sound long before anyone bothers to use reason. One gong for gate rise. Two for a pause in the bout. A harsher bell for fouls, disputes, or the sort of interruption that needs to be heard above a delighted crowd. Along the outer wall, bronze speaking tubes carry the announcer's calls from the upper desk to the lower handlers so the whole event can pretend it is more orderly than it feels.\n\nThe signal caller lays out the tone chart and points in two directions at once. \"Upper gongs if you trust your ear,\" she says. \"Speaking tubes if you trust your lungs and everyone else's maintenance. I need both checked before tonight's crowd starts inventing its own meanings.\"",
+      "options": [
+        { "label": "Climb to the upper gong line and test the bout signals", "go": 1 },
+        { "label": "Clear and test the speaking tubes around the wall", "go": 2 }
+      ]
+    },
+    {
+      "text": "Each gong on the upper line carries a slightly different voice, and that difference is the whole system. You strike the gate gong first, log its answer, then move down the rail to the pause bell and the foul bell, comparing each tone to the brass pitch markers hung beside the frame. The foul bell is flat by a small but dangerous degree, its clapper wrap damp enough to blur the note into something the crowd would hear as confusion instead of command.\n\nYou replace the wrap, strike again, and this time the sound cuts through the galleries clean enough to make the skin along your arms tighten. The signal caller reads your marks, then sounds the three-bell sequence in order and listens to the echoes die. \"Good,\" she says. \"If we must control a mob, we may as well do it with proper music.\"",
+      "options": [
+        { "label": "Hang the striker back on its hook and leave the bells true", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The speaking tubes run through the wall like a second set of nerves for the arena, and like nerves they become unreliable if you let enough grit and damp build inside them. You uncap each line, swab out the dust, and clear one ugly clot of soot and paper pulp from the tube feeding the east-side handlers. No wonder the gate orders arrived late there last night.\n\nWhen the signal caller tests the line again, her voice reaches the lower post hard and sharp, stripped of the muffled delay it had before. That matters more than it sounds. In the Colosseum, half a breath can be the difference between a smooth gate rise and two angry fighters staring at a closed portcullis while the crowd decides who to blame. The caller seems satisfied with the restored bite in the line. \"There. Now when I shout, the arena hears me instead of guessing.\"",
+      "options": [
+        { "label": "Cap the final tube and leave the signal line clear", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Shriek Shock", "Flash Kick" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

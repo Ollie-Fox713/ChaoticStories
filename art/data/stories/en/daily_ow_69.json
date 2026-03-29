@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_69",
+  "title": "Gas Bell",
+  "desc": "Some parts of the swamp need to be listened to before they can be crossed.",
+  "locations": [ "Gloomuck Swamp" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "In the deeper pockets of Gloomuck Swamp, bad air gathers low over the water and waits for anyone careless enough to stand still inside it. Sulfur vents, rotting gas, trapped bubbles rising through old muck. Local crews do not deal with this by pretending bravery solves chemistry. They hang bells, float bowls, and marker reeds that tell them what the air is doing before lungs get involved.\n\nA vent watcher is making rounds with a tuning pick in one hand and a long forked pole in the other. Ahead of her, three bell posts rise from a hummock ringed in yellow stain. One note is flat, and one of the vent channels has stopped releasing cleanly after yesterday's rain compacted the mud.\n\nShe gives you the obvious options. Retune the bells so the posts can warn properly, or use the vent pole to reopen the side channel and let the bad gas bleed away where no one walks.",
+      "options": [
+        { "label": "Retune the warning bells on the posts", "go": 1 },
+        { "label": "Reopen the vent channel with the pole", "go": 2 }
+      ]
+    },
+    {
+      "text": "The bells are small and mean no ceremony. Each hangs low over the danger patch, light enough that a bad upward push of gas or the wrong pressure wave in the mud will stir it. When they are tuned correctly, the sound they make is unmistakable: thin, sour, and just unpleasant enough to force attention.\n\nYou adjust the tongues with the pick while the watcher tests the air flow by kneeling well back from the stain line. The first bell comes right quickly. The second takes longer, its bracket warped by damp until the note stops sounding like warning and starts sounding merely tired.\n\nWhen the wind shifts and all three bells answer together, the result is ugly but useful. The watcher smiles with real satisfaction. \"There. Nobody will mistake that for a bird.\" In Gloomuck, clarity often comes with terrible acoustics.",
+      "options": [
+        { "label": "Step away while the warning notes carry", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The vent channel is a narrow cut through the mud bank meant to give the gas a preferred route out of the pool. When it silts over, the bubbling spreads and the whole hummock becomes a guessing game. You use the forked pole from the safe side, probing for the old cut until the soft packed layer gives and the trapped pocket starts to hiss through the right opening again.\n\nThe smell is immediate and appalling. The watcher has you both step back until the first dirty rush clears and the channel settles into a steady ugly exhale. Then the clay float bowl tied above it begins to bob again, just enough to show that pressure is moving where it should instead of building under the crossing line.\n\n\"Better there than under a boot,\" the watcher says. She marks the post with fresh yellow cord. It is not elegant work, but then very little in Gloomuck is. What it is, when done right, is survivable.",
+      "options": [
+        { "label": "Plant the pole back in its rack", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Fear Fight", "Rustoxic" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

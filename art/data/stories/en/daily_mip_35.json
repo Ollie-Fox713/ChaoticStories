@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_35",
+  "title": "Morning Circuit",
+  "desc": "The inner garden paths need tending at dawn, when the oasis feels most impossible and most alive.",
+  "locations": [ "Mipedim Oasis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "At dawn, Mipedim Oasis feels like an argument the desert lost overnight. The outer dunes are already warming, pale and sharp beneath the sun, but inside the garden walls the air still carries cool water and crushed green scent. The inner paths curve between palms, shallow channels, and reflecting pools that catch the sky in pieces. Barefoot on the paving, the stone feels almost impossibly cold. It is the kind of comfort a Mipedian notices without ever calling it comfort aloud.\n\nThat is why the morning circuit matters. Overnight wind has dusted the northern loop with sand, and the cooling channels along the path are carrying just enough runoff to turn neglect into grit and grit into mud. The path steward leans on her long brush and lets you take in the view for exactly one heartbeat before speaking. \"Beautiful, yes. Also filthy. The oasis does not stay miraculous by accident.\"\n\nShe points to two trouble spots: the broad walkway around the reflecting pool and the drain slots where the cooling runnels disappear under the paving. \"Sweep the pool loop before the crowds arrive, or clear the drain slots before the sand hardens. Either one keeps the garden feeling like itself.\"",
+      "options": [
+        { "label": "Sweep the broad path around the reflecting pool", "go": 1 },
+        { "label": "Clear the drain slots before they clog solid", "go": 2 }
+      ]
+    },
+    {
+      "text": "The broad path looks almost clean until the brush begins moving and reveals how much sand a single night can smuggle into paradise. You sweep in long, careful strokes toward the outer gutter, keeping the grit away from the runnels that lace cold water beside the paving. The rhythm settles quickly: brush, gather, lift, breathe. Around you the oasis wakes by degrees.\n\nAs the stone clears, the loop changes color from dust-muted tan back to deep blue-gray, and the reflecting pool beside it sharpens from dull brightness into a true mirror. Palms reappear in it. Fragments of sky return. A pair of early walkers cross the far side of the garden and, without even seeming to decide, drift toward the section you have already finished because the stone there is cooler and the whole place feels more complete.\n\nThe steward watches the pool for a moment rather than the path. \"People think the oasis is the water,\" she says. \"It isn't. It's the feeling that the water reached everything it was supposed to touch.\" She taps the brush against the stone. \"This is part of that.\"",
+      "options": [
+        { "label": "Finish the loop and let the garden wake around it", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The drain slots are narrow cuts in the paving where the cooling water slips below the garden and returns later farther down the loop. They are easy to miss until they clog, and then the whole illusion of effortless grace starts to fail. You kneel with a hooked pick and clear them one by one while the runoff threads cold over your knuckles and disappears back into the stone.\n\nWorking at ground level changes the garden. You see the tiny roots that have reached toward the channels, the mineral line left by yesterday's water, the way the light trembles under the pool's edge and paints shifting patterns across the underside of the path railing. By the fourth drain, the morning crowd has begun to gather in the distance - quiet voices, soft sandals, the first market baskets - but here at the slots the only sound is the neat liquid note each channel makes when it clears properly.\n\nWhen you pry the worst blockage free, the water slips downward in a bright, quick rush and the whole runnel beside you begins moving faster. The steward glances over and nods once. \"Good. If the drains fail, the paths get warm. If the paths get warm, people start remembering they live in a desert.\" Her tone turns almost gentle. \"The oasis exists so they can forget for a little while.\"",
+      "options": [
+        { "label": "Clear the final slot and listen to the water travel on", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Dexterous Storm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

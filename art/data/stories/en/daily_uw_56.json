@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_56",
+  "title": "Old Light",
+  "desc": "The entrance hall of Stone Pillar is only workable if the lamp bowls and dust screens are set before anyone goes farther in.",
+  "locations": [ "Stone Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Stone Pillar was built to outlast confidence, and it has. The entrance hall is all dark cut stone, old support arches, and wall niches where lamps still burn in bowls too old for anyone living to claim them as recent work. Dust moves strangely here. It hangs in slanting lines where no wind should reach and settles along the floor in patterns that make the eye try a little too hard to identify footsteps. Beyond the first arch, the deeper corridors fade into a quiet so complete it seems shaped rather than absent. The place is undeniably ruined. It is also, against reason, beautiful.\n\nThe threshold keeper uncovers a tray of oil bowls and folded screens. \"Light the entrance bowls if you want the hall itself,\" she says. \"Or reset the dust screens between the first pillars if you prefer the partitions. We do not need the ruin welcoming people by improvisation.\"",
+      "options": [
+        { "label": "Light the old oil bowls through the entrance hall", "go": 1 },
+        { "label": "Reset the dust screens between the first pillars", "go": 2 }
+      ]
+    },
+    {
+      "text": "The oil bowls sit in pairs along the wall niches, blackened with age and still somehow intact enough to do their work. You clean the rims, fill the cups, and relight each bowl in turn until warm amber light begins collecting under the arches. One by one, details emerge from the stone: tool marks older than the current guard roster, abandoned carvings half worn by time, and the pale streak of mineral through one column that looks almost like frozen lightning.\n\nWith the full hall lit, Stone Pillar stops feeling empty and starts feeling inhabited by its own memory. The threshold keeper studies the line of flame and seems satisfied by the honesty it restores. \"Better. If the dead want atmosphere, they may arrange their own.\"",
+      "options": [
+        { "label": "Cap the oil chest and leave the old hall burning steady", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The dust screens are narrow frames hung between the first pillars to catch drifting grit from the inner corridors before it can fog the whole entrance hall into uncertainty. Two screens have slipped out of square and a third hangs with enough slack to make the shadows behind it waver in ways no one here appreciates. You retension each frame, clear the grit from the lower catches, and restore the line until the screens hang flat and still between the pillars.\n\nThe effect is immediate. The deeper dust continues moving, but it does so farther in, where it belongs. The hall itself becomes clearer without becoming friendly. The threshold keeper glances along the corrected partition and nods. \"Good. Stone Pillar may remain haunted. It does not need to be untidy.\"",
+      "options": [
+        { "label": "Latch the last screen and leave the hall properly stern", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Shadow Strike", "Shriek Shock" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

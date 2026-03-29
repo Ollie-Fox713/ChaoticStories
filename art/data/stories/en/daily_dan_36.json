@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_36",
+  "title": "Sounding Lines",
+  "desc": "Before the main draw cycle begins, the reservoir crews need fresh depth and temperature readings from the black water.",
+  "locations": [ "Mount Pillar Reservoir" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Mount Pillar Reservoir is quiet in a way the rest of the hive never is. The water lies black and still beneath the stone basin, holding the ceiling lights as if it has borrowed another sky and no intention of returning it. Before the first heavy draw of the day, sounding crews check the basin's edge readings with weighted lines and bead gauges so the hive knows where the temperature layers shifted overnight and which margins are safe for work.\n\nThe sounding keeper offers you two reels. \"Take the wall-side line if you want the cleaner read,\" she says. \"Take the vent-side line if you want the warmer one and a better chance of getting sprayed in the face. Both matter. Only one pretends not to be dramatic.\"",
+      "options": [
+        { "label": "Read the wall-side sounding line along the quiet basin", "go": 1 },
+        { "label": "Work the vent-side line where the warm currents rise", "go": 2 }
+      ]
+    },
+    {
+      "text": "The wall-side stations are cut into the stone at measured intervals, each one marked with old depth notches and a bronze eye ring polished smooth by generations of use. You lower the weighted line until the first bead slips under, then the second, then the third, counting depth against the colored wax markers and noting where the chill band begins. The water swallows the line without fuss. That is the unsettling part. It accepts everything too neatly.\n\nWhen you haul the weight back up, the keeper reads the damp marks on the knots and copies your numbers into the slate with obvious relief. Stable depth. Cold layer holding. No unexpected lift near the wall. Around you, the basin remains dark and immense, but the measurements make it usable again, which is the closest ordinary work comes to mastery here. The keeper caps the ink and says, \"Good. The reservoir can be deep without becoming uncertain.\"",
+      "options": [
+        { "label": "Wind the line clean and log the wall-side reading", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The vent-side stations sit above the warmer seams where geothermal heat pushes up through the basin and turns the air soft with mineral damp. Here the water is never quite still. It moves in slow hidden lifts that tug the sounding weight sideways if you are not careful. You lower the bead line in stages, letting it settle each time before calling the depth and temperature color back to the keeper on the platform.\n\nThe reading comes back warmer than yesterday but still within the safe band for the nursery channels. Steam beads on the reel handle while the keeper marks the change. When you look out across the vent-side surface, the black water is striated with faint silver where the warm current reaches the light, beautiful in a way that makes practical creatures impatient. The keeper notices you looking and says, \"Yes. It does that. Record the numbers anyway.\"",
+      "options": [
+        { "label": "Dry the reel and leave the warm margin in order", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Stupefying Tide" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_16",
+  "title": "The Muge's Apprentice",
+  "desc": "A muge apprentice needs help gathering ingredients. What could go wrong?",
+  "locations": [ "Lake Ken-I-Po", "Runic Grove" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The apprentice is young, earnest, and carrying a list written in handwriting so bad it might be a spell in itself. She needs three things from the lakeshore: moonpetal lichen (grows on wet rocks), echo moss (only found where the acoustics are perfect), and a jar of stillwater — water so calm it has no ripples.\n\n\"My master needs them by sunset. I've been looking all morning. The lichen keeps dissolving when I touch it, the moss is in a cave I can't reach, and every time I try to jar the stillwater, my hand makes ripples.\"\n\nShe looks at you with the desperate hope of someone who has run out of options.",
+      "options": [
+        { "label": "Help with the moonpetal lichen", "go": 1 },
+        { "label": "Try the stillwater — how hard can it be?", "go": 2 }
+      ]
+    },
+    {
+      "text": "Moonpetal lichen grows in thin, luminescent sheets on rocks that are permanently damp. It's beautiful — pale silver-blue, like frozen moonlight. It also dissolves on contact with warm skin.\n\nYou try cold water on your hands first. The lichen holds for a moment, then disintegrates. You try using leaves as gloves. Better — you peel off a piece the size of your palm. It curls in the leaf like a sleeping insect.\n\nThe apprentice is delighted. \"That's more than my master needs! I was using my bare hands like an idiot.\"\n\nBetween the two of you, you collect enough lichen, locate the echo moss by following the sound of your own voice bouncing wrong, and manage the stillwater by lowering the jar on a string from a branch, never touching the surface.\n\n\"You'd make a good apprentice,\" she says. It sounds like a compliment and a threat.",
+      "options": [
+        { "label": "Politely decline the career change", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Stillwater. Water with no ripples. How hard can it be?\n\nVery hard. You lower the jar toward the lake's surface. Your breathing creates ripples. You hold your breath. Your heartbeat creates ripples. You try standing absolutely still — a bird lands on the water thirty feet away and the ripple reaches you.\n\nAfter forty minutes, you're lying flat on a rock, inching the jar toward the surface millimeter by millimeter. The apprentice is watching from a distance, holding her breath in sympathy.\n\nYou make contact. The water enters the jar. No ripple. You seal it instantly.\n\nInside the jar, the water is perfectly, impossibly still. It doesn't slosh when you move. It doesn't shift when you tilt it. It sits in the jar like a solid.\n\n\"That's... actually perfect,\" the apprentice whispers. \"My master's never gotten one that clean.\"\n\nYou feel unreasonably proud about water.",
+      "options": [
+        { "label": "Hand over the jar with great ceremony", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Delerium", "Ektospasm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_mugic",
+  "chainName": "Mugic Arts"
+}

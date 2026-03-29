@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_37",
+  "title": "Filter Weave",
+  "desc": "The reservoir's intake membranes wear out quietly, which is why the replacement racks are never empty.",
+  "locations": [ "Mount Pillar Reservoir" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The intake membranes that protect Mount Pillar Reservoir are easy to forget until one tears. Most creatures only see them once they are stretched over an intake frame and holding back grit, fungus, and anything more ambitious than either. Before they reach the water, though, they begin here on the shore racks as careful woven panels of treated fiber, each one judged by tension, mesh width, and the willingness to do repetitive work without pretending it is noble.\n\nThe membrane wright nods toward the long rack line. \"Patch the damaged panel if you want finer work,\" she says. \"Or stretch a fresh weave onto the bronze ring if you prefer arm strain and clean geometry. Both will be underwater by tomorrow. That does not make either of them unimportant.\"",
+      "options": [
+        { "label": "Patch the torn membrane and restore the weave", "go": 1 },
+        { "label": "Stretch a new membrane onto the intake ring", "go": 2 }
+      ]
+    },
+    {
+      "text": "The torn panel has failed cleanly, one split where mineral grit must have worried the same point for too many days in a row. You lay it flat on the rack, pick out the warped fibers, and reweave the opening with fresh treated thread, matching the original spacing strand by strand so the patch filters exactly like the rest of the panel instead of becoming the weak spot of tomorrow.\n\nBy the time you knot off the last repair, the tear has vanished into pattern. Only the slightly newer color of the fibers gives it away, and even that will disappear after a day in the water. The wright lifts the panel against the light, checks the mesh with narrowed eyes, and gives it back with approval. \"Good. A membrane should fail from use, not from impatience in the workshop.\"",
+      "options": [
+        { "label": "Hang the repaired panel with the ready stock", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Fresh membranes begin as a loose weave and only become useful once tension gives them discipline. You fasten the fiber sheet to a bronze intake ring a few links at a time, pulling opposite points in sequence so the mesh stays true instead of warping into pockets that would clog the first time the water pressed against it. The ring grows taut by degrees, the weave changing from cloth to instrument.\n\nWhen the last tie is set, the surface hums faintly under your knuckles, every strand sharing the load. The wright taps the frame, listens to the tension note, and nods. \"There. That one will hold.\" On the reservoir racks, that is all anyone asks for: a clean mesh, an even pull, and one more layer between the hive and whatever the water would rather keep to itself.",
+      "options": [
+        { "label": "Set the finished ring on the rack for tomorrow's crew", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Web Cocoon", "Pebblestorm" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

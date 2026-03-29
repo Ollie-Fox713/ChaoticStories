@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_40",
+  "title": "Target Row Reset",
+  "desc": "Yesterday's elemental drill turned the target lane into splinters, scorched cloth, and half-buried stakes.",
+  "locations": [ "Sha-Kree Flats" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The proving grounds on Sha-Kree Flats are tidy only between exercises. Yesterday's drill line involved air bursts, thrown blades, and a level of competitive irritation the instructors insist was healthy. This morning it looks like the remains of an argument between cloth, wood, and precision. Target sleeves are torn, range stakes are leaning, and one whole lane marker has vanished under blown sand as if the desert itself objected to the scoring.\n\nThe range keeper drops a bundle of fresh sleeves beside the shattered row. \"Replace the target stakes if you want heavier work,\" she says. \"Or clear the burst markers and reset the distance stones if you would rather spend an hour crouching and pretending the sand respects measurement. I need the lane ready before the next set arrives.\"",
+      "options": [
+        { "label": "Replace the broken target stakes and fresh sleeves", "go": 1 },
+        { "label": "Reset the burst markers and uncover the distance stones", "go": 2 }
+      ]
+    },
+    {
+      "text": "The old target stakes come out in splintered halves and smoke-darkened stumps, evidence that yesterday's trainees were either improving or showing off. You drive fresh poles into the packed row, slide new cloth sleeves over them, and tension each one so it will tear honestly when struck instead of twisting like a liar. The range keeper tests the alignment from the firing line, adjusting two poles by finger width and one by something so slight you would have missed it if she had not clicked her tongue.\n\nWhen the row is finished, the lane looks sharp again, all pale cloth and straight wood against the open sand. Whatever violence happens here next will at least happen on proper equipment. The keeper studies the new line and says, \"Better. Now if they miss, the fault returns to them where it belongs.\"",
+      "options": [
+        { "label": "Gather the broken stumps and leave the row ready", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The burst markers are shallow bowls and painted stones that show where an elemental strike landed relative to the intended target lane. After a windy night they become a puzzle, half buried and shifted just enough to start arguments. You clear each bowl, dig out the buried distance stones, and check them against the keeper's cord line until every interval sits where the exercise book says it should.\n\nIt is patient work in full sun, the sort that makes the flats feel larger because every crouch and rise happens under an uninterrupted sky. When the final stone is leveled, the lane regains its logic. Distances mean something again. Scores will mean something again. The range keeper reels in the cord, glances across the restored line, and says, \"Good. The sand tried to blur the lesson. We prefer our lessons visible.\"",
+      "options": [
+        { "label": "Brush the sand from your hands and reopen the range", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Dexterous Storm", "Force Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

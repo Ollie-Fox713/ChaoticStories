@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_08",
+  "title": "The Silent Race",
+  "desc": "A footrace across the flats. One rule: make a sound, you're out.",
+  "locations": [ "Sha-Kree Flats", "The Hunter's Perimeter" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Silent Race is a Mipedian tradition older than the current royal line. Competitors sprint across a mile of open desert. The catch: any audible sound — footfall, breath, rustle of clothing — and you're disqualified. Judges with enhanced hearing line the course.\n\nThe racers prepare in eerie quiet. Some wrap their feet in silk. Others go barefoot, trusting technique over padding. One competitor appears to hover slightly — using a subtle air cushion that costs enormous energy but produces zero sound.\n\nThe starter raises a flag (no starting gun, obviously). Twenty racers crouch at the line. The flag drops.\n\nSilence. Twenty figures sprint across the sand and you can hear absolutely nothing. It's deeply unsettling — like watching a painting move.",
+      "options": [
+        { "label": "Race — you've been practicing silent movement", "go": 1 },
+        { "label": "Judge — your hearing is sharp enough", "go": 2 }
+      ]
+    },
+    {
+      "text": "You hit the sand running. Silk wraps muffle your footfalls, but the real technique is in the stride — rolling from heel to toe, letting the sand absorb each step rather than pushing off. It's exhausting. Every muscle in your legs screams to just run normally.\n\nAround you, racers drop out. A cough — eliminated. A knee cracks — gone. Someone's silk wrapping comes loose and whispers against their ankle — out. The judges are merciless. By the halfway point, eight remain.\n\nYour lungs burn. You want to gasp. You breathe through your nose in controlled, silent pulls. Your vision narrows. The finish line is a silk banner hung between two posts — also silent, because of course it is.\n\nYou cross the line in fifth place. Fifth out of twenty is respectable. First place goes to a racer who seemed to barely touch the ground at all. The crowd celebrates in sign language — applause would be ironic.\n\nYour legs are jelly. Your lungs ache. But you didn't make a sound.",
+      "options": [
+        { "label": "Accept the silent congratulations", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Judging is harder than racing. You're posted at the quarter-mile mark with a brass ear-horn — a Mipedian device that amplifies nearby sounds to painful clarity. Through it, you can hear sand grains rolling. You can hear the heat shimmer. You can hear your own blood.\n\nThe racers approach. Through the ear-horn, the silence isn't silent at all. You hear the microscopic crunch of sand under silk-wrapped feet. You hear the whisper of displaced air. You hear heartbeats — rapid, thundering, panicked heartbeats.\n\nBut heartbeats don't count. Involuntary biological sounds are exempt (a controversial rule that took three years of debate to establish).\n\nYou flag two eliminations — a racer whose breathing hitched into an audible gasp, and another whose tail dragged across a rock. Both protest in sign language. You hold firm. The ear-horn doesn't lie.\n\nAfter the race, the head judge reviews your calls. Both confirmed. \"Good ear,\" she signs. \"You want to judge next season? We always need fresh ears. The old ones go deaf from the ear-horns.\"\n\nYou're not sure if she's joking.",
+      "options": [
+        { "label": "Consider the offer carefully (and quietly)", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Progressive Speed" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_race",
+  "chainName": "The Silent Race"
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_48",
+  "title": "Current Buoys",
+  "desc": "Two crystal buoys have drifted out of line, blurring the lake's careful reading of its own hidden currents.",
+  "locations": [ "Lake Ken-I-Po" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Morning at Lake Ken-I-Po is bright without feeling loud. Sunlight works across the surface in small white sparks, and the castle's western face hangs in the water with only the slightest distortion from current. Farther out, the crystal buoys that map surface drift float like dropped pieces of clear sky. Two of them have wandered off their marks. At another lake you might call that minor. Here, where hidden tunnels tug at the water from below, even a small disagreement on the surface matters.\n\nYesterday's chart rests beneath a glass weight on the dock table. It points you toward the jobs that need doing first: realign the buoy anchors and float line, or copy the corrected gauge marks onto the shore board once the water makes sense again.",
+      "options": [
+        { "label": "Realign the buoy anchors and reset the float line", "go": 1 },
+        { "label": "Copy the corrected gauge marks onto the record board", "go": 2 }
+      ]
+    },
+    {
+      "text": "The buoys sit deeper than cork, their weighted crystal spines letting them feel whatever quiet motion slides through the lake above the tunnel network. You work the anchor lines carefully from the dock, drawing the first float back into relation with the castle buttress on shore and the second into line with the gauge posts. Once both are true again, the row stops drifting and becomes readable.\n\nSunlight passes through the crystal bodies and scatters into pale bands beneath the surface, so the water seems to be writing with light. For a few seconds the buoys, the shore, and the castle reflection all agree. That small alignment feels like a form of respect.",
+      "options": [
+        { "label": "Tie off the anchor rope and leave the buoys in line", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The gauge posts read the lake by inches and patient repetition. You erase the numbers that came from the drifted line, copy the corrected marks into the board, and rebuild the sequence until the measurements step downward in clean order. It is quiet work, just chalk, wood, and the little sounds the shore makes when almost nothing disturbs it.\n\nWhen you set the board back in place, the figures no longer argue with the water outside the window. Beyond the posts, the lake keeps flashing with small points of white and blue as the morning sun catches each ripple. The numbers are plain. The thing they describe is not.",
+      "options": [
+        { "label": "Set the chalk down and leave the record board honest", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Reverberate" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

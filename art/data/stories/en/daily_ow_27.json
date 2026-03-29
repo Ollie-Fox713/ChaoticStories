@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_27",
+  "title": "Sconce Rotation",
+  "desc": "If the lamps drift out of alignment, Castle Bodhran stops making sense even by its own standards.",
+  "locations": [ "Castle Bodhran" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Castle Bodhran's lamps are mounted on rotating sconces because a fixed light source is not much use in a place where the walls periodically decide to behave like floors. The west galleries are dim this morning. Not dark, exactly. Just wrong in a way that makes every turn feel a little more treacherous than the architects intended.\n\nThe lamp keeper stands beneath a sideways stair with an oil flask in one hand and a brass adjustment key in the other. \"The hinges drift,\" she says. \"The mirrors drift. The guests drift. Then everybody blames the castle, as if the castle trims its own wicks.\" She hands you the key and points toward a row of lamps climbing what is currently the left wall.\n\n\"Either relight and rotate the west sconces directly, or reset the mirror plates at the bend so the gallery light carries properly again. Do whichever seems less likely to end with me retrieving you from a decorative alcove.\"",
+      "options": [
+        { "label": "Relight and rotate the west sconces", "go": 1 },
+        { "label": "Reset the mirror plates at the gallery bend", "go": 2 }
+      ]
+    },
+    {
+      "text": "The west sconces are all functioning, which would be comforting if they were pointing anywhere useful. You move from bracket to bracket with the adjustment key, loosening each lamp just enough to turn it and trim the wick. Once realigned, the flame throws light along the gallery rather than into the ceiling molding or directly into the eyes of anyone approaching from below.\n\nIt is careful work. Too far left and the stairs disappear into shadow. Too far right and the lamp begins illuminating a corridor no one is trying to walk just now. By the end of the row, the passage has changed from ominous to merely unusual. Brass rails gleam. The stair edges reappear. The castle's odd angles stop feeling hostile and return to feeling theatrical.\n\nThe lamp keeper follows behind you, checking the light with the approving severity of someone who has standards about illumination. \"There,\" she says when the last sconce settles into place. \"Now it looks intentional again.\" In Castle Bodhran, that is the highest compliment available.",
+      "options": [
+        { "label": "Cap the oil flask and let the gallery glow properly", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The mirror plates are mounted at a turn where the corridor loops upward and folds back across itself. When they are aligned, one lamp can light three segments of hall. When they are not, the bend turns into a pocket of uncertain shadow where guests start doubting the floor.\n\nYou polish the plates first, wiping away the fine dust and lamp soot that has dulled them, then loosen the brackets and turn them by degrees while the lamp keeper watches the reflected beam travel across the stone. A little higher. A touch right. Hold there. The light catches the first plate, skips to the second, then lands cleanly on the far stretch of corridor as if it had always meant to go there.\n\nThe effect is immediate. The bend opens up. The whole strange loop of the passage becomes readable. A servant carrying folded blankets comes through moments later, glances at the restored light path, and walks it without hesitation. The lamp keeper lets out a satisfied breath. \"Good. If the light knows where it's going, everyone else usually follows.\"",
+      "options": [
+        { "label": "Tighten the brackets and leave the mirrors true", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Shriek Shock", "Reverberate" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

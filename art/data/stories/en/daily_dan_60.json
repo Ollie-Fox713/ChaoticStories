@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_60",
+  "title": "Perch Nets",
+  "desc": "The cave-hawk perch line below the main platform needs fresh netting after the birds tore through last night's set.",
+  "locations": [ "Oipont's Lookout" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The cave-hawks that circle Oipont's Lookout are not pets, but they are useful neighbors when handled with a minimum of foolishness. The lookout crews keep a perch line and netted rest shelf below the main platform where the birds can settle instead of nesting directly on the signal masts, which experience has shown to be better for everyone. Last night's gusts and the birds' collective opinions have shredded one side of the netting.\n\nThe perch keeper holds a bundle of fresh net cord under one arm and does her best to ignore a hawk watching from the rail above. \"Replace the torn netting if you want the perch shelf,\" she says. \"Or reset the lure tassels along the rail if you prefer the birds' side of the arrangement. Either way, I'd like them landing where we planned.\"",
+      "options": [
+        { "label": "Replace the torn netting on the perch shelf", "go": 1 },
+        { "label": "Reset the lure tassels along the outer rail", "go": 2 }
+      ]
+    },
+    {
+      "text": "The perch net is there to catch dropped prey scraps, blown feathers, and the heavier awkwardness of a hawk deciding to arrive all at once. You tie the fresh net line into the frame, work the weave back to matching tension, and secure the corners until the shelf once again looks like a surface designed to survive birds with wingspans broader than your judgment in volunteering for this task.\n\nOne of the hawks drops to the repaired edge, tests the shelf with insulting calm, and settles. The net holds. The keeper seems pleased by that and by little else. \"Good. If they are going to critique our work, they may as well do it from the correct platform.\"",
+      "options": [
+        { "label": "Trim the spare cord and leave the perch shelf ready", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The lure tassels are strips of treated cloth tied along the outer rail where the hawks can see them turn in the wind. They give the birds something to focus on besides the signal masts and the occasional messenger who misjudges how shiny a buckle ought to be. Two tassels have wrapped themselves around the rail and another has torn free completely. You retie the line, space the cloths properly, and set their length so they flick and dance without tangling again the first time the wind remembers itself.\n\nSoon the tassels are answering the air in a bright little sequence down the rail. The hawks notice immediately. One shifts course mid-circle, follows the moving line, and chooses the perch shelf instead of the mast top. The keeper watches this with satisfaction sharpened by vindication. \"Better. A lookout needs eyes everywhere. It does not need claws on the signal poles.\"",
+      "options": [
+        { "label": "Tie off the last tassel and leave the rail speaking bird", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Web Cocoon", "Danihilation" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

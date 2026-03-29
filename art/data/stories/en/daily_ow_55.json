@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_55",
+  "title": "Silt Basins",
+  "desc": "The settling basins have filled with rich river silt, which is excellent news until someone has to move it where the fields can use it.",
+  "locations": [ "Riverlands" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "What the river leaves behind is nearly as important as what it carries through. Along a quiet side cut, a line of settling basins catches the heavy silt after high water, letting the Riverlands keep the fine dark soil that would otherwise drift farther downstream. Today the basins are full and the field carts are waiting nearby, which means the useful part of the cycle is about to become the laborious part.\n\nThe basin keeper hands you a flat shovel and points toward the reed partitions. \"Load the rich silt into the field carts if you want the heavier work,\" she says. \"Or reset the reed dividers between the basins if you prefer the waterline. Both matter. Fertility is easier to praise than to shovel.\"",
+      "options": [
+        { "label": "Shovel the rich silt into the waiting field carts", "go": 1 },
+        { "label": "Reset the reed dividers between the settling basins", "go": 2 }
+      ]
+    },
+    {
+      "text": "The settled silt is darker and finer than ordinary bank mud, rich enough that the keeper scoops a handful and lets it fall through her fingers with unmistakable professional pride. You shovel it into the carts by measured loads, separating out the larger gravel that never belonged in the fields to begin with. It is heavy work and oddly satisfying. Every cart that fills looks less like dirt and more like the next season's argument in favor of this whole complicated river system.\n\nWhen the third cart rolls away toward the fields, the keeper seems almost cheerful. \"Good. Water grows food twice here. Once by flowing. Once by stopping long enough to leave gifts behind.\"",
+      "options": [
+        { "label": "Set the shovel down and send the last cart on its way", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The reed dividers slow the basin flow just enough to let heavy soil drop where it can later be collected rather than carried onward. Two have folded under the last surge and another has drifted off its peg line entirely, letting the water cut too fast through the middle basin. You reset each divider, drive the pegs back in, and weave the reeds into the right shallow barriers until the flow settles into its old patient pattern.\n\nThe keeper watches the water take the corrected path and gives a short satisfied nod. Clear water slips through. Heavy silt lingers behind. That is exactly the arrangement she wanted. \"Better. A good basin is just a conversation between current and patience.\"",
+      "options": [
+        { "label": "Press the last peg firm and leave the basins catching well", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Vine Snare", "Enlightened Tenacity" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

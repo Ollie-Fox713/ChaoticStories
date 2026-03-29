@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_04",
+  "title": "The Water Census",
+  "desc": "Crystal-fish are migrating. Someone has to count them all.",
+  "locations": [ "Riverlands", "Lake Ken-I-Po" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Every season, the crystal-fish migrate upstream through the Riverlands toward Lake Ken-I-Po. Every season, the OverWorld counts them. It's tedious work — each fish is barely the size of your thumb, translucent, and moves in enormous shimmering schools that make your eyes water if you stare too long.\n\nA census worker hands you a counting rod — a stick with notches you click as fish pass. She points at a shallow bend in the river.\n\n\"Stand there. Count everything that swims past. Don't blink. Don't sneeze. And whatever you do, don't put your hand in the water.\"",
+      "options": [
+        { "label": "Ask why you shouldn't put your hand in", "go": 1 },
+        { "label": "Just start counting", "go": 2 }
+      ]
+    },
+    {
+      "text": "\"Because they'll swim up your sleeve.\"\n\nYou pull your hands back from the water's edge. She wasn't joking — you can see a fish nosing at the hem of your boot, probing for a way in.\n\nYou count for three hours. Click-click-click. The fish come in waves — sometimes nothing for minutes, then a blinding rush of hundreds that overwhelm your clicking hand. You lose count twice and have to estimate.\n\nFinal tally: 4,312, plus or minus a hundred. The census worker looks at the number and nods. \"Up from last season. The Riverlands are healthy.\" She pauses. \"Also, check your left boot. You've got one in there.\"\n\nYou do. You do have one in there.",
+      "options": [
+        { "label": "Shake the fish out and submit your tally", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "Click-click-click-click. The rhythm is hypnotic. Fish stream past in rivers of glass, catching sunlight and scattering it into rainbows on the riverbed. You stop seeing individual fish and start seeing patterns — the schools breathe, expand and contract, like a single organism with ten thousand bodies.\n\nAt some point you realize you've been counting for four hours. Your thumb is sore. Your eyes ache. But the number on your rod is impressive: 5,847.\n\nThe census worker looks at your tally and raises an eyebrow. \"Highest count on this bend in six seasons. Either the fish are thriving or you're very optimistic.\" She checks her own rod. \"No, they're thriving. Good work.\"",
+      "options": [
+        { "label": "Hand in the counting rod", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Rip Tide", "Hydro Balls" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_water",
+  "chainName": "Water Stewardship"
+}

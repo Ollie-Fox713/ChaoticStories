@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_45",
+  "title": "Arch Winch",
+  "desc": "The great gate mechanism only needs attention when it is about to become everyone else's problem.",
+  "locations": [ "Queen's Gate" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Most creatures passing through Queen's Gate notice the arch, the recognition stones, and the guards. Few look up long enough to think about what happens if the great slab door ever has to close in a hurry. Above the arch chamber, the winch hall keeps that answer ready: chain drums, counterweights, brake shoes, and a crank line big enough to make even routine maintenance feel like preparations for a siege.\n\nThe winch keeper wipes a hand on a rag black with old grease. \"Brake shoe or chain drum,\" she says. \"The shoes are glazing. The drum pins are dry. Both can wait right up until the moment they cannot.\"",
+      "options": [
+        { "label": "Check the brake shoes and rough the glazed surfaces", "go": 1 },
+        { "label": "Oil the chain drum pins and test the take-up", "go": 2 }
+      ]
+    },
+    {
+      "text": "The brake shoes sit against the outer drum rim, meant to bite hard enough to hold the gate where it stops instead of letting the whole weight of the slab decide the matter for everyone. A smooth brake surface is a polite way of saying future trouble. You rough the glazed faces back to texture, clear the old dust from the housings, and have the keeper engage the lever in short test pulls until the shoes catch with the resistance she wanted.\n\nWhen the final test run stops the drum cold without chatter or slide, the keeper looks almost calm. \"Good,\" she says. \"A gate this large should only move when someone important actually told it to.\" In the hall above Queen's Gate, that counts as machinery and doctrine agreeing for once.",
+      "options": [
+        { "label": "Brush out the brake dust and leave the lever set cleanly", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The chain drum carries the heavy work of lifting and lowering the gate slab, and the pins along its axle have started speaking in dry little complaints that the keeper no longer finds charming. You oil each one in turn, work the take-up wheel slowly, and watch the slack settle out of the side chains until the drum turns with deep steady confidence instead of small metallic resentment.\n\nThe test lift is brief but impressive anyway. Even halfway raised, the gate looks like a piece of Mount Pillar deciding whether to move. The keeper watches the drum roll, then sets the brake and listens to the chain settle in its housings. No squeal. No skip. No pin bite. \"There,\" she says. \"Now the arch can continue pretending it closes itself.\"",
+      "options": [
+        { "label": "Cap the oil can and leave the winch hall ready", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Danihilation", "Force Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,35 @@
+{
+  "id": "daily_ow_59",
+  "title": "Runoff Grooves",
+  "desc": "After last night's rain, the carved runoff grooves around the rune-marked bark need clearing before the next storm turns them destructive.",
+  "locations": [ "Runic Grove" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Rain does not treat the Great Tree gently. It runs along bark, gathers in the carved seams, and will happily sit in any little hollow long enough to turn reverence into rot if no one persuades it otherwise. Around the lower trunk and broader roots, narrow runoff grooves have been carved into the surrounding stone to draw water away from the runic bark without touching the bark itself. Overnight leaves and seed fluff have packed half the channels full.\n\nThe root court keeper points at the nearest clogged groove with a slim hooked stick. \"Clear the runoff channels if you want the stone line,\" she says. \"Or set the leaf screens at the upper drains if you prefer the catch points. One fixes today's problem. The other keeps tomorrow from arriving with the same face.\"",
+      "options": [
+        { "label": "Clear the runoff channels around the lower trunk", "go": 1 },
+        { "label": "Set the leaf screens at the upper drain mouths", "go": 2 }
+      ]
+    },
+    {
+      "text": "The clogged channels are full of the harmless things forests make in abundance until they settle somewhere important. You work the hooked stick through each groove, drag out the leaf paste and seed fluff, and flush the line with bucketed water until the channels begin carrying cleanly away from the bark. Once the first run clears, the stone seems to relax under your hands. Water goes where it was meant to go, and the rune-marked bark above it remains dry enough to keep pretending it answers only to time.\n\nThe keeper watches one full stream take the restored route and disappear into the lower drain bed without touching the trunk once. That is the outcome she wanted. \"Good. Ancient mysteries age better when the drainage behaves.\"",
+      "options": [
+        { "label": "Set the hook aside and leave the runoff line open", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The upper drain mouths use little woven leaf screens to stop branches, pine needles, and the larger pieces of forest enthusiasm from dropping into the channels below. Two screens blew loose in the storm, and the third is hanging at such a heroic angle that it is guarding nothing at all. You reseat each screen in its notch, tie the catches down, and brush the drain lip clear until the whole catch line looks quietly competent again.\n\nWhen the keeper tips a test bucket across the upper stone, the water catches at the screens, leaves the debris behind, and slips on into the channels in a clean narrow run. She nods at that with obvious approval. \"Better. We have enough undeciphered forces here already. Water need not become one of them.\"",
+      "options": [
+        { "label": "Tie off the last screen and leave the drains defended", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Hydro Balls", "Vine Snare" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

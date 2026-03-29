@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_57",
+  "title": "Wind Boards",
+  "desc": "The upper platform's wind boards and sight arrows have shifted again, which means the range notes are already suspect.",
+  "locations": [ "Oipont's Lookout" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Oipont's Lookout does not merely watch the horizon. It interprets it. Along the upper platform, wind boards turn on pivots, sight arrows mark common approach lines, and every railing post carries some little practical refinement meant to save a watcher half a second and therefore possibly half a day for the hive below. A hard night gust has twisted two wind boards off true and the eastern sight arrow now points somewhere between useful and hopeful.\n\nThe range keeper taps the warped arrow with one knuckle. \"Reset the wind boards if you want the pivot work,\" she says. \"Or realign the sight arrows to the ridge marks if you prefer the rail line. The view is impressive either way. I prefer it measurable.\"",
+      "options": [
+        { "label": "Reset the wind boards along the upper platform", "go": 1 },
+        { "label": "Realign the sight arrows to the ridge marks", "go": 2 }
+      ]
+    },
+    {
+      "text": "The wind boards are narrow slats marked by direction and set high where the air reaches them cleanly before the platform walls start complicating things. You free the binding pivot, square each board to its mark, and test the swing until the slats answer the morning gust with crisp, readable turns instead of lazy indecision. Once corrected, the boards stop being scenery and return to being information.\n\nThe range keeper watches the line for a full minute before speaking again. The boards now agree with one another, which seems to restore her relationship with the day. \"Good. I do not ask the wind to behave. I only ask the equipment to stop flattering it.\"",
+      "options": [
+        { "label": "Oil the last pivot and leave the boards speaking clearly", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The sight arrows run the rail at shoulder height, each one fixed toward a known feature: east approach notch, ash shelf, lower basin, far ridge cleft. When they drift off alignment, distance notes become arguments and arguments become delays. You loosen the mounts, sight each arrow against its proper landmark, and set the line back to the keeper's cuts until the whole platform reads like a map again instead of a cluster of opinions bolted to wood.\n\nOnce the last arrow is fixed, even a quick glance over the rail makes more sense than it did before. The world below is still vast and hostile. It has simply been given labels again. The range keeper runs her hand along the restored line and nods. \"Better. A good lookout should reduce surprise, not generate it.\"",
+      "options": [
+        { "label": "Pocket the wrench and leave the rail honest again", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Force Strike", "Hydro Balls" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

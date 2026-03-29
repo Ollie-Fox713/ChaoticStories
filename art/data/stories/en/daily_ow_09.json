@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_09",
+  "title": "The Training Yard",
+  "desc": "The public training grounds are open. Time to dodge.",
+  "locations": [ "Kiru City", "Gigantempopolis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The training yard in the eastern quarter is where OverWorld warriors practice — and where anyone foolish enough to walk through gets volunteered as a target dummy.\n\nYou were just cutting through to the market. Now a warrior twice your size is grinning at you, tossing a padded training club from hand to hand.\n\n\"You. Dodge practice. I need a partner and everyone else has already been bruised today.\"\n\nThe training club looks heavy. His grin looks permanent.",
+      "options": [
+        { "label": "Accept the challenge — try to dodge", "go": 1 },
+        { "label": "Offer to throw instead", "go": 2 }
+      ]
+    },
+    {
+      "text": "He's fast. You are, by necessity, faster.\n\nThe first swing whistles past your ear. You duck. The second catches air where your ribs were a moment ago. The third — a feint, the actual strike coming from below — clips your knee and sends you stumbling.\n\n\"Good!\" He sounds genuinely pleased. \"Most people don't dodge the first one. You got two.\"\n\nYou go again. And again. By the fifth round, you're reading his shoulder movements — the club goes where his shoulders point. You dodge seven straight attacks. The warrior stops, breathing hard.\n\n\"Seven. That's better than most of my squad.\" He claps you on the back hard enough to stagger you. \"Come back tomorrow. I need someone who actually tries.\"",
+      "options": [
+        { "label": "Limp away victorious", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "He shrugs and hands you the club. It's heavier than it looks — padded leather over a solid wooden core.\n\n\"Hit me.\"\n\nYou swing. He sidesteps without apparently moving. You swing again — he leans back two inches and the club passes through empty air. On your third try, you aim low. He hops over the club like a child skipping rope.\n\n\"Faster,\" he says.\n\nYou swing faster. Wilder. He dodges everything with minimal effort, occasionally nudging your arm to redirect a strike into thin air. After ten minutes you're gasping. He hasn't broken a sweat.\n\n\"Not bad,\" he says. \"Your form needs work but your commitment is there.\" He takes the club back. \"Come back when your arms stop shaking.\"",
+      "options": [
+        { "label": "Stagger to the market, arms like noodles", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Flash Kick", "Velocitrap" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_training",
+  "chainName": "Combat Training"
+}

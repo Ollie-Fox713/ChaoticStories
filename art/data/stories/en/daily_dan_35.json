@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_35",
+  "title": "Humidity Curtains",
+  "desc": "The resin curtains between the brood-warm corridors and the main hive are collecting too much moisture to do their job.",
+  "locations": [ "Mount Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Mount Pillar manages climate the way it manages everything else: through layers, habits, and constant small repairs. The brood corridors below the central levels are warm enough to fog metal. The main traffic lanes above need to stay cooler and drier or the walls start sweating and the footing goes slick. Between the two hang thick resin-woven curtains and shallow runoff troughs that catch wandering damp before it can spread.\n\nToday one curtain bank is heavy with condensate and the trough beneath it is ticking with overflow. The climate keeper hands you a hooked pole and a scraping knife. \"We can rehung the curtain line and restore the spacing, or clear the troughs and let the runoff move again,\" she says. \"Either one saves this corridor before second shift.\"",
+      "options": [
+        { "label": "Rehang the curtain line and reset the spacing", "go": 1 },
+        { "label": "Clear the runoff troughs before they spill over", "go": 2 }
+      ]
+    },
+    {
+      "text": "Up close the curtain is heavier than it looks, a layered sheet of resin thread stiffened just enough to hang straight while still flexing for traffic. The trouble is not the material but the line. Two hanger points have sagged, letting the bottom edge bunch against the floor where it catches extra moisture and stops the air gap from doing its work.\n\nYou pole the line loose, reset the hooks one by one, and pull the curtain back into an even fall so the warm air from below has to break across it instead of rolling straight through. The difference is immediate. Condensation stops gathering at the bottom seam, and the corridor on the cool side begins to feel less like a greenhouse pretending to be a road. The climate keeper runs a hand along the lower edge, checking the weight. \"Better,\" she says. \"A curtain does not have to block the whole hive. It only has to persuade the air to behave.\"",
+      "options": [
+        { "label": "Coil the spare line and leave the curtain hanging true", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The runoff trough is a narrow cut of stone at the base of the threshold, designed to catch condensation and guide it back toward the warmer chambers where it belongs. Right now it is half clogged with mineral crust and pale fibers shed from the curtain edge. You scrape it section by section until the channel deepens again, then pour a test cup into the high end and watch the water run cleanly away instead of pooling underfoot.\n\nOnce the trough starts doing its job, the corridor changes fast. The ticking overflow stops. The slick patch near the threshold dulls to ordinary damp and then dries under passing air. By the time second shift starts filing through, they are stepping over a working drain instead of through a puddle. The climate keeper crouches to inspect the cleared channel, then stands with the relief of someone whose problem has returned to being invisible. \"Good,\" she says. \"If the corridor notices the system, it means the system failed. Today it can go back to being unnoticed.\"",
+      "options": [
+        { "label": "Rinse the trough knife and let the threshold hold dry", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Freeze Flash", "Steam Rage" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

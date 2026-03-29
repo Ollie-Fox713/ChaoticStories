@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_67",
+  "title": "Heat Vent Caps",
+  "desc": "The flats look cool at a distance. Under the crust, some sections are still breathing fire.",
+  "locations": [ "Rao'Pa Sahkk" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Rao'Pa Sahkk is all surface until it suddenly is not. Beneath the hard pale crust, pockets of trapped heat still move through the flats, turning some sections of sand warm enough to soften leather or crack a careless boot sole. Regular crossing lanes stay safe only because crews keep the vent caps and warning rings in order.\n\nA lane keeper has a satchel full of replacement clay lids and a rake made from polished bone. She taps the sand with the handle as she walks, listening for the difference between ordinary packed ground and the hollow note that means heat is rising closer than it should. \"The false sea is pretty,\" she says. \"The fire under it is why we get paid.\"\n\nToday's checks begin at the cap line or the warning circles. The clay lids over the hottest breaths need inspection, or the sand has drifted over the stone rings that tell caravans where not to stop.",
+      "options": [
+        { "label": "Inspect the clay caps over the vent mouths", "go": 1 },
+        { "label": "Clear the warning rings buried under drifted sand", "go": 2 }
+      ]
+    },
+    {
+      "text": "The vent caps are simple pieces of fired clay, thick enough to dull the direct heat and shaped with side slits so pressure can escape without blowing the whole cover loose. Simple does not mean easy. Each one has to be lifted with hooked tongs because the sand around it is always warmer than it looks.\n\nYou move from cap to cap with the keeper, checking for hairline cracks and places where the edges have begun to glaze from repeated exposure. One lid is sound but crooked, letting a bright breath of hot air slip from one side and make the sand around it wrinkle with shimmering distortion. Another has cracked clean through and needs a replacement on the spot.\n\nBy the time the line is finished, your boots are warm through the soles and the keeper's slate has three new marks on it. She settles the last fresh cap into place and brushes sand up around the rim. \"Good,\" she says. \"Now the lane looks empty again. That is exactly what we want from danger.\"",
+      "options": [
+        { "label": "Leave the vent line quiet and covered", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The warning rings are low circles of dark stone set flat into the crust wherever heat rises too near the surface. When the wind behaves, they are obvious enough. When it does not, the flats smooth themselves over the markers until a traveler can only see trouble after stepping into it.\n\nYou rake back the drifted sand in slow arcs while the keeper checks each ring's edge for cracks. One circle emerges almost clean. Another has filled completely, its stone hidden under a pale skin of perfectly harmless-looking sand. The work leaves black crescents on the flats, stark and undeniable against the brighter ground.\n\nOnce the full lane is readable again, the keeper stands with hands on hips and looks pleased by the severity of it all. Out here, bright empty beauty depends on a great deal of blunt, visible warning. Rao'Pa Sahkk lets creatures admire it safely only if somebody keeps exposing where admiration should stop.",
+      "options": [
+        { "label": "Set the rake aside and mark the route on the slate", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Inferno Gust", "Quick Exit" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

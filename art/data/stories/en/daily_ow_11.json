@@ -1,0 +1,37 @@
+{
+  "id": "daily_ow_11",
+  "title": "The Cartographer's Errand",
+  "desc": "Updated maps need to reach the border outposts before they're useless.",
+  "locations": [ "Ravanaugh Ridge", "Stronghold Morn", "Castle Bodhran" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "A cartographer catches you at the crossroads, out of breath and holding a leather tube of rolled maps. \"I've got updated terrain surveys for three outposts. I was supposed to deliver them myself, but my ankle —\" She gestures. It's swollen. \"The ridge patrols need these. The seasonal floods changed the ravine paths, and if they're navigating by last season's maps, someone walks off a cliff that isn't there anymore.\"\n\nThe three outposts are spread across the ridgeline. You can't reach all three before dark.",
+      "options": [
+        { "label": "Take the high trail — hit the two ridge outposts", "go": 1 },
+        { "label": "Take the low trail — hit the valley outpost first", "go": 2 }
+      ]
+    },
+    {
+      "text": "The high trail is exposed but fast. Wind tears at the map tube as you climb. You reach the first outpost by midday — a stone watchtower manned by two bored sentries who light up when they see the maps.\n\n\"About time. We've been routing patrols around a bridge that apparently doesn't exist anymore.\" They study the new survey. \"Ah. It fell into the gorge. That explains the noise last month.\"\n\nThe second outpost is another hour along the ridge. By the time you arrive, the sun is dropping. The garrison commander compares old and new maps side by side, marking changes with a charcoal pencil.\n\n\"Three new ravines, a collapsed trail, and the spring moved forty meters south. Perim doesn't sit still.\" She nods. \"The valley outpost will have to wait for tomorrow. You've done enough.\"",
+      "options": [
+        { "label": "Head back before dark", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The valley outpost is the most remote — tucked into a fold in the hills where two streams converge. The trail down is muddy and winding, but sheltered from the wind.\n\nYou find the outpost quiet. A single sentry is on duty, watching the streams with the focused boredom of someone who's been staring at water for hours.\n\n\"New maps?\" She takes the tube and unrolls the survey on a flat rock. \"Oh. Oh no. The eastern ford isn't a ford anymore?\" She points at the map. Where a shallow crossing used to be, the new survey shows a deep channel. \"We sent a supply wagon that way two days ago. They must have had to turn around.\"\n\nShe writes a quick note and asks you to carry it back to the cartographer — confirmation received, plus a request for updated stream depth readings.\n\nYou make it back by dark. The cartographer is relieved. Her ankle looks worse.",
+      "options": [
+        { "label": "Deliver the note and suggest she see a healer", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Progressive Speed", "Quick Exit" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_ow_cartography",
+  "chainName": "Cartography"
+}

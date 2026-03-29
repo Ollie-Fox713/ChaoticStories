@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_59",
+  "title": "Root Stair",
+  "desc": "The stair down toward the catacomb access has gone slick with damp indigo runoff and needs to be made fit for human feet again.",
+  "locations": [ "Indigo Grove" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The surface entrance to the catacombs begins where the grove roots knot themselves around an old cut stair and decide not to hide it very hard. Stone steps descend between thick indigo-stained roots toward the cooler breath of the tunnels below. It is an elegant approach right up until the grove has been wet recently, at which point the whole stair takes on a dark sheen that suggests both beauty and broken bones in equal measure.\n\nThe stair hand plants a scraper on the top step and looks down the line. \"Clear the runoff film from the steps if you want the broad pass,\" she says. \"Or retie the root-guides along the hand line if you prefer the side work. We use this stair too often to let it start behaving like a secret.\"",
+      "options": [
+        { "label": "Scrape the indigo runoff film from the steps", "go": 1 },
+        { "label": "Retie the root-guides along the hand line", "go": 2 }
+      ]
+    },
+    {
+      "text": "The runoff film is thin, dark, and far more dangerous than it first appears. You scrape it off step by step, rinsing the blade often so the lifted slick does not simply relocate lower on the stair. As the stone dries, the steps recover their pale edges and the descent begins looking practical again instead of theatrically treacherous.\n\nThe stair hand walks the upper section in ordinary boots and does not slide once. That is all the proof she needs. \"Good. A hidden passage may keep its secrecy. It does not need to keep this much of the grove on its steps.\"",
+      "options": [
+        { "label": "Rinse the scraper and leave the stair secure again", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The hand line follows the stair by way of root-guides tied around the thicker exposed roots so travelers can keep contact with something reliable when the air turns cool and the light starts failing. Two guides have loosened and a third has slipped down the root enough to turn a helpful grip into an awkward reach. You retie each loop to the proper height and spacing until the line reads cleanly from top step to tunnel turn.\n\nThe stair hand tests the descent by running a palm down the root line without looking away from the lower dark. The guides meet her exactly where they should. \"Better,\" she says. \"If people are going underground on purpose, the least we can do is give their hands a clear opinion.\"",
+      "options": [
+        { "label": "Tuck the spare fiber away and leave the descent guided", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Web Cocoon", "Progressive Speed" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

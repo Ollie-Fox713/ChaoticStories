@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_56",
+  "title": "Indigo Rain",
+  "desc": "After a light desert shower, the grove bleeds color through leaf and bark, and the catch cloths need to be set before the runoff is lost.",
+  "locations": [ "Indigo Grove" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "When rain reaches Indigo Grove, it does not remain ordinary for long. The water strikes the deep violet leaves, runs along bark stained all the way to the grain, and begins carrying color with it until every droplet falling from the branches looks as though twilight learned how to drip. The grove glows more than shines in that wet hour, the roots dark with life from the hidden water below and the air carrying a sharp green scent under the indigo bloom. Even the Conjuror apprentices speak a little more softly when the first runoff starts.\n\nThe grove tender unrolls a stack of catch cloths at your feet. \"Stretch the cloths under the lower branches if you want the runoff,\" she says. \"Or set the drip bowls along the root stones if you prefer the slower collection. Once the color starts moving, it does not wait for anyone to admire it properly.\"",
+      "options": [
+        { "label": "Stretch the catch cloths beneath the dripping branches", "go": 1 },
+        { "label": "Set the drip bowls along the exposed root stones", "go": 2 }
+      ]
+    },
+    {
+      "text": "The catch cloths are fine-woven lengths fixed under the low branches to gather the fast runoff before it reaches the sand and disappears into rumor. You tie them taut between the poles, adjust the tilt so the water runs cleanly toward the collection lip, and move down the grove row as the branches begin releasing a thin violet rain. Soon the cloth line is carrying streams the color of bruised sky into the waiting jars.\n\nAround you, the grove looks impossibly deliberate. Purple droplets fall from leaf tips. Dark trunks gleam. The hidden roots below seem to draw the whole place tighter together under the rain. The tender watches the first jar fill and nods. \"Good. A place like this teaches you quickly that beauty is usually busiest when it appears to be resting.\"",
+      "options": [
+        { "label": "Swap the first full jar and leave the cloth line collecting", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The drip bowls are shallow glazed dishes set at the root stones where the slower runoff gathers after passing through bark, moss, and exposed root braid. You place them one by one in the old notches, tipping each until the falling droplets strike dead center instead of wasting themselves across the rim. The collection is slower here but deeper in color, thickening toward ink by the time the bowls begin to fill.\n\nBy the end of the row, the grove is answering the rain in dozens of tiny notes: drop against glaze, leaf against leaf, roots drinking somewhere below the stone. The tender lifts one bowl to the light and studies the nearly black indigo pooling there. \"Better,\" she says. \"The upper branches give us brightness. The roots keep the secrets.\"",
+      "options": [
+        { "label": "Carry the first filled bowl to the rack and leave the roots dripping", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Elementalist's Psy-Blast", "Windslash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

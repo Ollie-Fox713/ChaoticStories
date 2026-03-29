@@ -1,0 +1,35 @@
+{
+  "id": "daily_dan_65",
+  "title": "Exit Lanterns",
+  "desc": "At dusk, the carnival's doors stop leading where they did this morning.",
+  "locations": [ "Carnival of Confusion" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Dusk at the Carnival of Confusion is not exactly closing time. It is more like narrowing. Courtyards begin folding back into themselves. Long halls decide they were stairwells all along. The attractions do not vanish, but the routes between them become less interested in newcomers.\n\nThat is when the exit crews go to work. Lanterns are lit with different scented smokes for different stable roads. Bronze reeds are tuned so the sound of each exit carries in a direction that still makes sense even after sight stops helping. Nobody wants to spend the night in a coat room that becomes a canyon until morning.\n\nA lantern master hands you a hook pole and a packet of reed keys. \"We guide people out before the carnival gets private,\" she says. \"Take the upper line if you trust heights, or stay below and tune the ground notes.\"",
+      "options": [
+        { "label": "Trim and light the upper lanterns", "go": 1 },
+        { "label": "Tune the ground-level reeds for the return paths", "go": 2 }
+      ]
+    },
+    {
+      "text": "The upper catwalk gives you the whole carnival at its strangest. A bright lawn from morning is already shrinking into a tiled room no larger than a pantry. The floating pond has flattened itself into a ribbon of water along a wall. Gravity markers flutter against a sky that is also, depending on where you stand, part of the floor.\n\nYou move from hook to hook, trimming wicks and dropping scented pellets into the lantern cups. Cedar marks the Mount Pillar road. Salt smoke marks the stable west arch. Cold metal marks the staff court where nobody should wander unless invited. As each lamp catches, warm color blooms through the folding dark and whole streams of visitors begin steering toward the right exits without panic.\n\nFor a moment you stop and look back. The carnival is still impossible, still playful, still a little predatory around the edges. But under the lantern light it also looks tender, like something making sure its guests get home safely.",
+      "options": [
+        { "label": "Watch the last visitors find their way out", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The reeds are mounted low along the cross-court where footsteps slow and sight grows untrustworthy. Each one is tuned to a different return route. Visitors do not need to understand the system. They only need to follow the note that feels most like leaving.\n\nYou crouch with the key set and test each reed while the lantern master listens. One is too flat and sends creatures toward a service arch. One rings too brightly and attracts children who should be headed for their parents. When the tuning comes right, the notes thread through the dusk like narrow bridges. People stop hesitating. They just turn, almost unconsciously, toward the sound meant for them.\n\nThe last family out passes you smiling and damp from evening mist that did not exist an hour ago. Their smallest child looks back over her shoulder and asks whether the carnival sleeps. The lantern master hangs her keys back on her belt. \"Only sideways,\" she says.",
+      "options": [
+        { "label": "Let the reeds carry the rest of the crowd home", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Unsanity", "Mind Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

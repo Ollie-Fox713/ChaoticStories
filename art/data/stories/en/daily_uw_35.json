@@ -1,0 +1,35 @@
+{
+  "id": "daily_uw_35",
+  "title": "Decree Plates",
+  "desc": "Chaor's latest orders have to be posted across the hill districts before the complaints begin.",
+  "locations": [ "UnderWorld City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "UnderWorld City does not bother pretending authority is subtle. When Chaor issues a new order, it goes out on hammered iron plates stamped with the fortress seal and bolted to public boards where everyone can see exactly who expects obedience. Today's stack is still warm from the press, and the runner carrying them looks offended that so many districts require their own copy.\n\nHe drops half the load beside you. \"Market slope and lower hill if you do not mind stairs,\" he says. \"Or scrape yesterday's notices off the common board and chalk the new text for the creatures too lazy to walk over and read the iron. Either way, get it done before the arguments start forming on their own.\"",
+      "options": [
+        { "label": "Carry the iron plates and post them across the hill roads", "go": 1 },
+        { "label": "Clear the common board and copy the new orders in chalk", "go": 2 }
+      ]
+    },
+    {
+      "text": "The iron plates are heavier than policy has any right to be. You carry them from board to board along the hill roads, unbolt the old orders, and hang the new ones beneath the fortress crest where no one can pretend not to have seen them. Most passersby glance once and keep moving. A few stop to read the details, scowl, and then move on anyway. That, in UnderWorld City, is a functioning civic process.\n\nBy the final board the route has taught you the city's mood for the day. Impatient, crowded, willing to complain, unwilling to do so within easy earshot of armed creatures. The runner checks the last plate, confirms the seal faces outward, and seems satisfied. \"Good,\" he says. \"Now the city can disobey in an informed manner.\"",
+      "options": [
+        { "label": "Tighten the last bolts and leave the orders to their audience", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The common board outside the lower market saves time for creatures who prefer their decrees summarized before they decide how offended to be. You scrape away yesterday's chalk, dust the slate face clean, and copy the new orders line by line under the embossed heading from the iron plate. Accuracy matters. Missing one clause can turn a minor rule into an argument, and arguments in UnderWorld City tend to arrive fully grown.\n\nThe board draws a crowd before you are even halfway through. They read over your shoulder, mutter, correct one another, and object in the casual tone of creatures who know objection changes nothing but still enjoy the exercise. When the final line is finished, the crowd has already begun debating what the third paragraph means for market deliveries. The runner reads your copy, nods once, and says, \"Excellent. We have transformed orders into public irritation. Exactly as intended.\"",
+      "options": [
+        { "label": "Put down the chalk and let the city argue with the board", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Fear Fight", "Reckless Defeat" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

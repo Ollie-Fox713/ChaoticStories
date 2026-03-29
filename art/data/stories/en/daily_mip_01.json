@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_01",
+  "title": "Dew Collection",
+  "desc": "Before dawn, the silk nets catch water from the air. Every drop counts.",
+  "locations": [ "Mipedian Dew Farm", "Mipedim Oasis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The dew collectors wake before the sun. In the desert, water doesn't fall from the sky — it condenses, in tiny beads, on silk nets strung between stone pillars. The nets are enormous — fifty feet wide, gossamer-thin, catching moisture that the naked eye can't see.\n\nA collector hands you a glass scraping tool. \"Start at the bottom of net seven. Scrape upward. The water runs down into the channel. Don't tear the silk — it takes a month to spin a new net.\"\n\nThe pre-dawn air is cold. Your breath steams. The nets glitter with a thousand invisible droplets.",
+      "options": [
+        { "label": "Scrape carefully — every drop matters", "go": 1 },
+        { "label": "Check the collection channels first", "go": 2 }
+      ]
+    },
+    {
+      "text": "The scraping is delicate work. The glass tool slides along the silk, gathering droplets into rivulets that trickle into the stone channel below. Each scrape yields maybe a teaspoon. But there are thousands of scrapes, and by the time the sun crests the dunes, the channel is running.\n\nNot running like a river. Running like a whisper — a thin film of water sliding along polished stone toward the cistern. But it's enough. In the desert, a whisper of water is a shout of life.\n\nThe collector checks the cistern level. \"Good yield. Humidity was high last night.\" She marks the measurement on a clay tablet. \"Three more mornings like this and we'll have enough to irrigate the root gardens.\"\n\nThe sun hits the nets. The remaining dew evaporates instantly, as if it was never there. The nets go dry until tomorrow.",
+      "options": [
+        { "label": "Watch the last drops vanish into sunlight", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The channels are carved from a single piece of desert stone, polished smooth over generations. They run from the base of each net to a central cistern — a covered basin that keeps the water cool and dark.\n\nYou find a blockage in channel four. Sand, blown in overnight, has formed a small dam. The water behind it is pooling instead of flowing. You clear the sand with your fingers, and the pool releases — a tiny flood rushing toward the cistern.\n\nBut the sand isn't just sand. Mixed in are tiny crystals — clear, faceted, warm to the touch. Desert gems, formed when moisture and minerals combine under the extreme temperature swings. The collector picks one up and holds it to the light.\n\n\"These are worth more than the water,\" she says. \"Don't tell the overseer. He'll reassign us to gem-hunting and the nets will go untended.\"\n\nShe pockets two and hands you one. \"For your trouble. And your discretion.\"",
+      "options": [
+        { "label": "Pocket the gem, keep the secret", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Dexterous Storm", "Scout's Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_water",
+  "chainName": "Water Stewardship"
+}

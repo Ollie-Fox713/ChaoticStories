@@ -1,0 +1,37 @@
+{
+  "id": "daily_dan_15",
+  "title": "Swarm Drill",
+  "desc": "Emergency evacuation drill. Everyone moves. No exceptions.",
+  "locations": [ "Queen's Gate", "Mount Pillar", "Oipont's Lookout" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The alarm horn sounds at midday — three long blasts that echo through every corridor in Mount Pillar. Swarm drill. Every Danian drops what they're doing and follows the evacuation protocol.\n\nThe protocol is simple in theory: every resident moves to their assigned rally point via their designated corridor, in order of priority. The Queen's retinue first. Then the larvae. Then workers, soldiers, and muges. The entire hive should be at rally points within fifteen minutes.\n\nIn practice, it's chaos.\n\nYou're assigned as a corridor marshal — stationed at junction seven, directing traffic, preventing bottlenecks, and timing the flow. Your clipboard has the expected flow rate: two hundred Danians through this junction in twelve minutes.\n\nThe horn fades. The tunnels fill with movement.",
+      "options": [
+        { "label": "Direct traffic at the junction — keep the flow moving", "go": 1 },
+        { "label": "Run ahead to the rally point — help organize arrivals", "go": 2 }
+      ]
+    },
+    {
+      "text": "The first wave hits your junction at ninety seconds — right on schedule. Nursery workers carrying larval pods, moving fast but controlled. You direct them left, toward the deep shelters. They flow past without stopping.\n\nThe second wave is workers — slower, more chaotic. Some are carrying tools they should have dropped. One is carrying a half-eaten lunch. You wave them right, toward the open-air rally point at Queen's Gate.\n\n\"Drop the food!\"\n\n\"It's a drill!\"\n\n\"Drop the food anyway! In a real evacuation, you don't bring lunch!\"\n\nThe food is dropped. The worker grumbles but moves.\n\nAt the seven-minute mark, a bottleneck forms. Two corridors feed into your junction simultaneously, and the combined flow exceeds capacity. Bodies press together. Movement slows. You hear the drill master's whistle from somewhere behind — the signal for \"junction marshal, fix it.\"\n\nYou split the flow — left corridor holds while right clears, then switch. The bottleneck dissolves in forty seconds. Not great, but not catastrophic.\n\nFifteen minutes. Your junction has processed one hundred eighty-seven Danians. Twenty short of target. The drill master reviews the count.\n\n\"Thirteen unaccounted for in your sector. That's either late movers or creatures who didn't hear the horn.\" She marks the deficiency. \"We'll run corridor announcements before next drill. Nobody gets to be deaf.\"\n\nThe drill concludes. Everyone returns to work. The hive resumes as if nothing happened — because nothing did. That's the point of drills.",
+      "options": [
+        { "label": "File the junction report and return to normal", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The rally point at Queen's Gate is a wide plaza — the largest open space in Mount Pillar, designed specifically for mass assembly. Your job is organizing arrivals into their section blocks and counting heads.\n\nSections are marked on the ground with painted numbers. Each number corresponds to a residential or work sector. You stand at section four's marker and start counting.\n\nThe first arrivals are fast — soldiers and senior workers who know the drill. They file into their sections without direction, standing at attention, already counted.\n\nThe middle arrivals are messy. Workers from the deep tunnels, disoriented by the change in routine, milling at the plaza entrance. You grab the loudest and point them at their section numbers. \"Four! You're section four! Stand there!\"\n\nThe late arrivals are the problem. Three minutes past the fifteen-minute target, stragglers appear — a worker who was asleep, a muge who insisted on finishing a spell before evacuating, and a pair of juveniles who treated the drill as a race and took the scenic route.\n\nYou count section four. Forty-three out of forty-five. Two missing. You flag it. The drill master dispatches a search team. Five minutes later, the missing two are found — they were in a sealed maintenance chamber with no horn access. The maintenance chamber gets added to the horn system map.\n\n\"Every drill finds a gap,\" the drill master says. \"That's why we drill. Today we found a dead zone in the horn system. Next drill, we won't have that problem. We'll find a new one.\"\n\nThe hive returns to normal. The gaps are logged. The next drill will be better.",
+      "options": [
+        { "label": "Return to work knowing the drill found its gap", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Accelerated Unity", "Force Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_dan_guard",
+  "chainName": "Hive Defense"
+}

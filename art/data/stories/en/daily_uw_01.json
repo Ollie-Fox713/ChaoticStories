@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_01",
+  "title": "Arena Cleanup",
+  "desc": "The Colosseum needs clearing between bouts. The debris fights back.",
+  "locations": [ "UnderWorld Colosseum", "UnderWorld City" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The last bout ended ten minutes ago. The winner walked out. The loser was carried. Now it's your job to make the arena floor look like it wasn't the site of total destruction.\n\nScorched stone, shattered battlegear fragments, puddles of something you choose not to identify, and a crack in the floor that wasn't there this morning. The cleanup crew is three strong, including you.\n\nThe crew chief kicks a chunk of rubble. \"Standard cleanup. Sweep, scrub, patch. Next bout is in forty minutes. And watch out for residual fire — last week a mop caught flame.\"",
+      "options": [
+        { "label": "Start sweeping the blast zone", "go": 1 },
+        { "label": "Patch the crack in the floor first", "go": 2 }
+      ]
+    },
+    {
+      "text": "The blast zone is a perfect circle of blackened stone about fifteen feet across. Whatever happened here was precise and very, very hot. Your broom dissolves the first time you push it through the center. The straw just... disintegrates.\n\nThe crew chief tosses you a metal-bristle brush. \"For the hot zones. Should've mentioned.\"\n\nYou scrub. The black fades to dark gray. The dark gray fades to a lighter gray that's probably as good as it gets. Halfway through, you find a tooth. Not a human tooth — something bigger, serrated, glowing faintly orange.\n\n\"Souvenir jar,\" the crew chief says, pointing to a bucket by the wall. It's half-full of teeth, claw fragments, and bits of horn. \"Fans buy them. Don't ask me why.\"\n\nYou drop the tooth in the jar and keep scrubbing. The arena is ready with three minutes to spare.",
+      "options": [
+        { "label": "Clear out before the next bout starts", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The crack is deep — a jagged fissure running three feet across the arena floor. You peer into it. Warm air rises from below, smelling of sulfur and old fire.\n\nThe crew chief hands you a bucket of slag-cement — a gray paste that hardens on contact with heat. You trowel it into the crack. It hisses, steams, and sets instantly, forming a rough but solid patch.\n\nExcept the crack is still growing. Slowly, almost imperceptibly, but it's extending at both ends. You patch the extensions. They extend again.\n\n\"The arena's built over a lava vent,\" the crew chief says, watching you chase the crack. \"The heat expands the stone. It'll stop when it cools. Or when it doesn't, and we have a new lava feature.\"\n\nYou patch it as best you can. The next bout starts on schedule. Nobody in the crowd notices the crack. By the bout's end, the fighters have made three new ones.",
+      "options": [
+        { "label": "Accept that this job is eternal", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Torrent of Flame", "Ash Torrent" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_arena",
+  "chainName": "Colosseum Work"
+}

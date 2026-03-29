@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_57",
+  "title": "Sap Rungs",
+  "desc": "The tapping ladders have gone sticky and the collection tubes are drifting out of position again.",
+  "locations": [ "Indigo Grove" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Indigo sap does not leap obligingly into jars. It must be coaxed from scored bark through tiny ceramic tubes and down into hanging receivers that sway from the tapping ladders tied into the grove's lower trunks. The work is tidy in theory. In practice, the rungs collect sticky runoff, the tubes creep sideways, and the whole apparatus begins looking one hot afternoon away from becoming decorative instead of useful.\n\nThe sap hand flicks a violet-stained thumb at the nearest ladder. \"Clean the rungs if you want the climbing work,\" she says. \"Or reseat the ceramic tubes in the bark cuts if you prefer the taps themselves. Either way, the grove is generous only to people who keep its hardware honest.\"",
+      "options": [
+        { "label": "Clean the sticky rungs along the tapping ladders", "go": 1 },
+        { "label": "Reseat the ceramic tubes in the bark cuts", "go": 2 }
+      ]
+    },
+    {
+      "text": "The ladder rungs have varnished themselves with dried sap in the way only useful things ever seem to manage. You wipe them down with oil cloths, clear the side rails, and work the whole climbing line back to something a human hand can trust without becoming purple for a week. Once cleaned, the ladders stop looking like invitations to regret and go back to being ordinary tools tied into extraordinary trees.\n\nThe sap hand tests the nearest rung with one boot, then another, and seems pleased when it answers with friction instead of treachery. \"Good. Collection work is slow enough without every climb becoming a personal dispute with the tree.\"",
+      "options": [
+        { "label": "Hang the used cloths to dry and leave the ladders safe", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The ceramic tubes sit in shallow bark cuts and guide the indigo sap outward so it drips where it can be caught instead of soaking back into the trunk. Heat, wind, and one inattentive worker have nudged three of them off true. You press each tube back into its cut, scrape away the hardened resin at the edges, and watch for the first clean drop to confirm the line is carrying properly again.\n\nWhen the last tube is set, the grove regains its little mechanical grace. Dark sap gathers at the tips, lets go, and falls exactly where the jars can receive it. The sap hand studies the restored line and gives a short approving sound. \"Better. Waste is offensive. Waste from a place this strange feels almost insulting.\"",
+      "options": [
+        { "label": "Step off the ladder and leave the tap line flowing true", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Quick Exit", "Mind Strike" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

@@ -1,0 +1,37 @@
+{
+  "id": "daily_uw_12",
+  "title": "Mushroom Harvest",
+  "desc": "Bioluminescent fungi light the UnderWorld. Someone has to pick them.",
+  "locations": [ "Everrain", "Gloomuck Swamp", "Wooden Pillar" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The UnderWorld's lighting depends on fungi. Bioluminescent mushrooms grow in the wet zones — Everrain's drip-caves, the edges of Gloomuck Swamp, the root-systems of the Wooden Pillar. Harvested and placed in crystal globes, they glow for months.\n\nA harvester meets you at the entrance to a drip-cave, wearing waterproof boots and carrying a collection basket lined with damp cloth. \"We need the blue ones. The blue ones glow brightest and last longest. The green ones are decorative. The red ones are poison.\"\n\nShe pauses. \"Don't eat the red ones. Don't touch the red ones. Don't look at the red ones for too long.\"",
+      "options": [
+        { "label": "Focus on the blue ones — deep in the cave", "go": 1 },
+        { "label": "Ask about the red ones", "go": 2 }
+      ]
+    },
+    {
+      "text": "The blue mushrooms grow in clusters on the wet walls, their glow creating pools of cold light in the darkness. They're beautiful — electric blue caps, stems like glass, roots that thread through the stone in luminous veins.\n\nHarvesting is delicate. You twist the stem at the base and pull gently. Too hard and the cap crumbles, releasing spores that glow in the air like blue snow. Too gentle and the stem won't detach.\n\nYou fill half the basket before you notice: deeper in the cave, the blue glow is being replaced by another color. Green, then something between green and red. Then red.\n\nYou stop advancing. The harvester nods. \"Good instincts. The red ones grow where the moisture is wrong — too acidic, too mineral-rich. The cave gets dangerous deeper in.\"\n\nYou back out with your half-full basket. In the light-globes, the blue mushrooms will illuminate someone's home for the next six months.",
+      "options": [
+        { "label": "Deliver the basket and resist going deeper", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "\"The red ones affect your perception. You look at them and they look... right. Like they're the only real thing in the cave. Everything else — the walls, the water, your own hands — starts to look fake. Flat. Like a painting.\"\n\nShe's watched harvesters get lost in the red ones. Staring. Forgetting to move. Forgetting they were harvesting.\n\n\"One time, we had to carry someone out. She'd been staring at a red cap for two hours. Said it was the most beautiful thing she'd ever seen.\" She shrugs. \"Maybe it was. But beauty that eats your time isn't beauty. It's a trap.\"\n\nYou stick firmly to the blue mushrooms after that. They glow cheerfully, without agenda. You fill the basket, avoid the red zones, and emerge from the cave with damp boots and a full harvest.\n\nThe harvester counts your haul. \"Forty-six blues, no reds, no greens. Perfect run.\" She packs them in transport crates. \"These'll light the eastern corridor for half a year. Not bad for an afternoon.\"",
+      "options": [
+        { "label": "Leave the cave behind, blue light in your eyes", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Rustoxic", "Delerium" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_uw_food",
+  "chainName": "Provisions"
+}

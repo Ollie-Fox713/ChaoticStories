@@ -1,0 +1,35 @@
+{
+  "id": "daily_mip_36",
+  "title": "Morning Markers",
+  "desc": "The route poles across Sha-Kree Flats are still standing, but standing is not the same as being aligned.",
+  "locations": [ "Sha-Kree Flats" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "Sha-Kree Flats does not hide anything. That is its beauty and its threat. At dawn the whole plain is a sheet of pale gold, every route pole and distance flag throwing a shadow so long it seems to sketch the day before it begins. Far off, caravan markers stand like pins holding the horizon in place. Closer in, the proving ground lines wait empty for the first runners and drill crews. Here, the Mipedians measure accuracy in miles and mistakes in sun exposure.\n\nThe route master hands you a sight frame made of polished bone and two wrapped bundles of fresh pennants. \"The caravan line drifted in last night's wind,\" she says. \"The proving ground banners did too. Realign the route poles if you want the long walk, or reset the training line if you want the shorter work and louder complaints later.\"",
+      "options": [
+        { "label": "Realign the caravan markers across the open flats", "go": 1 },
+        { "label": "Reset the proving-ground banners and distance stakes", "go": 2 }
+      ]
+    },
+    {
+      "text": "The caravan line is laid by sight, not guesswork. You walk from pole to pole with the bone frame held at eye level, nudging each marker until the next three fall into the same narrow slot and the whole route runs true from one horizon shimmer to the other. It is patient work in a place that appears empty until you learn how much depends on tiny corrections. A marker half a degree off at dawn becomes a wasted hour by noon.\n\nOut on the line, with the sun lifting and the flats brightening around you, the land stops feeling barren and starts feeling precise. Every ripple in the sand tells you what last night's wind was trying to do. Every straightened pole pushes back. When you finish, the route master checks your line through the frame and gives an approving tilt of the head. \"Good. Now the desert can be wide without being careless.\"",
+      "options": [
+        { "label": "Plant the last pole firm and leave the route true", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The proving ground occupies a shallower sweep of the flats, marked by banner stakes, range stones, and low target lines that get moved constantly depending on what the instructors think needs correcting that week. Overnight winds have twisted two banners, buried one distance stone, and leaned a whole row of short stakes just enough to offend anyone who believes discipline should be visible from far away. Around here, that is most of the population.\n\nYou reset the banners first so the drill lanes can be read at a glance, then dig out and square the buried stones until each marker sits crisp against the sand again. By the time the first trainees arrive, the field looks deliberate rather than weathered. The route master scans the lanes once and says, \"There. Now when they miss, they cannot blame the ground.\" On Sha-Kree Flats, that is considered a public service.",
+      "options": [
+        { "label": "Dust off the sight frame and leave the field ready", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Spirit Gust", "Windslash" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": []
+}

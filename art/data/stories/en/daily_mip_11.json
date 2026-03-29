@@ -1,0 +1,37 @@
+{
+  "id": "daily_mip_11",
+  "title": "Scale Polishing",
+  "desc": "A Mipedian needs to look flawless for a royal audience. You're the polisher.",
+  "locations": [ "Mipedim Lounge", "Mipedim Oasis" ],
+  "tribes": [],
+  "unique": false,
+  "rarity": "common",
+  "steps": [
+    {
+      "text": "The Mipedim Lounge is part social club, part grooming salon, part political theater. Today it's all three, because a mid-ranking noble has a royal audience in four hours and looks like he just crawled out of a sandstorm. Which he did.\n\n\"Every scale,\" he says, gesturing at himself. \"Polished. Buffed. I need to shine like I was born yesterday.\" He's covered in fine grit, his scales dull and scratched from travel. His tail has a kink in it that he keeps trying to straighten.\n\nThe lounge attendant hands you a polishing kit — fine sand paste, oil, soft leather cloths, and a tiny pick for cleaning between scale edges. \"Start at the tail. Work up. Don't skip the chin scales — the royals notice chin scales.\"",
+      "options": [
+        { "label": "Start polishing — tail first", "go": 1 },
+        { "label": "Mix a custom polish blend first", "go": 2 }
+      ]
+    },
+    {
+      "text": "The tail scales are the largest and easiest — broad, flat, overlapping like roof tiles. You apply sand paste and work it in circles with the leather cloth. The dull surface brightens immediately, each scale shifting from matte gray to a warm, reflective bronze.\n\nThe noble flinches when you hit a cracked scale near the tail's midpoint. \"Old injury. Be gentle.\" You work around it, polishing the edges smooth. The crack will always be visible, but clean and polished, it looks like a scar rather than neglect.\n\nThe back scales take longer — smaller, more numerous, arranged in complex patterns. You find grit packed into every join. The pick work is tedious, but when the oil goes on after, each scale pops with color.\n\nThe chin scales are the worst. Tiny, delicate, and the noble keeps talking, which moves them. You wait for pauses in his monologue about political strategy to polish individual scales. By the time you finish, he gleams from jaw to tail-tip.\n\nHe examines himself in the polished copper mirror. \"Acceptable,\" he says, which from a Mipedian noble is practically a standing ovation.\n\nHe tips you three credits and vanishes — literally, testing his invisibility. You can tell it works because the gleaming scales disappear completely. Good polish.",
+      "options": [
+        { "label": "Pocket the tip and clean up", "outcome": "reward" }
+      ]
+    },
+    {
+      "text": "The standard polish works fine for common scales. But this noble has bronze-variant scales — a genetic trait that requires a different mineral balance in the paste. Standard paste will polish them, but they'll look flat under torchlight.\n\nYou mix a custom blend — finer sand, a touch of copper dust from the supply cabinet, and oil from the scaled-fruit trees near the oasis. The attendant watches with raised eyebrows.\n\n\"Where'd you learn that?\"\n\n\"Watched the master polisher last month.\"\n\nThe custom paste goes on smoother and buffs to a deeper shine. Under the lounge's torchlight, the noble's scales catch light like faceted gems — each one throwing a tiny warm reflection.\n\nThe noble notices immediately. \"This isn't standard polish.\" He turns, watching light play across his forearm. \"This is... actually good.\"\n\nThe attendant is already writing down your mixture ratios. The noble pays double — six credits — and leaves for his audience looking like a creature who has never seen a sandstorm in his life.\n\nThe attendant offers you a regular shift. \"Tuesday and Thursday mornings. We get a lot of audience prep. Your blend is better than what we stock.\"\n\nYou consider a career in scale maintenance. There are worse trades in the desert.",
+      "options": [
+        { "label": "Consider the job offer seriously", "outcome": "reward" }
+      ]
+    }
+  ],
+  "witnessAttacks": [ "Flash Kick", "Enlightened Tenacity" ],
+  "rewardOverride": null,
+  "lootTable": null,
+  "aiBattle": null,
+  "grantAchievements": [],
+  "chainId": "chain_mip_social",
+  "chainName": "Social Customs"
+}
