@@ -587,18 +587,9 @@
     "rarity": "Super Rare",
     "set": "DOP",
     "special_logic": {
-      "hooks": [
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "statMod",
-              "stat": "mugicDamageBonus",
-              "value": 5
-            }
-          ]
-        }
-      ]
+      "keywords": {
+        "mugicDmgBonus": 5
+      }
     },
     "speed": "50",
     "tribe": "UnderWorld",
@@ -5301,9 +5292,9 @@
     "gender": "Male",
     "id": "23",
     "legendary": "",
-    "loyal": "",
-    "mugic": "2",
-    "name": "Drimesse",
+      "loyal": "",
+      "mugic": "1",
+      "name": "Drimesse",
     "power": "30",
     "rarity": "Common",
     "set": "SS",
@@ -5361,27 +5352,47 @@
     "set": "SS",
     "special_logic": {
       "hooks": [
-        {
-          "event": "ally_leaves_play",
-          "effects": [
-            {
-              "type": "mugicCounter",
-              "value": -1,
-              "target": "self"
-            }
-          ]
-        },
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "keywordGrant",
-              "value": 5,
-              "keyword": "recklessness",
-              "target": "creature"
-            }
-          ]
-        }
+          {
+            "event": "ally_leaves_play",
+            "condition": {
+              "type": "creatureNamed",
+              "target": "attacker",
+              "name": "Enre-hep"
+            },
+            "effects": [
+              {
+                "type": "mugicCounter",
+                "value": 1,
+                "target": "self",
+                "extra": {
+                  "countSource": "defenderMugicCounters"
+                }
+              }
+            ]
+          },
+          {
+            "event": "activated",
+            "activation": {
+              "cost": {
+                "mugicCounters": 1
+              },
+              "timing": [
+                "combat_strike",
+                "burst_response"
+              ],
+              "usageLimit": "once_per_turn",
+              "needsTarget": true,
+              "targetFilter": "any"
+            },
+            "effects": [
+              {
+                "type": "keywordGrant",
+                "value": 5,
+                "keyword": "recklessness",
+                "target": "chosen"
+              }
+            ]
+          }
       ]
     },
     "speed": "50",
@@ -5449,6 +5460,10 @@
               "extra": {
                 "keyword": "recklessness"
               }
+            },
+            {
+              "type": "untargetable",
+              "target": "self"
             }
           ]
         }
@@ -5479,15 +5494,36 @@
     "set": "SS",
     "special_logic": {
       "hooks": [
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "mugicDamageImmunity",
-              "target": "creature"
-            }
-          ]
-        }
+          {
+            "event": "passive",
+            "effects": [
+              {
+                "type": "mugicDamageImmunity",
+                "target": "self"
+              }
+            ]
+          },
+          {
+            "event": "activated",
+            "activation": {
+              "cost": {
+                "mugicCounters": 2
+              },
+              "timing": [
+                "combat_strike",
+                "burst_response"
+              ],
+              "usageLimit": "once_per_turn",
+              "needsTarget": true,
+              "targetFilter": "any"
+            },
+            "effects": [
+              {
+                "type": "mugicDamageImmunity",
+                "target": "chosen"
+              }
+            ]
+          }
       ]
     },
     "speed": "65",
@@ -5515,26 +5551,34 @@
     "set": "SS",
     "special_logic": {
       "hooks": [
-        {
-          "event": "combat_start",
-          "effects": [
-            {
-              "type": "damageReduction",
-              "value": 10,
-              "element": "Fire"
-            }
-          ]
-        },
-        {
-          "event": "attack_resolved",
-          "effects": [
-            {
-              "type": "damage",
-              "value": 5,
-              "target": "engagedOpponent"
-            }
-          ]
-        }
+          {
+            "event": "combat_start",
+            "condition": {
+              "type": "hiveActive"
+            },
+            "effects": [
+              {
+                "type": "damageReduction",
+                "value": 10,
+                "element": "Fire",
+                "target": "self"
+              }
+            ]
+          },
+          {
+            "event": "pre_attack",
+            "condition": {
+              "type": "hasTribe",
+              "target": "opponent",
+              "tribe": "UnderWorld"
+            },
+            "effects": [
+              {
+                "type": "damage",
+                "value": 5
+              }
+            ]
+          }
       ]
     },
     "speed": "55",
@@ -6018,14 +6062,14 @@
             "targetFilter": "any"
           },
           "effects": [
-            {
-              "type": "damageScaled",
-              "value": 5,
-              "target": "chosen",
-              "extra": {
-                "perMugicCounter": true
+              {
+                "type": "damageScaled",
+                "value": 5,
+                "target": "chosen",
+                "extra": {
+                  "countSource": "sourceMugicCounters"
+                }
               }
-            }
           ]
         }
       ]
@@ -6162,14 +6206,266 @@
             "needsTarget": true,
             "targetFilter": "any"
           },
-          "effects": [
-            {
-              "type": "damageReduction",
-              "value": 10,
-              "target": "chosen"
-            }
-          ]
-        }
+            "effects": [
+              {
+                "type": "chooseOne",
+                "choices": [
+                  {
+                    "label": "Fireproof",
+                    "effects": [
+                      {
+                        "type": "keywordGrant",
+                        "value": 10,
+                        "keyword": "fireproof",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "conditionalAlternative",
+                        "choices": [
+                          {
+                            "condition": {
+                              "type": "mugicCounterCompare",
+                              "operator": ">=",
+                              "value": 2
+                            },
+                            "effects": [
+                              {
+                                "type": "chooseOne",
+                                "choices": [
+                                  {
+                                    "label": "Airproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "airproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Earthproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "earthproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Waterproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "waterproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Airproof",
+                    "effects": [
+                      {
+                        "type": "keywordGrant",
+                        "value": 10,
+                        "keyword": "airproof",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "conditionalAlternative",
+                        "choices": [
+                          {
+                            "condition": {
+                              "type": "mugicCounterCompare",
+                              "operator": ">=",
+                              "value": 2
+                            },
+                            "effects": [
+                              {
+                                "type": "chooseOne",
+                                "choices": [
+                                  {
+                                    "label": "Fireproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "fireproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Earthproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "earthproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Waterproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "waterproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Earthproof",
+                    "effects": [
+                      {
+                        "type": "keywordGrant",
+                        "value": 10,
+                        "keyword": "earthproof",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "conditionalAlternative",
+                        "choices": [
+                          {
+                            "condition": {
+                              "type": "mugicCounterCompare",
+                              "operator": ">=",
+                              "value": 2
+                            },
+                            "effects": [
+                              {
+                                "type": "chooseOne",
+                                "choices": [
+                                  {
+                                    "label": "Fireproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "fireproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Airproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "airproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Waterproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "waterproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Waterproof",
+                    "effects": [
+                      {
+                        "type": "keywordGrant",
+                        "value": 10,
+                        "keyword": "waterproof",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "conditionalAlternative",
+                        "choices": [
+                          {
+                            "condition": {
+                              "type": "mugicCounterCompare",
+                              "operator": ">=",
+                              "value": 2
+                            },
+                            "effects": [
+                              {
+                                "type": "chooseOne",
+                                "choices": [
+                                  {
+                                    "label": "Fireproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "fireproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Airproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "airproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  },
+                                  {
+                                    "label": "Earthproof",
+                                    "effects": [
+                                      {
+                                        "type": "keywordGrant",
+                                        "value": 10,
+                                        "keyword": "earthproof",
+                                        "target": "chosen"
+                                      }
+                                    ]
+                                  }
+                                ]
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
       ]
     },
     "speed": "35",
@@ -6478,15 +6774,26 @@
     "set": "SS",
     "special_logic": {
       "hooks": [
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "untargetable",
-              "target": "allied"
-            }
-          ]
-        }
+          {
+            "event": "activated",
+            "activation": {
+              "cost": {
+                "mugicCounters": 1
+              },
+              "timing": [
+                "combat_strike",
+                "burst_response"
+              ],
+              "usageLimit": "once_per_turn",
+              "needsTarget": false
+            },
+            "effects": [
+              {
+                "type": "untargetable",
+                "target": "all_friendly_danian"
+              }
+            ]
+          }
       ]
     },
     "speed": "30",
@@ -6855,15 +7162,15 @@
               "keyword": "range",
               "value": 1
             },
-            {
-              "type": "keywordGrant",
-              "target": "chosen",
-              "keyword": "swift",
-              "value": 1,
-              "extra": {
-                "perMugicCounter": true
+              {
+                "type": "keywordGrant",
+                "target": "chosen",
+                "keyword": "swift",
+                "value": 1,
+                "extra": {
+                  "countSource": "sourceMugicCounters"
+                }
               }
-            }
           ]
         }
       ]

@@ -1861,23 +1861,61 @@
     "name": "Granite Balls",
     "rarity": "Rare",
     "set": "ZOTH",
-    "special_logic": {
-      "hooks": [
-        {
-          "condition": {
-            "type": "creatureType",
-            "keyword": "Warrior"
-          },
-          "effects": [
-            {
-              "type": "damage",
-              "value": 10
-            }
-          ],
-          "event": "pre_attack"
-        }
-      ]
-    },
+      "special_logic": {
+        "hooks": [
+          {
+            "event": "pre_attack",
+            "effects": [
+              {
+                "type": "conditionalAlternative",
+                "choices": [
+                  {
+                    "label": "opponent_pays_counter",
+                    "condition": {
+                      "and": [
+                        {
+                          "type": "creatureType",
+                          "keyword": "Warrior"
+                        },
+                        {
+                          "type": "mugicCounterCompare",
+                          "target": "opponent",
+                          "operator": ">=",
+                          "value": 1
+                        }
+                      ]
+                    },
+                    "effects": [
+                      {
+                        "type": "mugicCounter",
+                        "value": -1,
+                        "target": "opponent"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "warrior_bonus_damage",
+                    "condition": {
+                      "type": "creatureType",
+                      "keyword": "Warrior"
+                    },
+                    "effects": [
+                      {
+                        "type": "damage",
+                        "value": 10
+                      }
+                    ]
+                  },
+                  {
+                    "label": "default",
+                    "effects": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
     "water": ""
   },
   {

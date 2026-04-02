@@ -1223,7 +1223,8 @@
             {
               "type": "keywordGrant",
               "keyword": "mugicAnyTribe",
-              "value": 1
+              "value": 1,
+              "target": "chosen"
             }
           ]
         }
@@ -1647,7 +1648,12 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "exile"
+              "type": "exile",
+              "extra": {
+                "generalDiscard": true,
+                "allCards": true,
+                "includeMugicDiscard": true
+              }
             }
           ]
         }
@@ -1672,7 +1678,8 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "flipBattlegear"
+              "type": "flipBattlegear",
+              "target": "chosen"
             }
           ]
         }
@@ -1821,9 +1828,17 @@
       "hooks": [
         {
           "event": "mugic_cast",
+          "condition": {
+            "type": "statCheck",
+            "stat": "Energy",
+            "target": "chosen",
+            "threshold": 30,
+            "operator": "<="
+          },
           "effects": [
             {
-              "type": "damageCap"
+              "type": "damageCap",
+              "value": 10
             }
           ]
         }
@@ -1845,20 +1860,211 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "mugic_cast",
-          "effects": [
-            {
-              "type": "statMod",
-              "value": 50,
-              "stat": "choice"
-            },
-            {
-              "type": "statMod",
-              "value": 50,
-              "stat": "differentChoice"
-            }
-          ]
-        }
+            "event": "mugic_cast",
+            "effects": [
+              {
+                "type": "chooseOne",
+                "choices": [
+                  {
+                    "label": "Courage",
+                    "effects": [
+                      {
+                        "type": "statMod",
+                        "value": 50,
+                        "stat": "Courage",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "chooseOne",
+                        "choices": [
+                          {
+                            "label": "Power",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Power",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Wisdom",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Wisdom",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Speed",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Speed",
+                                "target": "chosen"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Power",
+                    "effects": [
+                      {
+                        "type": "statMod",
+                        "value": 50,
+                        "stat": "Power",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "chooseOne",
+                        "choices": [
+                          {
+                            "label": "Courage",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Courage",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Wisdom",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Wisdom",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Speed",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Speed",
+                                "target": "chosen"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Wisdom",
+                    "effects": [
+                      {
+                        "type": "statMod",
+                        "value": 50,
+                        "stat": "Wisdom",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "chooseOne",
+                        "choices": [
+                          {
+                            "label": "Courage",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Courage",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Power",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Power",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Speed",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Speed",
+                                "target": "chosen"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Speed",
+                    "effects": [
+                      {
+                        "type": "statMod",
+                        "value": 50,
+                        "stat": "Speed",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "chooseOne",
+                        "choices": [
+                          {
+                            "label": "Courage",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Courage",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Power",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Power",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Wisdom",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Wisdom",
+                                "target": "chosen"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
       ]
     },
     "tribe": "OverWorld",
@@ -1998,20 +2204,211 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "mugic_cast",
-          "effects": [
-            {
-              "type": "statMod",
-              "value": -50,
-              "stat": "choice"
-            },
-            {
-              "type": "statMod",
-              "value": 50,
-              "stat": "differentChoice"
-            }
-          ]
-        }
+            "event": "mugic_cast",
+            "effects": [
+              {
+                "type": "chooseOne",
+                "choices": [
+                  {
+                    "label": "Courage",
+                    "effects": [
+                      {
+                        "type": "statMod",
+                        "value": -50,
+                        "stat": "Courage",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "chooseOne",
+                        "choices": [
+                          {
+                            "label": "Power",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Power",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Wisdom",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Wisdom",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Speed",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Speed",
+                                "target": "chosen"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Power",
+                    "effects": [
+                      {
+                        "type": "statMod",
+                        "value": -50,
+                        "stat": "Power",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "chooseOne",
+                        "choices": [
+                          {
+                            "label": "Courage",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Courage",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Wisdom",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Wisdom",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Speed",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Speed",
+                                "target": "chosen"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Wisdom",
+                    "effects": [
+                      {
+                        "type": "statMod",
+                        "value": -50,
+                        "stat": "Wisdom",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "chooseOne",
+                        "choices": [
+                          {
+                            "label": "Courage",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Courage",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Power",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Power",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Speed",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Speed",
+                                "target": "chosen"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Speed",
+                    "effects": [
+                      {
+                        "type": "statMod",
+                        "value": -50,
+                        "stat": "Speed",
+                        "target": "chosen"
+                      },
+                      {
+                        "type": "chooseOne",
+                        "choices": [
+                          {
+                            "label": "Courage",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Courage",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Power",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Power",
+                                "target": "chosen"
+                              }
+                            ]
+                          },
+                          {
+                            "label": "Wisdom",
+                            "effects": [
+                              {
+                                "type": "statMod",
+                                "value": 50,
+                                "stat": "Wisdom",
+                                "target": "chosen"
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
       ]
     },
     "tribe": "UnderWorld",
@@ -3898,17 +4295,20 @@
         {
           "event": "mugic_cast",
           "condition": {
-            "type": "isInfected"
+            "type": "isInfected",
+            "target": "chosen"
           },
           "effects": [
             {
               "type": "elementGrant",
-              "element": "Earth"
+              "element": "Earth",
+              "target": "chosen"
             },
             {
               "type": "elementAtkBonus",
               "element": "Earth",
-              "value": 5
+              "value": 5,
+              "target": "chosen"
             }
           ]
         },
@@ -5788,13 +6188,15 @@
           "event": "mugic_cast",
           "condition": {
             "type": "hasElement",
-            "element": "Earth"
+            "element": "Earth",
+            "target": "chosen"
           },
           "effects": [
             {
               "type": "keywordGrant",
               "keyword": "earth",
-              "value": 5
+              "value": 5,
+              "target": "chosen"
             }
           ]
         },
@@ -5803,12 +6205,14 @@
           "condition": {
             "type": "hasElement",
             "element": "Earth",
+            "target": "chosen",
             "negate": true
           },
           "effects": [
             {
               "type": "elementGrant",
-              "element": "Earth"
+              "element": "Earth",
+              "target": "chosen"
             }
           ]
         }
@@ -5886,7 +6290,7 @@
           "effects": [
             {
               "type": "mirrorTargetHealingEnergy",
-              "target": "self"
+              "target": "chosen"
             }
           ]
         }

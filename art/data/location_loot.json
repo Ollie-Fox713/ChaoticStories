@@ -582,7 +582,12 @@
                           "Qwun",
                           "Tiaane",
                           "Zhade",
-                          "Kolmo"
+                          "Kolmo",
+                          "Gnarlus",
+                          "Lanker",
+                          "Melke",
+                          "Prince Mudeenu (Dardemus Stats)",
+                          "Xelfe"
                       ],
         "locations":  [
                           "Rao\u0027Pa Sahkk, The Ocean with No Water",
@@ -799,7 +804,14 @@
                           "Khavakk",
                           "Mahrrant",
                           "Tassanil",
-                          "Yondaf"
+                          "Yondaf",
+                          "Hammerdoom Chantcaller, Assimilated",
+                          "Kolmo, Assimilated",
+                          "Lobanne",
+                          "Lore",
+                          "Makrabon",
+                          "Ramarhvir, The Danian Hivebringer",
+                          "Raznus, Assimilated"
                       ],
         "locations":  [
                           "Doors of the Deepmines",
@@ -812,7 +824,8 @@
                       "Chorus of the Hive",
                       "Song of Mandiblor",
                       "Song of Resistance",
-                      "Void Dirge"
+                      "Void Dirge",
+                      "Refrain of Denial, (OverWorld/UnderWorld)"
                   ],
         "battlegear":  [
                            "Mandiblor Crown",
@@ -1010,6 +1023,17 @@
     },
     {
         "location":  "Castle Bodhran",
+        "creatures":  [
+                          "Blügon",
+                          "Blügon (New York Comic Con)",
+                          "Bodal",
+                          "Heptadd (Tin Misprint)",
+                          "Heptadd, 2008 Hawaii Trade Conference",
+                          "Iparu",
+                          "Kinnianne, Ambassador to the Mipedians",
+                          "Raznus, Ambassador to the Danians",
+                          "Tartarek"
+                      ],
         "locations":  [
                           "Runic Grove",
                           "Storm Tunnel"
@@ -1033,13 +1057,28 @@
     },
     {
         "location":  "Fear Valley",
+        "creatures":  [
+                          "Atrapol",
+                          "Kamangareth",
+                          "Ornathor",
+                          "Slufurah",
+                          "Strikto",
+                          "Swassa",
+                          "Ultadur",
+                          "Vyll",
+                          "Zapetur"
+                      ],
         "locations":  [
                           "Carnival of Confusion",
                           "Doors of the Deepmines",
                           "Everrain",
                           "Mount Pillar",
                           "UnderWorld City"
-                      ]
+                      ],
+        "mugic":  [
+                      "Refrain of Denial, (OverWorld)",
+                      "Song of Revival, (UnderWorld)"
+                  ]
     },
     {
         "location":  "Iron Pillar",
