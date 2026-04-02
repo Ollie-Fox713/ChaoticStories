@@ -273,8 +273,45 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "elementGrant",
-              "element": "choice"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Fire",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Fire"
+                    }
+                  ]
+                },
+                {
+                  "label": "Water",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Water"
+                    }
+                  ]
+                },
+                {
+                  "label": "Air",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Air"
+                    }
+                  ]
+                },
+                {
+                  "label": "Earth",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Earth"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -507,7 +544,16 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "negate"
+              "type": "negateUnlessAdditionalCounterPaid",
+              "target": "defender",
+              "extra": {
+                "raw": {
+                  "additionalCost": {
+                    "mugicCounters": 1
+                  },
+                  "type": "negateUnlessPaid"
+                }
+              }
             }
           ]
         }
@@ -1045,7 +1091,8 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "removeKeyword"
+              "type": "removeKeyword",
+              "keyword": "invisibility"
             }
           ]
         }
@@ -1124,11 +1171,32 @@
           "effects": [
             {
               "type": "damage",
-              "value": 5
+              "value": 5,
+              "target": "chosen"
             },
             {
-              "type": "damage",
-              "value": 10
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "muge_bonus",
+                  "condition": {
+                    "type": "creatureType",
+                    "keyword": "Muge",
+                    "target": "attacker"
+                  },
+                  "effects": [
+                    {
+                      "type": "damage",
+                      "value": 10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "default",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -1153,7 +1221,9 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "keywordGrant",
+              "keyword": "mugicAnyTribe",
+              "value": 1
             }
           ]
         }
@@ -1178,9 +1248,49 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "statMod",
-              "value": 30,
-              "stat": "choice"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Courage",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": 30,
+                      "stat": "Courage"
+                    }
+                  ]
+                },
+                {
+                  "label": "Power",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": 30,
+                      "stat": "Power"
+                    }
+                  ]
+                },
+                {
+                  "label": "Wisdom",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": 30,
+                      "stat": "Wisdom"
+                    }
+                  ]
+                },
+                {
+                  "label": "Speed",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": 30,
+                      "stat": "Speed"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1205,7 +1315,10 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "gainAllElements"
+              "type": "gainAllElements",
+              "extra": {
+                "source": "teamElements"
+              }
             }
           ]
         }
@@ -1257,9 +1370,49 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "statMod",
-              "value": -30,
-              "stat": "choice"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Courage",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": -30,
+                      "stat": "Courage"
+                    }
+                  ]
+                },
+                {
+                  "label": "Power",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": -30,
+                      "stat": "Power"
+                    }
+                  ]
+                },
+                {
+                  "label": "Wisdom",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": -30,
+                      "stat": "Wisdom"
+                    }
+                  ]
+                },
+                {
+                  "label": "Speed",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": -30,
+                      "stat": "Speed"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1284,8 +1437,45 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "elementRemove",
-              "element": "choice"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Fire",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Fire"
+                    }
+                  ]
+                },
+                {
+                  "label": "Water",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Water"
+                    }
+                  ]
+                },
+                {
+                  "label": "Air",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Air"
+                    }
+                  ]
+                },
+                {
+                  "label": "Earth",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Earth"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1310,11 +1500,129 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "elementRemove",
-              "element": "choice"
-            },
-            {
-              "type": "immobilize"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "remove_fire",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Fire"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "no_elements_left",
+                          "condition": {
+                            "type": "hasNoElements",
+                            "target": "chosen"
+                          },
+                          "effects": [
+                            {
+                              "type": "immobilize"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "still_has_elements",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "remove_water",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Water"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "no_elements_left",
+                          "condition": {
+                            "type": "hasNoElements",
+                            "target": "chosen"
+                          },
+                          "effects": [
+                            {
+                              "type": "immobilize"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "still_has_elements",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "remove_air",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Air"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "no_elements_left",
+                          "condition": {
+                            "type": "hasNoElements",
+                            "target": "chosen"
+                          },
+                          "effects": [
+                            {
+                              "type": "immobilize"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "still_has_elements",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "remove_earth",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Earth"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "no_elements_left",
+                          "condition": {
+                            "type": "hasNoElements",
+                            "target": "chosen"
+                          },
+                          "effects": [
+                            {
+                              "type": "immobilize"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "still_has_elements",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -1417,7 +1725,26 @@
               "type": "deactivateHive"
             },
             {
-              "type": "optional"
+              "type": "optional",
+              "choices": [
+                {
+                  "label": "pay_counter_return",
+                  "effects": [
+                    {
+                      "type": "mugicCounter",
+                      "value": -1,
+                      "target": "self"
+                    },
+                    {
+                      "type": "returnToHand"
+                    }
+                  ]
+                },
+                {
+                  "label": "skip",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -1467,7 +1794,11 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "discardAndDraw"
+              "type": "discardAndDraw",
+              "count": 2,
+              "extra": {
+                "order": "draw_then_discard"
+              }
             }
           ]
         }
@@ -1590,9 +1921,10 @@
         {
           "event": "mugic_cast",
           "effects": [
-            {
-              "type": "damageScaled"
-            },
+              {
+                "type": "damageScaled",
+                "value": 5
+              },
             {
               "type": "uninfect"
             }
@@ -1620,10 +1952,31 @@
           "effects": [
             {
               "type": "heal",
-              "value": 10
+              "value": 10,
+              "target": "chosen"
             },
             {
-              "type": "returnToHand"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "return_if_small",
+                  "condition": {
+                    "type": "scannedEnergy",
+                    "target": "chosen",
+                    "threshold": 30,
+                    "operator": "<="
+                  },
+                  "effects": [
+                    {
+                      "type": "returnToHand"
+                    }
+                  ]
+                },
+                {
+                  "label": "default",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -1680,7 +2033,9 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "grantTribe"
+              "type": "grantTribe",
+              "keyword": "Mandiblor",
+              "target": "all_friendly"
             }
           ]
         }
@@ -1705,20 +2060,104 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "elementGrant",
-              "element": "Fire"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "fireproof",
+                  "condition": {
+                    "type": "hasElement",
+                    "element": "Fire",
+                    "target": "chosen"
+                  },
+                  "effects": [
+                    {
+                      "type": "damageReduction",
+                      "value": 10,
+                      "element": "Fire",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "skip_fire",
+                  "effects": []
+                }
+              ]
             },
             {
-              "type": "elementGrant",
-              "element": "Air"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "airproof",
+                  "condition": {
+                    "type": "hasElement",
+                    "element": "Air",
+                    "target": "chosen"
+                  },
+                  "effects": [
+                    {
+                      "type": "damageReduction",
+                      "value": 10,
+                      "element": "Air",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "skip_air",
+                  "effects": []
+                }
+              ]
             },
             {
-              "type": "elementGrant",
-              "element": "Earth"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "earthproof",
+                  "condition": {
+                    "type": "hasElement",
+                    "element": "Earth",
+                    "target": "chosen"
+                  },
+                  "effects": [
+                    {
+                      "type": "damageReduction",
+                      "value": 10,
+                      "element": "Earth",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "skip_earth",
+                  "effects": []
+                }
+              ]
             },
             {
-              "type": "elementGrant",
-              "element": "Water"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "waterproof",
+                  "condition": {
+                    "type": "hasElement",
+                    "element": "Water",
+                    "target": "chosen"
+                  },
+                  "effects": [
+                    {
+                      "type": "damageReduction",
+                      "value": 10,
+                      "element": "Water",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "skip_water",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -1743,7 +2182,7 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "untargetable"
             }
           ]
         }
@@ -1768,7 +2207,14 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "relocate"
+              "type": "swapWithFriendlyTarget",
+              "target": "chosen",
+              "extra": {
+                "targetController": "same",
+                "targetTribe": "Mipedian",
+                "targetRequireUnengaged": true,
+                "targetRequireOtherFriendly": true
+              }
             }
           ]
         }
@@ -1872,11 +2318,15 @@
         {
           "event": "mugic_cast",
           "effects": [
-            {
-              "type": "chooseOne"
-            }
-          ]
-        }
+              {
+                "type": "chooseOne",
+                "options": [
+                  "move_mirage_location",
+                  "replace_active_mirage"
+                ]
+              }
+            ]
+          }
       ]
     },
     "tribe": "Mipedian",
@@ -1900,11 +2350,15 @@
             {
               "type": "infect"
             },
-            {
-              "type": "conditionalAlternative"
-            }
-          ]
-        }
+              {
+                "type": "conditionalAlternative",
+                "options": [
+                  "base_infect",
+                  "hive_active_override"
+                ]
+              }
+            ]
+          }
       ]
     },
     "tribe": "Danian",
@@ -1981,7 +2435,29 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "chooseOne"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "heal",
+                  "effects": [
+                    {
+                      "type": "heal",
+                      "value": 10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "damage",
+                  "effects": [
+                    {
+                      "type": "damage",
+                      "value": 10,
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -2006,10 +2482,35 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "sacrificeBattlegear"
+              "type": "sacrificeBattlegear",
+              "extra": {
+                "tribe": "UnderWorld",
+                "requireUnengaged": true,
+                "storeAs": "sacrificed_gear"
+              }
             },
             {
-              "type": "destroyBattlegear"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "destroy_target_gear",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "sacrificed_gear",
+                    "threshold": 1,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "destroyBattlegear"
+                    }
+                  ]
+                },
+                {
+                  "label": "no_sacrifice",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -2033,11 +2534,15 @@
         {
           "event": "mugic_cast",
           "effects": [
-            {
-              "type": "chooseOne"
-            }
-          ]
-        }
+              {
+                "type": "chooseOne",
+                "options": [
+                  "shuffle_target_mirage",
+                  "shuffle_active_mirage"
+                ]
+              }
+            ]
+          }
       ]
     },
     "tribe": "Generic",
@@ -2089,11 +2594,12 @@
             {
               "type": "uninfect"
             },
-            {
-              "type": "mugicCounter"
-            }
-          ]
-        }
+              {
+                "type": "mugicCounter",
+                "value": 1
+              }
+            ]
+          }
       ]
     },
     "tribe": "Danian",
@@ -2117,11 +2623,12 @@
             {
               "type": "exile"
             },
-            {
-              "type": "healScaled"
-            }
-          ]
-        }
+              {
+                "type": "healScaled",
+                "value": 10
+              }
+            ]
+          }
       ]
     },
     "tribe": "OverWorld",
@@ -2143,10 +2650,37 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "sacrificeBattlegear"
+              "type": "sacrificeBattlegear",
+              "extra": {
+                "storeAs": "sacrificed_gear"
+              }
             },
             {
-              "type": "recoverBattlegear"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "recover_other_gear",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "sacrificed_gear",
+                    "threshold": 1,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "recoverBattlegear",
+                      "extra": {
+                        "excludeMostRecent": true,
+                        "requireUnequipped": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "no_sacrifice",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -2338,11 +2872,12 @@
         {
           "event": "mugic_cast",
           "effects": [
-            {
-              "type": "damageScaled"
-            }
-          ]
-        }
+              {
+                "type": "damageScaled",
+                "value": 5
+              }
+            ]
+          }
       ]
     },
     "tribe": "UnderWorld",
@@ -2363,11 +2898,15 @@
         {
           "event": "mugic_cast",
           "effects": [
-            {
-              "type": "grantAbility"
-            }
-          ]
-        }
+              {
+                "type": "keywordGrant",
+                "keyword": "type:Chieftain",
+                "value": 1,
+                "target": "self",
+                "duration": "turn"
+              }
+            ]
+          }
       ]
     },
     "tribe": "Generic",
@@ -2431,12 +2970,32 @@
           "effects": [
             {
               "type": "damage",
-              "value": 5
+              "value": 5,
+              "target": "chosen"
             },
             {
-              "type": "damage",
-              "value": 10,
-              "element": "Water"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "water_bonus",
+                  "condition": {
+                    "type": "hasElement",
+                    "element": "Water",
+                    "target": "chosen"
+                  },
+                  "effects": [
+                    {
+                      "type": "damage",
+                      "value": 10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "default",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -2513,14 +3072,31 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "statMod",
+              "type": "energyMod",
               "value": 10,
-              "stat": "Energy"
+              "target": "chosen"
             },
             {
-              "type": "statMod",
-              "value": 10,
-              "stat": "Energy"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "hive_bonus",
+                  "condition": {
+                    "type": "hiveActive"
+                  },
+                  "effects": [
+                    {
+                      "type": "energyMod",
+                      "value": 10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "default",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -2574,7 +3150,7 @@
               "type": "resetStats"
             },
             {
-              "type": "grantAbility"
+              "type": "untargetable"
             }
           ]
         }
@@ -3032,10 +3608,41 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "sacrificeCreature",
+              "extra": {
+                "creatureType": "Minion",
+                "requireUnengaged": true,
+                "storeAs": "sacrificed_creature"
+              }
             },
             {
-              "type": "healScaled"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "gain_energy",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "sacrificed_creature",
+                    "threshold": 1,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "energyScaled",
+                      "value": 1,
+                      "target": "chosen",
+                      "extra": {
+                        "countSource": "storedValue",
+                        "name": "sacrificed_creature_energy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "no_sacrifice",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -3106,15 +3713,73 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "sacrificeCreature",
+              "extra": {
+                "requireUnengaged": true,
+                "storeAs": "sacrificed_creature"
+              }
             },
             {
-              "type": "statLossEqualToSacrificeDisciplines"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "apply_stat_loss",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "sacrificed_creature",
+                    "threshold": 1,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "statLossEqualToSacrificeDisciplines",
+                      "target": "chosen",
+                      "extra": {
+                        "name": "sacrificed_creature"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "no_sacrifice",
+                  "effects": []
+                }
+              ]
             },
             {
-              "type": "damage",
-              "value": 10,
-              "stat": "Energy"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "minion_bonus_damage",
+                  "condition": {
+                    "and": [
+                      {
+                        "type": "storedValue",
+                        "name": "sacrificed_creature",
+                        "threshold": 1,
+                        "operator": ">="
+                      },
+                      {
+                        "type": "storedValue",
+                        "name": "sacrificed_creature_isMinion",
+                        "threshold": 1,
+                        "operator": ">="
+                      }
+                    ]
+                  },
+                  "effects": [
+                    {
+                      "type": "damage",
+                      "value": 10,
+                      "target": "bothEngaged"
+                    }
+                  ]
+                },
+                {
+                  "label": "no_minion_bonus",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -3165,10 +3830,41 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "exile"
+              "type": "exile",
+              "extra": {
+                "cardType": "creature",
+                "creatureType": "Minion",
+                "storeAs": "exiled_minion"
+              }
             },
             {
-              "type": "damageScaled"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "deal_scanned_energy",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "exiled_minion",
+                    "threshold": 1,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "damageScaled",
+                      "value": 1,
+                      "target": "chosen",
+                      "extra": {
+                        "countSource": "storedValue",
+                        "name": "exiled_minion_energy"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "no_exile",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -3195,8 +3891,16 @@
             {
               "type": "keywordGrant",
               "value": 5,
-              "keyword": "Courage"
-            },
+              "keyword": "outperformCourage"
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "isInfected"
+          },
+          "effects": [
             {
               "type": "elementGrant",
               "element": "Earth"
@@ -3205,7 +3909,15 @@
               "type": "elementAtkBonus",
               "element": "Earth",
               "value": 5
-            },
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hiveActive"
+          },
+          "effects": [
             {
               "type": "statMod",
               "value": 15,
@@ -3266,7 +3978,7 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "disciplineShield"
             }
           ]
         }
@@ -3343,9 +4055,14 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "statGainPerCount",
+              "type": "statMod",
               "value": 5,
-              "stat": "all"
+              "stat": "all",
+              "target": "chosen",
+              "extra": {
+                "countSource": "friendlyTypeCount",
+                "creatureType": "Mandiblor"
+              }
             }
           ]
         }
@@ -3393,9 +4110,39 @@
       "hooks": [
         {
           "event": "mugic_cast",
+          "condition": {
+            "and": [
+              {
+                "type": "creatureNamed",
+                "name": "Aa'une the Oligarch, Projection",
+                "target": "defender"
+              },
+              {
+                "type": "wonCombatThisTurn",
+                "target": "defender"
+              },
+              {
+                "type": "equippedWithNameContains",
+                "name": "Baton of Aa'une",
+                "target": "defender"
+              },
+              {
+                "type": "namedAttackPlayedThisTurn",
+                "name": "Rage of Aa'une"
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "flipCreature"
+              "type": "flipCreature",
+              "target": "defender",
+              "extra": {
+                "raw": {
+                  "from": "Aa'une the Oligarch, Projection",
+                  "to": "Aa'une the Oligarch, Avatar",
+                  "type": "flipNamedCreature"
+                }
+              }
             }
           ]
         }
@@ -3698,7 +4445,16 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "negate"
+              "type": "negateUnlessAdditionalCounterPaid",
+              "target": "defender",
+              "extra": {
+                "raw": {
+                  "additionalCost": {
+                    "mugicCounters": 1
+                  },
+                  "type": "negateUnlessPaid"
+                }
+              }
             }
           ]
         }
@@ -3756,7 +4512,33 @@
             {
               "type": "keywordGrant",
               "value": 5,
-              "keyword": "recklessness"
+              "keyword": "recklessness",
+              "target": "chosen"
+            },
+            {
+              "type": "optional",
+              "choices": [
+                {
+                  "label": "pay_extra",
+                  "effects": [
+                    {
+                      "type": "mugicCounter",
+                      "value": -2,
+                      "target": "attacker"
+                    },
+                    {
+                      "type": "keywordGrant",
+                      "value": 5,
+                      "keyword": "recklessness",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "skip",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -3782,7 +4564,16 @@
           "effects": [
             {
               "type": "destroyBattlegear"
-            },
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "controlsOnlyTribe",
+            "tribe": "Mipedian"
+          },
+          "effects": [
             {
               "type": "recoverBattlegear"
             }
@@ -3809,10 +4600,54 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "sacrificeCreature",
+              "extra": {
+                "creatureType": "Mandiblor",
+                "requireUnengaged": true,
+                "storeAs": "sacrificed_mandiblor"
+              }
             },
             {
-              "type": "revive"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "only_danians_any_open_space",
+                  "condition": {
+                    "type": "controlsOnlyTribe",
+                    "tribe": "Danian"
+                  },
+                  "effects": [
+                    {
+                      "type": "revive",
+                      "extra": {
+                        "tribe": "Danian"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "revive_to_sacrificed_space",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "sacrificed_mandiblor",
+                    "threshold": 1,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "revive",
+                      "extra": {
+                        "tribe": "Danian",
+                        "preferredBoardPosStoredAs": "sacrificed_mandiblor_boardPos"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "no_sacrifice",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -3869,14 +4704,137 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "elementGrant",
-              "element": "choice"
-            },
-            {
-              "type": "keywordGrant",
-              "value": 5,
-              "element": "chosen",
-              "keyword": "elementalDamage"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "grant_fire",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Fire"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "overworld_bonus",
+                          "condition": {
+                            "type": "controlsOnlyTribe",
+                            "tribe": "OverWorld"
+                          },
+                          "effects": [
+                            {
+                              "type": "elementAtkBonus",
+                              "value": 5,
+                              "element": "Fire"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "no_bonus",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "grant_water",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Water"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "overworld_bonus",
+                          "condition": {
+                            "type": "controlsOnlyTribe",
+                            "tribe": "OverWorld"
+                          },
+                          "effects": [
+                            {
+                              "type": "elementAtkBonus",
+                              "value": 5,
+                              "element": "Water"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "no_bonus",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "grant_air",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Air"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "overworld_bonus",
+                          "condition": {
+                            "type": "controlsOnlyTribe",
+                            "tribe": "OverWorld"
+                          },
+                          "effects": [
+                            {
+                              "type": "elementAtkBonus",
+                              "value": 5,
+                              "element": "Air"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "no_bonus",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "grant_earth",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Earth"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "overworld_bonus",
+                          "condition": {
+                            "type": "controlsOnlyTribe",
+                            "tribe": "OverWorld"
+                          },
+                          "effects": [
+                            {
+                              "type": "elementAtkBonus",
+                              "value": 5,
+                              "element": "Earth"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "no_bonus",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -3901,8 +4859,34 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "heal",
-              "value": 30
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "overworld_only",
+                  "condition": {
+                    "type": "controlsNonTribe",
+                    "tribe": "OverWorld",
+                    "negate": true
+                  },
+                  "effects": [
+                    {
+                      "type": "energyMod",
+                      "value": 30,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "default",
+                  "effects": [
+                    {
+                      "type": "heal",
+                      "value": 30,
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -3973,6 +4957,23 @@
               "value": 5
             }
           ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "controlsOnlyTribe",
+            "tribe": "Danian"
+          },
+          "effects": [
+            {
+              "type": "damageScaled",
+              "value": 5,
+              "target": "opponent",
+              "extra": {
+                "countSource": "opponentElements"
+              }
+            }
+          ]
         }
       ]
     },
@@ -4020,11 +5021,15 @@
         {
           "event": "mugic_cast",
           "effects": [
-            {
-              "type": "grantAbility"
-            }
-          ]
-        }
+              {
+                "type": "keywordGrant",
+                "keyword": "ignoreChieftainControl",
+                "value": 1,
+                "target": "self",
+                "duration": "turn"
+              }
+            ]
+          }
       ]
     },
     "tribe": "OverWorld",
@@ -4046,8 +5051,40 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "elementRemove",
-              "element": "all"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "underworld_only",
+                  "condition": {
+                    "type": "controlsNonTribe",
+                    "tribe": "UnderWorld",
+                    "negate": true
+                  },
+                  "effects": [
+                    {
+                      "type": "damage",
+                      "value": 5,
+                      "target": "chosen",
+                      "extra": {
+                        "perElement": true
+                      }
+                    },
+                    {
+                      "type": "removeAllElements",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "default",
+                  "effects": [
+                    {
+                      "type": "removeAllElements",
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -4099,10 +5136,31 @@
           "effects": [
             {
               "type": "damage",
-              "value": 10
+              "value": 10,
+              "target": "chosen"
             },
             {
-              "type": "destroyBattlegear"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "underworld_only",
+                  "condition": {
+                    "type": "controlsNonTribe",
+                    "tribe": "UnderWorld",
+                    "negate": true
+                  },
+                  "effects": [
+                    {
+                      "type": "destroyBattlegear",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "default",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -4162,9 +5220,27 @@
               "keyword": "air"
             },
             {
-              "type": "keywordGrant",
-              "value": 5,
-              "keyword": "Speed"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "mipedian_only",
+                  "condition": {
+                    "type": "controlsOnlyTribe",
+                    "tribe": "Mipedian"
+                  },
+                  "effects": [
+                    {
+                      "type": "keywordGrant",
+                      "value": 5,
+                      "keyword": "outperformSpeed"
+                    }
+                  ]
+                },
+                {
+                  "label": "default",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -4257,7 +5333,7 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "noHealEnergy"
             }
           ]
         }
@@ -4378,9 +5454,64 @@
       "hooks": [
         {
           "event": "mugic_cast",
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "OverWorld",
+            "target": "chosen"
+          },
           "effects": [
             {
-              "type": "tribeConditional"
+              "type": "energyMod",
+              "value": 10,
+              "target": "chosen"
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "UnderWorld",
+            "target": "chosen"
+          },
+          "effects": [
+            {
+              "type": "elementAtkBonus",
+              "element": "Fire",
+              "value": 5,
+              "target": "chosen"
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "Danian",
+            "target": "chosen"
+          },
+          "effects": [
+            {
+              "type": "statMod",
+              "stat": "all",
+              "value": 20,
+              "target": "chosen"
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "Mipedian",
+            "target": "chosen"
+          },
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "invisStrike",
+              "value": 10,
+              "target": "chosen"
             }
           ]
         }
@@ -4431,7 +5562,16 @@
           "effects": [
             {
               "type": "infect"
-            },
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "controlsNonTribe",
+            "tribe": "Danian"
+          },
+          "effects": [
             {
               "type": "infect"
             }
@@ -4596,10 +5736,34 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "exile"
+              "type": "exile",
+              "extra": {
+                "cardType": "creature",
+                "storeAs": "exiled_creature"
+              }
             },
             {
-              "type": "activateHive"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "activate_hive",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "exiled_creature",
+                    "threshold": 1,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "activateHive"
+                    }
+                  ]
+                },
+                {
+                  "label": "no_exile",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -4622,15 +5786,29 @@
       "hooks": [
         {
           "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Earth"
+          },
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "earth",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Earth",
+            "negate": true
+          },
           "effects": [
             {
               "type": "elementGrant",
               "element": "Earth"
-            },
-            {
-              "type": "elementAtkBonus",
-              "element": "Earth",
-              "value": 5
             }
           ]
         }
@@ -4707,7 +5885,8 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "mirrorTargetHealingEnergy",
+              "target": "self"
             }
           ]
         }
@@ -4734,11 +5913,20 @@
             {
               "type": "damage",
               "value": 20
-            },
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Fire",
+            "target": "attacker"
+          },
+          "effects": [
             {
               "type": "damage",
-              "value": 10,
-              "element": "Fire"
+              "value": 10
             }
           ]
         }
@@ -4763,7 +5951,7 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "noElementGain"
             }
           ]
         }
@@ -4788,7 +5976,7 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "disableChecks"
             }
           ]
         }
@@ -4857,15 +6045,29 @@
       "hooks": [
         {
           "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Fire"
+          },
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "fire",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Fire",
+            "negate": true
+          },
           "effects": [
             {
               "type": "elementGrant",
               "element": "Fire"
-            },
-            {
-              "type": "elementAtkBonus",
-              "element": "Fire",
-              "value": 5
             }
           ]
         }
@@ -4972,11 +6174,20 @@
             {
               "type": "heal",
               "value": 25
-            },
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Water",
+            "target": "attacker"
+          },
+          "effects": [
             {
               "type": "mugicCounter",
-              "value": 1,
-              "element": "Water"
+              "value": 1
             }
           ]
         }
@@ -5024,15 +6235,29 @@
       "hooks": [
         {
           "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Water"
+          },
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "water",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Water",
+            "negate": true
+          },
           "effects": [
             {
               "type": "elementGrant",
               "element": "Water"
-            },
-            {
-              "type": "elementAtkBonus",
-              "element": "Water",
-              "value": 5
             }
           ]
         }
@@ -5055,15 +6280,29 @@
       "hooks": [
         {
           "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Air"
+          },
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "air",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Air",
+            "negate": true
+          },
           "effects": [
             {
               "type": "elementGrant",
               "element": "Air"
-            },
-            {
-              "type": "elementAtkBonus",
-              "element": "Air",
-              "value": 5
             }
           ]
         }
@@ -5088,7 +6327,16 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "negate"
+              "type": "negateUnlessAdditionalCounterPaid",
+              "target": "defender",
+              "extra": {
+                "raw": {
+                  "additionalCost": {
+                    "mugicCounters": 1
+                  },
+                  "type": "negateUnlessPaid"
+                }
+              }
             }
           ]
         }
@@ -5114,12 +6362,27 @@
           "effects": [
             {
               "type": "healScaled",
-              "value": 5
-            },
-            {
-              "type": "heal",
               "value": 5,
-              "element": "Earth"
+              "extra": {
+                "countSource": "targetOpponentElements"
+              }
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Earth",
+            "target": "attacker"
+          },
+          "effects": [
+            {
+              "type": "healScaled",
+              "value": 5,
+              "extra": {
+                "countSource": "targetOpponentElements"
+              }
             }
           ]
         }
@@ -5203,10 +6466,19 @@
               "type": "keywordGrant",
               "value": 3,
               "keyword": "swift"
-            },
+            }
+          ]
+        },
+        {
+          "event": "mugic_cast",
+          "condition": {
+            "type": "hasElement",
+            "element": "Air",
+            "target": "attacker"
+          },
+          "effects": [
             {
               "type": "keywordGrant",
-              "element": "Air",
               "keyword": "invisSurprise",
               "value": 1
             }
@@ -5233,7 +6505,29 @@
           "event": "mugic_cast",
           "effects": [
             {
-              "type": "chooseOne"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "heal",
+                  "effects": [
+                    {
+                      "type": "heal",
+                      "value": 10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "damage",
+                  "effects": [
+                    {
+                      "type": "damage",
+                      "value": 10,
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -5306,9 +6600,18 @@
       "hooks": [
         {
           "event": "mugic_cast",
+          "condition": {
+            "type": "isEngaged",
+            "target": "attacker"
+          },
           "effects": [
             {
-              "type": "healScaled"
+              "type": "energyMod",
+              "value": 1,
+              "target": "all_engaged",
+              "extra": {
+                "countSource": "lowestDiscipline"
+              }
             }
           ]
         }

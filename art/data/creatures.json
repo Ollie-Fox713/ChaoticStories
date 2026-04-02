@@ -587,9 +587,18 @@
     "rarity": "Super Rare",
     "set": "DOP",
     "special_logic": {
-      "keywords": {
-        "mugicDmgBonus": 5
-      }
+      "hooks": [
+        {
+          "event": "passive",
+          "effects": [
+            {
+              "type": "statMod",
+              "stat": "mugicDamageBonus",
+              "value": 5
+            }
+          ]
+        }
+      ]
     },
     "speed": "50",
     "tribe": "UnderWorld",
@@ -1134,7 +1143,11 @@
           "effects": [
             {
               "type": "recoverFromDiscard",
-              "target": "Mandiblor"
+              "target": "alliedSide",
+              "extra": {
+                "cardType": "creature",
+                "creatureType": "Mandiblor"
+              }
             }
           ]
         }
@@ -1462,12 +1475,17 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "statFail",
+            "stat": "Courage",
+            "threshold": 65,
+            "target": "opponent"
+          },
           "effects": [
             {
-              "type": "statMod",
+              "type": "energyMod",
               "value": -10,
-              "stat": "Courage",
-              "target": "engagedOpponent"
+              "target": "opponent"
             }
           ]
         }
@@ -1700,10 +1718,18 @@
       "hooks": [
         {
           "event": "ally_first_attack",
+          "condition": {
+            "type": "hasKeyword",
+            "keyword": "invisibility",
+            "target": "attacker"
+          },
           "effects": [
             {
-              "type": "damage",
-              "value": 5
+              "type": "keywordGrant",
+              "keyword": "firstAttackBonus",
+              "value": 5,
+              "target": "attacker",
+              "duration": "combat"
             }
           ]
         }
@@ -2575,7 +2601,8 @@
           "event": "activated",
           "activation": {
             "cost": {
-              "sacrificeCreature": true
+              "sacrificeCreature": true,
+              "sacrificeCreatureTribe": "UnderWorld"
             },
             "timing": [
               "combat_strike",
@@ -3325,10 +3352,17 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Strategist",
+            "checkTarget": "allies"
+          },
           "effects": [
             {
-              "type": "grantAbility",
-              "stat": "Defender"
+              "type": "keywordGrant",
+              "keyword": "defender",
+              "value": 1,
+              "target": "all_friendly"
             }
           ]
         }
@@ -3496,6 +3530,10 @@
         },
         {
           "event": "turn_start",
+          "condition": {
+            "type": "opponentControlsTribe",
+            "tribe": "UnderWorld"
+          },
           "effects": [
             {
               "type": "activateHive"
@@ -3718,6 +3756,9 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "initiativeIsElement"
+          },
           "effects": [
             {
               "type": "elementAtkBonus",
@@ -3851,22 +3892,51 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "attack_resolved",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "sourceIsAttacker"
+              },
+              {
+                "type": "hasTribe",
+                "target": "opponent",
+                "tribe": "Danian"
+              },
+              {
+                "type": "hiveActive",
+                "negate": true
+              }
+            ]
+          },
           "effects": [
             {
               "type": "damage",
-              "value": 5,
-              "target": "engagedOpponent"
+              "value": 5
             }
           ]
         },
         {
-          "event": "attack_resolved",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "sourceIsAttacker"
+              },
+              {
+                "type": "hasTribe",
+                "target": "opponent",
+                "tribe": "UnderWorld"
+              },
+              {
+                "type": "hiveActive"
+              }
+            ]
+          },
           "effects": [
             {
               "type": "damage",
-              "value": 5,
-              "target": "engagedOpponent"
+              "value": 5
             }
           ]
         }
@@ -3936,11 +4006,17 @@
       "hooks": [
         {
           "event": "ally_leaves_play",
+          "condition": {
+            "type": "mugicCounterCompare",
+            "target": "defender",
+            "threshold": 1,
+            "operator": ">="
+          },
           "effects": [
             {
               "type": "mugicCounter",
               "value": -1,
-              "target": "creature"
+              "target": "chosen"
             }
           ]
         }
@@ -3975,14 +4051,28 @@
           "event": "passive",
           "effects": [
             {
-              "type": "grantAbility",
-              "stat": "Defender",
+              "type": "keywordGrant",
+              "keyword": "defender",
+              "value": 1,
               "target": "adjacentAllies"
             }
           ]
         },
         {
           "event": "creature_discarded",
+          "condition": {
+            "or": [
+              {
+                "type": "creatureType",
+                "keyword": "Mandiblor",
+                "target": "attacker"
+              },
+              {
+                "type": "isInfected",
+                "target": "attacker"
+              }
+            ]
+          },
           "effects": [
             {
               "type": "mugicCounter",
@@ -4038,6 +4128,10 @@
       "hooks": [
         {
           "event": "deals_earth_damage",
+          "condition": {
+            "type": "isNotInfected",
+            "target": "opponent"
+          },
           "effects": [
             {
               "type": "infect",
@@ -4047,6 +4141,17 @@
         },
         {
           "event": "combat_start",
+          "condition": {
+            "and": [
+              {
+                "type": "isEngaged"
+              },
+              {
+                "type": "isInfected",
+                "target": "opponent"
+              }
+            ]
+          },
           "effects": [
             {
               "type": "elementAtkBonus",
@@ -4247,7 +4352,10 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive_in_discard",
+          "event": "passive",
+          "condition": {
+            "type": "inDiscard"
+          },
           "effects": [
             {
               "type": "discardMandiblorCount"
@@ -4288,6 +4396,23 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "and": [
+              {
+                "type": "isEngaged"
+              },
+              {
+                "type": "hasTribe",
+                "target": "opponent",
+                "tribe": "Danian"
+              },
+              {
+                "type": "creatureType",
+                "target": "opponent",
+                "keyword": "Noble"
+              }
+            ]
+          },
           "effects": [
             {
               "type": "keywordGrant",
@@ -4591,8 +4716,10 @@
           "event": "passive",
           "effects": [
             {
-              "type": "mugicAnyTribe",
-              "stat": "OverWorld"
+              "type": "keywordGrant",
+              "keyword": "mugicTribe:OverWorld",
+              "value": 1,
+              "target": "all_friendly_danian"
             }
           ]
         }
@@ -4641,7 +4768,8 @@
           "effects": [
             {
               "type": "damage",
-              "value": 5
+              "value": 5,
+              "target": "attacker"
             }
           ]
         }
@@ -4847,7 +4975,39 @@
           "event": "passive",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "preventMugicGain",
+              "target": "self"
+            }
+          ]
+        },
+        {
+          "event": "passive",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Commander",
+            "checkTarget": "allies"
+          },
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Fire",
+              "target": "all_friendly"
+            }
+          ]
+        },
+        {
+          "event": "passive",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Commander",
+            "checkTarget": "allies"
+          },
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "recklessness",
+              "value": 5,
+              "target": "all_friendly"
             }
           ]
         }
@@ -4880,6 +5040,10 @@
       "hooks": [
         {
           "event": "mugic_targets_opponent",
+          "condition": {
+            "type": "isNotInfected",
+            "target": "defender"
+          },
           "effects": [
             {
               "type": "infect",
@@ -4953,10 +5117,13 @@
       "hooks": [
         {
           "event": "wins_challenge",
+          "condition": {
+            "type": "challengeWon",
+            "stat": "Power"
+          },
           "effects": [
             {
               "type": "destroyBattlegear",
-              "stat": "Power",
               "target": "engagedOpponent"
             }
           ]
@@ -5043,16 +5210,34 @@
           "effects": [
             {
               "type": "damageReduction",
-              "value": 10
+              "value": 10,
+              "target": "all_friendly_warbeast",
+              "extra": {
+                "keyword": "recklessness"
+              }
             }
           ]
         },
         {
-          "event": "passive",
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "mugicCounters": 1
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response"
+            ],
+            "needsTarget": false
+          },
           "effects": [
             {
               "type": "damageReduction",
-              "value": 10
+              "value": 10,
+              "target": "all_friendly_warbeast",
+              "extra": {
+                "keyword": "recklessness"
+              }
             }
           ]
         }
@@ -5085,11 +5270,14 @@
       "hooks": [
         {
           "event": "wins_challenge",
+          "condition": {
+            "type": "challengeWon",
+            "stat": "Wisdom"
+          },
           "effects": [
             {
               "type": "mugicCounter",
               "value": 1,
-              "stat": "Wisdom",
               "target": "self"
             }
           ]
@@ -5126,15 +5314,23 @@
           "effects": [
             {
               "type": "damageReduction",
-              "value": 10
+              "value": 10,
+              "target": "all_friendly_warbeast",
+              "extra": {
+                "keyword": "recklessness"
+              }
             }
           ]
         },
         {
           "event": "check_mugic_counters",
+          "condition": {
+            "type": "noMugicCounters"
+          },
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "sacrificeCreature",
+              "target": "self"
             }
           ]
         }
@@ -5248,7 +5444,11 @@
           "effects": [
             {
               "type": "damageReduction",
-              "value": 5
+              "value": 5,
+              "target": "all_friendly_warbeast",
+              "extra": {
+                "keyword": "recklessness"
+              }
             }
           ]
         }
@@ -5366,7 +5566,16 @@
           "event": "ally_gains_mugic_counter",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "keywordGrant",
+              "keyword": "range",
+              "value": 1,
+              "target": "self"
+            },
+            {
+              "type": "keywordGrant",
+              "keyword": "swift",
+              "value": 2,
+              "target": "self"
             }
           ]
         }
@@ -5441,7 +5650,8 @@
             },
             "timing": [
               "combat_strike",
-              "burst_response"
+              "burst_response",
+              "action_move"
             ],
             "usageLimit": "once_per_turn",
             "needsTarget": true,
@@ -5449,8 +5659,145 @@
           },
           "effects": [
             {
-              "type": "elementGrant",
-              "target": "chosen"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Fire",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Fire",
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "elementalist_bonus",
+                          "condition": {
+                            "type": "creatureType",
+                            "keyword": "Elementalist",
+                            "target": "chosen"
+                          },
+                          "effects": [
+                            {
+                              "type": "mugicCounter",
+                              "value": 1,
+                              "target": "chosen"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "no_bonus",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "Water",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Water",
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "elementalist_bonus",
+                          "condition": {
+                            "type": "creatureType",
+                            "keyword": "Elementalist",
+                            "target": "chosen"
+                          },
+                          "effects": [
+                            {
+                              "type": "mugicCounter",
+                              "value": 1,
+                              "target": "chosen"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "no_bonus",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "Air",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Air",
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "elementalist_bonus",
+                          "condition": {
+                            "type": "creatureType",
+                            "keyword": "Elementalist",
+                            "target": "chosen"
+                          },
+                          "effects": [
+                            {
+                              "type": "mugicCounter",
+                              "value": 1,
+                              "target": "chosen"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "no_bonus",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "label": "Earth",
+                  "effects": [
+                    {
+                      "type": "elementGrant",
+                      "element": "Earth",
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "conditionalAlternative",
+                      "choices": [
+                        {
+                          "label": "elementalist_bonus",
+                          "condition": {
+                            "type": "creatureType",
+                            "keyword": "Elementalist",
+                            "target": "chosen"
+                          },
+                          "effects": [
+                            {
+                              "type": "mugicCounter",
+                              "value": 1,
+                              "target": "chosen"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "no_bonus",
+                          "effects": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -5528,21 +5875,34 @@
     "power": "35",
     "rarity": "Super Rare",
     "set": "SS",
-    "special_logic": {
-      "keywords": {
-        "mugicAnyTribe": false
-      },
-      "hooks": [
-        {
-          "event": "heal_applied",
-          "effects": [
-            {
-              "type": "heal",
-              "value": 5,
-              "target": "allied"
-            }
-          ]
-        }
+      "special_logic": {
+        "hooks": [
+          {
+            "event": "passive",
+            "effects": [
+              {
+                "type": "keywordGrant",
+                "keyword": "mugicTribe:Mipedian",
+                "value": 1,
+                "target": "self"
+              }
+            ]
+          },
+          {
+            "event": "heal_applied",
+            "condition": {
+              "type": "hasTribe",
+              "tribe": "Mipedian",
+              "target": "attacker"
+            },
+            "effects": [
+              {
+                "type": "heal",
+                "value": 5,
+                "target": "attacker"
+              }
+            ]
+          }
       ]
     },
     "speed": "60",
@@ -5575,11 +5935,26 @@
       "hooks": [
         {
           "event": "engaged",
+          "condition": {
+            "and": [
+              {
+                "type": "hasTribe",
+                "tribe": "Mipedian",
+                "target": "opponent"
+              },
+              {
+                "type": "creatureType",
+                "keyword": "Royal",
+                "target": "opponent"
+              }
+            ]
+          },
           "effects": [
             {
               "type": "keywordGrant",
               "value": 20,
-              "keyword": "invisStrike"
+              "keyword": "invisStrike",
+              "target": "self"
             }
           ]
         },
@@ -5646,7 +6021,10 @@
             {
               "type": "damageScaled",
               "value": 5,
-              "target": "chosen"
+              "target": "chosen",
+              "extra": {
+                "perMugicCounter": true
+              }
             }
           ]
         }
@@ -5693,10 +6071,53 @@
           },
           "effects": [
             {
-              "type": "statMod",
-              "value": 15,
-              "stat": "choice",
-              "target": "chosen"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Courage",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": 15,
+                      "stat": "Courage",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Power",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": 15,
+                      "stat": "Power",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Wisdom",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": 15,
+                      "stat": "Wisdom",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Speed",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "value": 15,
+                      "stat": "Speed",
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -5835,6 +6256,9 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "activeLocationMirage"
+          },
           "effects": [
             {
               "type": "keywordGrant",
@@ -5871,11 +6295,26 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "activated",
+          "condition": {
+            "type": "mugicCounterCompare",
+            "target": "chosen",
+            "threshold": 1,
+            "operator": ">="
+          },
+          "activation": {
+            "timing": [
+              "action_move",
+              "combat_strike"
+            ],
+            "usageLimit": "once_per_turn",
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
           "effects": [
             {
-              "type": "transferMugicCounter",
-              "target": "anyCreature"
+              "type": "redistributeMugicCounter",
+              "target": "chosen"
             }
           ]
         }
@@ -5984,17 +6423,31 @@
             {
               "type": "damageReduction",
               "value": 10,
-              "target": "allied"
+              "target": "all_friendly_warbeast",
+              "extra": {
+                "keyword": "recklessness"
+              }
             }
           ]
         },
         {
-          "event": "passive",
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "mugicCounters": 1
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response"
+            ],
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
           "effects": [
             {
               "type": "heal",
               "value": 10,
-              "target": "anyCreature"
+              "target": "chosen"
             }
           ]
         }
@@ -6078,15 +6531,34 @@
           "event": "turn_start",
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "saandTurnStartPurge",
+              "extra": {
+                "raw": {
+                  "optionalSacrifice": true,
+                  "removeTotalCountersPerPlayer": 3,
+                  "type": "sacrificeForCounterPurge"
+                }
+              }
             }
           ]
         },
         {
-          "event": "passive",
+          "event": "gains_mugic_counter",
+          "condition": {
+            "type": "mugicCounterCompare",
+            "target": "self",
+            "operator": ">",
+            "value": 0
+          },
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "sacrificeCreature",
+              "target": "self",
+              "extra": {
+                "raw": {
+                  "type": "sacrificeIfHasAnyMugicCounters"
+                }
+              }
             }
           ]
         }
@@ -6220,10 +6692,25 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "first_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "sourceIsDefender"
+              },
+              {
+                "type": "higherStat",
+                "stat": "Courage"
+              },
+              {
+                "type": "higherStat",
+                "stat": "Wisdom"
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "negate"
+              "type": "attackDealsZero"
             }
           ]
         }
@@ -6371,7 +6858,11 @@
             {
               "type": "keywordGrant",
               "target": "chosen",
-              "keyword": "swift"
+              "keyword": "swift",
+              "value": 1,
+              "extra": {
+                "perMugicCounter": true
+              }
             }
           ]
         }
@@ -6723,11 +7214,17 @@
       "hooks": [
         {
           "event": "engaged",
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "M'arrillian",
+            "target": "opponent"
+          },
           "effects": [
             {
               "type": "keywordGrant",
               "value": 20,
-              "keyword": "invisStrike"
+              "keyword": "invisStrike",
+              "target": "self"
             }
           ]
         },
@@ -6804,6 +7301,9 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "isEquipped"
+          },
           "effects": [
             {
               "type": "elementAtkBonus",
@@ -6952,6 +7452,9 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "isInfected"
+          },
           "effects": [
             {
               "type": "elementAtkBonus",
@@ -7049,9 +7552,13 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "engagedMugicCounterAdvantage"
+          },
           "effects": [
             {
-              "type": "forceRandomAttacks"
+              "type": "forceRandomAttacks",
+              "target": "opponent"
             }
           ]
         }
@@ -7086,11 +7593,23 @@
       },
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "attackerControlledBySourcePlayer"
+              },
+              {
+                "type": "challenge",
+                "stat": "Wisdom",
+                "threshold": 50
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "attackMod",
-              "target": "allied"
+              "type": "damage",
+              "value": 10
             }
           ]
         }
@@ -7161,6 +7680,9 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "noOtherFriendlyCreatures"
+          },
           "effects": [
             {
               "type": "energyMod",
@@ -7243,30 +7765,36 @@
     "power": "50",
     "rarity": "Rare",
     "set": "MI",
-    "special_logic": {
-      "keywords": {
-        "loyal": true
-      },
-      "hooks": [
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "convertDamage",
-              "target": "allied"
-            }
-          ]
+      "special_logic": {
+        "keywords": {
+          "loyal": true
         },
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "destroyCreature"
-            }
-          ]
-        }
-      ]
-    },
+        "hooks": [
+          {
+            "event": "passive",
+            "effects": [
+              {
+                "type": "keywordGrant",
+                "keyword": "convertAttackDamageToDisciplineLoss",
+                "target": "all_friendly"
+              }
+            ]
+          },
+          {
+            "event": "attack_resolved",
+            "condition": {
+              "type": "hasZeroDiscipline",
+              "target": "defender"
+            },
+            "effects": [
+              {
+                "type": "destroyCreature",
+                "target": "defender"
+              }
+            ]
+          }
+        ]
+      },
     "speed": "50",
     "tribe": "M'arrillian",
     "types": "Chieftain",
@@ -7492,7 +8020,7 @@
             {
               "type": "mugicCounter",
               "value": 1,
-              "target": "combatWinner"
+              "target": "attacker"
             }
           ]
         }
@@ -7537,10 +8065,31 @@
           ]
         },
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "type": "isUnequipped",
+            "target": "opponent"
+          },
           "effects": [
             {
-              "type": "statMod"
+              "type": "elementAtkBonus",
+              "value": 5,
+              "element": "Air"
+            }
+          ]
+        },
+        {
+          "event": "combat_start",
+          "condition": {
+            "type": "isUnequipped",
+            "target": "opponent"
+          },
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "recklessness",
+              "value": 5,
+              "target": "self"
             }
           ]
         }
@@ -7998,6 +8547,9 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "isNotInfected"
+          },
           "effects": [
             {
               "type": "elementAtkBonus",
@@ -8008,6 +8560,9 @@
         },
         {
           "event": "passive",
+          "condition": {
+            "type": "isInfected"
+          },
           "effects": [
             {
               "type": "untargetable",
@@ -8046,7 +8601,19 @@
           "event": "wins_initiative",
           "effects": [
             {
-              "type": "grantAbility"
+              "type": "statMod",
+              "stat": "Power",
+              "value": 10,
+              "target": "self",
+              "extra": {
+                "outperform": true
+              }
+            },
+            {
+              "type": "elementAtkBonus",
+              "element": "Air",
+              "value": 10,
+              "target": "self"
             }
           ]
         }
@@ -8316,6 +8883,10 @@
         },
         {
           "event": "wins_challenge",
+          "condition": {
+            "type": "challengeWon",
+            "stat": "Power"
+          },
           "effects": [
             {
               "type": "elementGrant",
@@ -8355,17 +8926,38 @@
           "event": "creature_returns_from_discard",
           "effects": [
             {
-              "type": "exile",
-              "value": 2
+              "type": "destroyCreature",
+              "target": "attacker"
+            },
+            {
+              "type": "mugicCounter",
+              "value": 2,
+              "target": "self"
             }
           ]
         },
         {
-          "event": "passive",
+          "event": "activated",
+          "condition": {
+            "type": "isNotInfected",
+            "target": "chosen"
+          },
+          "activation": {
+            "cost": {
+              "mugicCounters": 1
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response"
+            ],
+            "usageLimit": "once_per_turn",
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
           "effects": [
             {
               "type": "infect",
-              "target": "anyCreature"
+              "target": "chosen"
             }
           ]
         }
@@ -8400,11 +8992,23 @@
       },
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "attackerControlledBySourcePlayer"
+              },
+              {
+                "type": "challenge",
+                "stat": "Courage",
+                "threshold": 50
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "attackMod",
-              "target": "allied"
+              "type": "damage",
+              "value": 10
             }
           ]
         }
@@ -8848,7 +9452,11 @@
             {
               "type": "damageReduction",
               "value": 10,
-              "target": "allied"
+              "target": "all_friendly_warbeast",
+              "extra": {
+                "keyword": "recklessness",
+                "perMugicCounter": true
+              }
             }
           ]
         }
@@ -9153,8 +9761,213 @@
           },
           "effects": [
             {
-              "type": "statSwap",
-              "target": "chosen"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Courage +25 / Power -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Courage",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Power",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Courage +25 / Wisdom -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Courage",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Wisdom",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Courage +25 / Speed -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Courage",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Speed",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Power +25 / Courage -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Power",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Courage",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Power +25 / Wisdom -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Power",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Wisdom",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Power +25 / Speed -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Power",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Speed",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Wisdom +25 / Courage -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Wisdom",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Courage",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Wisdom +25 / Power -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Wisdom",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Power",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Wisdom +25 / Speed -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Wisdom",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Speed",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Speed +25 / Courage -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Speed",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Courage",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Speed +25 / Power -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Speed",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Power",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Speed +25 / Wisdom -10",
+                  "effects": [
+                    {
+                      "type": "statMod",
+                      "stat": "Speed",
+                      "value": 25,
+                      "target": "chosen"
+                    },
+                    {
+                      "type": "statMod",
+                      "stat": "Wisdom",
+                      "value": -10,
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -9479,21 +10292,12 @@
     "power": "50",
     "rarity": "Ultra Rare",
     "set": "ROTO",
-    "special_logic": {
-      "keywords": {
-        "loyal": true
-      },
-      "hooks": [
-        {
-          "event": "game_start",
-          "effects": [
-            {
-              "type": "startFaceUp"
-            }
-          ]
+      "special_logic": {
+        "keywords": {
+          "loyal": true,
+          "startFaceUp": true
         }
-      ]
-    },
+      },
     "speed": "50",
     "tribe": "M'arrillian",
     "types": "Chieftain",
@@ -9734,14 +10538,21 @@
             }
           ]
         },
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "statMod"
-            }
-          ]
-        }
+          {
+            "event": "passive",
+            "condition": {
+              "type": "controlsType",
+              "keyword": "Muge"
+            },
+            "effects": [
+              {
+                "type": "keywordGrant",
+                "keyword": "supportAll",
+                "value": 5,
+                "target": "self"
+              }
+            ]
+          }
       ]
     },
     "speed": "40",
@@ -9823,7 +10634,11 @@
             {
               "type": "damageReduction",
               "value": 10,
-              "target": "allied"
+              "target": "all_friendly_warbeast",
+              "extra": {
+                "keyword": "recklessness",
+                "perMugicCounter": true
+              }
             }
           ]
         },
@@ -9866,6 +10681,9 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "activeLocationMirage"
+          },
           "effects": [
             {
               "type": "keywordGrant",
@@ -10046,11 +10864,15 @@
     "set": "ROTO",
     "special_logic": {
       "hooks": [
-        {
-          "event": "location_reveal",
-          "effects": [
-            {
-              "type": "newLocation"
+          {
+            "event": "location_reveal",
+            "condition": {
+              "type": "opponentTurn",
+              "negate": true
+            },
+            "effects": [
+              {
+                "type": "newLocation"
             }
           ]
         }
@@ -10253,6 +11075,10 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "controlsTribe",
+            "tribe": "UnderWorld"
+          },
           "effects": [
             {
               "type": "mugicDamageImmunity",
@@ -10471,7 +11297,36 @@
           "event": "passive",
           "effects": [
             {
-              "type": "statMod"
+              "type": "energyMod",
+              "value": 5,
+              "target": "self",
+              "extra": {
+                "countSource": "friendlyDefeatedTypeCount",
+                "creatureType": "Conjuror"
+              }
+            }
+          ]
+        },
+        {
+          "event": "pre_attack",
+          "effects": [
+            {
+              "type": "elementAtkBonus",
+              "value": 5,
+              "element": "Earth",
+              "extra": {
+                "countSource": "friendlyDefeatedTypeCount",
+                "creatureType": "Conjuror"
+              }
+            },
+            {
+              "type": "elementAtkBonus",
+              "value": 5,
+              "element": "Air",
+              "extra": {
+                "countSource": "friendlyDefeatedTypeCount",
+                "creatureType": "Conjuror"
+              }
             }
           ]
         }
@@ -10696,11 +11551,23 @@
       },
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "attackerControlledBySourcePlayer"
+              },
+              {
+                "type": "challenge",
+                "stat": "Speed",
+                "threshold": 50
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "attackMod",
-              "target": "allied"
+              "type": "damage",
+              "value": 10
             }
           ]
         }
@@ -10733,6 +11600,9 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "isEquipped"
+          },
           "effects": [
             {
               "type": "energyMod",
@@ -11450,6 +12320,12 @@
         },
         {
           "event": "passive",
+          "condition": {
+            "type": "statCheck",
+            "target": "self",
+            "stat": "Power",
+            "threshold": 126
+          },
           "effects": [
             {
               "type": "destroyCreature"
@@ -11484,12 +12360,21 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "attackerControlledBySourcePlayer"
+              },
+              {
+                "type": "currentAttackInDiscard"
+              }
+            ]
+          },
           "effects": [
             {
               "type": "damage",
-              "value": 5,
-              "target": "allied"
+              "value": 5
             }
           ]
         }
@@ -11729,6 +12614,11 @@
       "hooks": [
         {
           "event": "creature_returns_from_discard",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Mandiblor",
+            "target": "attacker"
+          },
           "effects": [
             {
               "type": "mugicCounter",
@@ -12167,11 +13057,23 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "attackerControlledBySourcePlayer"
+              },
+              {
+                "type": "challenge",
+                "stat": "Power",
+                "threshold": 50
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "attackMod",
-              "target": "alliedCreatures"
+              "type": "damage",
+              "value": 10
             }
           ]
         }
@@ -12204,10 +13106,16 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "statFail",
+            "stat": "Power",
+            "threshold": 65,
+            "target": "opponent"
+          },
           "effects": [
             {
               "type": "preventHeal",
-              "target": "engaged"
+              "target": "opponent"
             }
           ]
         }
@@ -12324,15 +13232,20 @@
             },
             "timing": [
               "combat_strike",
-              "burst_response"
+              "burst_response",
+              "action_move"
             ],
             "usageLimit": "once_per_turn",
             "needsTarget": false
           },
           "effects": [
             {
-              "type": "healScaled",
-              "target": "alliedCreatures"
+              "type": "energyMod",
+              "value": 5,
+              "target": "all_friendly",
+              "extra": {
+                "perElement": true
+              }
             }
           ]
         }
@@ -12405,11 +13318,26 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "mugicCounters": 1
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response",
+              "action_move"
+            ],
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
           "effects": [
             {
-              "type": "elementGrant",
-              "target": "targetCreature"
+              "type": "gainAllElements",
+              "target": "chosen",
+              "extra": {
+                "source": "teamElements"
+              }
             }
           ]
         }
@@ -12529,10 +13457,16 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "statFail",
+            "stat": "Courage",
+            "threshold": 65,
+            "target": "opponent"
+          },
           "effects": [
             {
-              "type": "removeAllElements",
-              "target": "engaged"
+              "type": "noElementGain",
+              "target": "opponent"
             }
           ]
         }
@@ -12642,7 +13576,15 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "isUnequipped"
+          },
           "effects": [
+            {
+              "type": "elementGrant",
+              "target": "self",
+              "element": "Water"
+            },
             {
               "type": "keywordGrant",
               "target": "self",
@@ -12721,9 +13663,12 @@
       "hooks": [
         {
           "event": "attack_resolved",
+          "condition": {
+            "type": "isEquipped"
+          },
           "effects": [
             {
-              "type": "heal",
+              "type": "energyMod",
               "value": 5,
               "target": "self"
             }
@@ -12758,6 +13703,9 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "initiativeIsElement"
+          },
           "effects": [
             {
               "type": "elementAtkBonus",
@@ -12796,6 +13744,10 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "controlsTribe",
+            "tribe": "UnderWorld"
+          },
           "effects": [
             {
               "type": "keywordGrant",
@@ -12805,11 +13757,14 @@
             }
           ]
         },
-        {
-          "event": "opponent_battlegear_discarded",
-          "effects": [
-            {
-              "type": "damage",
+          {
+            "event": "opponent_battlegear_discarded",
+            "condition": {
+              "type": "isEquipped"
+            },
+            "effects": [
+              {
+                "type": "damage",
               "value": 5,
               "target": "targetCreature"
             }
@@ -13121,7 +14076,35 @@
           "effects": [
             {
               "type": "removeAllMugicCounters",
-              "target": "self"
+              "target": "self",
+              "extra": {
+                "storeAs": "removed_mugic_counters"
+              }
+            },
+            {
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "negate_mugic",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "removed_mugic_counters",
+                    "operator": ">",
+                    "extra": {
+                      "compareTo": "mugicCost"
+                    }
+                  },
+                  "effects": [
+                    {
+                      "type": "negate"
+                    }
+                  ]
+                },
+                {
+                  "label": "no_effect",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -13235,22 +14218,52 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "mugicCounters": 1
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response",
+              "action_move"
+            ],
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
           "effects": [
             {
-              "type": "keywordGrant",
-              "target": "self",
-              "keyword": "defender",
-              "value": 1
+              "type": "healScaled",
+              "value": 5,
+              "target": "chosen",
+              "extra": {
+                "countSource": "uniqueFriendlyTribes"
+              }
             }
           ]
         },
         {
           "event": "passive",
+          "condition": {
+            "type": "onlyControlsNamedCreatures",
+            "extra": {
+              "names": [
+                "Aivenna, OverWorld Lieutenant",
+                "Nivenna, UnderWorld Lieutenant"
+              ]
+            }
+          },
           "effects": [
             {
-              "type": "healScaled",
-              "target": "targetCreature"
+              "type": "energyMod",
+              "value": 20,
+              "target": "self"
+            },
+            {
+              "type": "keywordGrant",
+              "keyword": "defender",
+              "value": 1,
+              "target": "self"
             }
           ]
         }
@@ -13319,11 +14332,24 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "controlsTribe",
+                "tribe": "Mipedian"
+              },
+              {
+                "type": "firstAttack"
+              },
+              {
+                "type": "sourceIsDefender"
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "negate",
-              "target": "self"
+              "type": "attackDealsZero"
             }
           ]
         }
@@ -13416,12 +14442,23 @@
               "sacrificeCreature": true
             },
             "timing": [
-              "combat_strike"
+              "combat_strike",
+              "burst_response"
             ]
           },
           "effects": [
             {
-              "type": "conditionalByTribe"
+              "type": "conditionalByTribe",
+              "extra": {
+                "raw": {
+                  "branches": {
+                    "danian": "gain30Energy",
+                    "mipedian": "nextAttackPlus20",
+                    "overworld": "negateTargetMugic"
+                  },
+                  "type": "tribeConditional"
+                }
+              }
             }
           ]
         }
@@ -13609,6 +14646,9 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "inDiscard"
+          },
           "effects": [
             {
               "type": "activateHive"
@@ -13646,11 +14686,64 @@
       },
       "hooks": [
         {
-          "event": "passive",
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "mugicCounters": 4
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response",
+              "action_move"
+            ],
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
           "effects": [
             {
-              "type": "elementRemove",
-              "target": "targetCreature"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Fire",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Fire",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Water",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Water",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Air",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Air",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Earth",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Earth",
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -13683,11 +14776,14 @@
       "hooks": [
         {
           "event": "opponent_fails_challenge",
+          "condition": {
+            "type": "sourceIsDefender"
+          },
           "effects": [
             {
               "type": "damage",
               "value": 10,
-              "target": "engaged"
+              "target": "opponent"
             }
           ]
         }
@@ -13815,14 +14911,48 @@
     "set": "FUN",
     "special_logic": {
       "hooks": [
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "conditionalAura"
-            }
-          ]
-        }
+          {
+            "event": "passive",
+            "condition": {
+              "type": "discardContainsTribe",
+              "tribe": "OverWorld"
+            },
+            "effects": [
+              {
+                "type": "elementGrant",
+                "element": "Water",
+                "target": "all_friendly"
+              }
+            ]
+          },
+          {
+            "event": "passive",
+            "condition": {
+              "type": "discardContainsTribe",
+              "tribe": "UnderWorld"
+            },
+            "effects": [
+              {
+                "type": "elementGrant",
+                "element": "Fire",
+                "target": "all_friendly"
+              }
+            ]
+          },
+          {
+            "event": "passive",
+            "condition": {
+              "type": "discardContainsTribe",
+              "tribe": "Mipedian"
+            },
+            "effects": [
+              {
+                "type": "elementGrant",
+                "element": "Air",
+                "target": "all_friendly"
+              }
+            ]
+          }
       ]
     },
     "speed": "35",
@@ -13850,14 +14980,75 @@
     "set": "FUN",
     "special_logic": {
       "hooks": [
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "conditionalAura"
-            }
-          ]
-        }
+          {
+            "event": "passive",
+            "condition": {
+              "and": [
+                {
+                  "type": "opponentTurn",
+                  "negate": true
+                },
+                {
+                  "type": "controlsTribe",
+                  "tribe": "OverWorld"
+                }
+              ]
+            },
+            "effects": [
+              {
+                "type": "statMod",
+                "stat": "all",
+                "value": 25,
+                "target": "other_friendly"
+              }
+            ]
+          },
+          {
+            "event": "passive",
+            "condition": {
+              "and": [
+                {
+                  "type": "opponentTurn",
+                  "negate": true
+                },
+                {
+                  "type": "controlsTribe",
+                  "tribe": "UnderWorld"
+                }
+              ]
+            },
+            "effects": [
+              {
+                "type": "keywordGrant",
+                "keyword": "intimidateEnergy",
+                "value": 10,
+                "target": "other_friendly"
+              }
+            ]
+          },
+          {
+            "event": "passive",
+            "condition": {
+              "and": [
+                {
+                  "type": "opponentTurn",
+                  "negate": true
+                },
+                {
+                  "type": "controlsTribe",
+                  "tribe": "Danian"
+                }
+              ]
+            },
+            "effects": [
+              {
+                "type": "damageReduction",
+                "element": "Water",
+                "value": 25,
+                "target": "other_friendly"
+              }
+            ]
+          }
       ]
     },
     "speed": "85",
@@ -13889,7 +15080,10 @@
           "event": "passive",
           "effects": [
             {
-              "type": "mugicAnyTribe"
+              "type": "keywordGrant",
+              "keyword": "mugicTribe:OverWorld",
+              "value": 1,
+              "target": "all_friendly_danian"
             }
           ]
         }
@@ -14012,8 +15206,21 @@
           "event": "passive",
           "effects": [
             {
+              "type": "energyMod",
+              "value": 10,
+              "target": "self",
+              "extra": {
+                "countSource": "uniqueFriendlyTribes"
+              }
+            },
+            {
               "type": "statMod",
-              "target": "self"
+              "stat": "all",
+              "value": 10,
+              "target": "self",
+              "extra": {
+                "countSource": "uniqueFriendlyTribes"
+              }
             }
           ]
         }
@@ -14074,10 +15281,25 @@
       "hooks": [
         {
           "event": "deals_attack_damage",
+          "condition": {
+            "and": [
+              {
+                "type": "firstAttack"
+              },
+              {
+                "type": "controlsTribe",
+                "tribe": "OverWorld"
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "heal",
-              "target": "self"
+              "type": "energyMod",
+              "value": 1,
+              "target": "self",
+              "extra": {
+                "scaledByDamage": true
+              }
             }
           ]
         }
@@ -14110,6 +15332,10 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "controlsTribe",
+            "tribe": "UnderWorld"
+          },
           "effects": [
             {
               "type": "keywordGrant",
@@ -14252,6 +15478,10 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "controlsTribe",
+            "tribe": "Danian"
+          },
           "effects": [
             {
               "type": "keywordGrant",
@@ -14290,6 +15520,10 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "controlsTribe",
+            "tribe": "UnderWorld"
+          },
           "effects": [
             {
               "type": "mugicDamageImmunity",
@@ -14365,20 +15599,58 @@
           "event": "activated",
           "activation": {
             "cost": {
+              "mugicCounters": 1
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response",
+              "action_move"
+            ],
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
+          "condition": {
+            "type": "onlyControlsNamedCreatures",
+            "extra": {
+              "names": [
+                "Nivenna, UnderWorld Lieutenant",
+                "Aivenna, OverWorld Lieutenant"
+              ]
+            }
+          },
+          "effects": [
+            {
+              "type": "damageScaled",
+              "value": 5,
+              "target": "chosen",
+              "extra": {
+                "countSource": "uniqueFriendlyTribes"
+              }
+            }
+          ]
+        },
+        {
+          "event": "activated",
+          "activation": {
+            "cost": {
               "mugicCounters": 2
             },
             "timing": [
               "combat_strike",
-              "burst_response"
+              "burst_response",
+              "action_move"
             ],
-            "usageLimit": "once_per_turn",
             "needsTarget": true,
             "targetFilter": "any"
           },
           "effects": [
             {
               "type": "damageScaled",
-              "target": "chosen"
+              "value": 5,
+              "target": "chosen",
+              "extra": {
+                "countSource": "uniqueFriendlyTribes"
+              }
             }
           ]
         }
@@ -14411,6 +15683,10 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "controlsTribe",
+            "tribe": "Mipedian"
+          },
           "effects": [
             {
               "type": "keywordGrant",
@@ -14448,10 +15724,17 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "engaged",
+          "event": "becomes_engaged",
           "effects": [
             {
-              "type": "relocate"
+              "type": "shinaddSwapOnEngage",
+              "extra": {
+                "raw": {
+                  "optional": true,
+                  "replacementTribe": "UnderWorld",
+                  "type": "swapOnOwnTurnEngage"
+                }
+              }
             }
           ]
         }
@@ -14486,10 +15769,80 @@
       },
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "opponentTurn"
+              },
+              {
+                "type": "controlsTribe",
+                "tribe": "UnderWorld"
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "conditionalAura"
+              "type": "elementAtkBonus",
+              "element": "Fire",
+              "value": 5
+            }
+          ]
+        },
+        {
+          "event": "passive",
+          "condition": {
+            "and": [
+              {
+                "type": "opponentTurn"
+              },
+              {
+                "type": "controlsTribe",
+                "tribe": "Mipedian"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "keywordGrant",
+              "keyword": "invisDisarm",
+              "value": 1
+            }
+          ]
+        },
+        {
+          "event": "passive",
+          "condition": {
+            "and": [
+              {
+                "type": "opponentTurn"
+              },
+              {
+                "type": "controlsTribe",
+                "tribe": "Danian"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "damageReduction",
+              "value": 5,
+              "element": "Fire"
+            },
+            {
+              "type": "damageReduction",
+              "value": 5,
+              "element": "Air"
+            },
+            {
+              "type": "damageReduction",
+              "value": 5,
+              "element": "Earth"
+            },
+            {
+              "type": "damageReduction",
+              "value": 5,
+              "element": "Water"
             }
           ]
         }
@@ -14570,6 +15923,10 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "controlsTribe",
+            "tribe": "Mipedian"
+          },
           "effects": [
             {
               "type": "keywordGrant",
@@ -14611,7 +15968,11 @@
           "effects": [
             {
               "type": "energyMod",
-              "target": "self"
+              "value": 1,
+              "target": "self",
+              "extra": {
+                "countSource": "lowestOtherFriendlyEnergy"
+              }
             }
           ]
         }
@@ -14650,16 +16011,67 @@
             },
             "timing": [
               "combat_strike",
-              "burst_response"
+              "burst_response",
+              "action_move"
             ],
-            "usageLimit": "once_per_turn",
             "needsTarget": true,
             "targetFilter": "any"
           },
           "effects": [
             {
-              "type": "grantTribe",
-              "target": "chosen"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "OverWorld",
+                  "effects": [
+                    {
+                      "type": "grantTribe",
+                      "keyword": "OverWorld",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "UnderWorld",
+                  "effects": [
+                    {
+                      "type": "grantTribe",
+                      "keyword": "UnderWorld",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Mipedian",
+                  "effects": [
+                    {
+                      "type": "grantTribe",
+                      "keyword": "Mipedian",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Danian",
+                  "effects": [
+                    {
+                      "type": "grantTribe",
+                      "keyword": "Danian",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "M'arrillian",
+                  "effects": [
+                    {
+                      "type": "grantTribe",
+                      "keyword": "M'arrillian",
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -14745,8 +16157,11 @@
           },
           "effects": [
             {
-              "type": "removeChieftainBonus",
-              "target": "chosen"
+              "type": "keywordGrant",
+              "target": "chosen",
+              "keyword": "ignoreChieftainControl",
+              "value": 1,
+              "duration": "turn"
             }
           ]
         }
@@ -15361,7 +16776,19 @@
           "event": "passive",
           "effects": [
             {
-              "type": "statMod",
+              "type": "keywordGrant",
+              "keyword": "range",
+              "value": 1,
+              "target": "self",
+              "extra": {
+                "hive": true
+              }
+            },
+            {
+              "type": "keywordGrant",
+              "keyword": "swift",
+              "value": 3,
+              "target": "self",
               "extra": {
                 "hive": true
               }
@@ -15419,8 +16846,31 @@
           "event": "wins_combat",
           "effects": [
             {
-              "type": "sacrificeCreature",
-              "target": "otherAllied"
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "sacrifice_other_creature",
+                  "condition": {
+                    "type": "noOtherFriendlyCreatures",
+                    "negate": true
+                  },
+                  "effects": [
+                    {
+                      "type": "sacrificeCreature",
+                      "target": "firstOtherFriendly"
+                    }
+                  ]
+                },
+                {
+                  "label": "destroy_gintanai",
+                  "effects": [
+                    {
+                      "type": "destroyCreature",
+                      "target": "self"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -15456,7 +16906,12 @@
           "effects": [
             {
               "type": "damageReduction",
-              "target": "alliedWarbeasts"
+              "value": 10,
+              "target": "all_friendly_warbeast",
+              "extra": {
+                "perElement": true,
+                "keyword": "recklessness"
+              }
             }
           ]
         }
@@ -15733,11 +17188,22 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "and": [
+              {
+                "type": "attackBuildCost",
+                "threshold": 2,
+                "operator": "=="
+              },
+              {
+                "type": "sourceIsDefender"
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "damageReduction",
-              "target": "self"
+              "type": "attackDealsZero"
             }
           ]
         }
@@ -15868,7 +17334,11 @@
           "effects": [
             {
               "type": "damageScaled",
-              "target": "chosen"
+              "value": 5,
+              "target": "chosen",
+              "extra": {
+                "countSource": "friendlyCreaturesOnOpponentSide"
+              }
             }
           ]
         }
@@ -16145,13 +17615,16 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "pre_attack",
+          "condition": {
+            "type": "equippedWithNameContains",
+            "name": "Shard"
+          },
           "effects": [
             {
-              "type": "keywordGrant",
-              "target": "self",
-              "keyword": "water",
-              "value": 5
+              "type": "elementAtkBonus",
+              "value": 5,
+              "element": "Water"
             }
           ]
         }
@@ -16183,12 +17656,24 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "activated",
+          "condition": {
+            "type": "isEngaged"
+          },
+          "activation": {
+            "cost": {
+              "expendElement": "Earth"
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response"
+            ]
+          },
           "effects": [
             {
               "type": "attackMod",
               "value": 15,
-              "target": "targetAttack"
+              "target": "self"
             }
           ]
         }
@@ -16315,7 +17800,11 @@
           "effects": [
             {
               "type": "healScaled",
-              "target": "chosen"
+              "value": 10,
+              "target": "chosen",
+              "extra": {
+                "countSource": "enemyCreaturesOnOwnSide"
+              }
             }
           ]
         }
@@ -16348,6 +17837,9 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "initiativeIsDiscipline"
+          },
           "effects": [
             {
               "type": "energyMod",
@@ -16421,16 +17913,10 @@
     "rarity": "Ultra Rare",
     "set": "AU",
     "special_logic": {
-      "hooks": [
-        {
-          "event": "passive",
-          "effects": [
-            {
-              "type": "recoverFromDiscard"
-            }
-          ]
-        }
-      ]
+      "keywords": {
+        "mugicFromDiscard": true,
+        "removePlayedDiscardMugicFromGame": true
+      }
     },
     "speed": "30",
     "tribe": "Danian",
@@ -16553,8 +18039,22 @@
           "event": "passive",
           "effects": [
             {
-              "type": "statMod",
-              "target": "self"
+              "type": "energyMod",
+              "value": 5,
+              "target": "self",
+              "extra": {
+                "countSource": "otherFriendlyTribeCount",
+                "tribe": "Danian"
+              }
+            },
+            {
+              "type": "energyMod",
+              "value": 5,
+              "target": "self",
+              "extra": {
+                "countSource": "otherFriendlyTypeCount",
+                "creatureType": "Past"
+              }
             }
           ]
         }
@@ -16589,8 +18089,12 @@
           "event": "passive",
           "effects": [
             {
-              "type": "statMod",
-              "target": "self"
+              "type": "energyMod",
+              "value": 5,
+              "target": "self",
+              "extra": {
+                "countSource": "allDiscardCreatures"
+              }
             }
           ]
         }
@@ -16623,10 +18127,18 @@
       "hooks": [
         {
           "event": "turn_start",
+          "condition": {
+            "type": "totalControlledMugicCounters",
+            "threshold": 0,
+            "operator": "=="
+          },
           "effects": [
             {
               "type": "recoverFromDiscard",
-              "target": "hand"
+              "target": "hand",
+              "extra": {
+                "cardType": "mugic"
+              }
             }
           ]
         }
@@ -16986,11 +18498,14 @@
     "set": "AU",
     "special_logic": {
       "hooks": [
-        {
-          "event": "location_reveal",
-          "effects": [
-            {
-              "type": "newLocation"
+          {
+            "event": "location_reveal",
+            "condition": {
+              "type": "inDiscard"
+            },
+            "effects": [
+              {
+                "type": "newLocation"
             }
           ]
         }
@@ -17022,12 +18537,48 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "mugicCounters": 1
+            },
+            "timing": [
+              "combat_strike",
+              "action_move"
+            ],
+            "needsTarget": true,
+            "targetFilter": "anyCreature"
+          },
           "effects": [
             {
-              "type": "damage",
+              "type": "attackMod",
               "value": 10,
-              "target": "targetCreature"
+              "target": "chosen"
+            },
+            {
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "fire_bonus",
+                  "condition": {
+                    "type": "hasElement",
+                    "element": "Fire",
+                    "target": "chosen"
+                  },
+                  "effects": [
+                    {
+                      "type": "elementAtkBonus",
+                      "value": 5,
+                      "element": "Fire",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "no_bonus",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -17150,11 +18701,34 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "activated",
+          "condition": {
+            "and": [
+              {
+                "type": "isEngaged"
+              },
+              {
+                "type": "isEngaged",
+                "target": "chosen"
+              }
+            ]
+          },
+          "activation": {
+            "cost": {
+              "expendElement": "Air"
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response"
+            ],
+            "usageLimit": "once_per_turn",
+            "needsTarget": true,
+            "targetFilter": "enemy"
+          },
           "effects": [
             {
-              "type": "noBattlegear",
-              "target": "opposingEngaged"
+              "type": "flipBattlegear",
+              "target": "chosen"
             }
           ]
         }
@@ -17186,11 +18760,68 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "passive",
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "discardMugic": true
+            },
+            "timing": [
+              "combat_strike",
+              "burst_response",
+              "action_move"
+            ],
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
+          "condition": {
+            "type": "hasZeroDiscipline",
+            "target": "chosen"
+          },
           "effects": [
             {
-              "type": "elementRemove",
-              "target": "targetCreatureWithZeroDiscipline"
+              "type": "chooseOne",
+              "choices": [
+                {
+                  "label": "Fire",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Fire",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Water",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Water",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Air",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Air",
+                      "target": "chosen"
+                    }
+                  ]
+                },
+                {
+                  "label": "Earth",
+                  "effects": [
+                    {
+                      "type": "elementRemove",
+                      "element": "Earth",
+                      "target": "chosen"
+                    }
+                  ]
+                }
+              ]
             }
           ]
         }
@@ -17223,9 +18854,13 @@
       "hooks": [
         {
           "event": "passive",
+          "condition": {
+            "type": "adjacentAttackAvailable"
+          },
           "effects": [
             {
-              "type": "immobilize"
+              "type": "movementOverride",
+              "keyword": "mustEngageAdjacent"
             }
           ]
         }
@@ -17342,8 +18977,8 @@
           "event": "turn_start",
           "effects": [
             {
-              "type": "startFaceUp",
-              "target": "selfBattlegear"
+              "type": "recoverBattlegear",
+              "target": "self"
             }
           ]
         }
@@ -17376,9 +19011,13 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "initiativeIsElement"
+          },
           "effects": [
             {
               "type": "elementGrant",
+              "target": "alliedEngaged",
               "extra": {
                 "source": "locationInitiative"
               }
@@ -17562,6 +19201,10 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "isEquipped",
+            "target": "self"
+          },
           "effects": [
             {
               "type": "sacrificeBattlegear",
@@ -17884,11 +19527,12 @@
             "usageLimit": "once_per_turn"
           },
           "effects": [
-            {
-              "type": "statMod",
-              "stat": "all",
-              "extra": {
-                "scaledByDamage": true,
+              {
+                "type": "statMod",
+                "value": 1,
+                "stat": "all",
+                "extra": {
+                  "scaledByDamage": true,
                 "onNextDamage": true
               },
               "target": "opponent"
@@ -18399,6 +20043,9 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "isEngaged"
+          },
           "effects": [
             {
               "type": "noMugic",
@@ -18926,7 +20573,7 @@
           "event": "activated",
           "activation": {
             "cost": {
-              "expendElement": "any"
+              "expendElement": "Fire"
             },
             "timing": [
               "combat_strike",
@@ -18934,15 +20581,99 @@
             ],
             "usageLimit": "once_per_turn",
             "needsTarget": true,
-            "targetFilter": "danianCreature"
+            "targetFilter": "any"
+          },
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "Danian",
+            "target": "chosen"
           },
           "effects": [
             {
               "type": "elementGrant",
-              "extra": {
-                "grantExpendedElement": true
-              },
-              "target": "target"
+              "element": "Fire",
+              "target": "chosen"
+            }
+          ]
+        },
+        {
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "expendElement": "Water"
+            },
+            "timing": [
+              "combat_strike",
+              "action_move"
+            ],
+            "usageLimit": "once_per_turn",
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "Danian",
+            "target": "chosen"
+          },
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Water",
+              "target": "chosen"
+            }
+          ]
+        },
+        {
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "expendElement": "Air"
+            },
+            "timing": [
+              "combat_strike",
+              "action_move"
+            ],
+            "usageLimit": "once_per_turn",
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "Danian",
+            "target": "chosen"
+          },
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Air",
+              "target": "chosen"
+            }
+          ]
+        },
+        {
+          "event": "activated",
+          "activation": {
+            "cost": {
+              "expendElement": "Earth"
+            },
+            "timing": [
+              "combat_strike",
+              "action_move"
+            ],
+            "usageLimit": "once_per_turn",
+            "needsTarget": true,
+            "targetFilter": "any"
+          },
+          "condition": {
+            "type": "hasTribe",
+            "tribe": "Danian",
+            "target": "chosen"
+          },
+          "effects": [
+            {
+              "type": "elementGrant",
+              "element": "Earth",
+              "target": "chosen"
             }
           ]
         }
@@ -19982,13 +21713,38 @@
           "event": "ally_defeated",
           "effects": [
             {
-              "type": "revive",
-              "target": "defeated",
+              "type": "removeAllMugicCounters",
+              "target": "self",
               "extra": {
-                "requireMugicCounters": 5,
-                "removeMugicCounters": true,
-                "noMugicCounters": true
+                "storeAs": "removed_mugic_counters"
               }
+            },
+            {
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "revive_defeated_ally",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "removed_mugic_counters",
+                    "threshold": 5,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "revive",
+                      "target": "defender",
+                      "extra": {
+                        "noMugicCounters": true
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "no_revive",
+                  "effects": []
+                }
+              ]
             }
           ]
         }

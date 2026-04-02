@@ -463,7 +463,7 @@
           "effects": [
             {
               "type": "keywordGrant",
-              "keyword": "invisibilityStrike",
+              "keyword": "invisStrike",
               "value": 15
             }
           ]
@@ -546,7 +546,15 @@
           "event": "location_activated",
           "effects": [
             {
-              "type": "mugicUntargetable"
+              "type": "mugicUntargetable",
+              "extra": {
+                "raw": {
+                  "preventAbilityTargets": true,
+                  "preventMugicTargets": true,
+                  "targetType": "mugic",
+                  "type": "untargetable"
+                }
+              }
             }
           ]
         }
@@ -687,18 +695,31 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "hasElement",
+            "target": "attacker",
+            "element": "Air"
+          },
           "effects": [
             {
               "type": "scry",
-              "extra": {
-                "raw": {
-                  "condition": "engagedHasElement",
-                  "count": 3,
-                  "element": "Air",
-                  "optional": true,
-                  "type": "scry"
-                }
-              }
+              "target": "attacker",
+              "count": 3
+            }
+          ]
+        },
+        {
+          "event": "combat_start",
+          "condition": {
+            "type": "hasElement",
+            "target": "defender",
+            "element": "Air"
+          },
+          "effects": [
+            {
+              "type": "scry",
+              "target": "defender",
+              "count": 3
             }
           ]
         }
@@ -720,18 +741,12 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "deals_water_damage",
           "effects": [
             {
-              "type": "onElementDamage",
-              "extra": {
-                "raw": {
-                  "element": "Water",
-                  "target": "attacker",
-                  "type": "heal",
-                  "value": 5
-                }
-              }
+              "type": "heal",
+              "value": 5,
+              "target": "attacker"
             }
           ]
         }
@@ -1031,17 +1046,12 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "mugic_counter_removed",
           "effects": [
             {
-              "type": "onMugicCounterRemoved",
-              "extra": {
-                "raw": {
-                  "target": "engagedCreatureSamePlayer",
-                  "type": "damage",
-                  "value": 10
-                }
-              }
+              "type": "damage",
+              "value": 10,
+              "target": "same_player_engaged"
             }
           ]
         }
@@ -1080,13 +1090,13 @@
             "tribe": "Danian"
           },
           "effects": [
-            {
-              "type": "statMod",
-              "value": 5,
-              "target": "self"
-            }
-          ]
-        }
+              {
+                "type": "elementGrant",
+                "element": "Water",
+                "target": "self"
+              }
+            ]
+          }
       ]
     },
     "unique": ""
@@ -1104,24 +1114,48 @@
     "set": "ZOTH",
     "special_logic": {
       "hooks": [
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "elementGrant"
-            }
-          ]
-        },
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "hiveActiveBonus"
-            }
-          ]
-        }
-      ]
-    },
+          {
+            "event": "combat_start",
+            "condition": {
+              "type": "hasElement",
+              "element": "Air"
+            },
+            "effects": [
+              {
+                "type": "elementGrant",
+                "element": "Earth",
+                "target": "self"
+              }
+            ]
+          },
+          {
+            "event": "combat_start",
+            "condition": {
+              "and": [
+                {
+                  "type": "hiveActive"
+                },
+                {
+                  "type": "hasTribe",
+                  "tribe": "Danian"
+                }
+              ]
+            },
+            "effects": [
+              {
+                "type": "elementGrant",
+                "element": "Air",
+                "target": "self",
+                "extra": {
+                  "addElements": [
+                    "Earth"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
     "unique": ""
   },
   {
@@ -1164,16 +1198,31 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Scout",
+            "target": "attacker"
+          },
           "effects": [
             {
               "type": "removeAndPreventKeyword",
-              "extra": {
-                "raw": {
-                  "condition": "engagedWithScout",
-                  "keyword": "Invisibility",
-                  "type": "removeAndPreventKeyword"
-                }
-              }
+              "keyword": "invisibility",
+              "target": "defender"
+            }
+          ]
+        },
+        {
+          "event": "combat_start",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Scout",
+            "target": "defender"
+          },
+          "effects": [
+            {
+              "type": "removeAndPreventKeyword",
+              "keyword": "invisibility",
+              "target": "attacker"
             }
           ]
         }
@@ -1200,7 +1249,11 @@
             {
               "type": "keywordGrant",
               "keyword": "invisStrike",
-              "value": 10
+              "value": 10,
+              "target": "all_creatures",
+              "extra": {
+                "targetElement": "Air"
+              }
             }
           ]
         }
@@ -1224,11 +1277,13 @@
         {
           "event": "combat_start",
           "effects": [
-            {
-              "type": "elementGrant"
-            }
-          ]
-        }
+              {
+                "type": "elementGrant",
+                "element": "choice",
+                "target": "engaged_creatures"
+              }
+            ]
+          }
       ]
     },
     "unique": ""
@@ -1284,12 +1339,20 @@
             {
               "type": "keywordGrant",
               "keyword": "range",
-              "value": 1
+              "value": 1,
+              "target": "all_creatures",
+              "extra": {
+                "targetElement": "Earth"
+              }
             },
             {
               "type": "keywordGrant",
               "keyword": "swift",
-              "value": 1
+              "value": 1,
+              "target": "all_creatures",
+              "extra": {
+                "targetElement": "Earth"
+              }
             }
           ]
         }
@@ -1354,14 +1417,21 @@
     "set": "SS",
     "special_logic": {
       "hooks": [
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "invisibilityControl"
-            }
-          ]
-        }
+          {
+            "event": "location_activated",
+            "effects": [
+              {
+                "type": "removeKeyword",
+                "keyword": "invisibility",
+                "target": "all_creatures"
+              },
+              {
+                "type": "removeAndPreventKeyword",
+                "keyword": "invisibility",
+                "target": "all_creatures"
+              }
+            ]
+          }
       ]
     },
     "unique": ""
@@ -1383,7 +1453,37 @@
           "event": "location_activated",
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "sacrificeCreature",
+              "extra": {
+                "excludeCreatureType": "Conjuror",
+                "storeAs": "sacrificed_creature"
+              }
+            },
+            {
+              "type": "conditionalAlternative",
+              "choices": [
+                {
+                  "label": "revive_conjuror",
+                  "condition": {
+                    "type": "storedValue",
+                    "name": "sacrificed_creature",
+                    "threshold": 1,
+                    "operator": ">="
+                  },
+                  "effects": [
+                    {
+                      "type": "revive",
+                      "extra": {
+                        "creatureType": "Conjuror"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "label": "no_sacrifice",
+                  "effects": []
+                }
+              ]
             }
           ]
         }
@@ -1452,20 +1552,41 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "passive",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Scout",
+            "target": "self"
+          },
           "effects": [
             {
-              "type": "subtypeElementGrant"
+              "type": "elementGrant",
+              "element": "Water",
+              "target": "self"
             }
           ]
         },
         {
-          "event": "location_activated",
+          "event": "passive",
+          "condition": {
+            "and": [
+              {
+                "type": "isEngaged",
+                "target": "self"
+              },
+              {
+                "type": "hasElement",
+                "element": "Water",
+                "target": "self"
+              }
+            ]
+          },
           "effects": [
             {
               "type": "keywordGrant",
               "keyword": "mugicHeal",
-              "value": 10
+              "value": 10,
+              "target": "self"
             }
           ]
         }
@@ -1574,7 +1695,8 @@
           },
           "effects": [
             {
-              "type": "statMod",
+              "type": "elementGrant",
+              "element": "Water",
               "target": "self"
             }
           ]
@@ -1605,16 +1727,14 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "pre_attack",
+          "condition": {
+            "type": "attackHasElement",
+            "element": "Water"
+          },
           "effects": [
             {
-              "type": "onWaterAttack",
-              "extra": {
-                "raw": {
-                  "becomesActive": true,
-                  "type": "revealTopLocation"
-                }
-              }
+              "type": "newLocation"
             }
           ]
         },
@@ -1679,7 +1799,11 @@
             {
               "type": "keywordGrant",
               "keyword": "invisSurprise",
-              "value": 1
+              "value": 1,
+              "target": "all_creatures",
+              "extra": {
+                "targetTribe": "Mipedian"
+              }
             }
           ]
         },
@@ -1899,20 +2023,23 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "passive",
           "effects": [
             {
-              "type": "keywordGrant",
-              "keyword": "fireproof",
-              "value": 5
+              "type": "damageReduction",
+              "value": 5,
+              "element": "Fire",
+              "target": "all_friendly"
             }
           ]
         },
         {
-          "event": "location_activated",
+          "event": "passive",
           "effects": [
             {
-              "type": "disciplineDecreaseReduction"
+              "type": "disciplineDecreaseReduction",
+              "value": 10,
+              "target": "all_friendly"
             }
           ]
         }
@@ -2001,13 +2128,12 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "passive",
           "effects": [
             {
-              "type": "friendlyEnergyPenalty",
-              "extra": {
-                "raw": -10
-              }
+              "type": "energyMod",
+              "value": -10,
+              "target": "all_friendly"
             }
           ]
         },
@@ -2042,14 +2168,16 @@
     "set": "MI",
     "special_logic": {
       "hooks": [
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "elementRemove"
-            }
-          ]
-        },
+          {
+            "event": "location_activated",
+            "effects": [
+              {
+                "type": "elementRemove",
+                "element": "Water",
+                "target": "engaged_creatures"
+              }
+            ]
+          },
         {
           "event": "location_activated",
           "effects": [
@@ -2129,23 +2257,41 @@
           "event": "location_activated",
           "effects": [
             {
-              "type": "addCounter"
+              "type": "addCounter",
+              "value": 10,
+              "extra": {
+                "counterType": "jade"
+              }
             }
           ]
         },
         {
-          "event": "combat_start",
+          "event": "passive",
           "effects": [
             {
-              "type": "onAttackDamage"
+              "type": "onAttackDamage",
+              "extra": {
+                "raw": {
+                  "counterType": "jade",
+                  "perDamage": 5,
+                  "type": "removeCountersForAttackDamage"
+                }
+              }
             }
           ]
         },
         {
-          "event": "combat_start",
+          "event": "passive",
           "effects": [
             {
-              "type": "onLastCounterRemoved"
+              "type": "onLastCounterRemoved",
+              "extra": {
+                "raw": {
+                  "counterType": "jade",
+                  "damage": 50,
+                  "type": "damageLastAttacker"
+                }
+              }
             }
           ]
         }
@@ -2263,13 +2409,13 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "passive",
           "effects": [
             {
-              "type": "allCreaturesHaveChieftain",
-              "extra": {
-                "raw": true
-              }
+              "type": "keywordGrant",
+              "keyword": "ignoreChieftainControl",
+              "target": "all_friendly",
+              "duration": "permanent"
             }
           ]
         }
@@ -2344,20 +2490,26 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "wins_challenge",
+          "condition": {
+            "or": [
+              {
+                "type": "hasTribe",
+                "tribe": "M'arrillian",
+                "target": "attacker"
+              },
+              {
+                "type": "creatureType",
+                "keyword": "Minion",
+                "target": "attacker"
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "onChallengeWin",
-              "extra": {
-                "raw": {
-                  "tribeOrSubtype": [
-                    "M'arrillian",
-                    "Minion"
-                  ],
-                  "type": "heal",
-                  "value": 5
-                }
-              }
+              "type": "heal",
+              "value": 5,
+              "target": "attacker"
             }
           ]
         }
@@ -2414,16 +2566,16 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "passive",
+          "condition": {
+            "type": "creatureType",
+            "keyword": "Minion",
+            "target": "self"
+          },
           "effects": [
             {
               "type": "abilityCostIncrease",
-              "extra": {
-                "raw": {
-                  "subtype": "Minion",
-                  "value": 1
-                }
-              }
+              "value": 1
             }
           ]
         }
@@ -2674,10 +2826,11 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "passive",
           "condition": {
             "type": "hasTribe",
-            "tribe": "M'arrillian"
+            "tribe": "M'arrillian",
+            "target": "self"
           },
           "effects": [
             {
@@ -2689,9 +2842,11 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "passive",
           "condition": {
-            "type": "hasTribe"
+            "type": "creatureType",
+            "keyword": "Minion",
+            "target": "self"
           },
           "effects": [
             {
@@ -2703,18 +2858,13 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "loses_initiative",
           "effects": [
             {
-              "type": "onLoseInitiative",
-              "extra": {
-                "raw": {
-                  "stat": "all",
-                  "target": "engagedCreature",
-                  "type": "statGain",
-                  "value": 20
-                }
-              }
+              "type": "statMod",
+              "stat": "all",
+              "value": 20,
+              "target": "attacker"
             }
           ]
         }
@@ -2761,17 +2911,22 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "gains_mugic_counter",
           "effects": [
             {
-              "type": "onMugicCounterChange",
-              "extra": {
-                "raw": {
-                  "target": "affectedCreature",
-                  "type": "damage",
-                  "value": 5
-                }
-              }
+              "type": "damage",
+              "value": 5,
+              "target": "attacker"
+            }
+          ]
+        },
+        {
+          "event": "mugic_counter_removed",
+          "effects": [
+            {
+              "type": "damage",
+              "value": 5,
+              "target": "attacker"
             }
           ]
         }
@@ -2786,41 +2941,38 @@
     "id": "92",
     "initiative": "Muge",
     "mirage": "",
-    "name": "Kiru City Tunnels",
-    "past": "",
-    "rarity": "Uncommon",
-    "set": "ROTO",
-    "special_logic": {
-      "hooks": [
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "highEnergyPenalty",
-              "extra": {
-                "raw": {
-                  "damagePenalty": 10,
-                  "threshold": 35
-                }
+      "name": "Kiru City Tunnels",
+      "past": "",
+      "rarity": "Uncommon",
+      "set": "ROTO",
+      "special_logic": {
+        "hooks": [
+          {
+            "event": "passive",
+            "condition": {
+              "type": "scannedEnergy",
+              "target": "self",
+              "operator": ">=",
+              "threshold": 35
+            },
+            "effects": [
+              {
+                "type": "attackMod",
+                "value": -10,
+                "target": "self"
               }
-            }
-          ]
-        },
-        {
-          "event": "combat_start",
-          "effects": [
-            {
-              "type": "onShuffleAttackDeck",
-              "extra": {
-                "raw": {
-                  "type": "revealNewLocation"
-                }
+            ]
+          },
+          {
+            "event": "attack_deck_shuffled",
+            "effects": [
+              {
+                "type": "newLocation"
               }
-            }
-          ]
-        }
-      ]
-    },
+            ]
+          }
+        ]
+      },
     "unique": ""
   },
   {
@@ -2837,18 +2989,18 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "passive",
           "effects": [
             {
-              "type": "attackMod"
-            }
-          ]
-        },
-        {
-          "event": "combat_start",
-          "effects": [
-            {
-              "type": "onEmptyDiscard"
+              "type": "onEmptyDiscard",
+              "extra": {
+                "raw": {
+                  "drawFromDiscard": true,
+                  "placePlayedOnDeckBottom": true,
+                  "revealWhenAnyDiscardEmpty": true,
+                  "type": "attackDiscardReplacement"
+                }
+              }
             }
           ]
         }
@@ -2905,9 +3057,27 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "mugicHandLessThanControlledCreatures",
+            "target": "attacker"
+          },
           "effects": [
             {
-              "type": "discardMugic"
+              "type": "discardMugic",
+              "target": "attacker"
+            }
+          ]
+        },
+        {
+          "event": "combat_start",
+          "condition": {
+            "type": "mugicHandLessThanControlledCreatures",
+            "target": "defender"
+          },
+          "effects": [
+            {
+              "type": "discardMugic",
+              "target": "defender"
             }
           ]
         }
@@ -2922,32 +3092,50 @@
     "id": "96",
     "initiative": "OverWorld",
     "mirage": "",
-    "name": "Skeletal Springs",
-    "past": "",
-    "rarity": "Uncommon",
-    "set": "ROTO",
-    "special_logic": {
-      "hooks": [
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "keywordGrant",
-              "keyword": "water",
-              "value": 5
-            }
-          ]
-        },
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "subtypeRestriction"
-            }
-          ]
-        }
-      ]
-    },
+      "name": "Skeletal Springs",
+      "past": "",
+      "rarity": "Uncommon",
+      "set": "ROTO",
+      "special_logic": {
+        "hooks": [
+          {
+            "event": "passive",
+            "condition": {
+              "type": "hasElement",
+              "target": "self",
+              "element": "Water"
+            },
+            "effects": [
+              {
+                "type": "keywordGrant",
+                "keyword": "water",
+                "value": 5,
+                "target": "self"
+              }
+            ]
+          },
+          {
+            "event": "passive",
+            "condition": {
+              "type": "creatureType",
+              "target": "self",
+              "keyword": "Fluidmorpher"
+            },
+            "effects": [
+              {
+                "type": "keywordGrant",
+                "keyword": "noMugicGain",
+                "target": "self"
+              },
+              {
+                "type": "keywordGrant",
+                "keyword": "cannotPayMugicCosts",
+                "target": "self"
+              }
+            ]
+          }
+        ]
+      },
     "unique": ""
   },
   {
@@ -2964,7 +3152,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "passive",
           "effects": [
             {
               "type": "onAttackWithElements",
@@ -3067,15 +3255,23 @@
             {
               "type": "damageScaled",
               "value": 5,
-              "stat": "MugicCounters"
+              "target": "bothEngaged",
+              "extra": {
+                "perMugicCounter": true
+              }
             }
           ]
         },
         {
-          "event": "combat_start",
+          "event": "wins_combat",
           "effects": [
             {
-              "type": "onWinCombat"
+              "type": "mugicCounter",
+              "value": 1,
+              "target": "attacker",
+              "extra": {
+                "countSource": "targetMugicAbility"
+              }
             }
           ]
         }
@@ -3126,6 +3322,9 @@
       "hooks": [
         {
           "event": "pre_attack",
+          "condition": {
+            "type": "allControlledShareTribe"
+          },
           "effects": [
             {
               "type": "damage",
@@ -3154,7 +3353,18 @@
           "event": "combat_start",
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "meltingCampPenalty",
+              "extra": {
+                "raw": {
+                  "cost": {
+                    "mugicCounters": 2
+                  },
+                  "penalty": {
+                    "allDisciplines": -50
+                  },
+                  "type": "payOrLoseDisciplines"
+                }
+              }
             }
           ]
         }
@@ -3227,32 +3437,35 @@
     "id": "96",
     "initiative": "Speed",
     "mirage": "",
-    "name": "Prototype Demolition Field",
-    "past": "",
-    "rarity": "Super Rare",
-    "set": "TOTT",
-    "special_logic": {
-      "hooks": [
-        {
-          "event": "combat_start",
-          "effects": [
-            {
-              "type": "onFirstAttack",
-              "extra": {
-                "raw": {
-                  "condition": {
-                    "damageDealt": ">=",
-                    "value": 20
-                  },
-                  "target": "attacker",
-                  "type": "conditionalDestroyBattlegear"
+      "name": "Prototype Demolition Field",
+      "past": "",
+      "rarity": "Super Rare",
+      "set": "TOTT",
+      "special_logic": {
+        "hooks": [
+          {
+            "event": "attack_resolved",
+            "condition": {
+              "and": [
+                {
+                  "type": "resolvedFirstAttack",
+                  "target": "attacker"
+                },
+                {
+                  "type": "damageThreshold",
+                  "value": 20
                 }
+              ]
+            },
+            "effects": [
+              {
+                "type": "destroyBattlegear",
+                "target": "attacker"
               }
-            }
-          ]
-        }
-      ]
-    },
+            ]
+          }
+        ]
+      },
     "unique": ""
   },
   {
@@ -3262,30 +3475,38 @@
     "id": "97",
     "initiative": "Wisdom",
     "mirage": "",
-    "name": "Shardcrafter's Workshop",
-    "past": "",
-    "rarity": "Rare",
-    "set": "TOTT",
-    "special_logic": {
-      "hooks": [
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "subtypeBattlegearBonus"
-            }
-          ]
-        },
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "protectBattlegear"
-            }
-          ]
-        }
-      ]
-    },
+      "name": "Shardcrafter's Workshop",
+      "past": "",
+      "rarity": "Rare",
+      "set": "TOTT",
+      "special_logic": {
+        "hooks": [
+          {
+            "event": "passive",
+            "condition": {
+              "type": "equippedWithNameContains",
+              "target": "self",
+              "name": "Shard"
+            },
+            "effects": [
+              {
+                "type": "attackMod",
+                "value": 5,
+                "target": "self"
+              }
+            ]
+          },
+          {
+            "event": "passive",
+            "effects": [
+              {
+                "type": "protectBattlegear",
+                "target": "self"
+              }
+            ]
+          }
+        ]
+      },
     "unique": ""
   },
   {
@@ -3309,12 +3530,13 @@
             "threshold": 50
           },
           "effects": [
-            {
-              "type": "elementAtkReduce",
-              "value": 5
-            }
-          ]
-        },
+              {
+                "type": "elementAtkReduce",
+                "value": 5,
+                "element": "all"
+              }
+            ]
+          },
         {
           "event": "pre_attack",
           "condition": {
@@ -3324,12 +3546,13 @@
             "operator": ">"
           },
           "effects": [
-            {
-              "type": "elementAtkBonus",
-              "value": 5
-            }
-          ]
-        }
+              {
+                "type": "elementAtkBonus",
+                "value": 5,
+                "element": "all"
+              }
+            ]
+          }
       ]
     },
     "unique": ""
@@ -3465,16 +3688,32 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "pre_attack",
+          "condition": {
+            "type": "hasKeyword",
+            "keyword": "Defender",
+            "target": "attacker"
+          },
           "effects": [
             {
-              "type": "keywordAttackBonus",
-              "extra": {
-                "raw": {
-                  "keyword": "Defender",
-                  "value": 5
-                }
-              }
+              "type": "attackMod",
+              "value": 5,
+              "target": "attacker"
+            }
+          ]
+        },
+        {
+          "event": "pre_attack",
+          "condition": {
+            "type": "hasKeyword",
+            "keyword": "Defender",
+            "target": "defender"
+          },
+          "effects": [
+            {
+              "type": "attackMod",
+              "value": 5,
+              "target": "defender"
             }
           ]
         },
@@ -3511,7 +3750,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "passive",
           "effects": [
             {
               "type": "alternateWinCondition",
@@ -3592,22 +3831,99 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "and": [
+              {
+                "type": "hasTribe",
+                "tribe": "M'arrillian",
+                "target": "attacker"
+              },
+              {
+                "type": "nameContains",
+                "name": "Aa'une",
+                "target": "attacker",
+                "negate": true
+              }
+            ]
+          },
           "effects": [
             {
-              "type": "tribeDamageWithNameOverride",
-              "extra": {
-                "raw": {
-                  "damage": 10,
-                  "nameOverride": {
-                    "heal": 20,
-                    "nameContains": "Aa'une",
-                    "replaceDamage": true
-                  },
-                  "target": "engagedCreatures",
-                  "tribe": "M'arrillian",
-                  "type": "tribeDamageWithNameOverride"
-                }
+              "type": "damage",
+              "value": 10,
+              "target": "attacker"
+            }
+          ]
+        },
+        {
+          "event": "combat_start",
+          "condition": {
+            "and": [
+              {
+                "type": "hasTribe",
+                "tribe": "M'arrillian",
+                "target": "attacker"
+              },
+              {
+                "type": "nameContains",
+                "name": "Aa'une",
+                "target": "attacker"
               }
+            ]
+          },
+          "effects": [
+            {
+              "type": "heal",
+              "value": 20,
+              "target": "attacker"
+            }
+          ]
+        },
+        {
+          "event": "combat_start",
+          "condition": {
+            "and": [
+              {
+                "type": "hasTribe",
+                "tribe": "M'arrillian",
+                "target": "defender"
+              },
+              {
+                "type": "nameContains",
+                "name": "Aa'une",
+                "target": "defender",
+                "negate": true
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "damage",
+              "value": 10,
+              "target": "defender"
+            }
+          ]
+        },
+        {
+          "event": "combat_start",
+          "condition": {
+            "and": [
+              {
+                "type": "hasTribe",
+                "tribe": "M'arrillian",
+                "target": "defender"
+              },
+              {
+                "type": "nameContains",
+                "name": "Aa'une",
+                "target": "defender"
+              }
+            ]
+          },
+          "effects": [
+            {
+              "type": "heal",
+              "value": 20,
+              "target": "defender"
             }
           ]
         }
@@ -3755,12 +4071,16 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "passive",
+          "condition": {
+            "type": "controlledTribeCount",
+            "threshold": 4,
+            "operator": "=="
+          },
           "effects": [
             {
-              "type": "keywordGrant",
-              "keyword": "untargetable",
-              "value": 1
+              "type": "untargetable",
+              "target": "all_friendly"
             }
           ]
         }
@@ -3866,16 +4186,11 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "location_reveal",
           "effects": [
             {
-              "type": "onReveal",
-              "extra": {
-                "raw": {
-                  "target": "allCreatures",
-                  "type": "removeAllElements"
-                }
-              }
+              "type": "removeAllElements",
+              "target": "all_creatures"
             }
           ]
         }
@@ -3976,7 +4291,13 @@
           "event": "location_activated",
           "effects": [
             {
-              "type": "sacrificeCreature"
+              "type": "castleMommark",
+              "extra": {
+                "raw": {
+                  "optionalPerPlayer": true,
+                  "type": "sacrificeThenReviveAnother"
+                }
+              }
             }
           ]
         }
@@ -4062,14 +4383,14 @@
             }
           ]
         },
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "grantTribe"
-            }
-          ]
-        }
+          {
+            "event": "location_activated",
+            "effects": [
+              {
+                "type": "suppressBaseTribe"
+              }
+            ]
+          }
       ]
     },
     "unique": ""
@@ -4138,16 +4459,16 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "pre_attack",
+          "condition": {
+            "type": "attackType",
+            "keyword": "elemental"
+          },
           "effects": [
             {
-              "type": "onElementalAttack",
-              "extra": {
-                "raw": {
-                  "type": "healAttacker",
-                  "value": 5
-                }
-              }
+              "type": "heal",
+              "value": 5,
+              "target": "attacker"
             }
           ]
         }
@@ -4198,15 +4519,30 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "location_activated",
+          "event": "pre_attack",
+          "condition": {
+            "type": "sharesAttackElement",
+            "target": "attacker"
+          },
           "effects": [
             {
-              "type": "sharedElementDamageReduction",
-              "extra": {
-                "raw": {
-                  "value": 5
-                }
-              }
+              "type": "damageReduction",
+              "value": 5,
+              "target": "attacker"
+            }
+          ]
+        },
+        {
+          "event": "pre_attack",
+          "condition": {
+            "type": "sharesAttackElement",
+            "target": "defender"
+          },
+          "effects": [
+            {
+              "type": "damageReduction",
+              "value": 5,
+              "target": "defender"
             }
           ]
         }
@@ -4379,7 +4715,14 @@
           "event": "location_activated",
           "effects": [
             {
-              "type": "recoverFromDiscard"
+              "type": "najarinsCastle",
+              "extra": {
+                "raw": {
+                  "discardThenRecoverMugic": true,
+                  "optionalPerPlayer": true,
+                  "type": "discardMugicToRecoverMugic"
+                }
+              }
             }
           ]
         }
@@ -4401,7 +4744,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "turn_start",
           "effects": [
             {
               "type": "beginTurn",
@@ -4588,13 +4931,11 @@
       "hooks": [
         {
           "event": "combat_start",
-          "condition": {
-            "type": "mostElements"
-          },
           "effects": [
             {
               "type": "mugicCounter",
-              "value": 1
+              "value": 1,
+              "target": "engagedWithMostElements"
             }
           ]
         }
@@ -4678,16 +5019,9 @@
     "rarity": "Super Rare",
     "set": "AU",
     "special_logic": {
-      "hooks": [
-        {
-          "event": "location_activated",
-          "effects": [
-            {
-              "type": "mugicAnyTribe"
-            }
-          ]
-        }
-      ]
+      "keywords": {
+        "mugicAnyTribe": true
+      }
     },
     "unique": ""
   },
@@ -4814,16 +5148,12 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "first_element_gain",
           "effects": [
             {
-              "type": "onGainElement",
-              "extra": {
-                "raw": {
-                  "firstTimePerTurn": true,
-                  "gainEnergy": 10
-                }
-              }
+              "type": "energyMod",
+              "value": 10,
+              "target": "self"
             }
           ]
         }
@@ -4845,16 +5175,12 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "first_element_loss",
           "effects": [
             {
-              "type": "onLoseElement",
-              "extra": {
-                "raw": {
-                  "firstTimePerTurn": true,
-                  "loseEnergy": 10
-                }
-              }
+              "type": "energyMod",
+              "value": -10,
+              "target": "self"
             }
           ]
         }
@@ -5125,30 +5451,23 @@
     "id": "82",
     "initiative": "Speed",
     "mirage": "",
-    "name": "Carnival of Confusion, The Entangled Throne",
-    "past": "",
-    "rarity": "Promo",
-    "set": "OP1",
-    "special_logic": {
-      "hooks": [
-        {
-          "event": "combat_start",
-          "effects": [
-            {
-              "type": "onAttackPlayed",
-              "extra": {
-                "raw": {
-                  "heads": {
-                    "damageMultiplier": 2
-                  },
-                  "tails": {
-                    "damageMultiplier": 0
-                  },
-                  "type": "coinFlip"
+      "name": "Carnival of Confusion, The Entangled Throne",
+      "past": "",
+      "rarity": "Promo",
+      "set": "OP1",
+      "special_logic": {
+        "hooks": [
+          {
+            "event": "pre_attack",
+            "effects": [
+              {
+                "type": "coinFlip",
+                "extra": {
+                  "headsMultiplier": 2,
+                  "tailsMultiplier": 0
                 }
               }
-            }
-          ]
+            ]
         }
       ]
     },
@@ -5198,9 +5517,14 @@
       "hooks": [
         {
           "event": "combat_start",
+          "condition": {
+            "type": "lowerStat",
+            "stat": "Courage"
+          },
           "effects": [
             {
-              "type": "damage"
+              "type": "damage",
+              "value": 10
             }
           ]
         }
@@ -5294,7 +5618,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "passive",
           "effects": [
             {
               "type": "onBattlegearDiscard",
