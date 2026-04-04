@@ -35,6 +35,39 @@
                        ]
     },
     {
+        "location":  "The Crown Warcamp",
+        "creatures":  [
+                          "Arias",
+                          "Donmar",
+                          "Staluk",
+                          "Vidav",
+                          "Hune Marquard",
+                          "Frafdo"
+                      ],
+        "locations":  [
+                          "Kiru City",
+                          "The Barracks",
+                          "Lake Ken-I-Po",
+                          "Ravanaugh Ridge",
+                          "Stronghold Morn"
+                      ],
+        "mugic":  [
+                      "OverWorld Aria",
+                      "Defender\u0027s Song",
+                      "Prelude of Protection",
+                      "Refrain of Denial",
+                      "Fortissimo",
+                      "Song of Truesight"
+                  ],
+        "battlegear":  [
+                           "Gauntlets of Might",
+                           "Stone Mail",
+                           "Torwegg",
+                           "Heptadd\u0027s Crown",
+                           "Telebracers"
+                       ]
+    },
+    {
         "location":  "Glacier Plains",
         "creatures":  [
                           "Gespedan",
@@ -611,6 +644,39 @@
                        ]
     },
     {
+        "location":  "The Veiled Warcamp",
+        "creatures":  [
+                          "Tiaane",
+                          "Zhade",
+                          "Kolmo",
+                          "Gnarlus",
+                          "Lanker",
+                          "Prince Mudeenu (Dardemus Stats)"
+                      ],
+        "locations":  [
+                          "Mipedim Oasis",
+                          "Mipedim Lounge",
+                          "Mipedim Mirage",
+                          "OverWorld Embassy at Mipedim",
+                          "Sha-Kree Flats"
+                      ],
+        "mugic":  [
+                      "Fanfare of the Vanishing",
+                      "Melody of Mirage",
+                      "Song of Deflection",
+                      "Gear Glissando",
+                      "Fortissimo",
+                      "Song of Truesight"
+                  ],
+        "battlegear":  [
+                           "Warbeast Power Leash",
+                           "Mipedian Cactus",
+                           "Hunter\u0027s Lure",
+                           "Ravita Flower",
+                           "Elixir Of Tenacity"
+                       ]
+    },
+    {
         "location":  "Mipedim Valley",
         "creatures":  [
                           "Ario",
@@ -757,6 +823,39 @@
                        ]
     },
     {
+        "location":  "The Burrowed Warcamp",
+        "creatures":  [
+                          "Wamma",
+                          "Formicidor",
+                          "Skartalas",
+                          "Valanii Levaan",
+                          "Mallash",
+                          "Kannen"
+                      ],
+        "locations":  [
+                          "Mount Pillar",
+                          "Mount Pillar Reservoir",
+                          "Queen\u0027s Gate",
+                          "Oipont\u0027s Lookout",
+                          "Doors of the Deepmines"
+                      ],
+        "mugic":  [
+                      "Chorus of the Hive",
+                      "Song of Mandiblor",
+                      "Song of Resistance",
+                      "Song of Symmetry",
+                      "Danian Element Choral",
+                      "Fortissimo"
+                  ],
+        "battlegear":  [
+                           "Talisman of the Mandiblor",
+                           "Mandiblor Crown",
+                           "Danian Carapace",
+                           "Nexus Fuse",
+                           "Prism of Vacuity"
+                       ]
+    },
+    {
         "location":  "Doors of the Deepmines",
         "creatures":  [
                           "Ekuud",
@@ -851,6 +950,40 @@
                           "Gothos Tower",
                           "Lava Pond",
                           "Stone Pillar",
+                          "UnderWorld Colosseum"
+                      ],
+        "mugic":  [
+                      "Canon of Casualty",
+                      "Discord of Disarming",
+                      "Song of Fury",
+                      "Song of Treachery",
+                      "Fortissimo",
+                      "Casters\u0027 Warsong"
+                  ],
+        "battlegear":  [
+                           "Pyroblaster",
+                           "Viledriver",
+                           "Vlaric Shard",
+                           "Skeletal Steed",
+                           "Sword of Khy\u0027at",
+                           "The Doomhammer"
+                       ]
+    },
+    {
+        "location":  "The Iron Warcamp",
+        "creatures":  [
+                          "Dardemus",
+                          "Khybon",
+                          "Magmon",
+                          "Rothar",
+                          "Krekk",
+                          "Pyrithion"
+                      ],
+        "locations":  [
+                          "UnderWorld City",
+                          "Fear Valley",
+                          "Gothos Tower",
+                          "Lava Pond",
                           "UnderWorld Colosseum"
                       ],
         "mugic":  [

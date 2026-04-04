@@ -116,7 +116,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -313,7 +313,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -324,7 +324,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -473,7 +473,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -845,7 +845,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -1239,7 +1239,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -1250,7 +1250,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -1343,7 +1343,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -1381,7 +1381,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -1465,7 +1465,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "statFail",
             "stat": "Courage",
@@ -4131,7 +4131,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "passive",
           "condition": {
             "and": [
               {
@@ -4574,12 +4574,15 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "damageScaled",
               "value": 5,
-              "target": "engagedOpponent"
+              "target": "engagedOpponent",
+              "extra": {
+                "perElement": true
+              }
             }
           ]
         }
@@ -6900,7 +6903,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -6911,7 +6914,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -7411,7 +7414,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -7422,7 +7425,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -7433,7 +7436,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -7444,7 +7447,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -8225,7 +8228,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "higherStat",
             "stat": "Courage"
@@ -9145,7 +9148,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -9156,7 +9159,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -9167,7 +9170,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -9178,7 +9181,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -9549,7 +9552,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "higherStat",
             "stat": "Power"
@@ -10634,7 +10637,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "higherStat",
             "stat": "All Disciplines"
@@ -10816,7 +10819,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "higherStat",
             "stat": "Courage"
@@ -10831,7 +10834,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "higherStat",
             "stat": "Wisdom"
@@ -11798,7 +11801,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -11809,7 +11812,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "damageReduction",
@@ -12024,7 +12027,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -12035,7 +12038,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "damageReduction",
@@ -12511,7 +12514,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -12522,7 +12525,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "damageReduction",
@@ -12863,7 +12866,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -12874,7 +12877,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "damageReduction",
@@ -13151,7 +13154,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "energyScaled",
@@ -13267,7 +13270,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "higherStat",
             "stat": "Power"
@@ -13454,7 +13457,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "stat": "Energy",
@@ -13465,7 +13468,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "stat": "Energy",
@@ -14291,7 +14294,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -14302,7 +14305,7 @@
           ]
         },
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -14691,7 +14694,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "higherStat",
             "stat": "Power"
@@ -17680,7 +17683,7 @@
       },
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -20349,7 +20352,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "condition": {
             "type": "isEngaged"
           },
@@ -21122,7 +21125,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -21432,7 +21435,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "statMod",
@@ -22132,7 +22135,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "elementRemove",
@@ -22583,7 +22586,7 @@
     "special_logic": {
       "hooks": [
         {
-          "event": "combat_start",
+          "event": "becomes_engaged",
           "effects": [
             {
               "type": "removeKeyword",

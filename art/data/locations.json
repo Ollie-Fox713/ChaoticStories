@@ -1086,13 +1086,22 @@
         {
           "event": "combat_start",
           "condition": {
-            "type": "hasTribe",
-            "tribe": "Danian"
+            "and": [
+              {
+                "type": "hasTribe",
+                "tribe": "Danian"
+              },
+              {
+                "type": "hasElement",
+                "element": "Water"
+              }
+            ]
           },
           "effects": [
               {
-                "type": "elementGrant",
-                "element": "Water",
+                "type": "keywordGrant",
+                "keyword": "water",
+                "value": 5,
                 "target": "self"
               }
             ]
@@ -1396,7 +1405,10 @@
           "effects": [
             {
               "type": "damageReduction",
-              "value": 5
+              "value": 5,
+              "extra": {
+                "keyword": "recklessness"
+              }
             }
           ]
         }

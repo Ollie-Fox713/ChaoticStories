@@ -5450,6 +5450,7 @@
           "effects": [
             {
               "stat": "Speed",
+              "target": "opponent",
               "type": "statMod",
               "value": -25
             }
